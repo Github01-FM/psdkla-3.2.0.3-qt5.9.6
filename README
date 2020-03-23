@@ -1,0 +1,60 @@
+
+Contents
+========
+
+├── qtbase
+│   ├── git                # Qtbase Source Code
+│   ├── patches            # Patches for Source Code
+│   ├── scripts            # Scripts called by build.sh
+│   ├── build              # Qtbase configure/compile dir
+│   ├── image              # Qtbase built-out install dir
+│   └── out                # Qtbase built-out files for Target Board
+├── qtdeclarative
+├── qtgraphicaleffects
+├── qtimageformats
+├── qtlocation
+├── qtquickcontrols
+├── qtquickcontrols2
+├── qtwayland
+├── qtwebchannel
+├── qtwebengine
+├── qtwebsockets
+├── qtxmlpatterns
+│
+├── build.sh            # Build script
+├── output              # Output files for Target Board
+├── qt.conf             # Auto update based on qt.conf.template by build.sh
+├── qt.conf.template
+├── README
+├── sysroots            # Contained needed headers and libraries for building Qt that run on the target architecture
+└── toolchain           # Cross Compile Toolchain
+
+
+Build
+=====
+
+Build command:
+$ ./build.sh
+
+Successful build log like:
+```
+make[3]: Leaving directory `/home/user01/zzp/test/test/psdkla-3.2.0.3-qt5.9.6/qtwebengine/build/examples/webengine/customdialogs'
+make[2]: Leaving directory `/home/user01/zzp/test/test/psdkla-3.2.0.3-qt5.9.6/qtwebengine/build/examples/webengine'
+make[1]: Leaving directory `/home/user01/zzp/test/test/psdkla-3.2.0.3-qt5.9.6/qtwebengine/build/examples'
+NOTE: Install 'qtwebengine' target-out.
+NOTE: Output all
+Done. Check 'output'.
+```
+
+Test on Target Board
+====================
+
+Copy the 'output' files into Target Board root /.
+
+On Host:
+$ cd output/
+$ tar cf qt5.tar *
+
+On Target Board:
+# tar xf /media/usbstorage1/qt5.tar -C /
+
