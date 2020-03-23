@@ -1,0 +1,19 @@
+PN: libpng
+PV: 1.6.21
+PR: r0
+PKGV: 1.6.21
+PKGR: r0.0
+LICENSE: Libpng
+DESCRIPTION_libpng-dev: PNG image format decoding library.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libpng-dev: PNG image format decoding library - Development files
+RDEPENDS_libpng-dev: libpng (= 1.6.21-r0.0)
+RPROVIDES_libpng-dev:  libpng-dev (=1.6.21)
+RRECOMMENDS_libpng-dev: external-linaro-toolchain-dev zlib-dev
+SECTION_libpng-dev: devel
+PKG_libpng-dev: libpng16-dev
+ALLOW_EMPTY_libpng-dev: 1
+FILES_libpng-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libpng/*.la /lib/*.la /usr/bin/*-config
+FILES_INFO: {"/usr/lib/libpng16.so": 19, "/usr/lib/pkgconfig/libpng.pc": 11, "/usr/include/libpng16/pngconf.h": 22873, "/usr/lib/pkgconfig/libpng16.pc": 224, "/usr/bin/libpng16-config": 173, "/usr/include/pngconf.h": 18, "/usr/lib/libpng.so": 11, "/usr/lib/libpng16.la": 1039, "/usr/include/pnglibconf.h": 21, "/usr/include/libpng16/png.h": 136730, "/usr/lib/libpng.la": 11, "/usr/bin/libpng-config": 15, "/usr/include/png.h": 14, "/usr/include/libpng16/pnglibconf.h": 7368}
+FILERDEPENDSFLIST_libpng-dev: /usr/bin/libpng16-config
+FILERDEPENDS_/usr/bin/libpng16-config_libpng-dev: /bin/sh
+PKGSIZE_libpng-dev: 168527

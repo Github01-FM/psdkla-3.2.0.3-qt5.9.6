@@ -1,0 +1,14 @@
+PN: icu
+PV: 56.1
+PR: r0
+PKGV: 56.1
+PKGR: r0.0
+LICENSE: ICU
+DESCRIPTION_icu-staticdev: The International Component for Unicode (ICU) is a mature, portable set of C/C++ and Java libraries for Unicode support, software internationalization (I18N) and globalization (G11N), giving applications the same results on all platforms.  This package contains static libraries for software development.
+SUMMARY_icu-staticdev: International Component for Unicode libraries - Development files (Static Libraries)
+RDEPENDS_icu-staticdev: icu-dev (= 56.1-r0.0)
+SECTION_icu-staticdev: devel
+PKG_icu-staticdev: icu-staticdev
+FILES_icu-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/icu/*.a
+FILES_INFO: {}
+PKGSIZE_icu-staticdev: 0

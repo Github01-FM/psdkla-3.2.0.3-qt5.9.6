@@ -1,0 +1,20 @@
+PN: xz
+PV: 5.2.2
+PR: r0
+PKGV: 5.2.2
+PKGR: r0.0
+LICENSE_liblzma: PD
+DESCRIPTION: Utilities for managing LZMA compressed files.
+SUMMARY: Utilities for managing LZMA compressed files
+RDEPENDS_liblzma: external-linaro-toolchain (>= 2.21)
+RPROVIDES_liblzma:  liblzma (=5.2.2)
+SECTION: base
+PKG_liblzma: liblzma5
+FILES_liblzma: /usr/lib/liblzma*.so.*
+pkg_postinst_liblzma: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_liblzma: /usr/lib/liblzma.so.5.2.2
+FILES_INFO: {"/usr/lib/liblzma.so.5.2.2": 127020, "/usr/lib/liblzma.so.5": 16}
+FILERPROVIDES_/usr/lib/liblzma.so.5.2.2_liblzma: elf(buildid) (= a8006d528f313b4d9bfa4c52e80d0e7791cae465) liblzma.so.5 liblzma.so.5(XZ_5.0) liblzma.so.5(XZ_5.2)
+FILERDEPENDSFLIST_liblzma: /usr/lib/liblzma.so.5.2.2
+FILERDEPENDS_/usr/lib/liblzma.so.5.2.2_liblzma: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_liblzma: 127036

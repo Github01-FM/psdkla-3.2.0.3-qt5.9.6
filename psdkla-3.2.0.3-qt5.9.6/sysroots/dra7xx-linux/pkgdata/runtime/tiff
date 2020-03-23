@@ -1,0 +1,20 @@
+PN: tiff
+PV: 4.0.6
+PR: r0.arago0
+PKGV: 4.0.6
+PKGR: r0.arago0.0
+LICENSE: BSD-2-Clause
+DESCRIPTION: Provides support for the Tag Image File Format (TIFF).
+SUMMARY: Provides support for the Tag Image File Format (TIFF)
+RDEPENDS_tiff: libjpeg-turbo (>= 8d+1.4.2) liblzma (>= 5.2.2) zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21)
+RPROVIDES_tiff:  tiff (=4.0.6)
+SECTION: base
+PKG_tiff: libtiff5
+FILES_tiff: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/tiff /usr/lib/tiff/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_tiff: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_tiff: /usr/lib/libtiff.so.5.2.4
+FILES_INFO: {"/usr/lib/libtiff.so.5": 16, "/usr/lib/libtiff.so.5.2.4": 410272}
+FILERPROVIDES_/usr/lib/libtiff.so.5.2.4_tiff: elf(buildid) (= bca1fd03ee57b05feddc6bb42950b79a3d071a64) libtiff.so.5
+FILERDEPENDSFLIST_tiff: /usr/lib/libtiff.so.5.2.4
+FILERDEPENDS_/usr/lib/libtiff.so.5.2.4_tiff: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 libjpeg.so.62(LIBJPEG_6.2) liblzma.so.5 liblzma.so.5(XZ_5.0) libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libz.so.1 rtld(GNU_HASH)
+PKGSIZE_tiff: 410288

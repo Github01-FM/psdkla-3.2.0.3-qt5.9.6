@@ -1,0 +1,20 @@
+PN: libgbm
+PV: 10.0.0
+PR: r0
+PKGV: 10.0.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: Userspace interface for the kernel GBM services.
+SUMMARY: libgbm version 10.0.0-r0
+RDEPENDS_libgbm: libudev (>= 229+git0+714c62b463) libcap (>= 2.24) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libgbm:  libgbm (=10.0.0)
+SECTION: base
+PKG_libgbm: libgbm2
+FILES_libgbm: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libgbm /usr/lib/libgbm/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libgbm: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libgbm: /usr/lib/libgbm.so.2.0.0
+FILES_INFO: {"/usr/lib/libgbm.so.2.0.0": 7272, "/usr/lib/libgbm.so.2": 15}
+FILERPROVIDES_/usr/lib/libgbm.so.2.0.0_libgbm: elf(buildid) (= e00510c3f7da18b038bc8e4e27c37fbc1497d624) libgbm.so.2
+FILERDEPENDSFLIST_libgbm: /usr/lib/libgbm.so.2.0.0
+FILERDEPENDS_/usr/lib/libgbm.so.2.0.0_libgbm: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+PKGSIZE_libgbm: 7287

@@ -1,0 +1,15 @@
+PN: packagegroup-sv-qt5
+PV: 1.0
+PR: r1
+PKGV: 1.0
+PKGR: r1.0
+LICENSE: MIT
+DESCRIPTION: External task to get Qt5
+SUMMARY: packagegroup-sv-qt5 version 1.0-r1
+RDEPENDS_packagegroup-sv-qt5: qtwayland qtxmlpatterns qtdeclarative qtgraphicaleffects-qmlplugins qtwebengine qtdeclarative-qmlplugins qtimageformats qtwayland-plugins libcap qtbase-plugins liblzma qtwebengine-examples qtgraphicaleffects qtbase qtquickcontrols-qmlplugins
+SECTION: base
+PKG_packagegroup-sv-qt5: packagegroup-sv-qt5
+ALLOW_EMPTY_packagegroup-sv-qt5: 1
+FILES_packagegroup-sv-qt5: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/packagegroup-sv-qt5 /usr/lib/packagegroup-sv-qt5/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+FILES_INFO: {}
+PKGSIZE_packagegroup-sv-qt5: 0

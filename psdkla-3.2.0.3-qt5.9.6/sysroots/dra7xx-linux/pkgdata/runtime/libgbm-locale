@@ -1,0 +1,13 @@
+PN: libgbm
+PV: 10.0.0
+PR: r0
+PKGV: 10.0.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: Userspace interface for the kernel GBM services.
+SUMMARY: libgbm version 10.0.0-r0
+SECTION: base
+PKG_libgbm-locale: libgbm-locale
+FILES_libgbm-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libgbm-locale: 0

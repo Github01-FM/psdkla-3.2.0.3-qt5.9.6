@@ -1,0 +1,13 @@
+PN: libcgroup
+PV: 0.41
+PR: r0
+PKGV: 0.41
+PKGR: r0.0
+LICENSE: LGPLv2.1
+DESCRIPTION_libcgroup-doc: libcgroup is a library that abstracts the control group file system in Linux. Control groups allow you to limit, account and isolate resource usage (CPU, memory, disk I/O, etc.) of groups of processes.  This package contains documentation.
+SUMMARY_libcgroup-doc: Linux control group abstraction library - Documentation files
+SECTION_libcgroup-doc: doc
+PKG_libcgroup-doc: libcgroup-doc
+FILES_libcgroup-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/man/man5/cgrules.conf.5": 3762, "/usr/share/man/man1/lscgroup.1": 759, "/usr/share/man/man1/cgget.1": 1951, "/usr/share/man/man1/cgexec.1": 2540, "/usr/share/man/man5/cgconfig.conf.5": 15055, "/usr/share/man/man1/cgset.1": 1048, "/usr/share/man/man1/lssubsys.1": 2250, "/usr/share/man/man1/cgclassify.1": 1907, "/usr/share/man/man8/cgrulesengd.8": 2271, "/usr/share/man/man1/cgdelete.1": 839, "/usr/share/man/man1/cgsnapshot.1": 2265, "/usr/share/man/man1/cgcreate.1": 2251, "/usr/share/man/man1/cgclear.1": 1633, "/usr/share/man/man8/cgconfigparser.8": 2355, "/usr/share/man/man5/cgred.conf.5": 986}
+PKGSIZE_libcgroup-doc: 41872

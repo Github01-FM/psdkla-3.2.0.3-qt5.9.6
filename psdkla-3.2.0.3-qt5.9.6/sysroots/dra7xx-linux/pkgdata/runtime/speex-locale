@@ -1,0 +1,14 @@
+PN: speex
+PV: 1.2rc2
+PR: r0
+PKGV: 1.2rc2
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION: Speex is an Open Source/Free Software patent-free audio compression format designed for speech.
+SUMMARY: Speech Audio Codec
+RPROVIDES_speex-locale:  speex-locale (=1.2rc2)
+SECTION: libs
+PKG_speex-locale: libspeex-locale
+FILES_speex-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_speex-locale: 0

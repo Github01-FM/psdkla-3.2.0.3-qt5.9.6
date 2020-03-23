@@ -1,0 +1,20 @@
+PN: libxkbcommon
+PV: 0.5.0
+PR: r0
+PKGV: 0.5.0
+PKGR: r0.0
+LICENSE: MIT & MIT-style
+DESCRIPTION: libxkbcommon is a keymap compiler and support library which processes a reduced subset of keymaps as defined by the XKB specification.
+SUMMARY: Generic XKB keymap library
+RDEPENDS_libxkbcommon: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libxkbcommon:  libxkbcommon (=0.5.0)
+SECTION: base
+PKG_libxkbcommon: libxkbcommon0
+FILES_libxkbcommon: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libxkbcommon /usr/lib/libxkbcommon/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libxkbcommon: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libxkbcommon: /usr/lib/libxkbcommon.so.0.0.0
+FILES_INFO: {"/usr/lib/libxkbcommon.so.0": 21, "/usr/lib/libxkbcommon.so.0.0.0": 225208}
+FILERPROVIDES_/usr/lib/libxkbcommon.so.0.0.0_libxkbcommon: elf(buildid) (= 584060750dc27151edf9be5a2f4a0be4161c974f) libxkbcommon.so.0 libxkbcommon.so.0(V_0.5.0)
+FILERDEPENDSFLIST_libxkbcommon: /usr/lib/libxkbcommon.so.0.0.0
+FILERDEPENDS_/usr/lib/libxkbcommon.so.0.0.0_libxkbcommon: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libxkbcommon: 225229

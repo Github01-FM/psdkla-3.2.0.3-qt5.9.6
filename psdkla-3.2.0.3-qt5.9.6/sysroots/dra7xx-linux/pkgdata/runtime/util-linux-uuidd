@@ -1,0 +1,18 @@
+PN: util-linux
+PV: 2.27.1
+PR: r0
+PKGV: 2.27.1
+PKGR: r0.0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux-uuidd: util-linux-libuuid (>= 2.27.1) external-linaro-toolchain (>= 2.21)
+SECTION: base
+PKG_util-linux-uuidd: util-linux-uuidd
+FILES_util-linux-uuidd: /usr/sbin/uuidd
+FILERPROVIDESFLIST_util-linux-uuidd: /usr/sbin/uuidd
+FILES_INFO: {"/usr/sbin/uuidd": 22488}
+FILERPROVIDES_/usr/sbin/uuidd_util-linux-uuidd: elf(buildid) (= 87ca6b71a3894de3faf61bc8d2ebf4839ccea0f6)
+FILERDEPENDSFLIST_util-linux-uuidd: /usr/sbin/uuidd
+FILERDEPENDS_/usr/sbin/uuidd_util-linux-uuidd: libc.so.6 libc.so.6(GLIBC_2.4) libuuid.so.1 libuuid.so.1(UUIDD_PRIVATE) libuuid.so.1(UUID_1.0) rtld(GNU_HASH)
+PKGSIZE_util-linux-uuidd: 22488

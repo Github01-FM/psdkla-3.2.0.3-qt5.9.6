@@ -1,0 +1,14 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_liblsan-dev: 5.3.1
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RRECOMMENDS_liblsan-dev: linux-libc-headers-dev
+SECTION: base
+PKG_liblsan-dev: liblsan-dev
+FILES_liblsan-dev:     /lib/liblsan.so     /lib/liblsan.la 
+FILES_INFO: {}
+PKGSIZE_liblsan-dev: 0

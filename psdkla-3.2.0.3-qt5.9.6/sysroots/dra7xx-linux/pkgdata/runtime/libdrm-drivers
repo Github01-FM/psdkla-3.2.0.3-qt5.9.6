@@ -1,0 +1,14 @@
+PN: libdrm
+PV: 2.4.67
+PR: r0.arago1
+PKGV: 2.4.67
+PKGR: r0.arago1.0
+LICENSE: MIT
+DESCRIPTION: The runtime library for accessing the kernel DRM services.  DRM stands for \\"Direct Rendering Manager\\", which is the kernel portion of the \\"Direct Rendering Infrastructure\\" (DRI).  DRI is required for many hardware accelerated OpenGL drivers.
+SUMMARY: Userspace interface to the kernel DRM services
+RRECOMMENDS_libdrm-drivers: libdrm-radeon libdrm-nouveau libdrm-omap libdrm-intel                              libdrm-exynos libdrm-freedreno libdrm-amdgpu
+SECTION: x11/base
+PKG_libdrm-drivers: libdrm-drivers
+ALLOW_EMPTY_libdrm-drivers: 1
+FILES_INFO: {}
+PKGSIZE_libdrm-drivers: 0

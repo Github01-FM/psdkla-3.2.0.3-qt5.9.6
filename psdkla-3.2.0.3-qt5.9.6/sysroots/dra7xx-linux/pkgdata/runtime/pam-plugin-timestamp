@@ -1,0 +1,21 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-timestamp: PAM plugin for -timestamp
+SUMMARY_pam-plugin-timestamp: PAM plugin for -timestamp
+RDEPENDS_pam-plugin-timestamp: libpam-suffix external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+RPROVIDES_pam-plugin-timestamp: pam-plugin-timestamp-suffix
+SECTION: base
+PKG_pam-plugin-timestamp: pam-plugin-timestamp
+FILES_pam-plugin-timestamp: /lib/security/pam_timestamp.so /usr/sbin/pam_timestamp_check
+FILERPROVIDESFLIST_pam-plugin-timestamp: /usr/sbin/pam@underscore@timestamp@underscore@check /lib/security/pam@underscore@timestamp.so
+FILES_INFO: {"/usr/sbin/pam_timestamp_check": 7300, "/lib/security/pam_timestamp.so": 12988}
+FILERPROVIDES_/usr/sbin/pam@underscore@timestamp@underscore@check_pam-plugin-timestamp: elf(buildid) (= 5d3aff72b6e2a34d745aea1dba8d6bc5a7f9256e)
+FILERPROVIDES_/lib/security/pam@underscore@timestamp.so_pam-plugin-timestamp: elf(buildid) (= 297a150a58cb46a159c2e0a32bfba84057ff0ba7) pam_timestamp.so
+FILERDEPENDSFLIST_pam-plugin-timestamp: /usr/sbin/pam@underscore@timestamp@underscore@check /lib/security/pam@underscore@timestamp.so
+FILERDEPENDS_/usr/sbin/pam@underscore@timestamp@underscore@check_pam-plugin-timestamp: libc.so.6 libc.so.6(GLIBC_2.4) libpam.so.0 libpam.so.0(LIBPAM_EXTENSION_1.0) rtld(GNU_HASH)
+FILERDEPENDS_/lib/security/pam@underscore@timestamp.so_pam-plugin-timestamp: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) rtld(GNU_HASH)
+PKGSIZE_pam-plugin-timestamp: 20288

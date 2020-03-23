@@ -1,0 +1,13 @@
+prefix=${STAGING_DIR_NATIVE}${STAGING_DIR_NATIVE}/usr
+exec_prefix=${prefix}
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include/qt5
+
+
+Name: Qt5 DBus
+Description: Qt DBus module
+Version: 5.9.6
+Libs: -L${libdir} -lQt5DBus 
+Cflags: -I${includedir}/QtDBus -I${includedir}
+Requires: Qt5Core
+

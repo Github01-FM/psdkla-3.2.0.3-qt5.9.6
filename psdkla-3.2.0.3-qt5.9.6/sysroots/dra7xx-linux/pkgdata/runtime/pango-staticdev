@@ -1,0 +1,14 @@
+PN: pango
+PV: 1.38.1
+PR: r0
+PKGV: 1.38.1
+PKGR: r0.0
+LICENSE: LGPLv2.0+
+DESCRIPTION_pango-staticdev: Pango is a library for laying out and rendering of text, with an emphasis on internationalization. Pango can be used anywhere that text layout is needed, though most of the work on Pango so far has been done in the context of the GTK+ widget toolkit. Pango forms the core of text and font handling for GTK+-2.x.  This package contains static libraries for software development.
+SUMMARY_pango-staticdev: Framework for layout and rendering of internationalized text - Development files (Static Libraries)
+RDEPENDS_pango-staticdev: pango-dev (= 1.38.1-r0.0)
+SECTION_pango-staticdev: devel
+PKG_pango-staticdev: pango-staticdev
+FILES_pango-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/pango/*.a
+FILES_INFO: {}
+PKGSIZE_pango-staticdev: 0

@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-sd-mod: sd-mod kernel module; SCSI disk (sd) driver
+SUMMARY_kernel-module-sd-mod: sd-mod kernel module
+RDEPENDS_kernel-module-sd-mod: kernel-4.4.45+ kernel-module-scsi-mod
+SECTION: kernel
+PKG_kernel-module-sd-mod: kernel-module-sd-mod
+FILES_kernel-module-sd-mod: /lib/modules/4.4.45+/kernel/drivers/scsi/sd_mod.ko /etc/modules-load.d/sd_mod.conf /etc/modprobe.d/sd_mod.conf
+pkg_postinst_kernel-module-sd-mod: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-sd-mod: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/drivers/scsi/sd_mod.ko": 49056}
+PKGSIZE_kernel-module-sd-mod: 49056

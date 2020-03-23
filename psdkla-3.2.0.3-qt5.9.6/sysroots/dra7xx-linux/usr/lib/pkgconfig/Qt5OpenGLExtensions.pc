@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include/qt5
+
+
+Name: Qt5 OpenGLExtensions
+Description: Qt OpenGLExtensions module
+Version: 5.9.6
+Libs: -L${libdir} -lQt5OpenGLExtensions 
+Libs.private:  -lQt5Gui -lQt5Core -lpthread -lGLESv2 -lsrv_um 
+Cflags: -I${includedir}/QtOpenGLExtensions -I${includedir}
+Requires: Qt5Core Qt5Gui
+

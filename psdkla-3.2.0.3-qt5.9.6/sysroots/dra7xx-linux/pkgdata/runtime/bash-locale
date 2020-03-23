@@ -1,0 +1,13 @@
+PN: bash
+PV: 3.2.48
+PR: r11.arago0
+PKGV: 3.2.48
+PKGR: r11.arago0.0
+LICENSE: GPLv2+
+DESCRIPTION: An sh-compatible command language interpreter.
+SUMMARY: An sh-compatible command language interpreter
+SECTION: base/shell
+PKG_bash-locale: bash-locale
+FILES_bash-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_bash-locale: 0

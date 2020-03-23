@@ -1,0 +1,15 @@
+PN: freetype
+PV: 2.6.3
+PR: r0.arago0
+PKGV: 2.6.3
+PKGR: r0.arago0.0
+LICENSE: GPLv2+
+DESCRIPTION_freetype-staticdev: FreeType is a software font engine that is designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output (glyph images). It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.  This package contains static libraries for software development.
+SUMMARY_freetype-staticdev: Freetype font rendering library - Development files (Static Libraries)
+RDEPENDS_freetype-staticdev: freetype-dev (= 2.6.3-r0.arago0.0)
+RPROVIDES_freetype-staticdev:  freetype-staticdev (=2.6.3)
+SECTION_freetype-staticdev: devel
+PKG_freetype-staticdev: libfreetype-staticdev
+FILES_freetype-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/freetype/*.a
+FILES_INFO: {"/usr/lib/libfreetype.a": 3690276}
+PKGSIZE_freetype-staticdev: 3690276

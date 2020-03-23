@@ -1,0 +1,15 @@
+PN: qtquickcontrols
+PV: 5.9.6+gitAUTOINC+ca6bba7163
+PR: r0
+PKGV: 5.9.6+git0+ca6bba7163
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtquickcontrols version 5.9.6+gitAUTOINC+ca6bba7163-r0.
+SUMMARY: qtquickcontrols version 5.9.6+gitAUTOINC+ca6bba7163-r0
+RRECOMMENDS_qtquickcontrols:      qtquickcontrols-plugins     qtquickcontrols-qmlplugins     
+SECTION: base
+PKG_qtquickcontrols: qtquickcontrols
+ALLOW_EMPTY_qtquickcontrols: 1
+FILES_qtquickcontrols: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/qtquickcontrols /usr/lib/qtquickcontrols/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers      /usr/lib/lib*.so.*     /usr/lib/qt5/libexec 
+FILES_INFO: {}
+PKGSIZE_qtquickcontrols: 0

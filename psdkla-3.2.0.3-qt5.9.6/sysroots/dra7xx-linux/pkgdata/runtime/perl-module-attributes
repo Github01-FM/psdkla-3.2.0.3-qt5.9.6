@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0.0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-attributes: perl module attributes
+SUMMARY_perl-module-attributes: perl module attributes
+RDEPENDS_perl-module-attributes: perl-module-carp perl-module-warnings perl perl-module-exporter external-linaro-toolchain (>= 2.21) perl-module-strict perl-module-xsloader
+SECTION: devel
+PKG_perl-module-attributes: perl-module-attributes
+FILES_perl-module-attributes: /usr/lib/perl/5.22.1/auto/attributes/attributes.so /usr/lib/perl/5.22.1/attributes.pm
+FILERPROVIDESFLIST_perl-module-attributes: /usr/lib/perl/5.22.1/auto/attributes/attributes.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/auto/attributes/attributes.so": 7460, "/usr/lib/perl/5.22.1/attributes.pm": 16719}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/attributes/attributes.so_perl-module-attributes: attributes.so elf(buildid) (= 7cd0a1164511e7ca2cc0963e31e48e0d7674dac7)
+FILERDEPENDSFLIST_perl-module-attributes: /usr/lib/perl/5.22.1/auto/attributes/attributes.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/attributes/attributes.so_perl-module-attributes: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_perl-module-attributes: 24179

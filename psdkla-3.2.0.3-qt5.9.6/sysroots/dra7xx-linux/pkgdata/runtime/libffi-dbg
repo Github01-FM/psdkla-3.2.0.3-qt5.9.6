@@ -1,0 +1,15 @@
+PN: libffi
+PV: 3.2.1
+PR: r0
+PKGV: 3.2.1
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libffi-dbg: The `libffi\' library provides a portable, high level programming interface to various calling conventions.  This allows a programmer to call any function specified by a call interface description at run time. FFI stands for Foreign Function Interface.  A foreign function interface is the popular name for the interface that allows code written in one language to call code written in another language.  The `libffi\' library really only provides the lowest, machine dependent layer of a fully featured foreign function interface.  A layer must exist above `libffi\' that handles type conversions for values passed between the two languages.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_libffi-dbg: A portable foreign function interface library - Debugging files
+RRECOMMENDS_libffi-dbg: external-linaro-toolchain-dbg libgcc-dbg
+SECTION_libffi-dbg: devel
+PKG_libffi-dbg: libffi-dbg
+ALLOW_EMPTY_libffi-dbg: 1
+FILES_libffi-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/libffi/3.2.1-r0/libffi-3.2.1/src/prep_cif.c": 7605, "/usr/src/debug/libffi/3.2.1-r0/build/include/ffitarget.h": 2358, "/usr/src/debug/libffi/3.2.1-r0/libffi-3.2.1/src/types.c": 3844, "/usr/src/debug/libffi/3.2.1-r0/libffi-3.2.1/src/dlmalloc.c": 183424, "/usr/src/debug/libffi/3.2.1-r0/libffi-3.2.1/src/closures.c": 18501, "/usr/src/debug/libffi/3.2.1-r0/libffi-3.2.1/src/java_raw_api.c": 8802, "/usr/src/debug/libffi/3.2.1-r0/libffi-3.2.1/src/raw_api.c": 6272, "/usr/lib/.debug/libffi.so.6.0.4": 89920, "/usr/src/debug/libffi/3.2.1-r0/libffi-3.2.1/src/arm/ffi.c": 25713, "/usr/src/debug/libffi/3.2.1-r0/libffi-3.2.1/include/ffi_common.h": 3486, "/usr/src/debug/libffi/3.2.1-r0/libffi-3.2.1/src/arm/sysv.S": 10612, "/usr/src/debug/libffi/3.2.1-r0/build/include/ffi.h": 13332}
+PKGSIZE_libffi-dbg: 373869

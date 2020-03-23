@@ -1,0 +1,20 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_libubsan: 5.3.1
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_libubsan: libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libubsan:  libubsan (=2.21)
+SECTION: base
+PKG_libubsan: libubsan0
+FILES_libubsan: /lib/libubsan.so.*
+pkg_postinst_libubsan: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libubsan: /lib/libubsan.so.0.0.0
+FILES_INFO: {"/lib/libubsan.so.0.0.0": 1366064, "/lib/libubsan.so.0": 17}
+FILERPROVIDES_/lib/libubsan.so.0.0.0_libubsan: elf(buildid) (= f9cd25f2c681c5affbb53413cea6dfaff0b62e06) libubsan.so.0
+FILERDEPENDSFLIST_libubsan: /lib/libubsan.so.0.0.0
+FILERDEPENDS_/lib/libubsan.so.0.0.0_libubsan: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libgcc_s.so.1(GCC_4.3.0) libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(GLIBCXX_3.4)
+PKGSIZE_libubsan: 1366081

@@ -1,0 +1,16 @@
+PN: systemd-serialgetty
+PV: 1.0
+PR: r5
+PKGV: 1.0
+PKGR: r5.0
+LICENSE: GPLv2+
+DESCRIPTION_systemd-serialgetty-dev: Serial terminal support for systemd.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_systemd-serialgetty-dev: Serial terminal support for systemd - Development files
+RDEPENDS_systemd-serialgetty-dev: systemd-serialgetty (= 1.0-r5.0)
+RRECOMMENDS_systemd-serialgetty-dev: systemd-dev
+SECTION_systemd-serialgetty-dev: devel
+PKG_systemd-serialgetty-dev: systemd-serialgetty-dev
+ALLOW_EMPTY_systemd-serialgetty-dev: 1
+FILES_systemd-serialgetty-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/systemd-serialgetty/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_systemd-serialgetty-dev: 0

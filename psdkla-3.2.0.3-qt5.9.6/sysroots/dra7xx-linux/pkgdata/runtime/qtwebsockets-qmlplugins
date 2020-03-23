@@ -1,0 +1,19 @@
+PN: qtwebsockets
+PV: 5.9.6+gitAUTOINC+3dc383a807
+PR: r0
+PKGV: 5.9.6+git0+3dc383a807
+PKGR: r0.0
+LICENSE: GFDL-1.3 & (GPL-3 | LGPL-3.0)
+DESCRIPTION: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0.
+SUMMARY: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0
+RDEPENDS_qtwebsockets-qmlplugins: qtdeclarative (>= 5.9.6+git0+283a900c4e) libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21) qtbase (>= 5.9.6+git0+9c50112304) qtwebsockets (>= 5.9.6+git0+3dc383a807)
+RPROVIDES_qtwebsockets-qmlplugins:  qtwebsockets-qmlplugins (=5.9.6+git0+3dc383a807)
+SECTION: base
+PKG_qtwebsockets-qmlplugins: libqt5websockets-qmlplugins
+FILES_qtwebsockets-qmlplugins:      /usr/lib/qt5/qml/*.qmltypes     /usr/lib/qt5/qml/*/*.so     /usr/lib/qt5/qml/*/qmldir     /usr/lib/qt5/qml/*/*.qmltypes     /usr/lib/qt5/qml/*/*.qml     /usr/lib/qt5/qml/*/*.qmlc     /usr/lib/qt5/qml/*/*.js     /usr/lib/qt5/qml/*/*.jsc     /usr/lib/qt5/qml/*/*.png     /usr/lib/qt5/qml/*/*/*.so     /usr/lib/qt5/qml/*/*/qmldir     /usr/lib/qt5/qml/*/*/*.qmltypes     /usr/lib/qt5/qml/*/*/*.qml     /usr/lib/qt5/qml/*/*/*.qmlc     /usr/lib/qt5/qml/*/*/*.js     /usr/lib/qt5/qml/*/*/*.jsc     /usr/lib/qt5/qml/*/*/*.png     /usr/lib/qt5/qml/*/*/*/*.so     /usr/lib/qt5/qml/*/*/*/qmldir     /usr/lib/qt5/qml/*/*/*/images     /usr/lib/qt5/qml/*/*/*/*.qmltypes     /usr/lib/qt5/qml/*/*/*/*.qml     /usr/lib/qt5/qml/*/*/*/*.qmlc     /usr/lib/qt5/qml/*/*/*/*.js     /usr/lib/qt5/qml/*/*/*/*.jsc     /usr/lib/qt5/qml/*/*/*/*.png     /usr/lib/qt5/qml/*/*/*/*.metainfo     /usr/lib/qt5/qml/*/*/*/*/*.so     /usr/lib/qt5/qml/*/*/*/*/qmldir     /usr/lib/qt5/qml/*/*/*/*/*.qmltypes     /usr/lib/qt5/qml/*/*/*/*/*.qml     /usr/lib/qt5/qml/*/*/*/*/*.qmlc     /usr/lib/qt5/qml/*/*/*/*/*.js     /usr/lib/qt5/qml/*/*/*/*/*.jsc     /usr/lib/qt5/qml/*/*/*/*/*/*.png     /usr/lib/qt5/imports/*.qmltypes     /usr/lib/qt5/imports/*/*.so     /usr/lib/qt5/imports/*/*.qmltypes     /usr/lib/qt5/imports/*/qmldir     /usr/lib/qt5/imports/*/*/*.so     /usr/lib/qt5/imports/*/*/*.qmltypes     /usr/lib/qt5/imports/*/*/qmldir     /usr/lib/qt5/imports/*/*/*/*.so     /usr/lib/qt5/imports/*/*/*/*.qmltypes     /usr/lib/qt5/imports/*/*/*/qmldir 
+FILERPROVIDESFLIST_qtwebsockets-qmlplugins: /usr/lib/qt5/qml/QtWebSockets/libdeclarative@underscore@qmlwebsockets.so
+FILES_INFO: {"/usr/lib/qt5/qml/Qt/WebSockets/qmldir": 140, "/usr/lib/qt5/qml/QtWebSockets/qmldir": 119, "/usr/lib/qt5/qml/QtWebSockets/plugins.qmltypes": 3448, "/usr/lib/qt5/qml/QtWebSockets/libdeclarative_qmlwebsockets.so": 33068}
+FILERPROVIDES_/usr/lib/qt5/qml/QtWebSockets/libdeclarative@underscore@qmlwebsockets.so_qtwebsockets-qmlplugins: elf(buildid) (= 0a286cb5c86077c054686b6f8b9a1b350fc9886a) libdeclarative_qmlwebsockets.so
+FILERDEPENDSFLIST_qtwebsockets-qmlplugins: /usr/lib/qt5/qml/QtWebSockets/libdeclarative@underscore@qmlwebsockets.so
+FILERDEPENDS_/usr/lib/qt5/qml/QtWebSockets/libdeclarative@underscore@qmlwebsockets.so_qtwebsockets-qmlplugins: libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Network.so.5 libQt5Network.so.5(Qt_5) libQt5Qml.so.5 libQt5Qml.so.5(Qt_5) libQt5WebSockets.so.5 libQt5WebSockets.so.5(Qt_5) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+PKGSIZE_qtwebsockets-qmlplugins: 36775

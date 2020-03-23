@@ -1,0 +1,15 @@
+PN: libgbm
+PV: 10.0.0
+PR: r0
+PKGV: 10.0.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libgbm-dbg: Userspace interface for the kernel GBM services.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_libgbm-dbg: libgbm version 10.0.0-r0 - Debugging files
+RRECOMMENDS_libgbm-dbg: external-linaro-toolchain-dbg libudev-dbg libcap-dbg
+SECTION_libgbm-dbg: devel
+PKG_libgbm-dbg: libgbm-dbg
+ALLOW_EMPTY_libgbm-dbg: 1
+FILES_libgbm-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/libgbm/10.0.0-r0/git/gbm.h": 12241, "/usr/src/debug/libgbm/10.0.0-r0/git/backend.c": 2731, "/usr/src/debug/libgbm/10.0.0-r0/git/backend.h": 1345, "/usr/src/debug/libgbm/10.0.0-r0/git/gbm.c": 14134, "/usr/src/debug/libgbm/10.0.0-r0/git/gbmint.h": 3709, "/usr/lib/.debug/libgbm.so.2.0.0": 24864, "/usr/src/debug/libgbm/10.0.0-r0/git/common.c": 2444}
+PKGSIZE_libgbm-dbg: 61468

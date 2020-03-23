@@ -1,0 +1,13 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+sharedlibdir=${libdir}
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.8
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

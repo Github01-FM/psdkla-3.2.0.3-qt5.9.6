@@ -1,0 +1,14 @@
+PN: libinput
+PV: 1.8.4
+PR: r0
+PKGV: 1.8.4
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libinput-staticdev: Library to handle input devices in Wayland compositors.  This package contains static libraries for software development.
+SUMMARY_libinput-staticdev: Library to handle input devices in Wayland compositors - Development files (Static Libraries)
+RDEPENDS_libinput-staticdev: libinput-dev (= 1.8.4-r0.0)
+SECTION_libinput-staticdev: devel
+PKG_libinput-staticdev: libinput-staticdev
+FILES_libinput-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/libinput/*.a
+FILES_INFO: {}
+PKGSIZE_libinput-staticdev: 0

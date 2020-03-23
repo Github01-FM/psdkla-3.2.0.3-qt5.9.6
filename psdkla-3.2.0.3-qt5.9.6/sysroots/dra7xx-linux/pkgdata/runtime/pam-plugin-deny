@@ -1,0 +1,19 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-deny: PAM plugin for -deny
+SUMMARY_pam-plugin-deny: PAM plugin for -deny
+RDEPENDS_pam-plugin-deny: libpam-suffix external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+RPROVIDES_pam-plugin-deny: pam-plugin-deny-suffix
+SECTION: base
+PKG_pam-plugin-deny: pam-plugin-deny
+FILES_pam-plugin-deny: /lib/security/pam_deny.so
+FILERPROVIDESFLIST_pam-plugin-deny: /lib/security/pam@underscore@deny.so
+FILES_INFO: {"/lib/security/pam_deny.so": 2872}
+FILERPROVIDES_/lib/security/pam@underscore@deny.so_pam-plugin-deny: elf(buildid) (= 77c8e61fe526c27c87ef11e3286ec30fee6cbeb8) pam_deny.so
+FILERDEPENDSFLIST_pam-plugin-deny: /lib/security/pam@underscore@deny.so
+FILERDEPENDS_/lib/security/pam@underscore@deny.so_pam-plugin-deny: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 rtld(GNU_HASH)
+PKGSIZE_pam-plugin-deny: 2872

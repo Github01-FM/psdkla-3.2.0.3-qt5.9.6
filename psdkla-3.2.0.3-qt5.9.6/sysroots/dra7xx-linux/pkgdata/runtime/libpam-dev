@@ -1,0 +1,16 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-dev: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libpam-dev: Linux-PAM (Pluggable Authentication Modules) - Development files
+RDEPENDS_libpam-dev: libpam (= 1.2.1-r5.0)
+RRECOMMENDS_libpam-dev: pam-plugin-succeed-if-suffix-dev bison-dev zlib-dev cracklib-dev pam-plugin-time-suffix-dev coreutils-dev pam-plugin-permit-suffix-dev pam-plugin-warn-suffix-dev external-linaro-toolchain-dev pam-plugin-pwhistory-suffix-dev pam-plugin-unix-suffix-dev libpam-suffix-dev flex-dev pam-plugin-access-suffix-dev pam-plugin-deny-suffix-dev pam-plugin-cracklib-suffix-dev pam-plugin-debug-suffix-dev
+SECTION_libpam-dev: devel
+PKG_libpam-dev: libpam-dev
+ALLOW_EMPTY_libpam-dev: 1
+FILES_libpam-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libpam/*.la /lib/*.la /lib/security/*.la /lib/*.la /lib/lib*.so
+FILES_INFO: {"/lib/security/pam_cracklib.la": 1086, "/lib/security/pam_env.la": 1026, "/lib/security/pam_deny.la": 1032, "/lib/security/pam_rootok.la": 1044, "/lib/security/pam_wheel.la": 1038, "/lib/security/pam_faildelay.la": 1062, "/lib/security/pam_unix.la": 1040, "/lib/security/pam_xauth.la": 1038, "/lib/security/pam_group.la": 1038, "/lib/security/pam_shells.la": 1044, "/usr/include/security/pam_appl.h": 3297, "/lib/libpamc.so": 17, "/lib/security/pam_issue.la": 1038, "/lib/security/pam_debug.la": 1038, "/lib/security/pam_succeed_if.la": 1068, "/lib/security/pam_ftp.la": 1026, "/lib/security/pam_mail.la": 1032, "/lib/security/pam_mkhomedir.la": 1062, "/usr/include/security/pam_ext.h": 3631, "/lib/security/pam_warn.la": 1032, "/lib/security/pam_listfile.la": 1056, "/usr/include/security/pam_filter.h": 1089, "/lib/security/pam_localuser.la": 1062, "/lib/security/pam_lastlog.la": 1057, "/lib/security/pam_exec.la": 1032, "/usr/include/security/pam_client.h": 7239, "/lib/libpam_misc.la": 1053, "/lib/libpam.so": 16, "/lib/security/pam_access.la": 1044, "/lib/security/pam_nologin.la": 1050, "/usr/include/security/_pam_types.h": 12904, "/lib/libpamc.la": 1008, "/lib/libpam_misc.so": 21, "/lib/security/pam_filter.la": 1044, "/usr/include/security/_pam_compat.h": 2972, "/usr/include/security/_pam_macros.h": 6109, "/lib/libpam.la": 1007, "/lib/security/pam_loginuid.la": 1056, "/lib/security/pam_echo.la": 1032, "/lib/security/pam_stress.la": 1044, "/usr/include/security/pam_modules.h": 6432, "/lib/security/pam_securetty.la": 1062, "/lib/security/pam_keyinit.la": 1050, "/lib/security/pam_permit.la": 1044, "/usr/include/security/pam_misc.h": 1526, "/usr/include/security/pam_modutil.h": 5220, "/lib/security/pam_tally2.la": 1044, "/lib/security/pam_timestamp.la": 1062, "/lib/security/pam_motd.la": 1032, "/lib/security/pam_pwhistory.la": 1070, "/lib/security/pam_limits.la": 1044, "/lib/security/pam_rhosts.la": 1044, "/lib/security/pam_namespace.la": 1062, "/lib/security/pam_tally.la": 1038, "/lib/security/pam_time.la": 1032, "/lib/security/pam_umask.la": 1038}
+PKGSIZE_libpam-dev: 95384

@@ -1,0 +1,20 @@
+PN: libdrm
+PV: 2.4.67
+PR: r0.arago1
+PKGV: 2.4.67
+PKGR: r0.arago1.0
+LICENSE: MIT
+DESCRIPTION: The runtime library for accessing the kernel DRM services.  DRM stands for \\"Direct Rendering Manager\\", which is the kernel portion of the \\"Direct Rendering Infrastructure\\" (DRI).  DRI is required for many hardware accelerated OpenGL drivers.
+SUMMARY: Userspace interface to the kernel DRM services
+RDEPENDS_libdrm-omap: libdrm (>= 2.4.67) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libdrm-omap:  libdrm-omap (=2.4.67)
+SECTION: x11/base
+PKG_libdrm-omap: libdrm-omap1
+FILES_libdrm-omap: /usr/lib/libdrm_omap.so.*
+pkg_postinst_libdrm-omap: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libdrm-omap: /usr/lib/libdrm@underscore@omap.so.1.0.0
+FILES_INFO: {"/usr/lib/libdrm_omap.so.1": 20, "/usr/lib/libdrm_omap.so.1.0.0": 6736}
+FILERPROVIDES_/usr/lib/libdrm@underscore@omap.so.1.0.0_libdrm-omap: elf(buildid) (= d910eb88770279cda5aa68f2aabd2f4a160dc9c9) libdrm_omap.so.1
+FILERDEPENDSFLIST_libdrm-omap: /usr/lib/libdrm@underscore@omap.so.1.0.0
+FILERDEPENDS_/usr/lib/libdrm@underscore@omap.so.1.0.0_libdrm-omap: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libm.so.6 rtld(GNU_HASH)
+PKGSIZE_libdrm-omap: 6756

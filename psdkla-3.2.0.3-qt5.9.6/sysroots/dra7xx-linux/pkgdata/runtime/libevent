@@ -1,0 +1,26 @@
+PN: libevent
+PV: 2.0.22
+PR: r0
+PKGV: 2.0.22
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION: An asynchronous event notification library.
+SUMMARY: An asynchronous event notification library
+RDEPENDS_libevent: external-linaro-toolchain (>= 2.21)
+SECTION: libs
+PKG_libevent: libevent
+FILES_libevent: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libevent /usr/lib/libevent/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libevent: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libevent: /usr/lib/libevent-2.0.so.5.1.10 /usr/lib/libevent@underscore@core-2.0.so.5.1.10 /usr/lib/libevent@underscore@extra-2.0.so.5.1.10 /usr/lib/libevent@underscore@pthreads-2.0.so.5.1.10
+FILES_INFO: {"/usr/lib/libevent_pthreads-2.0.so.5": 31, "/usr/lib/libevent_extra-2.0.so.5": 28, "/usr/lib/libevent_core-2.0.so.5.1.10": 150548, "/usr/bin/event_rpcgen.py": 55456, "/usr/lib/libevent-2.0.so.5": 22, "/usr/lib/libevent_core-2.0.so.5": 27, "/usr/lib/libevent-2.0.so.5.1.10": 245432, "/usr/lib/libevent_extra-2.0.so.5.1.10": 103012, "/usr/lib/libevent_pthreads-2.0.so.5.1.10": 4944}
+FILERPROVIDES_/usr/lib/libevent-2.0.so.5.1.10_libevent: elf(buildid) (= 86c0c0730f6548f99abdbcefa870125ec110d250) libevent-2.0.so.5
+FILERPROVIDES_/usr/lib/libevent@underscore@core-2.0.so.5.1.10_libevent: elf(buildid) (= 0ceffd1493789b2ed09515e4f89e6610e0b04a16) libevent_core-2.0.so.5
+FILERPROVIDES_/usr/lib/libevent@underscore@extra-2.0.so.5.1.10_libevent: elf(buildid) (= eb0fee0a11fe21bd207e1ef81015a24d16d5e467) libevent_extra-2.0.so.5
+FILERPROVIDES_/usr/lib/libevent@underscore@pthreads-2.0.so.5.1.10_libevent: elf(buildid) (= 76e810261893d2476fe17e94cc9094abdcb5e983) libevent_pthreads-2.0.so.5
+FILERDEPENDSFLIST_libevent: /usr/lib/libevent-2.0.so.5.1.10 /usr/lib/libevent@underscore@core-2.0.so.5.1.10 /usr/lib/libevent@underscore@extra-2.0.so.5.1.10 /usr/bin/event@underscore@rpcgen.py /usr/lib/libevent@underscore@pthreads-2.0.so.5.1.10
+FILERDEPENDS_/usr/lib/libevent-2.0.so.5.1.10_libevent: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libevent@underscore@core-2.0.so.5.1.10_libevent: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libevent@underscore@extra-2.0.so.5.1.10_libevent: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/event@underscore@rpcgen.py_libevent: /usr/bin/env
+FILERDEPENDS_/usr/lib/libevent@underscore@pthreads-2.0.so.5.1.10_libevent: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libevent: 559500

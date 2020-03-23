@@ -1,0 +1,20 @@
+PN: libinput
+PV: 1.8.4
+PR: r0
+PKGV: 1.8.4
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: Library to handle input devices in Wayland compositors.
+SUMMARY: Library to handle input devices in Wayland compositors
+RDEPENDS_libinput-bin: libudev (>= 229+git0+714c62b463) mtdev (>= 1.1.5) libevdev (>= 1.5.7) external-linaro-toolchain (>= 2.21) libinput (>= 1.8.4) libcap (>= 2.24)
+SECTION: libs
+PKG_libinput-bin: libinput-bin
+FILES_libinput-bin: /usr/bin/* /usr/sbin/*
+FILERPROVIDESFLIST_libinput-bin: /usr/bin/libinput
+FILES_INFO: {"/usr/bin/libinput-list-devices": 164, "/usr/bin/libinput": 13072, "/usr/bin/libinput-debug-events": 164}
+FILERPROVIDES_/usr/bin/libinput_libinput-bin: elf(buildid) (= 088ffabd5071f4548ec07abce060f0db23e3ca0c)
+FILERDEPENDSFLIST_libinput-bin: /usr/bin/libinput-list-devices /usr/bin/libinput /usr/bin/libinput-debug-events
+FILERDEPENDS_/usr/bin/libinput-list-devices_libinput-bin: /bin/sh
+FILERDEPENDS_/usr/bin/libinput_libinput-bin: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libinput.so.10 libinput.so.10(LIBINPUT_0.12.0) libinput.so.10(LIBINPUT_0.14.0) libinput.so.10(LIBINPUT_0.19.0) libinput.so.10(LIBINPUT_0.21.0) libinput.so.10(LIBINPUT_1.1) libinput.so.10(LIBINPUT_1.2) libinput.so.10(LIBINPUT_1.5) libm.so.6 libmtdev.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/libinput-debug-events_libinput-bin: /bin/sh
+PKGSIZE_libinput-bin: 13400

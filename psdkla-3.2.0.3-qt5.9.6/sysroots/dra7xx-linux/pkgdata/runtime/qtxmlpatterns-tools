@@ -1,0 +1,21 @@
+PN: qtxmlpatterns
+PV: 5.9.6+gitAUTOINC+4dcae15a5a
+PR: r0
+PKGV: 5.9.6+git0+4dcae15a5a
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtxmlpatterns version 5.9.6+gitAUTOINC+4dcae15a5a-r0.
+SUMMARY: qtxmlpatterns version 5.9.6+gitAUTOINC+4dcae15a5a-r0
+RDEPENDS_qtxmlpatterns-tools: libstdc++ (>= 5.3.1) qtxmlpatterns (>= 5.9.6+git0+4dcae15a5a) libgcc (>= 5.3.1) qtbase (>= 5.9.6+git0+9c50112304) external-linaro-toolchain (>= 2.21)
+RPROVIDES_qtxmlpatterns-tools:  qtxmlpatterns-tools (=5.9.6+git0+4dcae15a5a)
+SECTION: base
+PKG_qtxmlpatterns-tools: libqt5xmlpatterns-tools
+FILES_qtxmlpatterns-tools:      /usr/bin/qt5/* 
+FILERPROVIDESFLIST_qtxmlpatterns-tools: /usr/bin/qt5/xmlpatternsvalidator /usr/bin/qt5/xmlpatterns
+FILES_INFO: {"/usr/bin/qt5/xmlpatternsvalidator": 7076, "/usr/bin/qt5/xmlpatterns": 55780}
+FILERPROVIDES_/usr/bin/qt5/xmlpatternsvalidator_qtxmlpatterns-tools: elf(buildid) (= 05c4d0c1981bae92e72f25a31b849b9f41755cd8)
+FILERPROVIDES_/usr/bin/qt5/xmlpatterns_qtxmlpatterns-tools: elf(buildid) (= 1663756c615c68ad768f13989deee195c5cc440d)
+FILERDEPENDSFLIST_qtxmlpatterns-tools: /usr/bin/qt5/xmlpatternsvalidator /usr/bin/qt5/xmlpatterns
+FILERDEPENDS_/usr/bin/qt5/xmlpatternsvalidator_qtxmlpatterns-tools: libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Network.so.5 libQt5XmlPatterns.so.5 libQt5XmlPatterns.so.5(Qt_5) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libm.so.6 libpthread.so.0 libstdc++.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/qt5/xmlpatterns_qtxmlpatterns-tools: libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Network.so.5 libQt5XmlPatterns.so.5 libQt5XmlPatterns.so.5(Qt_5) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+PKGSIZE_qtxmlpatterns-tools: 62856

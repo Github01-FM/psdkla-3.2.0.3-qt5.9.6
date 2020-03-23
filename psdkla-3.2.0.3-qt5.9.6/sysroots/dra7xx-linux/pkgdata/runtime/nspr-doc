@@ -1,0 +1,13 @@
+PN: nspr
+PV: 4.12
+PR: r0
+PKGV: 4.12
+PKGR: r0.0
+LICENSE: GPL-2.0 | MPL-2.0 | LGPL-2.1
+DESCRIPTION_nspr-doc: Netscape Portable Runtime Library.  This package contains documentation.
+SUMMARY_nspr-doc: Netscape Portable Runtime Library - Documentation files
+SECTION_nspr-doc: doc
+PKG_nspr-doc: nspr-doc
+FILES_nspr-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_nspr-doc: 0

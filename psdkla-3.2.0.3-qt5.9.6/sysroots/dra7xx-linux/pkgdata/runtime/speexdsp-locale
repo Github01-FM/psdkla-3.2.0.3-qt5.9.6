@@ -1,0 +1,14 @@
+PN: speexdsp
+PV: 1.2rc3
+PR: r0
+PKGV: 1.2rc3
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION: SpeexDSP is a patent-free, Open Source/Free Software DSP library.
+SUMMARY: A patent-free DSP library
+RPROVIDES_speexdsp-locale:  speexdsp-locale (=1.2rc3)
+SECTION: libs
+PKG_speexdsp-locale: libspeexdsp-locale
+FILES_speexdsp-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_speexdsp-locale: 0

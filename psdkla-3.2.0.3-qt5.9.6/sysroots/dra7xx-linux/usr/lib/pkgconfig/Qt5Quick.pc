@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include/qt5
+
+
+Name: Qt5 Quick
+Description: Qt Quick module
+Version: 5.9.6
+Libs: -L${libdir} -lQt5Quick 
+Cflags: -I${includedir}/QtQuick -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml
+

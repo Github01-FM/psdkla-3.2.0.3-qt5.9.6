@@ -1,0 +1,16 @@
+PN: pixman
+PE: 1
+PV: 0.32.8
+PR: r0
+PKGE: 1
+PKGV: 0.32.8
+PKGR: r0.0
+LICENSE: MIT & MIT-style & PD
+DESCRIPTION: Pixman provides a library for manipulating pixel regions -- a set of Y-X banded rectangles, image compositing using the Porter/Duff model and implicit mask generation for geometric primitives including trapezoids, triangles, and rectangles.
+SUMMARY: Pixman: Pixel Manipulation library
+RPROVIDES_pixman-locale:  pixman-locale (=0.32.8)
+SECTION: x11/libs
+PKG_pixman-locale: libpixman-1-locale
+FILES_pixman-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_pixman-locale: 0

@@ -1,0 +1,25 @@
+PN: libevdev
+PV: 1.5.7
+PR: r0
+PKGV: 1.5.7
+PKGR: r0.0
+LICENSE: MIT-X
+DESCRIPTION: Wrapper library for evdev devices.
+SUMMARY: Wrapper library for evdev devices
+RDEPENDS_libevdev: external-linaro-toolchain (>= 2.21)
+SECTION: libs
+PKG_libevdev: libevdev
+FILES_libevdev: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libevdev /usr/lib/libevdev/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libevdev: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libevdev: /usr/bin/mouse-dpi-tool /usr/bin/touchpad-edge-detector /usr/bin/libevdev-tweak-device /usr/lib/libevdev.so.2.1.19
+FILES_INFO: {"/usr/lib/libevdev.so.2.1.19": 62868, "/usr/bin/mouse-dpi-tool": 8500, "/usr/bin/touchpad-edge-detector": 9480, "/usr/bin/libevdev-tweak-device": 7416, "/usr/lib/libevdev.so.2": 18}
+FILERPROVIDES_/usr/bin/mouse-dpi-tool_libevdev: elf(buildid) (= a8b00c9d76be9de79345121975d3ecb6ecd0dbec)
+FILERPROVIDES_/usr/bin/touchpad-edge-detector_libevdev: elf(buildid) (= 0e3abd4a5da39ad8cdb988b584cac2085c3f5b11)
+FILERPROVIDES_/usr/bin/libevdev-tweak-device_libevdev: elf(buildid) (= 7d9b1ca83c8aa2482a0456dea57b5204fb21d3d8)
+FILERPROVIDES_/usr/lib/libevdev.so.2.1.19_libevdev: elf(buildid) (= 1d208732be23961b4587edba13aa2bc2ab585868) libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libevdev.so.2(LIBEVDEV_1_3)
+FILERDEPENDSFLIST_libevdev: /usr/bin/mouse-dpi-tool /usr/bin/touchpad-edge-detector /usr/bin/libevdev-tweak-device /usr/lib/libevdev.so.2.1.19
+FILERDEPENDS_/usr/bin/mouse-dpi-tool_libevdev: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libm.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/touchpad-edge-detector_libevdev: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libm.so.6 libm.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/libevdev-tweak-device_libevdev: libc.so.6 libc.so.6(GLIBC_2.4) libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libm.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libevdev.so.2.1.19_libevdev: libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 rtld(GNU_HASH)
+PKGSIZE_libevdev: 88282

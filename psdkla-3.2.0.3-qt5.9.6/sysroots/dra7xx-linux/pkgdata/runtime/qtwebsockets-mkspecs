@@ -1,0 +1,14 @@
+PN: qtwebsockets
+PV: 5.9.6+gitAUTOINC+3dc383a807
+PR: r0
+PKGV: 5.9.6+git0+3dc383a807
+PKGR: r0.0
+LICENSE: GFDL-1.3 & (GPL-3 | LGPL-3.0)
+DESCRIPTION: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0.
+SUMMARY: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0
+RPROVIDES_qtwebsockets-mkspecs:  qtwebsockets-mkspecs (=5.9.6+git0+3dc383a807)
+SECTION: base
+PKG_qtwebsockets-mkspecs: libqt5websockets-mkspecs
+FILES_qtwebsockets-mkspecs:     /usr/lib/qt5/mkspecs 
+FILES_INFO: {"/usr/lib/qt5/mkspecs/modules/qt_lib_websockets_private.pri": 555, "/usr/lib/qt5/mkspecs/modules/qt_lib_websockets.pri": 538}
+PKGSIZE_qtwebsockets-mkspecs: 1093

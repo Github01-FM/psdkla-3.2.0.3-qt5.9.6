@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-cls-tcindex: cls-tcindex kernel module
+SUMMARY_kernel-module-cls-tcindex: cls-tcindex kernel module
+RDEPENDS_kernel-module-cls-tcindex: kernel-4.4.45+
+SECTION: kernel
+PKG_kernel-module-cls-tcindex: kernel-module-cls-tcindex
+FILES_kernel-module-cls-tcindex: /lib/modules/4.4.45+/kernel/net/sched/cls_tcindex.ko /etc/modules-load.d/cls_tcindex.conf /etc/modprobe.d/cls_tcindex.conf
+pkg_postinst_kernel-module-cls-tcindex: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-cls-tcindex: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/net/sched/cls_tcindex.ko": 14820}
+PKGSIZE_kernel-module-cls-tcindex: 14820

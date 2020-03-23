@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Emit a useful diagnostic if something fails:
+bb_exit_handler() {
+    ret=$?
+    case $ret in
+    0)  ;;
+    *)  case $BASH_VERSION in
+        "") echo "WARNING: exit code $ret from a shell command.";;
+        *)  echo "WARNING: ${BASH_SOURCE[0]}:${BASH_LINENO[0]} exit $ret from '$BASH_COMMAND'";;
+        esac
+        exit $ret
+    esac
+}
+trap 'bb_exit_handler' 0
+set -e
+
+test -n "${WORKDIR}"
+test -n "${S}"
+
+cd "${S}"
+
+# Main
+test ! -e "${WORKDIR}/patches/series" && echo "NOTE: Skip patch as NO patches" && exit 0
+
+rm -rf "patches"
+cp -a "${WORKDIR}/patches" .
+
+PatchNum=$(cat patches/series | wc -l)
+
+for n in $(seq 1 1 ${PatchNum})
+do
+    PatchCont=$(head -n $n patches/series | tail -n 1)
+    echo "NOTE: patch ${PatchCont}"
+    eval "patch < patches/$PatchCont"
+done
+
+# cleanup
+ret=$?
+trap '' 0
+exit $ret

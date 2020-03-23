@@ -1,0 +1,13 @@
+PN: libevent
+PV: 2.0.22
+PR: r0
+PKGV: 2.0.22
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION: An asynchronous event notification library.
+SUMMARY: An asynchronous event notification library
+SECTION: libs
+PKG_libevent-locale: libevent-locale
+FILES_libevent-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libevent-locale: 0

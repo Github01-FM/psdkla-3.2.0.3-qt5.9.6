@@ -1,0 +1,18 @@
+PN: e2fsprogs
+PV: 1.42.99+1.43+gitAUTOINC+0f26747167
+PR: r0
+PKGV: 1.42.99+1.43+git0+0f26747167
+PKGR: r0.0
+LICENSE_e2fsprogs-badblocks: GPLv2
+DESCRIPTION: The Ext2 Filesystem Utilities (e2fsprogs) contain all of the standard utilities for creating, fixing, configuring , and debugging ext2 filesystems.
+SUMMARY: Ext2 Filesystem Utilities
+RDEPENDS_e2fsprogs-badblocks: libext2fs (>= 1.42.99+1.43+git0+0f26747167) libcomerr (>= 1.42.99+1.43+git0+0f26747167) util-linux-libblkid (>= 2.27.1) external-linaro-toolchain (>= 2.21)
+SECTION: base
+PKG_e2fsprogs-badblocks: e2fsprogs-badblocks
+FILES_e2fsprogs-badblocks: /sbin/badblocks
+FILERPROVIDESFLIST_e2fsprogs-badblocks: /sbin/badblocks
+FILES_INFO: {"/sbin/badblocks": 20008}
+FILERPROVIDES_/sbin/badblocks_e2fsprogs-badblocks: elf(buildid) (= 3390d4e5aa1086e1afd23641082c0e94cf7dd255)
+FILERDEPENDSFLIST_e2fsprogs-badblocks: /sbin/badblocks
+FILERDEPENDS_/sbin/badblocks_e2fsprogs-badblocks: libblkid.so.1 libc.so.6 libc.so.6(GLIBC_2.4) libcom_err.so.2 libext2fs.so.2 rtld(GNU_HASH)
+PKGSIZE_e2fsprogs-badblocks: 20008

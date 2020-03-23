@@ -1,0 +1,14 @@
+PN: qtbase
+PV: 5.9.6+gitAUTOINC+9c50112304
+PR: r0.arago12
+PKGV: 5.9.6+git0+9c50112304
+PKGR: r0.arago12.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION_qtbase-staticdev: qtbase version 5.9.6+gitAUTOINC+9c50112304-r0.arago12.  This package contains static libraries for software development.
+SUMMARY_qtbase-staticdev: qtbase version 5.9.6+gitAUTOINC+9c50112304-r0.arago12 - Development files (Static Libraries)
+RDEPENDS_qtbase-staticdev: qtbase-dev (= 5.9.6+git0+9c50112304-r0.arago12.0)
+SECTION_qtbase-staticdev: devel
+PKG_qtbase-staticdev: qtbase-staticdev
+FILES_qtbase-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/qtbase/*.a      /usr/lib/*.a 
+FILES_INFO: {"/usr/lib/libQt5EventDispatcherSupport.a": 1074102, "/usr/lib/libQt5InputSupport.a": 11323696, "/usr/lib/libQt5PlatformCompositorSupport.a": 1911530, "/usr/lib/libQt5DeviceDiscoverySupport.a": 1145840, "/usr/lib/libQt5ThemeSupport.a": 1698062, "/usr/lib/libQt5EglSupport.a": 1450924, "/usr/lib/libQt5FbSupport.a": 4649100, "/usr/lib/libQt5FontDatabaseSupport.a": 3458202, "/usr/lib/libQt5OpenGLExtensions.a": 554900, "/usr/lib/libQt5AccessibilitySupport.a": 526636, "/usr/lib/libQt5Bootstrap.a": 40301236, "/usr/lib/libQt5ServiceSupport.a": 610006}
+PKGSIZE_qtbase-staticdev: 68704234

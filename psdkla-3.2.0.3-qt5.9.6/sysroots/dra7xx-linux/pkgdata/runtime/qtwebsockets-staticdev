@@ -1,0 +1,15 @@
+PN: qtwebsockets
+PV: 5.9.6+gitAUTOINC+3dc383a807
+PR: r0
+PKGV: 5.9.6+git0+3dc383a807
+PKGR: r0.0
+LICENSE: GFDL-1.3 & (GPL-3 | LGPL-3.0)
+DESCRIPTION_qtwebsockets-staticdev: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0.  This package contains static libraries for software development.
+SUMMARY_qtwebsockets-staticdev: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0 - Development files (Static Libraries)
+RDEPENDS_qtwebsockets-staticdev: qtwebsockets-dev (= 5.9.6+git0+3dc383a807-r0.0)
+RPROVIDES_qtwebsockets-staticdev:  qtwebsockets-staticdev (=5.9.6+git0+3dc383a807)
+SECTION_qtwebsockets-staticdev: devel
+PKG_qtwebsockets-staticdev: libqt5websockets-staticdev
+FILES_qtwebsockets-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/qtwebsockets/*.a      /usr/lib/*.a 
+FILES_INFO: {}
+PKGSIZE_qtwebsockets-staticdev: 0

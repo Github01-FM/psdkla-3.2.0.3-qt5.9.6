@@ -1,0 +1,17 @@
+PN: fontconfig
+PV: 2.11.94
+PR: r0
+PKGV: 2.11.94
+PKGR: r0.0
+LICENSE: MIT-style & MIT & PD
+DESCRIPTION_fontconfig-dev: Fontconfig is a font configuration and customization library, which does not depend on the X Window System. It is designed to locate fonts within the system and select them according to requirements specified by applications. Fontconfig is not a rasterization library, nor does it impose a particular rasterization library on the application. The X-specific library \'Xft\' uses fontconfig along with freetype to specify and rasterize fonts.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_fontconfig-dev: Generic font configuration library - Development files
+RDEPENDS_fontconfig-dev: fontconfig (= 2.11.94-r0.0)
+RPROVIDES_fontconfig-dev:  fontconfig-dev (=2.11.94)
+RRECOMMENDS_fontconfig-dev: external-linaro-toolchain-dev freetype-dev expat-dev zlib-dev
+SECTION_fontconfig-dev: devel
+PKG_fontconfig-dev: libfontconfig-dev
+ALLOW_EMPTY_fontconfig-dev: 1
+FILES_fontconfig-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/fontconfig/*.la /lib/*.la
+FILES_INFO: {"/usr/lib/libfontconfig.la": 1106, "/usr/include/fontconfig/fcprivate.h": 4245, "/usr/include/fontconfig/fontconfig.h": 25908, "/usr/lib/pkgconfig/fontconfig.pc": 411, "/usr/include/fontconfig/fcfreetype.h": 1951, "/usr/lib/libfontconfig.so": 22}
+PKGSIZE_fontconfig-dev: 33643

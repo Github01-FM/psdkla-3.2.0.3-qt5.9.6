@@ -1,0 +1,18 @@
+PN: alsa-lib
+PV: 1.1.0
+PR: r0
+PKGV: 1.1.0
+PKGR: r0.0
+LICENSE: LGPLv2.1 & GPLv2+
+DESCRIPTION: ALSA sound library.
+SUMMARY: ALSA sound library
+RDEPENDS_alsa-server: libasound (>= 1.1.0) external-linaro-toolchain (>= 2.21)
+SECTION: libs/multimedia
+PKG_alsa-server: alsa-server
+FILES_alsa-server: /usr/bin/*
+FILERPROVIDESFLIST_alsa-server: /usr/bin/aserver
+FILES_INFO: {"/usr/bin/aserver": 21392}
+FILERPROVIDES_/usr/bin/aserver_alsa-server: elf(buildid) (= 85e887c8578563fd05e1658f5f8b06254a4699b1)
+FILERDEPENDSFLIST_alsa-server: /usr/bin/aserver
+FILERDEPENDS_/usr/bin/aserver_alsa-server: libasound.so.2 libasound.so.2(ALSA_0.9) libasound.so.2(ALSA_0.9.0rc8) libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 rtld(GNU_HASH)
+PKGSIZE_alsa-server: 21392

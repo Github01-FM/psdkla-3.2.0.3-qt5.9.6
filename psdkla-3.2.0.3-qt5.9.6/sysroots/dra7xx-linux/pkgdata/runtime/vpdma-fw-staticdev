@@ -1,0 +1,14 @@
+PN: vpdma-fw
+PV: 03-2012
+PR: r1
+PKGV: 03-2012
+PKGR: r1.0
+LICENSE: TI-TSPA
+DESCRIPTION_vpdma-fw-staticdev: VPDMA firmware for Video Input Port and Video Processing Engine  This package contains static libraries for software development.
+SUMMARY_vpdma-fw-staticdev: vpdma-fw version 03-2012-r1 - Development files (Static Libraries)
+RDEPENDS_vpdma-fw-staticdev: vpdma-fw-dev (= 03-2012-r1.0)
+SECTION_vpdma-fw-staticdev: devel
+PKG_vpdma-fw-staticdev: vpdma-fw-staticdev
+FILES_vpdma-fw-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/vpdma-fw/*.a
+FILES_INFO: {}
+PKGSIZE_vpdma-fw-staticdev: 0

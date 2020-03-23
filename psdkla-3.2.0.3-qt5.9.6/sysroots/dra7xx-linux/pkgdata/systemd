@@ -1,0 +1,1 @@
+PACKAGES: udev udev-hwdb systemd-gui systemd-vconsole-setup systemd-initramfs systemd-analyze systemd-kernel-install systemd-rpm-macros systemd-binfmt systemd-pam systemd-zsh-completion systemd-xorg-xinitrc systemd-extra-utils systemd-dbg systemd-staticdev systemd-dev systemd-doc systemd-locale systemd systemd-bash-completion libsystemd libudev

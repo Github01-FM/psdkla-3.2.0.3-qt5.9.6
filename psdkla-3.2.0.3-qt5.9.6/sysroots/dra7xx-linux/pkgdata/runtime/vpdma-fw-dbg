@@ -1,0 +1,14 @@
+PN: vpdma-fw
+PV: 03-2012
+PR: r1
+PKGV: 03-2012
+PKGR: r1.0
+LICENSE: TI-TSPA
+DESCRIPTION_vpdma-fw-dbg: VPDMA firmware for Video Input Port and Video Processing Engine  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_vpdma-fw-dbg: vpdma-fw version 03-2012-r1 - Debugging files
+SECTION_vpdma-fw-dbg: devel
+PKG_vpdma-fw-dbg: vpdma-fw-dbg
+ALLOW_EMPTY_vpdma-fw-dbg: 1
+FILES_vpdma-fw-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_vpdma-fw-dbg: 0

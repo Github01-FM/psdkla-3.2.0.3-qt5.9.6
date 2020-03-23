@@ -1,0 +1,15 @@
+PN: speex
+PV: 1.2rc2
+PR: r0
+PKGV: 1.2rc2
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_speex-staticdev: Speex is an Open Source/Free Software patent-free audio compression format designed for speech.  This package contains static libraries for software development.
+SUMMARY_speex-staticdev: Speech Audio Codec - Development files (Static Libraries)
+RDEPENDS_speex-staticdev: speex-dev (= 1.2rc2-r0.0)
+RPROVIDES_speex-staticdev:  speex-staticdev (=1.2rc2)
+SECTION_speex-staticdev: devel
+PKG_speex-staticdev: libspeex-staticdev
+FILES_speex-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/speex/*.a
+FILES_INFO: {"/usr/lib/libspeex.a": 429502}
+PKGSIZE_speex-staticdev: 429502

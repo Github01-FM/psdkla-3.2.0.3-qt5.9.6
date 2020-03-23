@@ -1,0 +1,16 @@
+PN: libgbm
+PV: 10.0.0
+PR: r0
+PKGV: 10.0.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libgbm-dev: Userspace interface for the kernel GBM services.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libgbm-dev: libgbm version 10.0.0-r0 - Development files
+RDEPENDS_libgbm-dev: libgbm (= 10.0.0-r0.0)
+RRECOMMENDS_libgbm-dev: external-linaro-toolchain-dev libdrm-dev libudev-dev libcap-dev
+SECTION_libgbm-dev: devel
+PKG_libgbm-dev: libgbm-dev
+ALLOW_EMPTY_libgbm-dev: 1
+FILES_libgbm-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libgbm/*.la /lib/*.la
+FILES_INFO: {"/usr/include/gbm/gbmint.h": 3709, "/usr/lib/libgbm.la": 1065, "/usr/lib/pkgconfig/gbm.pc": 217, "/usr/include/gbm/gbm.h": 12241, "/usr/include/gbm/common_drm.h": 1626, "/usr/lib/libgbm.so": 15}
+PKGSIZE_libgbm-dev: 18873

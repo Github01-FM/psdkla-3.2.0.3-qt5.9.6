@@ -1,0 +1,18 @@
+PN: speexdsp
+PV: 1.2rc3
+PR: r0
+PKGV: 1.2rc3
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_speexdsp-dev: SpeexDSP is a patent-free, Open Source/Free Software DSP library.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_speexdsp-dev: A patent-free DSP library - Development files
+RDEPENDS_speexdsp-dev: speexdsp (= 1.2rc3-r0.0)
+RPROVIDES_speexdsp-dev:  speexdsp-dev (=1.2rc3)
+RRECOMMENDS_speexdsp-dev: external-linaro-toolchain-dev
+RCONFLICTS_speexdsp-dev: speex-dev (< 1.2rc2)
+SECTION_speexdsp-dev: devel
+PKG_speexdsp-dev: libspeexdsp-dev
+ALLOW_EMPTY_speexdsp-dev: 1
+FILES_speexdsp-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/speexdsp/*.la /lib/*.la
+FILES_INFO: {"/usr/include/speex/speex_resampler.h": 14728, "/usr/lib/libspeexdsp.so": 20, "/usr/lib/libspeexdsp.la": 1050, "/usr/include/speex/speex_preprocess.h": 8606, "/usr/include/speex/speexdsp_types.h": 3592, "/usr/include/speex/speex_jitter.h": 7216, "/usr/include/speex/speex_echo.h": 6450, "/usr/include/speex/speexdsp_config_types.h": 203, "/usr/lib/pkgconfig/speexdsp.pc": 322}
+PKGSIZE_speexdsp-dev: 42187

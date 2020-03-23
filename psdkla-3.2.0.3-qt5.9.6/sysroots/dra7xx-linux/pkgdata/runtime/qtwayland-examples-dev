@@ -1,0 +1,14 @@
+PN: qtwayland
+PV: 5.9.6+gitAUTOINC+8c5999644c
+PR: r0.arago0
+PKGV: 5.9.6+git0+8c5999644c
+PKGR: r0.arago0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtwayland version 5.9.6+gitAUTOINC+8c5999644c-r0.arago0.
+SUMMARY: qtwayland version 5.9.6+gitAUTOINC+8c5999644c-r0.arago0
+RRECOMMENDS_qtwayland-examples-dev: qtbase-dev libxkbcommon-dev qtdeclarative-dev wayland-dev
+SECTION: base
+PKG_qtwayland-examples-dev: qtwayland-examples-dev
+FILES_qtwayland-examples-dev:      /usr/share/qt5/examples/*.so     /usr/share/qt5/examples/*/*.so     /usr/share/qt5/examples/*/*/*.so     /usr/share/qt5/examples/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*/*/*.so 
+FILES_INFO: {}
+PKGSIZE_qtwayland-examples-dev: 0

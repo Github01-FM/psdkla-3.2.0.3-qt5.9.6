@@ -1,0 +1,13 @@
+PN: libevdev
+PV: 1.5.7
+PR: r0
+PKGV: 1.5.7
+PKGR: r0.0
+LICENSE: MIT-X
+DESCRIPTION: Wrapper library for evdev devices.
+SUMMARY: Wrapper library for evdev devices
+SECTION: libs
+PKG_libevdev-locale: libevdev-locale
+FILES_libevdev-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libevdev-locale: 0

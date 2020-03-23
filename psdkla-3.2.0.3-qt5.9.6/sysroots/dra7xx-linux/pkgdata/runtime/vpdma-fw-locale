@@ -1,0 +1,13 @@
+PN: vpdma-fw
+PV: 03-2012
+PR: r1
+PKGV: 03-2012
+PKGR: r1.0
+LICENSE: TI-TSPA
+DESCRIPTION: VPDMA firmware for Video Input Port and Video Processing Engine
+SUMMARY: vpdma-fw version 03-2012-r1
+SECTION: base
+PKG_vpdma-fw-locale: vpdma-fw-locale
+FILES_vpdma-fw-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_vpdma-fw-locale: 0

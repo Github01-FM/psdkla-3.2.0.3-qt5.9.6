@@ -1,0 +1,14 @@
+PN: qtwebengine
+PV: 5.9.6+gitAUTOINC+cc526afe9c_e517527148
+PR: r0
+PKGV: 5.9.6+git0+cc526afe9c_e517527148
+PKGR: r0.0
+LICENSE: BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: QtWebEngine combines the power of Chromium and Qt.
+SUMMARY: QtWebEngine combines the power of Chromium and Qt
+RRECOMMENDS_qtwebengine-plugins-dbg: libstdc++-dbg qtwebchannel-dbg libxslt-dbg external-linaro-toolchain-dbg libevent-dbg qtwebengine-dbg qtquickcontrols2-dbg nspr-dbg fontconfig-dbg nss-dbg qtlocation-dbg libpng-dbg libjpeg-turbo-dbg expat-dbg libxml2-dbg qtbase-dbg qtdeclarative-dbg freetype-dbg dbus-lib-dbg libwebp-dbg libgcc-dbg libdrm-omap-dbg zlib-dbg ti-sgx-ddk-um-dbg
+SECTION: base
+PKG_qtwebengine-plugins-dbg: qtwebengine-plugins-dbg
+FILES_qtwebengine-plugins-dbg:      /usr/lib/qt5/plugins/*/.debug/*     /usr/lib/qt5/plugins/*/*/.debug/*     /usr/lib/qt5/plugins/*/*/*/.debug/* 
+FILES_INFO: {}
+PKGSIZE_qtwebengine-plugins-dbg: 0

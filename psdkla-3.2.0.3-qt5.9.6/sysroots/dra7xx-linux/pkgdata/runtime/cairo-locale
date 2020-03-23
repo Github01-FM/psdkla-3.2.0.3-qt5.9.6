@@ -1,0 +1,14 @@
+PN: cairo
+PV: 1.14.6
+PR: r1
+PKGV: 1.14.6
+PKGR: r1.0
+LICENSE: MPL-1 & LGPLv2.1 & GPLv3+
+DESCRIPTION: Cairo is a multi-platform library providing anti-aliased vector-based rendering for multiple target backends. Paths consist of line segments and cubic splines and can be rendered at any width with various join and cap styles. All colors may be specified with optional translucence (opacity/alpha) and combined using the extended Porter/Duff compositing algebra as found in the X Render Extension.
+SUMMARY: The Cairo 2D vector graphics library
+RPROVIDES_cairo-locale:  cairo-locale (=1.14.6)
+SECTION: libs
+PKG_cairo-locale: libcairo-locale
+FILES_cairo-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_cairo-locale: 0

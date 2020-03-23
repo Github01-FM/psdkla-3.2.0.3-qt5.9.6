@@ -1,0 +1,23 @@
+PN: nspr
+PV: 4.12
+PR: r0
+PKGV: 4.12
+PKGR: r0.0
+LICENSE: GPL-2.0 | MPL-2.0 | LGPL-2.1
+DESCRIPTION: Netscape Portable Runtime Library.
+SUMMARY: Netscape Portable Runtime Library
+RDEPENDS_nspr: external-linaro-toolchain (>= 2.21)
+SECTION: libs/network
+PKG_nspr: nspr
+FILES_nspr: /usr/lib/lib*.so
+pkg_postinst_nspr: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_nspr: /usr/lib/libnspr4.so /usr/lib/libplc4.so /usr/lib/libplds4.so
+FILES_INFO: {"/usr/lib/libnspr4.so": 218320, "/usr/lib/libplc4.so": 12348, "/usr/lib/libplds4.so": 9940}
+FILERPROVIDES_/usr/lib/libnspr4.so_nspr: elf(buildid) (= 6a9b9a414cb4f53afed3d310cb78af3a592d2107) libnspr4.so
+FILERPROVIDES_/usr/lib/libplc4.so_nspr: elf(buildid) (= a373f5cc45bc570517816edbb1c402581bc51e39) libplc4.so
+FILERPROVIDES_/usr/lib/libplds4.so_nspr: elf(buildid) (= 8c8c944f1a1405ff7b31616187440bbe2d270d64) libplds4.so
+FILERDEPENDSFLIST_nspr: /usr/lib/libnspr4.so /usr/lib/libplc4.so /usr/lib/libplds4.so
+FILERDEPENDS_/usr/lib/libnspr4.so_nspr: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 librt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libplc4.so_nspr: libc.so.6 libc.so.6(GLIBC_2.4) libnspr4.so rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libplds4.so_nspr: libc.so.6 libc.so.6(GLIBC_2.4) libnspr4.so rtld(GNU_HASH)
+PKGSIZE_nspr: 240608

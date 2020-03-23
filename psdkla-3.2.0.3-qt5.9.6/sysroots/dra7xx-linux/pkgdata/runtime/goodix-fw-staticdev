@@ -1,0 +1,14 @@
+PN: goodix-fw
+PV: 1.0.0.0
+PR: r0
+PKGV: 1.0.0.0
+PKGR: r0.0
+LICENSE: BSD-3-Clause
+DESCRIPTION_goodix-fw-staticdev: Goodix GT9271 config firmware  This package contains static libraries for software development.
+SUMMARY_goodix-fw-staticdev: goodix-fw version 1.0.0.0-r0 - Development files (Static Libraries)
+RDEPENDS_goodix-fw-staticdev: goodix-fw-dev (= 1.0.0.0-r0.0)
+SECTION_goodix-fw-staticdev: devel
+PKG_goodix-fw-staticdev: goodix-fw-staticdev
+FILES_goodix-fw-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/goodix-fw/*.a
+FILES_INFO: {}
+PKGSIZE_goodix-fw-staticdev: 0

@@ -1,0 +1,20 @@
+PN: kmod
+PV: 22+gitAUTOINC+42f32b8ae4
+PR: r0
+PKGV: 22+git0+42f32b8ae4
+PKGR: r0.0
+LICENSE_libkmod: LGPL-2.1+
+DESCRIPTION: kmod is a set of tools to handle common tasks with Linux kernel modules like                insert, remove, list, check properties, resolve dependencies and aliases.
+SUMMARY: Tools for managing Linux kernel modules
+RDEPENDS_libkmod: zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libkmod:  libkmod (=22+git0+42f32b8ae4)
+SECTION: base
+PKG_libkmod: libkmod2
+FILES_libkmod: /lib/libkmod*.so.* /usr/lib/libkmod*.so.*
+pkg_postinst_libkmod: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libkmod: /usr/lib/libkmod.so.2.3.0
+FILES_INFO: {"/usr/lib/libkmod.so.2.3.0": 59620, "/usr/lib/libkmod.so.2": 16}
+FILERPROVIDES_/usr/lib/libkmod.so.2.3.0_libkmod: elf(buildid) (= a80eb8095c836e404db78d2e3fa02d6560c83071) libkmod.so.2 libkmod.so.2(LIBKMOD_22) libkmod.so.2(LIBKMOD_5) libkmod.so.2(LIBKMOD_6)
+FILERDEPENDSFLIST_libkmod: /usr/lib/libkmod.so.2.3.0
+FILERDEPENDS_/usr/lib/libkmod.so.2.3.0_libkmod: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libz.so.1 rtld(GNU_HASH)
+PKGSIZE_libkmod: 59636

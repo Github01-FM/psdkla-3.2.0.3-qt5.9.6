@@ -1,0 +1,2 @@
+#!/bin/sh
+prelink-rtld --root=${STAGING_DIR_HOST} "$@"

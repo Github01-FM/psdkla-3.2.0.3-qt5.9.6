@@ -1,0 +1,20 @@
+PN: ncurses
+PV: 6.0+20160213
+PR: r0
+PKGV: 6.0+20160213
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_ncurses-libform: ncurses form library
+SUMMARY_ncurses-libform: ncurses form library
+RDEPENDS_ncurses-libform: ncurses-libncurses (>= 6.0+20160213) ncurses-libtinfo (>= 6.0+20160213) external-linaro-toolchain (>= 2.21)
+RPROVIDES_ncurses-libform:  ncurses-libform (=6.0+20160213)
+SECTION: libs
+PKG_ncurses-libform: libform5
+FILES_ncurses-libform: /usr/lib/libform.so.5 /usr/lib/libform.so.5.9
+pkg_postinst_ncurses-libform: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_ncurses-libform: /usr/lib/libform.so.5.9
+FILES_INFO: {"/usr/lib/libform.so.5.9": 44832, "/usr/lib/libform.so.5": 14}
+FILERPROVIDES_/usr/lib/libform.so.5.9_ncurses-libform: elf(buildid) (= e04e05a3e6aaeb54df365d4b7cba263c01ea4e37) libform.so.5
+FILERDEPENDSFLIST_ncurses-libform: /usr/lib/libform.so.5.9
+FILERDEPENDS_/usr/lib/libform.so.5.9_ncurses-libform: libc.so.6 libc.so.6(GLIBC_2.4) libncurses.so.5 libtinfo.so.5 rtld(GNU_HASH)
+PKGSIZE_ncurses-libform: 44846

@@ -1,0 +1,13 @@
+PN: ti-sgx-ddk-um
+PV: 1.14.3699939
+PR: r23
+PKGV: 1.14.3699939
+PKGR: r23.0
+LICENSE: TI-TSPA
+DESCRIPTION: Userspace libraries for PowerVR SGX chipset on TI SoCs
+SUMMARY: ti-sgx-ddk-um version 1.14.3699939-r23
+SECTION: base
+PKG_ti-sgx-ddk-um-locale: ti-sgx-ddk-um-locale
+FILES_ti-sgx-ddk-um-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_ti-sgx-ddk-um-locale: 0

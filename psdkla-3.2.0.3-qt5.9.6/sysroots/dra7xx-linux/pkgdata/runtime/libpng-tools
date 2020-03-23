@@ -1,0 +1,21 @@
+PN: libpng
+PV: 1.6.21
+PR: r0
+PKGV: 1.6.21
+PKGR: r0.0
+LICENSE: Libpng
+DESCRIPTION: PNG image format decoding library.
+SUMMARY: PNG image format decoding library
+RDEPENDS_libpng-tools: libpng (>= 1.6.21) zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libpng-tools:  libpng-tools (=1.6.21)
+SECTION: libs
+PKG_libpng-tools: libpng16-tools
+FILES_libpng-tools: /usr/bin/png-fix-itxt /usr/bin/pngfix
+FILERPROVIDESFLIST_libpng-tools: /usr/bin/pngfix /usr/bin/png-fix-itxt
+FILES_INFO: {"/usr/bin/pngfix": 36460, "/usr/bin/png-fix-itxt": 4144}
+FILERPROVIDES_/usr/bin/pngfix_libpng-tools: elf(buildid) (= 456ec6b8bc68a607dfcac101217bdd7382225dcc)
+FILERPROVIDES_/usr/bin/png-fix-itxt_libpng-tools: elf(buildid) (= 96d19e9a7475cc1b9381250b9d3c34bac2fd1815)
+FILERDEPENDSFLIST_libpng-tools: /usr/bin/pngfix /usr/bin/png-fix-itxt
+FILERDEPENDS_/usr/bin/pngfix_libpng-tools: libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 libpng16.so.16 libpng16.so.16(PNG16_0) libz.so.1 libz.so.1(ZLIB_1.2.3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/png-fix-itxt_libpng-tools: libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 libz.so.1 rtld(GNU_HASH)
+PKGSIZE_libpng-tools: 40604

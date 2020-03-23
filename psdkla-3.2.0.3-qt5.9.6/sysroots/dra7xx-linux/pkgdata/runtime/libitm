@@ -1,0 +1,20 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_libitm: libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libitm:  libitm (=2.21)
+SECTION: base
+PKG_libitm: libitm1
+FILES_libitm: /lib/libitm*.so.*
+pkg_postinst_libitm: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libitm: /lib/libitm.so.1.0.0
+FILES_INFO: {"/lib/libitm.so.1.0.0": 924280, "/lib/libitm.so.1": 15}
+FILERPROVIDES_/lib/libitm.so.1.0.0_libitm: elf(buildid) (= 06b99476457ca249c8ba020b4c27d2f7e5ab4cbd) libitm.so.1 libitm.so.1(LIBITM_1.0)
+FILERDEPENDSFLIST_libitm: /lib/libitm.so.1.0.0
+FILERDEPENDS_/lib/libitm.so.1.0.0_libitm: libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.0) libgcc_s.so.1(GCC_3.5) libpthread.so.0 libpthread.so.0(GLIBC_2.4)
+PKGSIZE_libitm: 924295

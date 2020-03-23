@@ -1,0 +1,13 @@
+PN: qtimageformats
+PV: 5.9.6+gitAUTOINC+e9daef6d8f
+PR: r0
+PKGV: 5.9.6+git0+e9daef6d8f
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0.
+SUMMARY: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0
+SECTION: base
+PKG_qtimageformats-qmlplugins: qtimageformats-qmlplugins
+FILES_qtimageformats-qmlplugins:      /usr/lib/qt5/qml/*.qmltypes     /usr/lib/qt5/qml/*/*.so     /usr/lib/qt5/qml/*/qmldir     /usr/lib/qt5/qml/*/*.qmltypes     /usr/lib/qt5/qml/*/*.qml     /usr/lib/qt5/qml/*/*.qmlc     /usr/lib/qt5/qml/*/*.js     /usr/lib/qt5/qml/*/*.jsc     /usr/lib/qt5/qml/*/*.png     /usr/lib/qt5/qml/*/*/*.so     /usr/lib/qt5/qml/*/*/qmldir     /usr/lib/qt5/qml/*/*/*.qmltypes     /usr/lib/qt5/qml/*/*/*.qml     /usr/lib/qt5/qml/*/*/*.qmlc     /usr/lib/qt5/qml/*/*/*.js     /usr/lib/qt5/qml/*/*/*.jsc     /usr/lib/qt5/qml/*/*/*.png     /usr/lib/qt5/qml/*/*/*/*.so     /usr/lib/qt5/qml/*/*/*/qmldir     /usr/lib/qt5/qml/*/*/*/images     /usr/lib/qt5/qml/*/*/*/*.qmltypes     /usr/lib/qt5/qml/*/*/*/*.qml     /usr/lib/qt5/qml/*/*/*/*.qmlc     /usr/lib/qt5/qml/*/*/*/*.js     /usr/lib/qt5/qml/*/*/*/*.jsc     /usr/lib/qt5/qml/*/*/*/*.png     /usr/lib/qt5/qml/*/*/*/*.metainfo     /usr/lib/qt5/qml/*/*/*/*/*.so     /usr/lib/qt5/qml/*/*/*/*/qmldir     /usr/lib/qt5/qml/*/*/*/*/*.qmltypes     /usr/lib/qt5/qml/*/*/*/*/*.qml     /usr/lib/qt5/qml/*/*/*/*/*.qmlc     /usr/lib/qt5/qml/*/*/*/*/*.js     /usr/lib/qt5/qml/*/*/*/*/*.jsc     /usr/lib/qt5/qml/*/*/*/*/*/*.png     /usr/lib/qt5/imports/*.qmltypes     /usr/lib/qt5/imports/*/*.so     /usr/lib/qt5/imports/*/*.qmltypes     /usr/lib/qt5/imports/*/qmldir     /usr/lib/qt5/imports/*/*/*.so     /usr/lib/qt5/imports/*/*/*.qmltypes     /usr/lib/qt5/imports/*/*/qmldir     /usr/lib/qt5/imports/*/*/*/*.so     /usr/lib/qt5/imports/*/*/*/*.qmltypes     /usr/lib/qt5/imports/*/*/*/qmldir 
+FILES_INFO: {}
+PKGSIZE_qtimageformats-qmlplugins: 0

@@ -1,0 +1,16 @@
+PN: speexdsp
+PV: 1.2rc3
+PR: r0
+PKGV: 1.2rc3
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_speexdsp-staticdev: SpeexDSP is a patent-free, Open Source/Free Software DSP library.  This package contains static libraries for software development.
+SUMMARY_speexdsp-staticdev: A patent-free DSP library - Development files (Static Libraries)
+RDEPENDS_speexdsp-staticdev: speexdsp-dev (= 1.2rc3-r0.0)
+RPROVIDES_speexdsp-staticdev:  speexdsp-staticdev (=1.2rc3)
+RCONFLICTS_speexdsp-staticdev: speex-staticdev (< 1.2rc2)
+SECTION_speexdsp-staticdev: devel
+PKG_speexdsp-staticdev: libspeexdsp-staticdev
+FILES_speexdsp-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/speexdsp/*.a
+FILES_INFO: {"/usr/lib/libspeexdsp.a": 263786}
+PKGSIZE_speexdsp-staticdev: 263786

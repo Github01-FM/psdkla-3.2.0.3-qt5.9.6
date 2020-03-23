@@ -1,0 +1,17 @@
+PN: speexdsp
+PV: 1.2rc3
+PR: r0
+PKGV: 1.2rc3
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_speexdsp-dbg: SpeexDSP is a patent-free, Open Source/Free Software DSP library.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_speexdsp-dbg: A patent-free DSP library - Debugging files
+RPROVIDES_speexdsp-dbg:  speexdsp-dbg (=1.2rc3)
+RRECOMMENDS_speexdsp-dbg: external-linaro-toolchain-dbg
+RCONFLICTS_speexdsp-dbg: speex-dbg (< 1.2rc2)
+SECTION_speexdsp-dbg: devel
+PKG_speexdsp-dbg: libspeexdsp-dbg
+ALLOW_EMPTY_speexdsp-dbg: 1
+FILES_speexdsp-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/mdf.c": 44090, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/include/speex/speex_buffer.h": 2169, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/jitter.c": 29433, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/preprocess.c": 41648, "/usr/src/debug/speexdsp/1.2rc3-r0/build/include/speex/speexdsp_config_types.h": 203, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/smallft.h": 1490, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/smallft.c": 22276, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/filterbank.h": 2268, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/include/speex/speex_echo.h": 6450, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/filterbank.c": 6838, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/fftwrap.h": 2261, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/os_support.h": 5313, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/scal.c": 8525, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/fftwrap.c": 10716, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/include/speex/speex_preprocess.h": 8606, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/include/speex/speex_resampler.h": 14728, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/resample.c": 43765, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/arch.h": 6681, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/include/speex/speex_jitter.h": 7216, "/usr/lib/.debug/libspeexdsp.so.1.5.0": 155352, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/buffer.c": 4769, "/usr/src/debug/speexdsp/1.2rc3-r0/speexdsp-1.2rc3/libspeexdsp/resample_neon.h": 6211}
+PKGSIZE_speexdsp-dbg: 431008

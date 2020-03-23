@@ -1,0 +1,19 @@
+PN: qtwebchannel
+PV: 5.9.6+gitAUTOINC+56a155e68d
+PR: r0
+PKGV: 5.9.6+git0+56a155e68d
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtwebchannel version 5.9.6+gitAUTOINC+56a155e68d-r0.
+SUMMARY: qtwebchannel version 5.9.6+gitAUTOINC+56a155e68d-r0
+RDEPENDS_qtwebchannel-qmlplugins: qtwebchannel (>= 5.9.6+git0+56a155e68d) ti-sgx-ddk-um (>= 1.14.3699939) qtdeclarative (>= 5.9.6+git0+283a900c4e) libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21) qtbase (>= 5.9.6+git0+9c50112304)
+RPROVIDES_qtwebchannel-qmlplugins:  qtwebchannel-qmlplugins (=5.9.6+git0+56a155e68d)
+SECTION: base
+PKG_qtwebchannel-qmlplugins: libqt5webchannel-qmlplugins
+FILES_qtwebchannel-qmlplugins:      /usr/lib/qt5/qml/*.qmltypes     /usr/lib/qt5/qml/*/*.so     /usr/lib/qt5/qml/*/qmldir     /usr/lib/qt5/qml/*/*.qmltypes     /usr/lib/qt5/qml/*/*.qml     /usr/lib/qt5/qml/*/*.qmlc     /usr/lib/qt5/qml/*/*.js     /usr/lib/qt5/qml/*/*.jsc     /usr/lib/qt5/qml/*/*.png     /usr/lib/qt5/qml/*/*/*.so     /usr/lib/qt5/qml/*/*/qmldir     /usr/lib/qt5/qml/*/*/*.qmltypes     /usr/lib/qt5/qml/*/*/*.qml     /usr/lib/qt5/qml/*/*/*.qmlc     /usr/lib/qt5/qml/*/*/*.js     /usr/lib/qt5/qml/*/*/*.jsc     /usr/lib/qt5/qml/*/*/*.png     /usr/lib/qt5/qml/*/*/*/*.so     /usr/lib/qt5/qml/*/*/*/qmldir     /usr/lib/qt5/qml/*/*/*/images     /usr/lib/qt5/qml/*/*/*/*.qmltypes     /usr/lib/qt5/qml/*/*/*/*.qml     /usr/lib/qt5/qml/*/*/*/*.qmlc     /usr/lib/qt5/qml/*/*/*/*.js     /usr/lib/qt5/qml/*/*/*/*.jsc     /usr/lib/qt5/qml/*/*/*/*.png     /usr/lib/qt5/qml/*/*/*/*.metainfo     /usr/lib/qt5/qml/*/*/*/*/*.so     /usr/lib/qt5/qml/*/*/*/*/qmldir     /usr/lib/qt5/qml/*/*/*/*/*.qmltypes     /usr/lib/qt5/qml/*/*/*/*/*.qml     /usr/lib/qt5/qml/*/*/*/*/*.qmlc     /usr/lib/qt5/qml/*/*/*/*/*.js     /usr/lib/qt5/qml/*/*/*/*/*.jsc     /usr/lib/qt5/qml/*/*/*/*/*/*.png     /usr/lib/qt5/imports/*.qmltypes     /usr/lib/qt5/imports/*/*.so     /usr/lib/qt5/imports/*/*.qmltypes     /usr/lib/qt5/imports/*/qmldir     /usr/lib/qt5/imports/*/*/*.so     /usr/lib/qt5/imports/*/*/*.qmltypes     /usr/lib/qt5/imports/*/*/qmldir     /usr/lib/qt5/imports/*/*/*/*.so     /usr/lib/qt5/imports/*/*/*/*.qmltypes     /usr/lib/qt5/imports/*/*/*/qmldir 
+FILERPROVIDESFLIST_qtwebchannel-qmlplugins: /usr/lib/qt5/qml/QtWebChannel/libdeclarative@underscore@webchannel.so
+FILES_INFO: {"/usr/lib/qt5/qml/QtWebChannel/qmldir": 104, "/usr/lib/qt5/qml/QtWebChannel/libdeclarative_webchannel.so": 10480, "/usr/lib/qt5/qml/QtWebChannel/plugins.qmltypes": 2208}
+FILERPROVIDES_/usr/lib/qt5/qml/QtWebChannel/libdeclarative@underscore@webchannel.so_qtwebchannel-qmlplugins: elf(buildid) (= 93dec750dfc320ed49b66f163c81617b6af2379d) libdeclarative_webchannel.so
+FILERDEPENDSFLIST_qtwebchannel-qmlplugins: /usr/lib/qt5/qml/QtWebChannel/libdeclarative@underscore@webchannel.so
+FILERDEPENDS_/usr/lib/qt5/qml/QtWebChannel/libdeclarative@underscore@webchannel.so_qtwebchannel-qmlplugins: libGLESv2.so.2 libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Gui.so.5 libQt5Network.so.5 libQt5Qml.so.5 libQt5Qml.so.5(Qt_5) libQt5Quick.so.5 libQt5WebChannel.so.5 libQt5WebChannel.so.5(Qt_5) libQt5WebChannel.so.5(Qt_5_PRIVATE_API) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libm.so.6 libpthread.so.0 libsrv_um.so.1 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+PKGSIZE_qtwebchannel-qmlplugins: 12792

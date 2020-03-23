@@ -1,0 +1,22 @@
+PN: alsa-lib
+PV: 1.1.0
+PR: r0
+PKGV: 1.1.0
+PKGR: r0.0
+LICENSE: LGPLv2.1 & GPLv2+
+DESCRIPTION: ALSA sound library.
+SUMMARY: ALSA sound library
+RDEPENDS_alsa-lib: libasound (>= 1.1.0) external-linaro-toolchain (>= 2.21)
+SECTION: libs/multimedia
+PKG_alsa-lib: alsa-lib
+FILES_alsa-lib: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/alsa-lib /usr/lib/alsa-lib/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers /usr/lib/alsa-lib/smixer/*.so
+FILERPROVIDESFLIST_alsa-lib: /usr/lib/alsa-lib/smixer/smixer-sbase.so /usr/lib/alsa-lib/smixer/smixer-hda.so /usr/lib/alsa-lib/smixer/smixer-ac97.so
+FILES_INFO: {"/usr/lib/alsa-lib/smixer/smixer-sbase.so": 8252, "/usr/lib/alsa-lib/smixer/smixer-hda.so": 5832, "/usr/lib/alsa-lib/smixer/smixer-ac97.so": 5832}
+FILERPROVIDES_/usr/lib/alsa-lib/smixer/smixer-sbase.so_alsa-lib: elf(buildid) (= 23f155402fbd8807fd2bb8dc7d2fe22086388956) smixer-sbase.so
+FILERPROVIDES_/usr/lib/alsa-lib/smixer/smixer-hda.so_alsa-lib: elf(buildid) (= c787d7f106051d9fb54e111432df538dfefb9150) smixer-hda.so
+FILERPROVIDES_/usr/lib/alsa-lib/smixer/smixer-ac97.so_alsa-lib: elf(buildid) (= 9e61de7729bd33d0b6162f309feaf60d510d4a0e) smixer-ac97.so
+FILERDEPENDSFLIST_alsa-lib: /usr/lib/alsa-lib/smixer/smixer-sbase.so /usr/lib/alsa-lib/smixer/smixer-hda.so /usr/lib/alsa-lib/smixer/smixer-ac97.so
+FILERDEPENDS_/usr/lib/alsa-lib/smixer/smixer-sbase.so_alsa-lib: libasound.so.2 libasound.so.2(ALSA_0.9) libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libm.so.6 libpthread.so.0 librt.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/alsa-lib/smixer/smixer-hda.so_alsa-lib: libasound.so.2 libasound.so.2(ALSA_0.9) libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4) libm.so.6 libpthread.so.0 librt.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/alsa-lib/smixer/smixer-ac97.so_alsa-lib: libasound.so.2 libasound.so.2(ALSA_0.9) libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4) libm.so.6 libpthread.so.0 librt.so.1 rtld(GNU_HASH)
+PKGSIZE_alsa-lib: 19916

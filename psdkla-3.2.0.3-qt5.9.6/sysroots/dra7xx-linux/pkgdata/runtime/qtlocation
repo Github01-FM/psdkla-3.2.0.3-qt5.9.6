@@ -1,0 +1,23 @@
+PN: qtlocation
+PV: 5.9.6+gitAUTOINC+b0dd210c2d_b0dd210c2d-mapboxgl
+PR: r0
+PKGV: 5.9.6+git0+b0dd210c2d_b0dd210c2d-mapboxgl
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & (LGPL-2.1 & The-Qt-Company-Qt-LGPL-Exception-1.1 | LGPL-3.0) | GPL-2.0 | The-Qt-Company-Commercial
+DESCRIPTION: qtlocation version 5.9.6+gitAUTOINC+b0dd210c2d_b0dd210c2d-mapboxgl-r0.
+SUMMARY: qtlocation version 5.9.6+gitAUTOINC+b0dd210c2d_b0dd210c2d-mapboxgl-r0
+RDEPENDS_qtlocation: ti-sgx-ddk-um (>= 1.14.3699939) qtdeclarative (>= 5.9.6+git0+283a900c4e) libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21) qtbase (>= 5.9.6+git0+9c50112304)
+RRECOMMENDS_qtlocation:      qtlocation-plugins     qtlocation-qmlplugins     
+SECTION: base
+PKG_qtlocation: qtlocation
+ALLOW_EMPTY_qtlocation: 1
+FILES_qtlocation: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/qtlocation /usr/lib/qtlocation/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers      /usr/lib/lib*.so.*     /usr/lib/qt5/libexec 
+pkg_postinst_qtlocation: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_qtlocation: /usr/lib/libQt5Positioning.so.5.9.6 /usr/lib/libQt5Location.so.5.9.6
+FILES_INFO: {"/usr/lib/libQt5Positioning.so.5.9.6": 349328, "/usr/lib/libQt5Location.so.5.9.6": 1561612, "/usr/lib/libQt5Location.so.5.9": 23, "/usr/lib/libQt5Location.so.5": 23, "/usr/lib/libQt5Positioning.so.5": 26, "/usr/lib/libQt5Positioning.so.5.9": 26}
+FILERPROVIDES_/usr/lib/libQt5Positioning.so.5.9.6_qtlocation: elf(buildid) (= a7782581f41625c185a3235363397c38edc07ad6) libQt5Positioning.so.5 libQt5Positioning.so.5(Qt_5) libQt5Positioning.so.5(Qt_5.0) libQt5Positioning.so.5(Qt_5.1) libQt5Positioning.so.5(Qt_5.2) libQt5Positioning.so.5(Qt_5.3) libQt5Positioning.so.5(Qt_5.4) libQt5Positioning.so.5(Qt_5.5) libQt5Positioning.so.5(Qt_5.6) libQt5Positioning.so.5(Qt_5.7) libQt5Positioning.so.5(Qt_5.8) libQt5Positioning.so.5(Qt_5.9) libQt5Positioning.so.5(Qt_5_PRIVATE_API)
+FILERPROVIDES_/usr/lib/libQt5Location.so.5.9.6_qtlocation: elf(buildid) (= f68b07e4e9b5bb63799e1c62fc7406cdb1d49744) libQt5Location.so.5 libQt5Location.so.5(Qt_5) libQt5Location.so.5(Qt_5.0) libQt5Location.so.5(Qt_5.1) libQt5Location.so.5(Qt_5.2) libQt5Location.so.5(Qt_5.3) libQt5Location.so.5(Qt_5.4) libQt5Location.so.5(Qt_5.5) libQt5Location.so.5(Qt_5.6) libQt5Location.so.5(Qt_5.7) libQt5Location.so.5(Qt_5.8) libQt5Location.so.5(Qt_5.9) libQt5Location.so.5(Qt_5_PRIVATE_API)
+FILERDEPENDSFLIST_qtlocation: /usr/lib/libQt5Positioning.so.5.9.6 /usr/lib/libQt5Location.so.5.9.6
+FILERDEPENDS_/usr/lib/libQt5Positioning.so.5.9.6_qtlocation: libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Core.so.5(Qt_5_PRIVATE_API) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libQt5Location.so.5.9.6_qtlocation: libGLESv2.so.2 libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Core.so.5(Qt_5_PRIVATE_API) libQt5Gui.so.5 libQt5Gui.so.5(Qt_5) libQt5Gui.so.5(Qt_5_PRIVATE_API) libQt5Network.so.5 libQt5Positioning.so.5 libQt5Positioning.so.5(Qt_5) libQt5Positioning.so.5(Qt_5_PRIVATE_API) libQt5Qml.so.5 libQt5Qml.so.5(Qt_5) libQt5Qml.so.5(Qt_5_PRIVATE_API) libQt5Quick.so.5 libQt5Quick.so.5(Qt_5) libQt5Quick.so.5(Qt_5_PRIVATE_API) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libm.so.6(GLIBC_2.15) libm.so.6(GLIBC_2.4) libpthread.so.0 libsrv_um.so.1 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) libstdc++.so.6(GLIBCXX_3.4.11) libstdc++.so.6(GLIBCXX_3.4.15) libstdc++.so.6(GLIBCXX_3.4.21) libstdc++.so.6(GLIBCXX_3.4.9) rtld(GNU_HASH)
+PKGSIZE_qtlocation: 1911038

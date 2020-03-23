@@ -1,0 +1,20 @@
+PN: python
+PV: 2.7.11
+PR: r1
+PKGV: 2.7.11
+PKGR: r1.0
+LICENSE: PSFv2
+DESCRIPTION: The Python Programming Language.
+SUMMARY: The Python Programming Language
+RDEPENDS_libpython2: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libpython2:  libpython2 (=2.7.11)
+SECTION: devel/python
+PKG_libpython2: libpython2.7-1.0
+FILES_libpython2: /usr/lib/libpython*.so.*
+pkg_postinst_libpython2: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libpython2: /usr/lib/libpython2.7.so.1.0
+FILES_INFO: {"/usr/lib/libpython2.7.so.1.0": 1526116}
+FILERPROVIDES_/usr/lib/libpython2.7.so.1.0_libpython2: elf(buildid) (= b22623c796002e91559e259aa75214651ed12602) libpython2.7.so.1.0
+FILERDEPENDSFLIST_libpython2: /usr/lib/libpython2.7.so.1.0
+FILERDEPENDS_/usr/lib/libpython2.7.so.1.0_libpython2: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4) libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libutil.so.1 libutil.so.1(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libpython2: 1526116

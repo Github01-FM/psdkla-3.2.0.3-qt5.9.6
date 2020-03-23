@@ -1,0 +1,13 @@
+PN: libinput
+PV: 1.8.4
+PR: r0
+PKGV: 1.8.4
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libinput-doc: Library to handle input devices in Wayland compositors.  This package contains documentation.
+SUMMARY_libinput-doc: Library to handle input devices in Wayland compositors - Documentation files
+SECTION_libinput-doc: doc
+PKG_libinput-doc: libinput-doc
+FILES_libinput-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/man/man1/libinput-debug-events.1": 2715, "/usr/share/man/man1/libinput-measure.1": 775, "/usr/share/man/man1/libinput-list-devices.1": 1347, "/usr/share/man/man1/libinput-measure-touchpad-tap.1": 2809, "/usr/share/man/man1/libinput.1": 1568}
+PKGSIZE_libinput-doc: 9214

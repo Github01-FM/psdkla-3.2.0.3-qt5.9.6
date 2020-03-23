@@ -1,0 +1,15 @@
+PN: gettext
+PV: 0.16.1
+PR: r6
+PKGV: 0.16.1
+PKGR: r6.0
+LICENSE: GPLv2
+DESCRIPTION_gettext-locale-tr: GNU gettext is a set of tools that provides a framework to help other programs produce multi-lingual messages. These tools include a set of conventions about how programs should be written to support message catalogs, a directory and file naming organization for the message catalogs themselves, a runtime library supporting the retrieval of translated messages, and a few stand-alone programs to massage in various ways the sets of translatable and already translated strings.  This package contains language translation files for the tr locale.
+SUMMARY_gettext-locale-tr: Utilities and libraries for producing multi-lingual messages - tr translations
+RPROVIDES_gettext-locale-tr: gettext-locale tr-translation
+RRECOMMENDS_gettext-locale-tr: virtual-locale-tr
+SECTION: libs
+PKG_gettext-locale-tr: gettext-locale-tr
+FILES_gettext-locale-tr: /usr/share/locale/tr
+FILES_INFO: {"/usr/share/locale/tr/LC_MESSAGES/gettext-runtime.mo": 9171, "/usr/share/locale/tr/LC_MESSAGES/gettext-tools.mo": 99308}
+PKGSIZE_gettext-locale-tr: 108479

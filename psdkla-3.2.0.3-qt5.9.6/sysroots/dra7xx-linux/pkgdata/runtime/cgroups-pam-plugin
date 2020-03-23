@@ -1,0 +1,18 @@
+PN: libcgroup
+PV: 0.41
+PR: r0
+PKGV: 0.41
+PKGR: r0.0
+LICENSE: LGPLv2.1
+DESCRIPTION: libcgroup is a library that abstracts the control group file system in Linux. Control groups allow you to limit, account and isolate resource usage (CPU, memory, disk I/O, etc.) of groups of processes.
+SUMMARY: Linux control group abstraction library
+RDEPENDS_cgroups-pam-plugin: libcgroup (>= 0.41) external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+SECTION: libs
+PKG_cgroups-pam-plugin: cgroups-pam-plugin
+FILES_cgroups-pam-plugin: /lib/security/pam_cgroup.so*
+FILERPROVIDESFLIST_cgroups-pam-plugin: /lib/security/pam@underscore@cgroup.so
+FILES_INFO: {"/lib/security/pam_cgroup.so": 4352}
+FILERPROVIDES_/lib/security/pam@underscore@cgroup.so_cgroups-pam-plugin: elf(buildid) (= 96f0913457d85260a9c801a271d6d29196549bf7) pam_cgroup.so.0
+FILERDEPENDSFLIST_cgroups-pam-plugin: /lib/security/pam@underscore@cgroup.so
+FILERDEPENDS_/lib/security/pam@underscore@cgroup.so_cgroups-pam-plugin: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) libpthread.so.0 rtld(GNU_HASH)
+PKGSIZE_cgroups-pam-plugin: 4352

@@ -1,0 +1,13 @@
+PN: os-release
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: The /etc/os-release file contains operating system identification data.
+SUMMARY: Operating system identification
+SECTION: base
+PKG_os-release: os-release
+FILES_os-release: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/os-release /usr/lib/os-release/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+FILES_INFO: {"/etc/os-release": 91}
+PKGSIZE_os-release: 91

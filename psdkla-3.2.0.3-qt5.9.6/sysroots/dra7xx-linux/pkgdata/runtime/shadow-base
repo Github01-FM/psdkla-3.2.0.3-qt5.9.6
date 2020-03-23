@@ -1,0 +1,26 @@
+PN: shadow
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0.0
+LICENSE: BSD | Artistic-1.0
+DESCRIPTION: Tools to change and administer password and group data.
+SUMMARY: Tools to change and administer password and group data
+RDEPENDS_shadow-base: update-alternatives-opkg external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+SECTION: base/utils
+PKG_shadow-base: shadow-base
+FILES_shadow-base:     /bin/login.shadow     /bin/su.shadow     /usr/bin/sg     /usr/bin/newgrp.shadow     /usr/bin/groups.shadow     /etc/pam.d/login     /etc/pam.d/su     /etc/login.defs 
+pkg_postinst_shadow-base: #!/bin/sh\n\tupdate-alternatives --install /usr/bin/newgrp newgrp /usr/bin/newgrp.shadow 200\n\tupdate-alternatives --install /usr/bin/groups groups /usr/bin/groups.shadow 200\n\tupdate-alternatives --install /bin/login login /bin/login.shadow 200\n\tupdate-alternatives --install /bin/su su /bin/su.shadow 200\n
+pkg_prerm_shadow-base: #!/bin/sh\n\tupdate-alternatives --remove  newgrp /usr/bin/newgrp.shadow\n\tupdate-alternatives --remove  groups /usr/bin/groups.shadow\n\tupdate-alternatives --remove  login /bin/login.shadow\n\tupdate-alternatives --remove  su /bin/su.shadow\n
+FILERPROVIDESFLIST_shadow-base: /usr/bin/groups.shadow /bin/login.shadow /usr/bin/newgrp.shadow /bin/su.shadow
+FILES_INFO: {"/usr/bin/groups.shadow": 6460, "/etc/login.defs": 10945, "/usr/bin/newgrp.shadow": 23008, "/bin/su.shadow": 24220, "/etc/pam.d/login": 3202, "/usr/bin/sg": 13, "/etc/pam.d/su": 2140, "/bin/login.shadow": 28596}
+FILERPROVIDES_/usr/bin/groups.shadow_shadow-base: elf(buildid) (= cb26fc8b98aa25158eb0709bca31c4f30274fb4d) /usr/bin/groups
+FILERPROVIDES_/bin/login.shadow_shadow-base: elf(buildid) (= 438f2d6681f9655f17a1522e67d8f0cb5c5382b0) /bin/login
+FILERPROVIDES_/usr/bin/newgrp.shadow_shadow-base: elf(buildid) (= f9e09e331b956a41504253b2896de4ba1e581a6e) /usr/bin/newgrp
+FILERPROVIDES_/bin/su.shadow_shadow-base: elf(buildid) (= fb13b47f4d86141b87dc50af8fa3d74c442d9278) /bin/su
+FILERDEPENDSFLIST_shadow-base: /usr/bin/groups.shadow /bin/login.shadow /usr/bin/newgrp.shadow /bin/su.shadow
+FILERDEPENDS_/usr/bin/groups.shadow_shadow-base: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/bin/login.shadow_shadow-base: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam_misc.so.0 libpam_misc.so.0(LIBPAM_MISC_1.0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/newgrp.shadow_shadow-base: libc.so.6 libc.so.6(GLIBC_2.4) libcrypt.so.1 libcrypt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/bin/su.shadow_shadow-base: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam_misc.so.0 libpam_misc.so.0(LIBPAM_MISC_1.0) rtld(GNU_HASH)
+PKGSIZE_shadow-base: 98584

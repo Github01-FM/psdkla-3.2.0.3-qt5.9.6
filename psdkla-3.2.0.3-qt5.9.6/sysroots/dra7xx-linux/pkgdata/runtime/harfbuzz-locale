@@ -1,0 +1,14 @@
+PN: harfbuzz
+PV: 0.9.35
+PR: r0
+PKGV: 0.9.35
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: HarfBuzz is an OpenType text shaping engine.
+SUMMARY: Text shaping library
+RPROVIDES_harfbuzz-locale:  harfbuzz-locale (=0.9.35)
+SECTION: libs
+PKG_harfbuzz-locale: libharfbuzz-locale
+FILES_harfbuzz-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_harfbuzz-locale: 0

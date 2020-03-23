@@ -1,0 +1,15 @@
+PN: qtwebengine
+PV: 5.9.6+gitAUTOINC+cc526afe9c_e517527148
+PR: r0
+PKGV: 5.9.6+git0+cc526afe9c_e517527148
+PKGR: r0.0
+LICENSE: BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION_qtwebengine-dbg: QtWebEngine combines the power of Chromium and Qt.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_qtwebengine-dbg: QtWebEngine combines the power of Chromium and Qt - Debugging files
+RRECOMMENDS_qtwebengine-dbg: qtwebengine-plugins-dbg libstdc++-dbg qtwebchannel-dbg libxslt-dbg external-linaro-toolchain-dbg libevent-dbg qtquickcontrols2-dbg nspr-dbg fontconfig-dbg nss-dbg qtlocation-dbg libpng-dbg libjpeg-turbo-dbg expat-dbg libxml2-dbg qtbase-dbg qtdeclarative-dbg qtwebengine-qmlplugins-dbg freetype-dbg dbus-lib-dbg libwebp-dbg libgcc-dbg libdrm-omap-dbg zlib-dbg ti-sgx-ddk-um-dbg
+SECTION_qtwebengine-dbg: devel
+PKG_qtwebengine-dbg: qtwebengine-dbg
+ALLOW_EMPTY_qtwebengine-dbg: 1
+FILES_qtwebengine-dbg: /usr/lib/debug /usr/src/debug      /usr/lib/.debug     /usr/lib/qt5/libexec/.debug 
+FILES_INFO: {"/usr/lib/.debug/libQt5WebEngineCore.so.5.9.6": 75270264, "/usr/share/qt5/examples/webengine/customdialogs/.debug/customdialogs": 709600, "/usr/share/qt5/examples/webengine/recipebrowser/.debug/recipebrowser": 400520, "/usr/share/qt5/examples/webengine/minimal/.debug/minimal": 397952, "/usr/lib/.debug/libQt5WebEngine.so.5.9.6": 7918004, "/usr/lib/qt5/libexec/.debug/QtWebEngineProcess": 283188, "/usr/share/qt5/examples/webengine/quicknanobrowser/.debug/quicknanobrowser": 592380, "/usr/lib/qt5/qml/QtWebEngine/.debug/libqtwebengineplugin.so": 964240}
+PKGSIZE_qtwebengine-dbg: 86536148

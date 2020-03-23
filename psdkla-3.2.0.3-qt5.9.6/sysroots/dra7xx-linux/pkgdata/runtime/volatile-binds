@@ -1,0 +1,17 @@
+PN: volatile-binds
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: Volatile bind mount setup and configuration for read-only-rootfs
+SUMMARY: Volatile bind mount setup and configuration for read-only-rootfs
+SECTION: base
+PKG_volatile-binds: volatile-binds
+FILES_volatile-binds: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/volatile-binds /usr/lib/volatile-binds/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers /lib/systemd/system/*.service /lib/systemd/system/var-volatile-lib.service
+pkg_postinst_volatile-binds: #!/bin/sh\nOPTS=""\n\nif [ -n "$D" ]; then\n    OPTS="--root=$D"\nfi\n\nif type systemctl >/dev/null 2>/dev/null; then\n\tsystemctl $OPTS enable var-volatile-lib.service\n\n\tif [ -z "$D" -a "enable" = "enable" ]; then\n\t\tsystemctl restart var-volatile-lib.service\n\tfi\nfi\n
+pkg_prerm_volatile-binds: #!/bin/sh\nOPTS=""\n\nif [ -n "$D" ]; then\n    OPTS="--root=$D"\nfi\n\nif type systemctl >/dev/null 2>/dev/null; then\n\tif [ -z "$D" ]; then\n\t\tsystemctl stop var-volatile-lib.service\n\tfi\n\n\tsystemctl $OPTS disable var-volatile-lib.service\nfi\n
+FILES_INFO: {"/lib/systemd/system/var-volatile-lib.service": 496, "/sbin/mount-copybind": 649}
+FILERDEPENDSFLIST_volatile-binds: /sbin/mount-copybind
+FILERDEPENDS_/sbin/mount-copybind_volatile-binds: /bin/sh
+PKGSIZE_volatile-binds: 1145

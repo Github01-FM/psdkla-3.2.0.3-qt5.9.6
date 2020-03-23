@@ -1,0 +1,13 @@
+PN: mtdev
+PV: 1.1.5
+PR: r0
+PKGV: 1.1.5
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_mtdev-doc: mtdev is a library which transforms all variants of kernel multitouch events to the slotted type B protocol. The events put into mtdev may be from any MT device, specifically type A without contact tracking, type A with contact tracking, or type B with contact tracking  This package contains documentation.
+SUMMARY_mtdev-doc: Multitouch Protocol Translation Library - Documentation files
+SECTION_mtdev-doc: doc
+PKG_mtdev-doc: mtdev-doc
+FILES_mtdev-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_mtdev-doc: 0

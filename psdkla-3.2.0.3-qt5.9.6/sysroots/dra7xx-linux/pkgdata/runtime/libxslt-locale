@@ -1,0 +1,13 @@
+PN: libxslt
+PV: 1.1.28
+PR: r0
+PKGV: 1.1.28
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: GNOME XSLT library.
+SUMMARY: GNOME XSLT library
+SECTION: libs
+PKG_libxslt-locale: libxslt-locale
+FILES_libxslt-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libxslt-locale: 0

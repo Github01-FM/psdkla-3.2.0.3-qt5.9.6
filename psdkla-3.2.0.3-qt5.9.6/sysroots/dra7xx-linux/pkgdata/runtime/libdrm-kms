@@ -1,0 +1,20 @@
+PN: libdrm
+PV: 2.4.67
+PR: r0.arago1
+PKGV: 2.4.67
+PKGR: r0.arago1.0
+LICENSE: MIT
+DESCRIPTION: The runtime library for accessing the kernel DRM services.  DRM stands for \\"Direct Rendering Manager\\", which is the kernel portion of the \\"Direct Rendering Infrastructure\\" (DRI).  DRI is required for many hardware accelerated OpenGL drivers.
+SUMMARY: Userspace interface to the kernel DRM services
+RDEPENDS_libdrm-kms: libdrm (>= 2.4.67) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libdrm-kms:  libdrm-kms (=2.4.67)
+SECTION: x11/base
+PKG_libdrm-kms: libkms1
+FILES_libdrm-kms: /usr/lib/libkms*.so.*
+pkg_postinst_libdrm-kms: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libdrm-kms: /usr/lib/libkms.so.1.0.0
+FILES_INFO: {"/usr/lib/libkms.so.1": 15, "/usr/lib/libkms.so.1.0.0": 8440}
+FILERPROVIDES_/usr/lib/libkms.so.1.0.0_libdrm-kms: elf(buildid) (= 65674028dfef47ab1b059c2de2d7611e69e23650) libkms.so.1
+FILERDEPENDSFLIST_libdrm-kms: /usr/lib/libkms.so.1.0.0
+FILERDEPENDS_/usr/lib/libkms.so.1.0.0_libdrm-kms: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libm.so.6 rtld(GNU_HASH)
+PKGSIZE_libdrm-kms: 8455

@@ -1,0 +1,16 @@
+PN: libevdev
+PV: 1.5.7
+PR: r0
+PKGV: 1.5.7
+PKGR: r0.0
+LICENSE: MIT-X
+DESCRIPTION_libevdev-dev: Wrapper library for evdev devices.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libevdev-dev: Wrapper library for evdev devices - Development files
+RDEPENDS_libevdev-dev: libevdev (= 1.5.7-r0.0)
+RRECOMMENDS_libevdev-dev: external-linaro-toolchain-dev
+SECTION_libevdev-dev: devel
+PKG_libevdev-dev: libevdev-dev
+ALLOW_EMPTY_libevdev-dev: 1
+FILES_libevdev-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libevdev/*.la /lib/*.la
+FILES_INFO: {"/usr/include/libevdev-1.0/libevdev/libevdev-uinput.h": 8375, "/usr/lib/libevdev.la": 1031, "/usr/lib/pkgconfig/libevdev.pc": 210, "/usr/lib/libevdev.so": 18, "/usr/include/libevdev-1.0/libevdev/libevdev.h": 81347}
+PKGSIZE_libevdev-dev: 90981

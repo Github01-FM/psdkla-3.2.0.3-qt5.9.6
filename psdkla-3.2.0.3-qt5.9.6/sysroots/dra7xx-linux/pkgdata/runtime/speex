@@ -1,0 +1,20 @@
+PN: speex
+PV: 1.2rc2
+PR: r0
+PKGV: 1.2rc2
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION: Speex is an Open Source/Free Software patent-free audio compression format designed for speech.
+SUMMARY: Speech Audio Codec
+RDEPENDS_speex: external-linaro-toolchain (>= 2.21)
+RPROVIDES_speex:  speex (=1.2rc2)
+SECTION: libs
+PKG_speex: libspeex1
+FILES_speex: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/speex /usr/lib/speex/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_speex: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_speex: /usr/lib/libspeex.so.1.5.0
+FILES_INFO: {"/usr/lib/libspeex.so.1": 17, "/usr/lib/libspeex.so.1.5.0": 77092}
+FILERPROVIDES_/usr/lib/libspeex.so.1.5.0_speex: elf(buildid) (= 7c4f17b4f9c06b07750345b177c7877fd265f44f) libspeex.so.1
+FILERDEPENDSFLIST_speex: /usr/lib/libspeex.so.1.5.0
+FILERDEPENDS_/usr/lib/libspeex.so.1.5.0_speex: libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 libm.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_speex: 77109

@@ -1,0 +1,13 @@
+PN: wayland
+PV: 1.14.0
+PR: r0
+PKGV: 1.14.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_wayland-doc: Wayland is a protocol for a compositor to talk to its clients as well as a C library implementation of that protocol. The compositor can be a standalone display server running on Linux kernel modesetting and evdev input devices, an X application, or a wayland client itself. The clients can be traditional applications, X servers (rootless or fullscreen) or other display servers.  This package contains documentation.
+SUMMARY_wayland-doc: Wayland, a protocol between a compositor and clients - Documentation files
+SECTION_wayland-doc: doc
+PKG_wayland-doc: wayland-doc
+FILES_wayland-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_wayland-doc: 0

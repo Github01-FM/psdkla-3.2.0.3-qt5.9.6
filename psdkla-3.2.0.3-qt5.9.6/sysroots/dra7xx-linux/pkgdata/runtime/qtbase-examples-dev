@@ -1,0 +1,14 @@
+PN: qtbase
+PV: 5.9.6+gitAUTOINC+9c50112304
+PR: r0.arago12
+PKGV: 5.9.6+git0+9c50112304
+PKGR: r0.arago12.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtbase version 5.9.6+gitAUTOINC+9c50112304-r0.arago12.
+SUMMARY: qtbase version 5.9.6+gitAUTOINC+9c50112304-r0.arago12
+RRECOMMENDS_qtbase-examples-dev: icu-dev zlib-dev wayland-dev jpeg-dev dbus-dev openssl-dev freetype-dev libpng-dev libinput-dev udev-dev libdrm-dev fontconfig-dev
+SECTION: base
+PKG_qtbase-examples-dev: qtbase-examples-dev
+FILES_qtbase-examples-dev:      /usr/share/qt5/examples/*.so     /usr/share/qt5/examples/*/*.so     /usr/share/qt5/examples/*/*/*.so     /usr/share/qt5/examples/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*/*/*.so 
+FILES_INFO: {}
+PKGSIZE_qtbase-examples-dev: 0

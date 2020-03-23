@@ -1,0 +1,20 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_libgfortran: libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libgfortran:  libgfortran (=2.21)
+SECTION: base
+PKG_libgfortran: libgfortran3
+FILES_libgfortran: /lib/libgfortran.so.*
+pkg_postinst_libgfortran: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libgfortran: /lib/libgfortran.so.3.0.0
+FILES_INFO: {"/lib/libgfortran.so.3": 20, "/lib/libgfortran.so.3.0.0": 3455720}
+FILERPROVIDES_/lib/libgfortran.so.3.0.0_libgfortran: elf(buildid) (= f85ce796cb0af41774e8a4f40309328e5bef861e) libgfortran.so.3 libgfortran.so.3(F2C_1.0) libgfortran.so.3(GFORTRAN_1.0) libgfortran.so.3(GFORTRAN_1.1) libgfortran.so.3(GFORTRAN_1.2) libgfortran.so.3(GFORTRAN_1.3) libgfortran.so.3(GFORTRAN_1.4) libgfortran.so.3(GFORTRAN_1.5) libgfortran.so.3(GFORTRAN_1.6) libgfortran.so.3(GFORTRAN_C99_1.0) libgfortran.so.3(GFORTRAN_C99_1.1)
+FILERDEPENDSFLIST_libgfortran: /lib/libgfortran.so.3.0.0
+FILERDEPENDS_/lib/libgfortran.so.3.0.0_libgfortran: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.7) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libgcc_s.so.1(GCC_4.3.0) libm.so.6 libm.so.6(GLIBC_2.4)
+PKGSIZE_libgfortran: 3455740

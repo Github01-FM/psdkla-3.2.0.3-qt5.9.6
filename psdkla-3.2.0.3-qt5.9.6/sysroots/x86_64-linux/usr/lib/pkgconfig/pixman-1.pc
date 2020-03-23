@@ -1,0 +1,11 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: Pixman
+Description: The pixman library (version 1)
+Version: 0.32.8
+Cflags: -I${includedir}/pixman-1
+Libs: -L${libdir} -lpixman-1
+

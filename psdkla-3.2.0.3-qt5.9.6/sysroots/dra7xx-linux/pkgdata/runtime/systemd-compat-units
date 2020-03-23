@@ -1,0 +1,15 @@
+PN: systemd-compat-units
+PV: 1.0
+PR: r29
+PKGV: 1.0
+PKGR: r29.0
+LICENSE: MIT
+DESCRIPTION: Enhances systemd compatilibity with existing SysVinit scripts.
+SUMMARY: Enhances systemd compatilibity with existing SysVinit scripts
+SECTION: base
+PKG_systemd-compat-units: systemd-compat-units
+ALLOW_EMPTY_systemd-compat-units: 1
+FILES_systemd-compat-units: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/systemd-compat-units /usr/lib/systemd-compat-units/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_systemd-compat-units: \tcd $D/etc/init.d\n\n\techo "Disabling the following sysv scripts: "\n\n\tOPTS=""\n\n\tif [ -n "$D" ]; then\n\t\tOPTS="--root=$D"\n\tfi\n\n\tfor i in    busybox-udhcpc   hwclock   networking   nfsserver   nfscommon   syslog.busybox  ; do\n\t\tif [ \\( -e $i -o $i.sh \\) -a ! \\( -e $D/etc/systemd/system/$i.service -o  -e $D/lib/systemd/system/$i.service \\) ] ; then\n\t\t\techo -n "$i: " ; systemctl ${OPTS} mask $i.service\n\t\tfi\n\tdone ; echo\n
+FILES_INFO: {}
+PKGSIZE_systemd-compat-units: 0

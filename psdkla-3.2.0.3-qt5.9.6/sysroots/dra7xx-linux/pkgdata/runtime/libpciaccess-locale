@@ -1,0 +1,13 @@
+PN: libpciaccess
+PV: 0.13.4
+PR: r0
+PKGV: 0.13.4
+PKGR: r0.0
+LICENSE: MIT & MIT-style
+DESCRIPTION: libpciaccess provides functionality for X to access the PCI bus and devices in a platform-independent way.
+SUMMARY: Generic PCI access library for X
+SECTION: x11/libs
+PKG_libpciaccess-locale: libpciaccess-locale
+FILES_libpciaccess-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libpciaccess-locale: 0

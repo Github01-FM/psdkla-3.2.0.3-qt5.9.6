@@ -1,0 +1,14 @@
+PN: libgbm
+PV: 10.0.0
+PR: r0
+PKGV: 10.0.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libgbm-staticdev: Userspace interface for the kernel GBM services.  This package contains static libraries for software development.
+SUMMARY_libgbm-staticdev: libgbm version 10.0.0-r0 - Development files (Static Libraries)
+RDEPENDS_libgbm-staticdev: libgbm-dev (= 10.0.0-r0.0)
+SECTION_libgbm-staticdev: devel
+PKG_libgbm-staticdev: libgbm-staticdev
+FILES_libgbm-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/libgbm/*.a
+FILES_INFO: {"/usr/lib/libgbm.a": 37118}
+PKGSIZE_libgbm-staticdev: 37118

@@ -1,0 +1,14 @@
+PN: libjpeg-turbo
+PV: 8d+1.4.2
+PR: r0
+PKGV: 8d+1.4.2
+PKGR: r0.0
+LICENSE: BSD-3-Clause
+DESCRIPTION: libjpeg-turbo is a derivative of libjpeg that uses SIMD instructions (MMX, SSE2, NEON) to accelerate baseline JPEG compression and decompression
+SUMMARY: libjpeg-turbo version 8d+1.4.2-r0
+RPROVIDES_libjpeg-turbo-locale:  libjpeg-turbo-locale (=8d+1.4.2)
+SECTION: base
+PKG_libjpeg-turbo-locale: libjpeg-locale
+FILES_libjpeg-turbo-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libjpeg-turbo-locale: 0

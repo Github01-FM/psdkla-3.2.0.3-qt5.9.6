@@ -1,0 +1,14 @@
+PN: openssl
+PV: 1.0.2h
+PR: r0.arago0
+PKGV: 1.0.2h
+PKGR: r0.arago0.0
+LICENSE: openssl
+DESCRIPTION_openssl-staticdev: Secure Socket Layer (SSL) binary and related cryptographic tools.  This package contains static libraries for software development.
+SUMMARY_openssl-staticdev: Secure Socket Layer - Development files (Static Libraries)
+RDEPENDS_openssl-staticdev: openssl-dev (= 1.0.2h-r0.arago0.0)
+SECTION_openssl-staticdev: devel
+PKG_openssl-staticdev: openssl-staticdev
+FILES_openssl-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/openssl/*.a
+FILES_INFO: {"/usr/lib/libcrypto.a": 11365144, "/usr/lib/libssl.a": 2827492}
+PKGSIZE_openssl-staticdev: 14192636

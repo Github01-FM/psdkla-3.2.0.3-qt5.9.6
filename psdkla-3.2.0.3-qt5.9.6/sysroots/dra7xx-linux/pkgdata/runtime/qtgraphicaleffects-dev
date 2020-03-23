@@ -1,0 +1,15 @@
+PN: qtgraphicaleffects
+PV: 5.9.6+gitAUTOINC+f61dcaa5e5
+PR: r0
+PKGV: 5.9.6+git0+f61dcaa5e5
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION_qtgraphicaleffects-dev: qtgraphicaleffects version 5.9.6+gitAUTOINC+f61dcaa5e5-r0.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_qtgraphicaleffects-dev: qtgraphicaleffects version 5.9.6+gitAUTOINC+f61dcaa5e5-r0 - Development files
+RRECOMMENDS_qtgraphicaleffects-dev: qtgraphicaleffects-qmldesigner qtgraphicaleffects-mkspecs qtgraphicaleffects qtdeclarative-dev
+SECTION_qtgraphicaleffects-dev: devel
+PKG_qtgraphicaleffects-dev: qtgraphicaleffects-dev
+ALLOW_EMPTY_qtgraphicaleffects-dev: 1
+FILES_qtgraphicaleffects-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/qtgraphicaleffects/*.la /lib/*.la      /usr/lib/lib*.so     /usr/lib/pkgconfig     /usr/lib/cmake/*     /usr/lib/*.prl     /usr/lib/*.la     /usr/include/qt5/* 
+FILES_INFO: {}
+PKGSIZE_qtgraphicaleffects-dev: 0

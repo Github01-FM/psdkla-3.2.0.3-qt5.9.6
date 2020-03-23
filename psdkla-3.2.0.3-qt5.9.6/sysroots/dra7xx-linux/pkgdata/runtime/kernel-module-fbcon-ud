@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-fbcon-ud: fbcon-ud kernel module; Console Rotation (180 degrees) Support
+SUMMARY_kernel-module-fbcon-ud: fbcon-ud kernel module
+RDEPENDS_kernel-module-fbcon-ud: kernel-module-softcursor kernel-4.4.45+
+SECTION: kernel
+PKG_kernel-module-fbcon-ud: kernel-module-fbcon-ud
+FILES_kernel-module-fbcon-ud: /lib/modules/4.4.45+/kernel/drivers/video/console/fbcon_ud.ko /etc/modules-load.d/fbcon_ud.conf /etc/modprobe.d/fbcon_ud.conf
+pkg_postinst_kernel-module-fbcon-ud: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-fbcon-ud: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/drivers/video/console/fbcon_ud.ko": 7768}
+PKGSIZE_kernel-module-fbcon-ud: 7768

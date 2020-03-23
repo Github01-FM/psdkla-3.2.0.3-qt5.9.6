@@ -1,0 +1,20 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_glibc-thread-db: 2.21
+PKGR: r0.arago33.0
+LICENSE_glibc-thread-db: LGPL-2.1
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_glibc-thread-db: external-linaro-toolchain (>= 2.21)
+RPROVIDES_glibc-thread-db: eglibc-thread-db glibc-thread-db (=2.21)
+SECTION: base
+PKG_glibc-thread-db: libthread-db1
+FILES_glibc-thread-db: /lib/libthread_db.so.* /lib/libthread_db-*.so
+pkg_postinst_glibc-thread-db: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_glibc-thread-db: /lib/libthread@underscore@db-1.0.so
+FILES_INFO: {"/lib/libthread_db.so.1": 19, "/lib/libthread_db-1.0.so": 219244}
+FILERPROVIDES_/lib/libthread@underscore@db-1.0.so_glibc-thread-db: libthread_db.so.1 libthread_db.so.1(GLIBC_2.4)
+FILERDEPENDSFLIST_glibc-thread-db: /lib/libthread@underscore@db-1.0.so
+FILERDEPENDS_/lib/libthread@underscore@db-1.0.so_glibc-thread-db: libc.so.6 libc.so.6(GLIBC_2.4)
+PKGSIZE_glibc-thread-db: 219263

@@ -1,0 +1,16 @@
+PN: mtdev
+PV: 1.1.5
+PR: r0
+PKGV: 1.1.5
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_mtdev-dev: mtdev is a library which transforms all variants of kernel multitouch events to the slotted type B protocol. The events put into mtdev may be from any MT device, specifically type A without contact tracking, type A with contact tracking, or type B with contact tracking  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_mtdev-dev: Multitouch Protocol Translation Library - Development files
+RDEPENDS_mtdev-dev: mtdev (= 1.1.5-r0.0)
+RRECOMMENDS_mtdev-dev: external-linaro-toolchain-dev
+SECTION_mtdev-dev: devel
+PKG_mtdev-dev: mtdev-dev
+ALLOW_EMPTY_mtdev-dev: 1
+FILES_mtdev-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/mtdev/*.la /lib/*.la
+FILES_INFO: {"/usr/lib/pkgconfig/mtdev.pc": 200, "/usr/lib/libmtdev.la": 1025, "/usr/include/mtdev-mapping.h": 3006, "/usr/include/mtdev.h": 6741, "/usr/include/mtdev-plumbing.h": 4785, "/usr/lib/libmtdev.so": 17}
+PKGSIZE_mtdev-dev: 15774

@@ -1,0 +1,34 @@
+PN: libinput
+PV: 1.8.4
+PR: r0
+PKGV: 1.8.4
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: Library to handle input devices in Wayland compositors.
+SUMMARY: Library to handle input devices in Wayland compositors
+RDEPENDS_libinput: libudev (>= 229+git0+714c62b463) libcap (>= 2.24) mtdev (>= 1.1.5) external-linaro-toolchain (>= 2.21) libevdev (>= 1.5.7)
+RPROVIDES_libinput: libinput
+RREPLACES_libinput: libinput
+RCONFLICTS_libinput: libinput
+SECTION: libs
+PKG_libinput: libinput10
+FILES_libinput: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libinput /usr/lib/libinput/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers /lib/udev/*
+pkg_postinst_libinput: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libinput: /usr/libexec/libinput/libinput-measure-touchpad-tap /lib/udev/libinput-device-group /lib/udev/libinput-model-quirks /usr/libexec/libinput/libinput-list-devices /usr/libexec/libinput/libinput-measure /usr/libexec/libinput/libinput-debug-events /usr/lib/libinput.so.10.13.0
+FILES_INFO: {"/lib/udev/hwdb.d/90-libinput-model-quirks.hwdb": 8498, "/usr/libexec/libinput/libinput-measure-touchpad-tap": 18640, "/lib/udev/rules.d/80-libinput-device-groups.rules": 277, "/lib/udev/rules.d/90-libinput-model-quirks.rules": 1747, "/lib/udev/libinput-device-group": 4808, "/lib/udev/libinput-model-quirks": 4764, "/usr/libexec/libinput/libinput-list-devices": 19888, "/usr/libexec/libinput/libinput-measure": 12644, "/usr/libexec/libinput/libinput-debug-events": 33828, "/usr/lib/libinput.so.10.13.0": 162952, "/usr/lib/libinput.so.10": 19}
+FILERPROVIDES_/usr/libexec/libinput/libinput-measure-touchpad-tap_libinput: elf(buildid) (= e521c591371021ac918e652a7498f2f81bb6a2f9)
+FILERPROVIDES_/lib/udev/libinput-device-group_libinput: elf(buildid) (= 6d73ddd0a5e3434fca9c64a9618fe893917ca1d4)
+FILERPROVIDES_/lib/udev/libinput-model-quirks_libinput: elf(buildid) (= 57544e1baa1ec010c874466afed52162caf01191)
+FILERPROVIDES_/usr/libexec/libinput/libinput-list-devices_libinput: elf(buildid) (= 0b2009f0fdb186a12a22b65eefac30c710a84da4)
+FILERPROVIDES_/usr/libexec/libinput/libinput-measure_libinput: elf(buildid) (= 0abac4a7128776b28401c7561de3a52c7a44c98d)
+FILERPROVIDES_/usr/libexec/libinput/libinput-debug-events_libinput: elf(buildid) (= db81e036a0af45f62614930b796a332275cb5c58)
+FILERPROVIDES_/usr/lib/libinput.so.10.13.0_libinput: elf(buildid) (= 4b23383c8570d0b2d69ebf8aaf84a202b5c03226) libinput.so.10 libinput.so.10(LIBINPUT_0.12.0) libinput.so.10(LIBINPUT_0.14.0) libinput.so.10(LIBINPUT_0.15.0) libinput.so.10(LIBINPUT_0.19.0) libinput.so.10(LIBINPUT_0.20.0) libinput.so.10(LIBINPUT_0.21.0) libinput.so.10(LIBINPUT_1.1) libinput.so.10(LIBINPUT_1.2) libinput.so.10(LIBINPUT_1.3) libinput.so.10(LIBINPUT_1.4) libinput.so.10(LIBINPUT_1.5) libinput.so.10(LIBINPUT_1.7)
+FILERDEPENDSFLIST_libinput: /usr/libexec/libinput/libinput-measure-touchpad-tap /lib/udev/libinput-device-group /lib/udev/libinput-model-quirks /usr/libexec/libinput/libinput-list-devices /usr/libexec/libinput/libinput-measure /usr/libexec/libinput/libinput-debug-events /usr/lib/libinput.so.10.13.0
+FILERDEPENDS_/usr/libexec/libinput/libinput-measure-touchpad-tap_libinput: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libcap.so.2 libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libinput.so.10 libinput.so.10(LIBINPUT_0.12.0) libinput.so.10(LIBINPUT_0.14.0) libinput.so.10(LIBINPUT_0.19.0) libinput.so.10(LIBINPUT_0.21.0) libinput.so.10(LIBINPUT_1.1) libinput.so.10(LIBINPUT_1.2) libinput.so.10(LIBINPUT_1.5) libm.so.6 libmtdev.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/lib/udev/libinput-device-group_libinput: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libm.so.6 libpthread.so.0 libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/lib/udev/libinput-model-quirks_libinput: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libm.so.6 libpthread.so.0 libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/libexec/libinput/libinput-list-devices_libinput: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libinput.so.10 libinput.so.10(LIBINPUT_0.12.0) libinput.so.10(LIBINPUT_0.14.0) libinput.so.10(LIBINPUT_0.19.0) libinput.so.10(LIBINPUT_0.21.0) libinput.so.10(LIBINPUT_1.1) libinput.so.10(LIBINPUT_1.2) libinput.so.10(LIBINPUT_1.3) libinput.so.10(LIBINPUT_1.4) libinput.so.10(LIBINPUT_1.5) libm.so.6 libmtdev.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/libexec/libinput/libinput-measure_libinput: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libinput.so.10 libinput.so.10(LIBINPUT_0.12.0) libinput.so.10(LIBINPUT_0.14.0) libinput.so.10(LIBINPUT_0.19.0) libinput.so.10(LIBINPUT_0.21.0) libinput.so.10(LIBINPUT_1.1) libinput.so.10(LIBINPUT_1.2) libinput.so.10(LIBINPUT_1.5) libm.so.6 libmtdev.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/libexec/libinput/libinput-debug-events_libinput: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libinput.so.10 libinput.so.10(LIBINPUT_0.12.0) libinput.so.10(LIBINPUT_0.14.0) libinput.so.10(LIBINPUT_0.19.0) libinput.so.10(LIBINPUT_0.20.0) libinput.so.10(LIBINPUT_0.21.0) libinput.so.10(LIBINPUT_1.1) libinput.so.10(LIBINPUT_1.2) libinput.so.10(LIBINPUT_1.3) libinput.so.10(LIBINPUT_1.4) libinput.so.10(LIBINPUT_1.5) libinput.so.10(LIBINPUT_1.7) libm.so.6 libmtdev.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 librt.so.1(GLIBC_2.4) libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libinput.so.10.13.0_libinput: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.9) libcap.so.2 libevdev.so.2 libevdev.so.2(LIBEVDEV_1) libevdev.so.2(LIBEVDEV_1_3) libm.so.6 libm.so.6(GLIBC_2.4) libmtdev.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 librt.so.1(GLIBC_2.4) libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+PKGSIZE_libinput: 268065

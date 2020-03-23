@@ -1,0 +1,3 @@
+0001-fix-build-without-xkbcommon-evdev.patch -p1
+0001-plugins-decorations-bradient-display-window-icon-onl.patch -p1
+sv001-disable-pointer.patch -p1

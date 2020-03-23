@@ -1,0 +1,13 @@
+PN: goodix-fw
+PV: 1.0.0.0
+PR: r0
+PKGV: 1.0.0.0
+PKGR: r0.0
+LICENSE: BSD-3-Clause
+DESCRIPTION_goodix-fw-doc: Goodix GT9271 config firmware  This package contains documentation.
+SUMMARY_goodix-fw-doc: goodix-fw version 1.0.0.0-r0 - Documentation files
+SECTION_goodix-fw-doc: doc
+PKG_goodix-fw-doc: goodix-fw-doc
+FILES_goodix-fw-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_goodix-fw-doc: 0

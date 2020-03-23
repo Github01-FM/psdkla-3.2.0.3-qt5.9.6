@@ -1,0 +1,15 @@
+PN: qtxmlpatterns
+PV: 5.9.6+gitAUTOINC+4dcae15a5a
+PR: r0
+PKGV: 5.9.6+git0+4dcae15a5a
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtxmlpatterns version 5.9.6+gitAUTOINC+4dcae15a5a-r0.
+SUMMARY: qtxmlpatterns version 5.9.6+gitAUTOINC+4dcae15a5a-r0
+RPROVIDES_qtxmlpatterns-plugins-dbg:  qtxmlpatterns-plugins-dbg (=5.9.6+git0+4dcae15a5a)
+RRECOMMENDS_qtxmlpatterns-plugins-dbg: external-linaro-toolchain-dbg qtbase-dbg libstdc++-dbg qtxmlpatterns-dbg libgcc-dbg
+SECTION: base
+PKG_qtxmlpatterns-plugins-dbg: libqt5xmlpatterns-plugins-dbg
+FILES_qtxmlpatterns-plugins-dbg:      /usr/lib/qt5/plugins/*/.debug/*     /usr/lib/qt5/plugins/*/*/.debug/*     /usr/lib/qt5/plugins/*/*/*/.debug/* 
+FILES_INFO: {}
+PKGSIZE_qtxmlpatterns-plugins-dbg: 0

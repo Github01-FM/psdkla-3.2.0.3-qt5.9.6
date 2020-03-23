@@ -1,0 +1,9 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+datarootdir=${prefix}/share
+pkgdatadir=${STAGING_DIR_NATIVE}/usr/share/wayland
+wayland_scanner=wayland-scanner
+
+Name: Wayland Scanner
+Description: Wayland scanner
+Version: 1.14.0

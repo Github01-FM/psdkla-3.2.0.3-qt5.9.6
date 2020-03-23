@@ -1,0 +1,14 @@
+PN: os-release
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_os-release-staticdev: The /etc/os-release file contains operating system identification data.  This package contains static libraries for software development.
+SUMMARY_os-release-staticdev: Operating system identification - Development files (Static Libraries)
+RDEPENDS_os-release-staticdev: os-release-dev (= 1.0-r0.0)
+SECTION_os-release-staticdev: devel
+PKG_os-release-staticdev: os-release-staticdev
+FILES_os-release-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/os-release/*.a
+FILES_INFO: {}
+PKGSIZE_os-release-staticdev: 0

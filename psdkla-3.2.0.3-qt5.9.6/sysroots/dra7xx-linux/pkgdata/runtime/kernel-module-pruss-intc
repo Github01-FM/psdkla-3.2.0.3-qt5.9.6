@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-pruss-intc: pruss-intc kernel module; PRU-ICSS INTC Driver
+SUMMARY_kernel-module-pruss-intc: pruss-intc kernel module
+RDEPENDS_kernel-module-pruss-intc: kernel-4.4.45+
+SECTION: kernel
+PKG_kernel-module-pruss-intc: kernel-module-pruss-intc
+FILES_kernel-module-pruss-intc: /lib/modules/4.4.45+/kernel/drivers/remoteproc/pruss_intc.ko /etc/modules-load.d/pruss_intc.conf /etc/modprobe.d/pruss_intc.conf
+pkg_postinst_kernel-module-pruss-intc: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-pruss-intc: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/drivers/remoteproc/pruss_intc.ko": 15408}
+PKGSIZE_kernel-module-pruss-intc: 15408

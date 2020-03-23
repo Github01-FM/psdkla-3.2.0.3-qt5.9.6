@@ -1,0 +1,18 @@
+PN: ti-sgx-ddk-um
+PV: 1.14.3699939
+PR: r23
+PKGV: 1.14.3699939
+PKGR: r23.0
+LICENSE: TI-TSPA
+DESCRIPTION_ti-sgx-ddk-um-dbg: Userspace libraries for PowerVR SGX chipset on TI SoCs  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_ti-sgx-ddk-um-dbg: ti-sgx-ddk-um version 1.14.3699939-r23 - Debugging files
+RPROVIDES_ti-sgx-ddk-um-dbg: libegl-dbg libgles1-dbg libgles2-dbg omap5-sgx-ddk-um-linux-dbg
+RRECOMMENDS_ti-sgx-ddk-um-dbg: libgbm-dbg wayland-dbg libstdc++-dbg libffi-dbg external-linaro-toolchain-dbg libdrm-dbg libgcc-dbg libdrm-omap-dbg libudev-dbg
+RREPLACES_ti-sgx-ddk-um-dbg: libegl-dbg libgles1-dbg libgles2-dbg omap5-sgx-ddk-um-linux-dbg
+RCONFLICTS_ti-sgx-ddk-um-dbg: libegl-dbg libgles1-dbg libgles2-dbg omap5-sgx-ddk-um-linux-dbg
+SECTION_ti-sgx-ddk-um-dbg: devel
+PKG_ti-sgx-ddk-um-dbg: ti-sgx-ddk-um-dbg
+ALLOW_EMPTY_ti-sgx-ddk-um-dbg: 1
+FILES_ti-sgx-ddk-um-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_ti-sgx-ddk-um-dbg: 0

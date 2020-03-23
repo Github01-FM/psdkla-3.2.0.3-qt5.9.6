@@ -1,0 +1,18 @@
+PN: e2fsprogs
+PV: 1.42.99+1.43+gitAUTOINC+0f26747167
+PR: r0
+PKGV: 1.42.99+1.43+git0+0f26747167
+PKGR: r0.0
+LICENSE: GPLv2 & LGPLv2 & BSD & MIT
+DESCRIPTION_e2fsprogs-doc: The Ext2 Filesystem Utilities (e2fsprogs) contain all of the standard utilities for creating, fixing, configuring , and debugging ext2 filesystems.  This package contains documentation.
+SUMMARY_e2fsprogs-doc: Ext2 Filesystem Utilities - Documentation files
+RDEPENDS_e2fsprogs-doc: update-alternatives-opkg
+SECTION_e2fsprogs-doc: doc
+PKG_e2fsprogs-doc: e2fsprogs-doc
+FILES_e2fsprogs-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+pkg_postinst_e2fsprogs-doc: #!/bin/sh\n\tupdate-alternatives --install /usr/share/man/man8/fsck.8 fsck.8 /usr/share/man/man8/fsck.8.e2fsprogs 100\n
+pkg_prerm_e2fsprogs-doc: #!/bin/sh\n\tupdate-alternatives --remove  fsck.8 /usr/share/man/man8/fsck.8.e2fsprogs\n
+FILERPROVIDESFLIST_e2fsprogs-doc:  /usr/share/man/man8/fsck.8.e2fsprogs
+FILES_INFO: {"/usr/share/man/man8/fsck.8.e2fsprogs": 11494, "/usr/share/man/man5/ext4.5": 24832, "/usr/share/man/man1/chattr.1": 7693, "/usr/share/man/man1/compile_et.1": 2237, "/usr/share/man/man8/resize2fs.8": 5629, "/usr/share/man/man8/mkfs.ext4dev.8": 23524, "/usr/share/man/man8/mkfs.ext3.8": 23524, "/usr/share/man/man8/mke2fs.8": 23524, "/usr/share/man/man8/e2image.8": 9214, "/usr/share/man/man8/fsck.ext4.8": 13522, "/usr/share/man/man8/tune2fs.8": 21930, "/usr/share/man/man8/e4crypt.8": 1459, "/usr/share/man/man8/logsave.8": 1595, "/usr/share/man/man8/mkfs.ext2.8": 23524, "/usr/share/man/man8/e2freefrag.8": 2475, "/usr/share/man/man8/dumpe2fs.8": 2613, "/usr/share/man/man5/mke2fs.conf.5": 16041, "/usr/share/man/man8/e4defrag.8": 2046, "/usr/share/man/man8/mkfs.ext4.8": 23524, "/usr/share/info/libext2fs.info.gz": 13339, "/usr/share/man/man8/fsck.ext2.8": 13522, "/usr/share/man/man5/e2fsck.conf.5": 14257, "/usr/share/man/man8/fsck.ext3.8": 13522, "/usr/share/man/man8/debugfs.8": 21011, "/usr/share/man/man8/filefrag.8": 1385, "/usr/share/man/man8/e2undo.8": 1208, "/usr/share/man/man8/fsck.ext4dev.8": 13522, "/usr/share/man/man8/e2fsck.8": 13522, "/usr/share/man/man8/badblocks.8": 6611, "/usr/share/man/man1/lsattr.1": 1022, "/usr/share/man/man1/mk_cmds.1": 1112, "/usr/share/man/man8/mklost+found.8": 1309, "/usr/share/man/man8/e2label.8": 1216, "/usr/share/man/man5/ext2.5": 24832, "/usr/share/man/man3/com_err.3": 2372, "/usr/share/man/man5/ext3.5": 24832}
+FILERPROVIDES_/usr/share/man/man8/fsck.8.e2fsprogs_e2fsprogs-doc:  /usr/share/man/man8/fsck.8
+PKGSIZE_e2fsprogs-doc: 408994

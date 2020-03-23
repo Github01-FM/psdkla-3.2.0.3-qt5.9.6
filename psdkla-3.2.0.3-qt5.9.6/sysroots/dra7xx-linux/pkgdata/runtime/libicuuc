@@ -1,0 +1,20 @@
+PN: icu
+PV: 56.1
+PR: r0
+PKGV: 56.1
+PKGR: r0.0
+LICENSE: ICU
+DESCRIPTION: The International Component for Unicode (ICU) is a mature, portable set of C/C++ and Java libraries for Unicode support, software internationalization (I18N) and globalization (G11N), giving applications the same results on all platforms.
+SUMMARY: International Component for Unicode libraries
+RDEPENDS_libicuuc: libstdc++ (>= 5.3.1) libicudata (>= 56.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libicuuc:  libicuuc (=56.1)
+SECTION: base
+PKG_libicuuc: libicuuc56
+FILES_libicuuc: /usr/lib/libicuuc.so.*
+pkg_postinst_libicuuc: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libicuuc: /usr/lib/libicuuc.so.56.1
+FILES_INFO: {"/usr/lib/libicuuc.so.56": 16, "/usr/lib/libicuuc.so.56.1": 1319892}
+FILERPROVIDES_/usr/lib/libicuuc.so.56.1_libicuuc: elf(buildid) (= 797dd767ce8065427ab43ba738932233216531b5) libicuuc.so.56
+FILERDEPENDSFLIST_libicuuc: /usr/lib/libicuuc.so.56.1
+FILERDEPENDS_/usr/lib/libicuuc.so.56.1_libicuuc: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+PKGSIZE_libicuuc: 1319908

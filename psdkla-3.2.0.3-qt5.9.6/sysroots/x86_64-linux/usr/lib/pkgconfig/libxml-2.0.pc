@@ -1,0 +1,13 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+modules=1
+
+Name: libXML
+Version: 2.9.4
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:   -L${STAGING_DIR_NATIVE}/usr/lib -lz   -lm  
+Cflags: -I${includedir}/libxml2 

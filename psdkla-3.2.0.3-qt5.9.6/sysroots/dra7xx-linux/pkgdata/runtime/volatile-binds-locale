@@ -1,0 +1,13 @@
+PN: volatile-binds
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: Volatile bind mount setup and configuration for read-only-rootfs
+SUMMARY: Volatile bind mount setup and configuration for read-only-rootfs
+SECTION: base
+PKG_volatile-binds-locale: volatile-binds-locale
+FILES_volatile-binds-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_volatile-binds-locale: 0

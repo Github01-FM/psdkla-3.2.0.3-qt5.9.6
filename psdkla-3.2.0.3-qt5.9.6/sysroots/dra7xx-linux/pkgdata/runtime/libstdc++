@@ -1,0 +1,21 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_libstdc++: 5.3.1
+PKGR: r0.arago33.0
+LICENSE_libstdc++: GPL-3-with-GCC-exception
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_libstdc++: libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libstdc++:  libstdc++ (=2.21)
+SECTION: base
+PKG_libstdc++: libstdc++6
+ALLOW_EMPTY_libstdc++: 1
+FILES_libstdc++: /lib/libstdc++.so.*
+pkg_postinst_libstdc++: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libstdc++: /lib/libstdc++.so.6.0.21
+FILES_INFO: {"/lib/libstdc++.so.6.0.21-gdb.py": 2680, "/lib/libstdc++.so.6.0.21": 8961820, "/lib/libstdc++.so.6": 19}
+FILERPROVIDES_/lib/libstdc++.so.6.0.21_libstdc++: elf(buildid) (= 3dca2b980a4c6bdca592f44d414c36a25bec6c65) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.1) libstdc++.so.6(CXXABI_1.3.2) libstdc++.so.6(CXXABI_1.3.3) libstdc++.so.6(CXXABI_1.3.4) libstdc++.so.6(CXXABI_1.3.5) libstdc++.so.6(CXXABI_1.3.6) libstdc++.so.6(CXXABI_1.3.7) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(CXXABI_TM_1) libstdc++.so.6(GLIBCXX_3.4) libstdc++.so.6(GLIBCXX_3.4.1) libstdc++.so.6(GLIBCXX_3.4.10) libstdc++.so.6(GLIBCXX_3.4.11) libstdc++.so.6(GLIBCXX_3.4.12) libstdc++.so.6(GLIBCXX_3.4.13) libstdc++.so.6(GLIBCXX_3.4.14) libstdc++.so.6(GLIBCXX_3.4.15) libstdc++.so.6(GLIBCXX_3.4.16) libstdc++.so.6(GLIBCXX_3.4.17) libstdc++.so.6(GLIBCXX_3.4.18) libstdc++.so.6(GLIBCXX_3.4.19) libstdc++.so.6(GLIBCXX_3.4.2) libstdc++.so.6(GLIBCXX_3.4.20) libstdc++.so.6(GLIBCXX_3.4.21) libstdc++.so.6(GLIBCXX_3.4.3) libstdc++.so.6(GLIBCXX_3.4.4) libstdc++.so.6(GLIBCXX_3.4.5) libstdc++.so.6(GLIBCXX_3.4.6) libstdc++.so.6(GLIBCXX_3.4.7) libstdc++.so.6(GLIBCXX_3.4.8) libstdc++.so.6(GLIBCXX_3.4.9)
+FILERDEPENDSFLIST_libstdc++: /lib/libstdc++.so.6.0.21
+FILERDEPENDS_/lib/libstdc++.so.6.0.21_libstdc++: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.0) libgcc_s.so.1(GCC_3.3) libgcc_s.so.1(GCC_3.5) libm.so.6 libm.so.6(GLIBC_2.4)
+PKGSIZE_libstdc++: 8964519

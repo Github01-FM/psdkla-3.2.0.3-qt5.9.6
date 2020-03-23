@@ -1,0 +1,13 @@
+PN: attr
+PV: 2.4.47
+PR: r0
+PKGV: 2.4.47
+PKGR: r0.0
+LICENSE: LGPLv2.1+ & GPLv2+
+DESCRIPTION: Utilities for manipulating filesystem extended attributes.
+SUMMARY: Utilities for manipulating filesystem extended attributes
+SECTION: libs
+PKG_attr-locale: attr-locale
+FILES_attr-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_attr-locale: 0

@@ -1,0 +1,14 @@
+PN: qtbase-conf
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_qtbase-conf-dbg: qtbase configuration files.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_qtbase-conf-dbg: qtbase configuration files - Debugging files
+SECTION_qtbase-conf-dbg: devel
+PKG_qtbase-conf-dbg: qtbase-conf-dbg
+ALLOW_EMPTY_qtbase-conf-dbg: 1
+FILES_qtbase-conf-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_qtbase-conf-dbg: 0

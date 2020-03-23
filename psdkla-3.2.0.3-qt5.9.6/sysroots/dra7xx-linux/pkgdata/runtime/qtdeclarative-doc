@@ -1,0 +1,13 @@
+PN: qtdeclarative
+PV: 5.9.6+gitAUTOINC+283a900c4e
+PR: r0.tisdk0
+PKGV: 5.9.6+git0+283a900c4e
+PKGR: r0.tisdk0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION_qtdeclarative-doc: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0.  This package contains documentation.
+SUMMARY_qtdeclarative-doc: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0 - Documentation files
+SECTION_qtdeclarative-doc: doc
+PKG_qtdeclarative-doc: qtdeclarative-doc
+FILES_qtdeclarative-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_qtdeclarative-doc: 0

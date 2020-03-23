@@ -1,0 +1,13 @@
+PN: vpdma-fw
+PV: 03-2012
+PR: r1
+PKGV: 03-2012
+PKGR: r1.0
+LICENSE: TI-TSPA
+DESCRIPTION_vpdma-fw-doc: VPDMA firmware for Video Input Port and Video Processing Engine  This package contains documentation.
+SUMMARY_vpdma-fw-doc: vpdma-fw version 03-2012-r1 - Documentation files
+SECTION_vpdma-fw-doc: doc
+PKG_vpdma-fw-doc: vpdma-fw-doc
+FILES_vpdma-fw-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_vpdma-fw-doc: 0

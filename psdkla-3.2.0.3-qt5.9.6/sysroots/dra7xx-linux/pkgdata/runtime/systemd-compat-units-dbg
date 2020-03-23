@@ -1,0 +1,14 @@
+PN: systemd-compat-units
+PV: 1.0
+PR: r29
+PKGV: 1.0
+PKGR: r29.0
+LICENSE: MIT
+DESCRIPTION_systemd-compat-units-dbg: Enhances systemd compatilibity with existing SysVinit scripts.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_systemd-compat-units-dbg: Enhances systemd compatilibity with existing SysVinit scripts - Debugging files
+SECTION_systemd-compat-units-dbg: devel
+PKG_systemd-compat-units-dbg: systemd-compat-units-dbg
+ALLOW_EMPTY_systemd-compat-units-dbg: 1
+FILES_systemd-compat-units-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_systemd-compat-units-dbg: 0

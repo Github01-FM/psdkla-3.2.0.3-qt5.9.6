@@ -1,0 +1,13 @@
+PN: gobject-introspection
+PV: 1.46.0
+PR: r0
+PKGV: 1.46.0
+PKGR: r0.0
+LICENSE: LGPLv2+ & GPLv2+
+DESCRIPTION: gobject-introspection version 1.46.0-r0.
+SUMMARY: gobject-introspection version 1.46.0-r0
+SECTION: libs
+PKG_gobject-introspection-locale: gobject-introspection-locale
+FILES_gobject-introspection-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_gobject-introspection-locale: 0

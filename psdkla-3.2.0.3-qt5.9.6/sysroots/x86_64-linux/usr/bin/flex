@@ -1,0 +1,4 @@
+#!/bin/bash
+realpath=`readlink -fn $0`
+export M4=${STAGING_DIR_NATIVE}/usr/bin/m4
+exec -a `dirname $realpath`/flex `dirname $realpath`/flex.real "$@"

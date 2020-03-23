@@ -1,0 +1,14 @@
+PN: freetype
+PV: 2.6.3
+PR: r0.arago0
+PKGV: 2.6.3
+PKGR: r0.arago0.0
+LICENSE: GPLv2+
+DESCRIPTION: FreeType is a software font engine that is designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output (glyph images). It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.
+SUMMARY: Freetype font rendering library
+RPROVIDES_freetype-locale:  freetype-locale (=2.6.3)
+SECTION: libs
+PKG_freetype-locale: libfreetype-locale
+FILES_freetype-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_freetype-locale: 0

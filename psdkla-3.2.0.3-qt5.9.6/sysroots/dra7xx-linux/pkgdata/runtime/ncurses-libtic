@@ -1,0 +1,20 @@
+PN: ncurses
+PV: 6.0+20160213
+PR: r0
+PKGV: 6.0+20160213
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_ncurses-libtic: ncurses tic library
+SUMMARY_ncurses-libtic: ncurses tic library
+RDEPENDS_ncurses-libtic: ncurses-libtinfo (>= 6.0+20160213) external-linaro-toolchain (>= 2.21)
+RPROVIDES_ncurses-libtic:  ncurses-libtic (=6.0+20160213)
+SECTION: libs
+PKG_ncurses-libtic: libtic5
+FILES_ncurses-libtic: /usr/lib/libtic.so.5 /usr/lib/libtic.so.5.9
+pkg_postinst_ncurses-libtic: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_ncurses-libtic: /usr/lib/libtic.so.5.9
+FILES_INFO: {"/usr/lib/libtic.so.5": 13, "/usr/lib/libtic.so.5.9": 49508}
+FILERPROVIDES_/usr/lib/libtic.so.5.9_ncurses-libtic: elf(buildid) (= cfdc716400a0dcf420863dd60f9ec0e5cf8c50c8) libtic.so.5
+FILERDEPENDSFLIST_ncurses-libtic: /usr/lib/libtic.so.5.9
+FILERDEPENDS_/usr/lib/libtic.so.5.9_ncurses-libtic: libc.so.6 libc.so.6(GLIBC_2.4) libtinfo.so.5 rtld(GNU_HASH)
+PKGSIZE_ncurses-libtic: 49521

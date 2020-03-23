@@ -1,0 +1,18 @@
+PN: libxslt
+PV: 1.1.28
+PR: r0
+PKGV: 1.1.28
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libxslt-dev: GNOME XSLT library.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libxslt-dev: GNOME XSLT library - Development files
+RDEPENDS_libxslt-dev: libxslt (= 1.1.28-r0.0)
+RRECOMMENDS_libxslt-dev: external-linaro-toolchain-dev zlib-dev libxml2-dev
+SECTION_libxslt-dev: devel
+PKG_libxslt-dev: libxslt-dev
+ALLOW_EMPTY_libxslt-dev: 1
+FILES_libxslt-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libxslt/*.la /lib/*.la /usr/bin/*-config /usr/lib/xsltConf.sh
+FILES_INFO: {"/usr/include/libexslt/exsltexports.h": 3383, "/usr/include/libxslt/xsltutils.h": 8272, "/usr/include/libxslt/transform.h": 6328, "/usr/include/libxslt/preproc.h": 892, "/usr/lib/pkgconfig/libexslt.pc": 237, "/usr/include/libxslt/xsltexports.h": 3426, "/usr/include/libxslt/keys.h": 1155, "/usr/include/libxslt/imports.h": 1840, "/usr/include/libexslt/exslt.h": 3018, "/usr/lib/libxslt.la": 1054, "/usr/include/libxslt/functions.h": 2006, "/usr/include/libxslt/namespaces.h": 1666, "/usr/include/libexslt/exsltconfig.h": 1218, "/usr/lib/pkgconfig/libxslt.pc": 227, "/usr/include/libxslt/security.h": 2652, "/usr/lib/libexslt.la": 1082, "/usr/bin/xslt-config": 165, "/usr/include/libxslt/xsltlocale.h": 1233, "/usr/include/libxslt/documents.h": 2704, "/usr/include/libxslt/xsltInternals.h": 56937, "/usr/share/aclocal/libxslt.m4": 8119, "/usr/include/libxslt/templates.h": 2268, "/usr/lib/libexslt.so": 18, "/usr/lib/libxslt.so": 17, "/usr/include/libxslt/numbersInternals.h": 2019, "/usr/include/libxslt/xslt.h": 1964, "/usr/include/libxslt/attributes.h": 930, "/usr/include/libxslt/extensions.h": 6903, "/usr/include/libxslt/xsltconfig.h": 3400, "/usr/include/libxslt/pattern.h": 1998, "/usr/include/libxslt/extra.h": 1834, "/usr/include/libxslt/variables.h": 2593, "/usr/lib/xsltConf.sh": 170}
+FILERDEPENDSFLIST_libxslt-dev: /usr/bin/xslt-config
+FILERDEPENDS_/usr/bin/xslt-config_libxslt-dev: /bin/sh
+PKGSIZE_libxslt-dev: 131728

@@ -1,0 +1,14 @@
+PN: cryptodev-module
+PV: 1.8
+PR: r0.arago0
+PKGV: 1.8
+PKGR: r0.arago0.0
+LICENSE: GPLv2
+DESCRIPTION_cryptodev-module-staticdev: A /dev/crypto device driver kernel module.  This package contains static libraries for software development.
+SUMMARY_cryptodev-module-staticdev: A /dev/crypto device driver kernel module - Development files (Static Libraries)
+RDEPENDS_cryptodev-module-staticdev: cryptodev-module-dev (= 1.8-r0.arago0.0)
+SECTION_cryptodev-module-staticdev: devel
+PKG_cryptodev-module-staticdev: cryptodev-module-staticdev
+FILES_cryptodev-module-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/cryptodev-module/*.a
+FILES_INFO: {}
+PKGSIZE_cryptodev-module-staticdev: 0

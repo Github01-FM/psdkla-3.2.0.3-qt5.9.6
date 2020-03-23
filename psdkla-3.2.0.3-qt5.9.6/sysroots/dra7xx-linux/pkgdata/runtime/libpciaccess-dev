@@ -1,0 +1,16 @@
+PN: libpciaccess
+PV: 0.13.4
+PR: r0
+PKGV: 0.13.4
+PKGR: r0.0
+LICENSE: MIT & MIT-style
+DESCRIPTION_libpciaccess-dev: libpciaccess provides functionality for X to access the PCI bus and devices in a platform-independent way.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libpciaccess-dev: Generic PCI access library for X - Development files
+RDEPENDS_libpciaccess-dev: libpciaccess (= 0.13.4-r0.0)
+RRECOMMENDS_libpciaccess-dev: external-linaro-toolchain-dev util-macros-dev
+SECTION_libpciaccess-dev: devel
+PKG_libpciaccess-dev: libpciaccess-dev
+ALLOW_EMPTY_libpciaccess-dev: 1
+FILES_libpciaccess-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libpciaccess/*.la /lib/*.la
+FILES_INFO: {"/usr/lib/pkgconfig/pciaccess.pc": 230, "/usr/lib/libpciaccess.la": 1056, "/usr/include/pciaccess.h": 15082, "/usr/lib/libpciaccess.so": 22}
+PKGSIZE_libpciaccess-dev: 16390

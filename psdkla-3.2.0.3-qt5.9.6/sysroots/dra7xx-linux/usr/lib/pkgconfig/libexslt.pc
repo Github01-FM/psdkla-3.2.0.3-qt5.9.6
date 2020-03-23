@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+
+Name: libexslt
+Version: 0.8.17
+Description: EXSLT Extension library
+Requires: libxml-2.0
+Libs: -lexslt -L${libdir} -lexslt -lxslt -lxml2 -lm 
+Cflags: -I${includedir}

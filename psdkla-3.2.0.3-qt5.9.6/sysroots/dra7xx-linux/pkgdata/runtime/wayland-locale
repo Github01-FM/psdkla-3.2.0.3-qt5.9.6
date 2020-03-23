@@ -1,0 +1,13 @@
+PN: wayland
+PV: 1.14.0
+PR: r0
+PKGV: 1.14.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: Wayland is a protocol for a compositor to talk to its clients as well as a C library implementation of that protocol. The compositor can be a standalone display server running on Linux kernel modesetting and evdev input devices, an X application, or a wayland client itself. The clients can be traditional applications, X servers (rootless or fullscreen) or other display servers.
+SUMMARY: Wayland, a protocol between a compositor and clients
+SECTION: base
+PKG_wayland-locale: wayland-locale
+FILES_wayland-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_wayland-locale: 0

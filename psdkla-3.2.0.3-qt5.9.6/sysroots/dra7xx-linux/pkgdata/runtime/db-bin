@@ -1,0 +1,44 @@
+PN: db
+PV: 6.0.30
+PR: r0
+PKGV: 6.0.30
+PKGR: r0.0
+LICENSE: AGPL-3.0
+DESCRIPTION: Berkeley Database v6.
+SUMMARY: Berkeley Database v6
+RDEPENDS_db-bin: db (>= 6.0.30) external-linaro-toolchain (>= 2.21)
+SECTION: libs
+PKG_db-bin: db-bin
+FILES_db-bin: /usr/bin/* /usr/sbin/*
+FILERPROVIDESFLIST_db-bin: /usr/bin/db@underscore@recover /usr/bin/db@underscore@log@underscore@verify /usr/bin/db@underscore@upgrade /usr/bin/db@underscore@tuner /usr/bin/db@underscore@checkpoint /usr/bin/db@underscore@verify /usr/bin/db@underscore@hotbackup /usr/bin/db@underscore@deadlock /usr/bin/db@underscore@dump /usr/bin/db@underscore@load /usr/bin/db@underscore@replicate /usr/bin/db@underscore@stat /usr/bin/db@underscore@printlog /usr/bin/db@underscore@archive
+FILES_INFO: {"/usr/bin/db_printlog": 28716, "/usr/bin/db_dump": 11712, "/usr/bin/db_archive": 6476, "/usr/bin/db_deadlock": 8024, "/usr/bin/db_log_verify": 9012, "/usr/bin/db_replicate": 4732, "/usr/bin/db_upgrade": 7096, "/usr/bin/db_load": 23232, "/usr/bin/db_recover": 8100, "/usr/bin/db_verify": 8720, "/usr/bin/db_stat": 9476, "/usr/bin/db_checkpoint": 7992, "/usr/bin/db_tuner": 17288, "/usr/bin/db_hotbackup": 11632}
+FILERPROVIDES_/usr/bin/db@underscore@recover_db-bin: elf(buildid) (= 83d06702da457a2440cb9712a8fc9d72fb497dc2)
+FILERPROVIDES_/usr/bin/db@underscore@log@underscore@verify_db-bin: elf(buildid) (= 94cddf928f82fba3c4df7386cb063ec5e2fc3d04)
+FILERPROVIDES_/usr/bin/db@underscore@upgrade_db-bin: elf(buildid) (= 1f05a9e2d67b77cf9365511cb7129fdf1ff1a0db)
+FILERPROVIDES_/usr/bin/db@underscore@tuner_db-bin: elf(buildid) (= a2d3f5907ed5f1c91d361271a166ff801b37b09d)
+FILERPROVIDES_/usr/bin/db@underscore@checkpoint_db-bin: elf(buildid) (= 590ba1c2fc64a1d5bbf72504d9e8ebf622029890)
+FILERPROVIDES_/usr/bin/db@underscore@verify_db-bin: elf(buildid) (= 71a48b6350c11809c25f3952c663e4669361739b)
+FILERPROVIDES_/usr/bin/db@underscore@hotbackup_db-bin: elf(buildid) (= dbfa8dbdd8c46026a90bfcfda170cc341c2d20fb)
+FILERPROVIDES_/usr/bin/db@underscore@deadlock_db-bin: elf(buildid) (= 26355fe20ec54930776fb84cfed322d023aa2376)
+FILERPROVIDES_/usr/bin/db@underscore@dump_db-bin: elf(buildid) (= 8464e72fe168737f9e10b542b2a20ef1429485c7)
+FILERPROVIDES_/usr/bin/db@underscore@load_db-bin: elf(buildid) (= 3bc0792ecb6e043e0a24f4de197e138fb3315e86)
+FILERPROVIDES_/usr/bin/db@underscore@replicate_db-bin: elf(buildid) (= b55961e85d55ed36a7004e17bfd6e22f01d85b09)
+FILERPROVIDES_/usr/bin/db@underscore@stat_db-bin: elf(buildid) (= 3ce186e2c36b3a23997f649d40a1511ee3542f3d)
+FILERPROVIDES_/usr/bin/db@underscore@printlog_db-bin: elf(buildid) (= 6ef621cbbd8648a967c4ef98e1f305a3bcf3c391)
+FILERPROVIDES_/usr/bin/db@underscore@archive_db-bin: elf(buildid) (= 3876925eeac940430fc630acd70b9d9603ed9ce6)
+FILERDEPENDSFLIST_db-bin: /usr/bin/db@underscore@recover /usr/bin/db@underscore@log@underscore@verify /usr/bin/db@underscore@upgrade /usr/bin/db@underscore@tuner /usr/bin/db@underscore@checkpoint /usr/bin/db@underscore@verify /usr/bin/db@underscore@hotbackup /usr/bin/db@underscore@deadlock /usr/bin/db@underscore@dump /usr/bin/db@underscore@load /usr/bin/db@underscore@replicate /usr/bin/db@underscore@stat /usr/bin/db@underscore@printlog /usr/bin/db@underscore@archive
+FILERDEPENDS_/usr/bin/db@underscore@recover_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@log@underscore@verify_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@upgrade_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@tuner_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@checkpoint_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@verify_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@hotbackup_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@deadlock_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@dump_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@load_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@replicate_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@stat_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@printlog_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@archive_db-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdb-6.0.so libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_db-bin: 162208

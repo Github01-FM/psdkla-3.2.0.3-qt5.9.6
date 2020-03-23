@@ -1,0 +1,18 @@
+PN: util-linux
+PV: 2.27.1
+PR: r0
+PKGV: 2.27.1
+PKGR: r0.0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux-cfdisk: ncurses-libtinfo (>= 6.0+20160213) util-linux-libsmartcols (>= 2.27.1) util-linux-libmount (>= 2.27.1) ncurses-libncursesw (>= 6.0+20160213) util-linux-libblkid (>= 2.27.1) util-linux-libuuid (>= 2.27.1) external-linaro-toolchain (>= 2.21) util-linux-libfdisk (>= 2.27.1)
+SECTION: base
+PKG_util-linux-cfdisk: util-linux-cfdisk
+FILES_util-linux-cfdisk: /sbin/cfdisk
+FILERPROVIDESFLIST_util-linux-cfdisk: /sbin/cfdisk
+FILES_INFO: {"/sbin/cfdisk": 68608}
+FILERPROVIDES_/sbin/cfdisk_util-linux-cfdisk: elf(buildid) (= 9f4b055b3c8e8986c0a08ba1608521077fb7afa5)
+FILERDEPENDSFLIST_util-linux-cfdisk: /sbin/cfdisk
+FILERDEPENDS_/sbin/cfdisk_util-linux-cfdisk: libblkid.so.1 libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libc.so.6 libc.so.6(GLIBC_2.4) libfdisk.so.1 libfdisk.so.1(FDISK_2.26) libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.24) libncursesw.so.5 librt.so.1 libsmartcols.so.1 libsmartcols.so.1(SMARTCOLS_2.25) libtinfo.so.5 libuuid.so.1 rtld(GNU_HASH)
+PKGSIZE_util-linux-cfdisk: 68608

@@ -1,0 +1,15 @@
+PN: libevdev
+PV: 1.5.7
+PR: r0
+PKGV: 1.5.7
+PKGR: r0.0
+LICENSE: MIT-X
+DESCRIPTION_libevdev-dbg: Wrapper library for evdev devices.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_libevdev-dbg: Wrapper library for evdev devices - Debugging files
+RRECOMMENDS_libevdev-dbg: external-linaro-toolchain-dbg
+SECTION_libevdev-dbg: devel
+PKG_libevdev-dbg: libevdev-dbg
+ALLOW_EMPTY_libevdev-dbg: 1
+FILES_libevdev-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/libevdev/libevdev.c": 40240, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/tools/libevdev-tweak-device.c": 10002, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/libevdev/libevdev-uinput.h": 8375, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/libevdev/libevdev-names.c": 4380, "/usr/bin/.debug/touchpad-edge-detector": 22732, "/usr/bin/.debug/libevdev-tweak-device": 23060, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/include/linux/uinput.h": 9197, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/libevdev/libevdev-uinput-int.h": 1470, "/usr/src/debug/libevdev/1.5.7-r0/build/libevdev/event-names.h": 57754, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/libevdev/libevdev-util.h": 2426, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/libevdev/libevdev-uinput.c": 11372, "/usr/lib/.debug/libevdev.so.2.1.19": 102112, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/tools/mouse-dpi-tool.c": 7800, "/usr/bin/.debug/mouse-dpi-tool": 22816, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/include/linux/input.h": 15127, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/tools/touchpad-edge-detector.c": 7850, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/libevdev/libevdev-int.h": 8683, "/usr/src/debug/libevdev/1.5.7-r0/libevdev-1.5.7/libevdev/libevdev.h": 81347}
+PKGSIZE_libevdev-dbg: 436743

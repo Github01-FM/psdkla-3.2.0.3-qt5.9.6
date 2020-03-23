@@ -1,0 +1,15 @@
+PN: libcap
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0.0
+LICENSE: BSD | GPLv2
+DESCRIPTION_libcap-dbg: Library for getting/setting POSIX.1e capabilities.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_libcap-dbg: Library for getting/setting POSIX.1e capabilities - Debugging files
+RRECOMMENDS_libcap-dbg: external-linaro-toolchain-dbg libattr-dbg
+SECTION_libcap-dbg: devel
+PKG_libcap-dbg: libcap-dbg
+ALLOW_EMPTY_libcap-dbg: 1
+FILES_libcap-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/cap_text.c": 9849, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/libcap.h": 5889, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/include/uapi/linux/capability.h": 11183, "/usr/sbin/.debug/getcap": 15820, "/lib/.debug/libcap.so.2.24": 39268, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/progs/setcap.c": 4181, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/progs/capsh.c": 15970, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/cap_flag.c": 3125, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/cap_proc.c": 2291, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/progs/getpcaps.c": 1178, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/cap_extint.c": 2969, "/usr/sbin/.debug/setcap": 17252, "/lib/security/.debug/pam_cap.so": 13840, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/progs/getcap.c": 2107, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/cap_file.c": 6913, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/pam_cap/pam_cap.c": 7012, "/usr/sbin/.debug/capsh": 32524, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/cap_names.h": 1445, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/include/sys/capability.h": 3322, "/usr/sbin/.debug/getpcaps": 13256, "/usr/src/debug/libcap/2.24-r0/libcap-2.24/libcap/cap_alloc.c": 2746}
+PKGSIZE_libcap-dbg: 212140

@@ -1,0 +1,13 @@
+PN: libpciaccess
+PV: 0.13.4
+PR: r0
+PKGV: 0.13.4
+PKGR: r0.0
+LICENSE: MIT & MIT-style
+DESCRIPTION_libpciaccess-doc: libpciaccess provides functionality for X to access the PCI bus and devices in a platform-independent way.  This package contains documentation.
+SUMMARY_libpciaccess-doc: Generic PCI access library for X - Documentation files
+SECTION_libpciaccess-doc: doc
+PKG_libpciaccess-doc: libpciaccess-doc
+FILES_libpciaccess-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_libpciaccess-doc: 0

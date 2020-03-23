@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# Emit a useful diagnostic if something fails:
+bb_exit_handler() {
+    ret=$?
+    case $ret in
+    0)  ;;
+    *)  case $BASH_VERSION in
+        "") echo "WARNING: exit code $ret from a shell command.";;
+        *)  echo "WARNING: ${BASH_SOURCE[0]}:${BASH_LINENO[0]} exit $ret from '$BASH_COMMAND'";;
+        esac
+        exit $ret
+    esac
+}
+trap 'bb_exit_handler' 0
+set -e
+
+export PATH="${TOOLCHAIN_PATH}/bin:${PATH}"
+
+test -n "${O}"
+test -n "${D}"
+
+cd "${D}"
+
+# Main
+# OutList is specified by your target need.
+# 
+OutList=$(find . -not -type d | grep -v "/mkspecs/\|/include/\|/pkgconfig/\|usr/share/doc\|usr/bin\|\.cmake\|\.a\|\.la\|\.prl")
+
+rm -rf ${O}
+mkdir -p ${O}
+cp -af --parents $OutList ${O}
+
+for i in $(find ${O})
+do
+    if $(file $i | grep "not stripped" | grep "shared object" > /dev/null); then
+        ${HOST_PREFIX}strip --remove-section=.comment --remove-section=.note --strip-unneeded $i
+    fi
+done
+
+# cleanup
+ret=$?
+trap '' 0
+exit $ret

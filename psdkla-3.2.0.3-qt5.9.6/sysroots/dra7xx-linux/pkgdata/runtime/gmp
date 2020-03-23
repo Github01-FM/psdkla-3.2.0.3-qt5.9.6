@@ -1,0 +1,20 @@
+PN: gmp
+PV: 6.1.0
+PR: r0
+PKGV: 6.1.0
+PKGR: r0.0
+LICENSE: GPLv2+ | LGPLv3+
+DESCRIPTION: GMP is a free library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating point numbers
+SUMMARY: GNU multiprecision arithmetic library
+RDEPENDS_gmp: external-linaro-toolchain (>= 2.21)
+RPROVIDES_gmp:  gmp (=6.1.0)
+SECTION: devel
+PKG_gmp: libgmp10
+FILES_gmp: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/gmp /usr/lib/gmp/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_gmp: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_gmp: /usr/lib/libgmp.so.10.3.0
+FILES_INFO: {"/usr/lib/libgmp.so.10": 16, "/usr/lib/libgmp.so.10.3.0": 380432}
+FILERPROVIDES_/usr/lib/libgmp.so.10.3.0_gmp: elf(buildid) (= 61cd4aea7a95c22ccd578da3d282facefec6e4f4) libgmp.so.10
+FILERDEPENDSFLIST_gmp: /usr/lib/libgmp.so.10.3.0
+FILERDEPENDS_/usr/lib/libgmp.so.10.3.0_gmp: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+PKGSIZE_gmp: 380448

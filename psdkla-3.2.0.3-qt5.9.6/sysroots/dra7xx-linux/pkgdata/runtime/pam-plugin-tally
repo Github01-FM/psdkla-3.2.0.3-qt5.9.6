@@ -1,0 +1,21 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-tally: PAM plugin for -tally
+SUMMARY_pam-plugin-tally: PAM plugin for -tally
+RDEPENDS_pam-plugin-tally: libpam-suffix external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+RPROVIDES_pam-plugin-tally: pam-plugin-tally-suffix
+SECTION: base
+PKG_pam-plugin-tally: pam-plugin-tally
+FILES_pam-plugin-tally: /lib/security/pam_tally.so /usr/sbin/pam_tally
+FILERPROVIDESFLIST_pam-plugin-tally: /usr/sbin/pam@underscore@tally /lib/security/pam@underscore@tally.so
+FILES_INFO: {"/lib/security/pam_tally.so": 9892, "/usr/sbin/pam_tally": 7312}
+FILERPROVIDES_/usr/sbin/pam@underscore@tally_pam-plugin-tally: elf(buildid) (= c1d543b7ed7e3cd589a691956804c5c185e4968e)
+FILERPROVIDES_/lib/security/pam@underscore@tally.so_pam-plugin-tally: elf(buildid) (= fd76c70051bd29db91503af792ead0a2d3b393d5) pam_tally.so
+FILERDEPENDSFLIST_pam-plugin-tally: /usr/sbin/pam@underscore@tally /lib/security/pam@underscore@tally.so
+FILERDEPENDS_/usr/sbin/pam@underscore@tally_pam-plugin-tally: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/security/pam@underscore@tally.so_pam-plugin-tally: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) rtld(GNU_HASH)
+PKGSIZE_pam-plugin-tally: 17204

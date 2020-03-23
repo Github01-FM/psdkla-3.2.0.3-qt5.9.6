@@ -1,0 +1,13 @@
+PN: bison
+PV: 3.0.4
+PR: r0
+PKGV: 3.0.4
+PKGR: r0.0
+LICENSE: GPLv3
+DESCRIPTION_bison-doc: Bison is a general-purpose parser generator that converts an annotated context-free grammar into an LALR(1) or GLR parser for that grammar.  Bison is upward compatible with Yacc: all properly-written Yacc grammars ought to work with Bison with no change. Anyone familiar with Yacc should be able to use Bison with little trouble.  This package contains documentation.
+SUMMARY_bison-doc: GNU Project parser generator (yacc replacement) - Documentation files
+SECTION_bison-doc: doc
+PKG_bison-doc: bison-doc
+FILES_bison-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/doc/bison/examples/calc++/calc++-scanner.ll": 1921, "/usr/share/doc/bison/TODO": 14141, "/usr/share/doc/bison/COPYING": 35147, "/usr/share/info/bison.info": 600038, "/usr/share/doc/bison/examples/calc++/calc++-driver.hh": 1009, "/usr/share/doc/bison/examples/mfcalc/mfcalc.y": 4700, "/usr/share/doc/bison/AUTHORS": 1460, "/usr/share/doc/bison/NEWS": 100610, "/usr/share/doc/bison/examples/rpcalc/rpcalc.y": 1445, "/usr/share/doc/bison/README": 2289, "/usr/share/doc/bison/examples/mfcalc/calc.h": 555, "/usr/share/doc/bison/THANKS": 8610, "/usr/share/doc/bison/examples/calc++/calc++.cc": 438, "/usr/share/doc/bison/examples/calc++/calc++-driver.cc": 653, "/usr/share/doc/bison/examples/calc++/calc++-parser.yy": 1442}
+PKGSIZE_bison-doc: 774458

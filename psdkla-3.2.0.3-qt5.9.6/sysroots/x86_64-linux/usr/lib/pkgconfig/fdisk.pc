@@ -1,0 +1,11 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: fdisk
+Description: fdisk library
+Version: 2.27.0
+Requires.private: uuid blkid
+Cflags: -I${includedir}/libfdisk
+Libs: -L${libdir} -lfdisk

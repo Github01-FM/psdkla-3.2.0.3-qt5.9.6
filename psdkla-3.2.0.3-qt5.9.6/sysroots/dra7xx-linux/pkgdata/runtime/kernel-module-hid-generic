@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-hid-generic: hid-generic kernel module; HID generic driver
+SUMMARY_kernel-module-hid-generic: hid-generic kernel module
+RDEPENDS_kernel-module-hid-generic: kernel-4.4.45+
+SECTION: kernel
+PKG_kernel-module-hid-generic: kernel-module-hid-generic
+FILES_kernel-module-hid-generic: /lib/modules/4.4.45+/kernel/drivers/hid/hid-generic.ko /etc/modules-load.d/hid-generic.conf /etc/modprobe.d/hid-generic.conf
+pkg_postinst_kernel-module-hid-generic: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-hid-generic: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/drivers/hid/hid-generic.ko": 3532}
+PKGSIZE_kernel-module-hid-generic: 3532

@@ -1,0 +1,16 @@
+PN: libxkbcommon
+PV: 0.5.0
+PR: r0
+PKGV: 0.5.0
+PKGR: r0.0
+LICENSE: MIT & MIT-style
+DESCRIPTION_libxkbcommon-dev: libxkbcommon is a keymap compiler and support library which processes a reduced subset of keymaps as defined by the XKB specification.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libxkbcommon-dev: Generic XKB keymap library - Development files
+RDEPENDS_libxkbcommon-dev: libxkbcommon (= 0.5.0-r0.0)
+RRECOMMENDS_libxkbcommon-dev: external-linaro-toolchain-dev util-macros-dev
+SECTION_libxkbcommon-dev: devel
+PKG_libxkbcommon-dev: libxkbcommon-dev
+ALLOW_EMPTY_libxkbcommon-dev: 1
+FILES_libxkbcommon-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libxkbcommon/*.la /lib/*.la
+FILES_INFO: {"/usr/include/xkbcommon/xkbcommon-compose.h": 15768, "/usr/include/xkbcommon/xkbcommon-keysyms.h": 212552, "/usr/include/xkbcommon/xkbcommon.h": 57919, "/usr/include/xkbcommon/xkbcommon-names.h": 1718, "/usr/lib/pkgconfig/xkbcommon.pc": 206, "/usr/lib/libxkbcommon.so": 21, "/usr/lib/libxkbcommon.la": 1053, "/usr/include/xkbcommon/xkbcommon-compat.h": 4295}
+PKGSIZE_libxkbcommon-dev: 293532

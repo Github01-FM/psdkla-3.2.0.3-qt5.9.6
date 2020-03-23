@@ -1,0 +1,14 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RRECOMMENDS_libssp-dev: external-linaro-toolchain-dev linux-libc-headers-dev
+SECTION: base
+PKG_libssp-dev: libssp-dev
+FILES_libssp-dev:    /lib/libssp*.so   /lib/libssp*_nonshared.a   /lib/libssp*.la   /lib/gcc/arm-linux-gnueabi/${BINV}/include/ssp
+FILES_INFO: {"/lib/libssp_nonshared.la": 1067, "/lib/libssp_nonshared.a": 2642, "/lib/libssp.la": 1085}
+PKGSIZE_libssp-dev: 4794

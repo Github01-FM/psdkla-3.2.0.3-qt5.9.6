@@ -1,0 +1,14 @@
+PN: ti-sgx-ddk-um
+PV: 1.14.3699939
+PR: r23
+PKGV: 1.14.3699939
+PKGR: r23.0
+LICENSE: TI-TSPA
+DESCRIPTION_ti-sgx-ddk-um-staticdev: Userspace libraries for PowerVR SGX chipset on TI SoCs  This package contains static libraries for software development.
+SUMMARY_ti-sgx-ddk-um-staticdev: ti-sgx-ddk-um version 1.14.3699939-r23 - Development files (Static Libraries)
+RDEPENDS_ti-sgx-ddk-um-staticdev: ti-sgx-ddk-um-dev (= 1.14.3699939-r23.0)
+SECTION_ti-sgx-ddk-um-staticdev: devel
+PKG_ti-sgx-ddk-um-staticdev: ti-sgx-ddk-um-staticdev
+FILES_ti-sgx-ddk-um-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/ti-sgx-ddk-um/*.a
+FILES_INFO: {}
+PKGSIZE_ti-sgx-ddk-um-staticdev: 0

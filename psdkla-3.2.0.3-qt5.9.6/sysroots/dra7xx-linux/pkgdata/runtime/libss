@@ -1,0 +1,20 @@
+PN: e2fsprogs
+PV: 1.42.99+1.43+gitAUTOINC+0f26747167
+PR: r0
+PKGV: 1.42.99+1.43+git0+0f26747167
+PKGR: r0.0
+LICENSE: GPLv2 & LGPLv2 & BSD & MIT
+DESCRIPTION: The Ext2 Filesystem Utilities (e2fsprogs) contain all of the standard utilities for creating, fixing, configuring , and debugging ext2 filesystems.
+SUMMARY: Ext2 Filesystem Utilities
+RDEPENDS_libss: libcomerr (>= 1.42.99+1.43+git0+0f26747167) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libss:  libss (=1.42.99+1.43+git0+0f26747167)
+SECTION: base
+PKG_libss: libss2
+FILES_libss: /lib/libss.so.*
+pkg_postinst_libss: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libss: /lib/libss.so.2.0
+FILES_INFO: {"/lib/libss.so.2": 12, "/lib/libss.so.2.0": 17096}
+FILERPROVIDES_/lib/libss.so.2.0_libss: elf(buildid) (= 37e68b113dc30a10a715144c5440afbf7a6f0132) libss.so.2
+FILERDEPENDSFLIST_libss: /lib/libss.so.2.0
+FILERDEPENDS_/lib/libss.so.2.0_libss: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libcom_err.so.2 libdl.so.2 libdl.so.2(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libss: 17108

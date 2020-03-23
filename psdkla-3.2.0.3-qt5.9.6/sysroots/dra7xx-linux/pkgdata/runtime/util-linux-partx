@@ -1,0 +1,18 @@
+PN: util-linux
+PV: 2.27.1
+PR: r0
+PKGV: 2.27.1
+PKGR: r0.0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux-partx: util-linux-libblkid (>= 2.27.1) util-linux-libuuid (>= 2.27.1) util-linux-libsmartcols (>= 2.27.1) external-linaro-toolchain (>= 2.21)
+SECTION: base
+PKG_util-linux-partx: util-linux-partx
+FILES_util-linux-partx: /usr/sbin/partx
+FILERPROVIDESFLIST_util-linux-partx: /usr/sbin/partx
+FILES_INFO: {"/usr/sbin/partx": 60108}
+FILERPROVIDES_/usr/sbin/partx_util-linux-partx: elf(buildid) (= 37b894095faf3c5527ac5b6f05f5f6a53f2959a1)
+FILERDEPENDSFLIST_util-linux-partx: /usr/sbin/partx
+FILERDEPENDS_/usr/sbin/partx_util-linux-partx: libblkid.so.1 libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libblkid.so.1(BLKID_2.18) libblkid.so.1(BLKID_2.25) libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libsmartcols.so.1 libsmartcols.so.1(SMARTCOLS_2.25) libuuid.so.1 rtld(GNU_HASH)
+PKGSIZE_util-linux-partx: 60108

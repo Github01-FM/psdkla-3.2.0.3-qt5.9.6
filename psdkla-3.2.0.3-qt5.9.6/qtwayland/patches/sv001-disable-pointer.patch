@@ -1,0 +1,18 @@
+--- git/src/client/qwaylandinputdevice.cpp.orig	2017-05-16 10:42:04.835420021 +0800
++++ git/src/client/qwaylandinputdevice.cpp	2017-05-16 10:42:41.292266912 +0800
+@@ -220,6 +220,7 @@
+         mKeyboard = 0;
+     }
+ 
++#if 0
+     if (caps & WL_SEAT_CAPABILITY_POINTER && !mPointer) {
+         mPointer = createPointer(this);
+         mPointer->init(get_pointer());
+@@ -228,6 +229,7 @@
+         delete mPointer;
+         mPointer = 0;
+     }
++#endif
+ 
+     if (caps & WL_SEAT_CAPABILITY_TOUCH && !mTouch) {
+         mTouch = createTouch(this);

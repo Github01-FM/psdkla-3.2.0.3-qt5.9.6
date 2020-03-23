@@ -1,0 +1,14 @@
+PN: qtxmlpatterns
+PV: 5.9.6+gitAUTOINC+4dcae15a5a
+PR: r0
+PKGV: 5.9.6+git0+4dcae15a5a
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtxmlpatterns version 5.9.6+gitAUTOINC+4dcae15a5a-r0.
+SUMMARY: qtxmlpatterns version 5.9.6+gitAUTOINC+4dcae15a5a-r0
+RPROVIDES_qtxmlpatterns-mkspecs:  qtxmlpatterns-mkspecs (=5.9.6+git0+4dcae15a5a)
+SECTION: base
+PKG_qtxmlpatterns-mkspecs: libqt5xmlpatterns-mkspecs
+FILES_qtxmlpatterns-mkspecs:     /usr/lib/qt5/mkspecs 
+FILES_INFO: {"/usr/lib/qt5/mkspecs/modules/qt_lib_xmlpatterns.pri": 567, "/usr/lib/qt5/mkspecs/modules/qt_lib_xmlpatterns_private.pri": 571}
+PKGSIZE_qtxmlpatterns-mkspecs: 1138

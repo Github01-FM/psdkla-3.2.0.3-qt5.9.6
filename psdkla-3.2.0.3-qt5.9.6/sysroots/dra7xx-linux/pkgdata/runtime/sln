@@ -1,0 +1,13 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_sln: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION_sln: Similar to the \'ln\' utility, but statically linked.  sln is useful to make symbolic links to dynamic libraries if the dynamic linking system, for some reason, is not functional.
+SUMMARY_sln: The static ln
+SECTION: base
+PKG_sln: sln
+FILES_sln: /sbin/sln
+FILES_INFO: {}
+PKGSIZE_sln: 0

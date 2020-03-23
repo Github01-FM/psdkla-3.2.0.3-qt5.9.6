@@ -1,0 +1,16 @@
+PN: cryptodev-module
+PV: 1.8
+PR: r0.arago0
+PKGV: 1.8
+PKGR: r0.arago0.0
+LICENSE: GPLv2
+DESCRIPTION: A /dev/crypto device driver kernel module.
+SUMMARY: A /dev/crypto device driver kernel module
+RDEPENDS_cryptodev-module: kernel-module-cryptodev
+RREPLACES_cryptodev-module: ocf-linux
+RCONFLICTS_cryptodev-module: ocf-linux
+SECTION: base
+PKG_cryptodev-module: cryptodev-module
+ALLOW_EMPTY_cryptodev-module: 1
+FILES_INFO: {}
+PKGSIZE_cryptodev-module: 0

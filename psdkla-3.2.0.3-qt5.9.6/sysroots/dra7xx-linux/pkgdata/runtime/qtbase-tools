@@ -1,0 +1,26 @@
+PN: qtbase
+PV: 5.9.6+gitAUTOINC+9c50112304
+PR: r0.arago12
+PKGV: 5.9.6+git0+9c50112304
+PKGR: r0.arago12.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtbase version 5.9.6+gitAUTOINC+9c50112304-r0.arago12.
+SUMMARY: qtbase version 5.9.6+gitAUTOINC+9c50112304-r0.arago12
+RDEPENDS_qtbase-tools: libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21) perl
+SECTION: base
+PKG_qtbase-tools: qtbase-tools
+FILES_qtbase-tools:      /usr/bin/qt5/* 
+FILERPROVIDESFLIST_qtbase-tools: /usr/bin/qt5/qmake /usr/bin/qt5/rcc /usr/bin/qt5/qlalr /usr/bin/qt5/moc
+FILES_INFO: {"/usr/bin/qt5/fixqt4headers.pl": 6344, "/usr/bin/qt5/qlalr": 860000, "/usr/bin/qt5/qmake": 2382716, "/usr/bin/qt5/rcc": 910028, "/usr/bin/qt5/syncqt.pl": 49240, "/usr/bin/qt5/moc": 1012688}
+FILERPROVIDES_/usr/bin/qt5/qmake_qtbase-tools: elf(buildid) (= 954aae2bbd469b356f66f28736e07bfc6a05dacd)
+FILERPROVIDES_/usr/bin/qt5/rcc_qtbase-tools: elf(buildid) (= 1de7be0e25bdc07e03782c3f2877181b7e821814)
+FILERPROVIDES_/usr/bin/qt5/qlalr_qtbase-tools: elf(buildid) (= 415ce21edde661941f283c5d2e64d3fb5e3578b1)
+FILERPROVIDES_/usr/bin/qt5/moc_qtbase-tools: elf(buildid) (= 828315fa2f2ac6d47a15460ca7b4b8664bc502a2)
+FILERDEPENDSFLIST_qtbase-tools: /usr/bin/qt5/fixqt4headers.pl /usr/bin/qt5/qlalr /usr/bin/qt5/qmake /usr/bin/qt5/rcc /usr/bin/qt5/syncqt.pl /usr/bin/qt5/moc
+FILERDEPENDS_/usr/bin/qt5/fixqt4headers.pl_qtbase-tools: /usr/bin/env
+FILERDEPENDS_/usr/bin/qt5/qlalr_qtbase-tools: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/qt5/qmake_qtbase-tools: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.6) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libm.so.6(GLIBC_2.4) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/qt5/rcc_qtbase-tools: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/qt5/syncqt.pl_qtbase-tools: /usr/bin/env
+FILERDEPENDS_/usr/bin/qt5/moc_qtbase-tools: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+PKGSIZE_qtbase-tools: 5221016

@@ -1,0 +1,19 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-echo: PAM plugin for -echo
+SUMMARY_pam-plugin-echo: PAM plugin for -echo
+RDEPENDS_pam-plugin-echo: libpam-suffix external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+RPROVIDES_pam-plugin-echo: pam-plugin-echo-suffix
+SECTION: base
+PKG_pam-plugin-echo: pam-plugin-echo
+FILES_pam-plugin-echo: /lib/security/pam_echo.so
+FILERPROVIDESFLIST_pam-plugin-echo: /lib/security/pam@underscore@echo.so
+FILES_INFO: {"/lib/security/pam_echo.so": 5040}
+FILERPROVIDES_/lib/security/pam@underscore@echo.so_pam-plugin-echo: elf(buildid) (= 371179e7f309976ce91a5672724e71fd6a7954a5) pam_echo.so
+FILERDEPENDSFLIST_pam-plugin-echo: /lib/security/pam@underscore@echo.so
+FILERDEPENDS_/lib/security/pam@underscore@echo.so_pam-plugin-echo: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) rtld(GNU_HASH)
+PKGSIZE_pam-plugin-echo: 5040

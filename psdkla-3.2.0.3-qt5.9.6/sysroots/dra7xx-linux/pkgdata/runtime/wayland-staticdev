@@ -1,0 +1,14 @@
+PN: wayland
+PV: 1.14.0
+PR: r0
+PKGV: 1.14.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_wayland-staticdev: Wayland is a protocol for a compositor to talk to its clients as well as a C library implementation of that protocol. The compositor can be a standalone display server running on Linux kernel modesetting and evdev input devices, an X application, or a wayland client itself. The clients can be traditional applications, X servers (rootless or fullscreen) or other display servers.  This package contains static libraries for software development.
+SUMMARY_wayland-staticdev: Wayland, a protocol between a compositor and clients - Development files (Static Libraries)
+RDEPENDS_wayland-staticdev: wayland-dev (= 1.14.0-r0.0)
+SECTION_wayland-staticdev: devel
+PKG_wayland-staticdev: wayland-staticdev
+FILES_wayland-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/wayland/*.a
+FILES_INFO: {"/usr/lib/libwayland-cursor.a": 80558, "/usr/lib/libwayland-server.a": 240688, "/usr/lib/libwayland-client.a": 162986}
+PKGSIZE_wayland-staticdev: 484232

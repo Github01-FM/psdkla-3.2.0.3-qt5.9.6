@@ -1,0 +1,15 @@
+PN: systemd-compat-units
+PV: 1.0
+PR: r29
+PKGV: 1.0
+PKGR: r29.0
+LICENSE: MIT
+DESCRIPTION_systemd-compat-units-dev: Enhances systemd compatilibity with existing SysVinit scripts.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_systemd-compat-units-dev: Enhances systemd compatilibity with existing SysVinit scripts - Development files
+RDEPENDS_systemd-compat-units-dev: systemd-compat-units (= 1.0-r29.0)
+SECTION_systemd-compat-units-dev: devel
+PKG_systemd-compat-units-dev: systemd-compat-units-dev
+ALLOW_EMPTY_systemd-compat-units-dev: 1
+FILES_systemd-compat-units-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/systemd-compat-units/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_systemd-compat-units-dev: 0

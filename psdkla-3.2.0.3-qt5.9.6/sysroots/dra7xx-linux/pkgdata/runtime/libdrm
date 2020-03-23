@@ -1,0 +1,21 @@
+PN: libdrm
+PV: 2.4.67
+PR: r0.arago1
+PKGV: 2.4.67
+PKGR: r0.arago1.0
+LICENSE: MIT
+DESCRIPTION: The runtime library for accessing the kernel DRM services.  DRM stands for \\"Direct Rendering Manager\\", which is the kernel portion of the \\"Direct Rendering Infrastructure\\" (DRI).  DRI is required for many hardware accelerated OpenGL drivers.
+SUMMARY: Userspace interface to the kernel DRM services
+RDEPENDS_libdrm: update-alternatives-opkg external-linaro-toolchain (>= 2.21)
+RPROVIDES_libdrm:  libdrm (=2.4.67)
+SECTION: x11/base
+PKG_libdrm: libdrm2
+FILES_libdrm: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libdrm /usr/lib/libdrm/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libdrm: #!/bin/sh\n\tupdate-alternatives --install /usr/bin/kmstest kmstest /usr/bin/kmstest.libdrm 10\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+pkg_prerm_libdrm: #!/bin/sh\n\tupdate-alternatives --remove  kmstest /usr/bin/kmstest.libdrm\n
+FILERPROVIDESFLIST_libdrm: /usr/lib/libdrm.so.2.4.0
+FILES_INFO: {"/usr/lib/libdrm.so.2.4.0": 44572, "/usr/lib/libdrm.so.2": 15}
+FILERPROVIDES_/usr/lib/libdrm.so.2.4.0_libdrm: elf(buildid) (= ff524a37af295086984dc8277bb868e2c342c5a0) libdrm.so.2
+FILERDEPENDSFLIST_libdrm: /usr/lib/libdrm.so.2.4.0
+FILERDEPENDS_/usr/lib/libdrm.so.2.4.0_libdrm: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libm.so.6 libm.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libdrm: 44587

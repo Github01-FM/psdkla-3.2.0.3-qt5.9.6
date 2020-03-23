@@ -1,0 +1,17 @@
+PN: harfbuzz
+PV: 0.9.35
+PR: r0
+PKGV: 0.9.35
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_harfbuzz-dev: HarfBuzz is an OpenType text shaping engine.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_harfbuzz-dev: Text shaping library - Development files
+RDEPENDS_harfbuzz-dev: harfbuzz (= 0.9.35-r0.0)
+RPROVIDES_harfbuzz-dev:  harfbuzz-dev (=0.9.35)
+RRECOMMENDS_harfbuzz-dev: zlib-dev freetype-dev libpcre-dev external-linaro-toolchain-dev cairo-dev glib-2.0-dev
+SECTION_harfbuzz-dev: devel
+PKG_harfbuzz-dev: libharfbuzz-dev
+ALLOW_EMPTY_harfbuzz-dev: 1
+FILES_harfbuzz-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/harfbuzz/*.la /lib/*.la
+FILES_INFO: {"/usr/include/harfbuzz/hb-ot-font.h": 1292, "/usr/include/harfbuzz/hb-shape-plan.h": 2747, "/usr/include/harfbuzz/hb-blob.h": 3414, "/usr/lib/pkgconfig/harfbuzz.pc": 207, "/usr/include/harfbuzz/hb-ft.h": 1756, "/usr/include/harfbuzz/hb-ot-shape.h": 1692, "/usr/include/harfbuzz/hb-common.h": 13015, "/usr/include/harfbuzz/hb-ot.h": 1348, "/usr/include/harfbuzz/hb-shape.h": 2232, "/usr/include/harfbuzz/hb-unicode.h": 14218, "/usr/include/harfbuzz/hb-font.h": 12957, "/usr/include/harfbuzz/hb-deprecated.h": 1584, "/usr/lib/libharfbuzz.la": 1145, "/usr/include/harfbuzz/hb-buffer.h": 9078, "/usr/include/harfbuzz/hb-glib.h": 1496, "/usr/include/harfbuzz/hb.h": 1470, "/usr/include/harfbuzz/hb-ot-layout.h": 9378, "/usr/include/harfbuzz/hb-face.h": 2815, "/usr/include/harfbuzz/hb-version.h": 1801, "/usr/lib/libharfbuzz.so": 22, "/usr/include/harfbuzz/hb-set.h": 3544, "/usr/include/harfbuzz/hb-ot-tag.h": 1688}
+PKGSIZE_harfbuzz-dev: 88899

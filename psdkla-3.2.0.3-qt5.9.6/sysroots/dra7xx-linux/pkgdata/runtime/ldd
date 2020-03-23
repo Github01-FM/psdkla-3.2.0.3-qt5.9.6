@@ -1,0 +1,16 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_ldd: 2.21
+PKGR: r0.arago33.0
+LICENSE_ldd: LGPL-2.1
+DESCRIPTION_ldd: /usr/bin/ldd prints shared library dependencies for each program or shared library specified on the command line.
+SUMMARY_ldd: print shared library dependencies
+SECTION: base
+PKG_ldd: ldd
+ALLOW_EMPTY_ldd: 1
+FILES_ldd: /usr/bin/ldd
+FILES_INFO: {"/usr/bin/ldd": 5667}
+FILERDEPENDSFLIST_ldd: /usr/bin/ldd
+FILERDEPENDS_/usr/bin/ldd_ldd: /bin/bash
+PKGSIZE_ldd: 5667

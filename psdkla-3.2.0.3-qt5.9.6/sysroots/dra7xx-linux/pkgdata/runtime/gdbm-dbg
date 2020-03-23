@@ -1,0 +1,15 @@
+PN: gdbm
+PV: 1.8.3
+PR: r4
+PKGV: 1.8.3
+PKGR: r4.0
+LICENSE: GPLv2+
+DESCRIPTION_gdbm-dbg: Key/value database library with extensible hashing.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_gdbm-dbg: Key/value database library with extensible hashing - Debugging files
+RRECOMMENDS_gdbm-dbg: external-linaro-toolchain-dbg
+SECTION_gdbm-dbg: devel
+PKG_gdbm-dbg: gdbm-dbg
+ALLOW_EMPTY_gdbm-dbg: 1
+FILES_gdbm-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/lib/.debug/libgdbm.so.3.0.0": 78396, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmexists.c": 1688, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/global.c": 1742, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/hash.c": 2001, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbmclose.c": 1406, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmstore.c": 5785, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/store.c": 1633, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbmpagfno.c": 1521, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmreorg.c": 6068, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/version.c": 1467, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbmseq.c": 2401, "/usr/lib/.debug/libgdbm_compat.so.3.0.0": 50660, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbmstore.c": 1684, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/bucket.c": 11599, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/proto.h": 2838, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmsetopt.c": 3019, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmopen.c": 13277, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmdelete.c": 3896, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmseq.c": 4519, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbmrdonly.c": 1545, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/close.c": 1738, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/seq.c": 2314, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/update.c": 3843, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/falloc.c": 14635, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmdefs.h": 7696, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmsync.c": 1551, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbmdirfno.c": 1521, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/findkey.c": 5639, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmclose.c": 2270, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbmdelete.c": 1549, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmerrno.h": 2004, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmfdesc.c": 1501, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmerrno.c": 2250, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbmopen.c": 4663, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/gdbmfetch.c": 2672, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/extern.h": 1422, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/fetch.c": 1906, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/delete.c": 1520, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbmfetch.c": 1897, "/usr/src/debug/gdbm/1.8.3-r4/gdbm-1.8.3/dbminit.c": 3921}
+PKGSIZE_gdbm-dbg: 263657

@@ -1,0 +1,13 @@
+PN: qtgraphicaleffects
+PV: 5.9.6+gitAUTOINC+f61dcaa5e5
+PR: r0
+PKGV: 5.9.6+git0+f61dcaa5e5
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtgraphicaleffects version 5.9.6+gitAUTOINC+f61dcaa5e5-r0.
+SUMMARY: qtgraphicaleffects version 5.9.6+gitAUTOINC+f61dcaa5e5-r0
+SECTION: base
+PKG_qtgraphicaleffects-plugins: qtgraphicaleffects-plugins
+FILES_qtgraphicaleffects-plugins:      /usr/lib/qt5/plugins/*/*.so     /usr/lib/qt5/plugins/*/*/*.so     /usr/lib/qt5/plugins/*/*/*/*.so 
+FILES_INFO: {}
+PKGSIZE_qtgraphicaleffects-plugins: 0

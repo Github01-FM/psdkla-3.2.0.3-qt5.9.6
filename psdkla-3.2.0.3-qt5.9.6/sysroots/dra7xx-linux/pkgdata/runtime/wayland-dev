@@ -1,0 +1,20 @@
+PN: wayland
+PV: 1.14.0
+PR: r0
+PKGV: 1.14.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_wayland-dev: Wayland is a protocol for a compositor to talk to its clients as well as a C library implementation of that protocol. The compositor can be a standalone display server running on Linux kernel modesetting and evdev input devices, an X application, or a wayland client itself. The clients can be traditional applications, X servers (rootless or fullscreen) or other display servers.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_wayland-dev: Wayland, a protocol between a compositor and clients - Development files
+RDEPENDS_wayland-dev: wayland (= 1.14.0-r0.0) expat (>= 2.1.0) zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21) libxml2 (>= 2.9.4)
+RRECOMMENDS_wayland-dev: external-linaro-toolchain-dev zlib-dev expat-dev libffi-dev libxml2-dev
+SECTION_wayland-dev: devel
+PKG_wayland-dev: wayland-dev
+ALLOW_EMPTY_wayland-dev: 1
+FILES_wayland-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/wayland/*.la /lib/*.la /usr/bin /usr/share/wayland
+FILERPROVIDESFLIST_wayland-dev: /usr/bin/wayland-scanner
+FILES_INFO: {"/usr/include/wayland-server-protocol.h": 138870, "/usr/lib/pkgconfig/wayland-cursor.pc": 209, "/usr/bin/wayland-scanner": 30664, "/usr/share/wayland/wayland.xml": 124289, "/usr/lib/libwayland-cursor.so": 26, "/usr/lib/libwayland-cursor.la": 1157, "/usr/include/wayland-version.h": 1354, "/usr/share/aclocal/wayland-scanner.m4": 418, "/usr/lib/pkgconfig/wayland-scanner.pc": 187, "/usr/lib/libwayland-client.la": 1126, "/usr/include/wayland-cursor.h": 2243, "/usr/lib/libwayland-client.so": 26, "/usr/lib/libwayland-server.so": 26, "/usr/include/wayland-util.h": 23111, "/usr/include/wayland-server.h": 2929, "/usr/include/wayland-egl.h": 1313, "/usr/share/wayland/wayland.dtd": 1266, "/usr/share/wayland/wayland-scanner.mk": 304, "/usr/lib/pkgconfig/wayland-client.pc": 281, "/usr/include/wayland-client-core.h": 8615, "/usr/lib/pkgconfig/wayland-server.pc": 288, "/usr/include/wayland-server-core.h": 16231, "/usr/include/wayland-egl-core.h": 1788, "/usr/include/wayland-client.h": 1573, "/usr/lib/libwayland-server.la": 1126, "/usr/include/wayland-client-protocol.h": 177539}
+FILERPROVIDES_/usr/bin/wayland-scanner_wayland-dev: elf(buildid) (= 0764b475513311ceddbb3fc74e669b87920ce235)
+FILERDEPENDSFLIST_wayland-dev: /usr/bin/wayland-scanner
+FILERDEPENDS_/usr/bin/wayland-scanner_wayland-dev: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libexpat.so.1 libm.so.6 libxml2.so.2 libxml2.so.2(LIBXML2_2.4.30) libxml2.so.2(LIBXML2_2.5.8) libxml2.so.2(LIBXML2_2.6.0) libz.so.1 rtld(GNU_HASH)
+PKGSIZE_wayland-dev: 536959

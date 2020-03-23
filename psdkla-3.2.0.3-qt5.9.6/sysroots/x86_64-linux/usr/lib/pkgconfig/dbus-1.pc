@@ -1,0 +1,20 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+bindir=${STAGING_DIR_NATIVE}/usr/bin
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+system_bus_default_address=unix:path=${STAGING_DIR_NATIVE}/var/run/dbus/system_bus_socket
+datarootdir=${prefix}/share
+datadir=${STAGING_DIR_NATIVE}/usr/share
+sysconfdir=${STAGING_DIR_NATIVE}/etc
+session_bus_services_dir=${datadir}/dbus-1/services
+system_bus_services_dir=${datadir}/dbus-1/system-services
+interfaces_dir=${datadir}/dbus-1/interfaces
+daemondir=$bindir
+
+Name: dbus
+Description: Free desktop message bus
+Version: 1.10.20
+Libs: -L${libdir} -ldbus-1
+Libs.private: -lpthread    
+Cflags: -I${includedir}/dbus-1.0 -I${libdir}/dbus-1.0/include 

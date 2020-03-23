@@ -1,0 +1,2 @@
+CATALOG ${STAGING_DIR_NATIVE}/etc/sgml/sgml-ent.cat
+CATALOG ${STAGING_DIR_NATIVE}/etc/sgml/sgml-docbook-dtd-4.1.cat

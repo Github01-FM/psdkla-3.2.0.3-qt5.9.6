@@ -1,0 +1,13 @@
+PN: qtbase-conf
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_qtbase-conf-doc: qtbase configuration files.  This package contains documentation.
+SUMMARY_qtbase-conf-doc: qtbase configuration files - Documentation files
+SECTION_qtbase-conf-doc: doc
+PKG_qtbase-conf-doc: qtbase-conf-doc
+FILES_qtbase-conf-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_qtbase-conf-doc: 0

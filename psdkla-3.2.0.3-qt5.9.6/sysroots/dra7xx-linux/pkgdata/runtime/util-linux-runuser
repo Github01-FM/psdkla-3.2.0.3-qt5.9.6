@@ -1,0 +1,18 @@
+PN: util-linux
+PV: 2.27.1
+PR: r0
+PKGV: 2.27.1
+PKGR: r0.0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux-runuser: external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+SECTION: base
+PKG_util-linux-runuser: util-linux-runuser
+FILES_util-linux-runuser: /usr/sbin/runuser
+FILERPROVIDESFLIST_util-linux-runuser: /usr/sbin/runuser
+FILES_INFO: {"/usr/sbin/runuser": 21232}
+FILERPROVIDES_/usr/sbin/runuser_util-linux-runuser: elf(buildid) (= 5d116ce2ae8f8eb2a9eb95b9751b107c98f8a3af)
+FILERDEPENDSFLIST_util-linux-runuser: /usr/sbin/runuser
+FILERDEPENDS_/usr/sbin/runuser_util-linux-runuser: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam_misc.so.0 libpam_misc.so.0(LIBPAM_MISC_1.0) rtld(GNU_HASH)
+PKGSIZE_util-linux-runuser: 21232

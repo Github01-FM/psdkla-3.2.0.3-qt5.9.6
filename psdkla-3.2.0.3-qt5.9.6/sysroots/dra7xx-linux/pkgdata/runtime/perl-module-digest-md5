@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0.0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-digest-md5: perl module digest-md5
+SUMMARY_perl-module-digest-md5: perl module digest-md5
+RDEPENDS_perl-module-digest-md5: perl-module-digest-base perl-module-vars perl perl-module-exporter external-linaro-toolchain (>= 2.21) perl-module-strict perl-module-xsloader
+SECTION: devel
+PKG_perl-module-digest-md5: perl-module-digest-md5
+FILES_perl-module-digest-md5: /usr/lib/perl/5.22.1/auto/Digest/MD5/MD5.so /usr/lib/perl/5.22.1/Digest/MD5.pm
+FILERPROVIDESFLIST_perl-module-digest-md5: /usr/lib/perl/5.22.1/auto/Digest/MD5/MD5.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/Digest/MD5.pm": 10941, "/usr/lib/perl/5.22.1/auto/Digest/MD5/MD5.so": 13180}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/Digest/MD5/MD5.so_perl-module-digest-md5: MD5.so elf(buildid) (= e86f59ddd2765a55475e4082dfd12c3ef94a6cd6)
+FILERDEPENDSFLIST_perl-module-digest-md5: /usr/lib/perl/5.22.1/auto/Digest/MD5/MD5.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/Digest/MD5/MD5.so_perl-module-digest-md5: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_perl-module-digest-md5: 24121

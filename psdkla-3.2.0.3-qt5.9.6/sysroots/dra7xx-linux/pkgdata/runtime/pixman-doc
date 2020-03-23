@@ -1,0 +1,16 @@
+PN: pixman
+PE: 1
+PV: 0.32.8
+PR: r0
+PKGE: 1
+PKGV: 0.32.8
+PKGR: r0.0
+LICENSE: MIT & MIT-style & PD
+DESCRIPTION_pixman-doc: Pixman provides a library for manipulating pixel regions -- a set of Y-X banded rectangles, image compositing using the Porter/Duff model and implicit mask generation for geometric primitives including trapezoids, triangles, and rectangles.  This package contains documentation.
+SUMMARY_pixman-doc: Pixman: Pixel Manipulation library - Documentation files
+RPROVIDES_pixman-doc:  pixman-doc (=0.32.8)
+SECTION_pixman-doc: doc
+PKG_pixman-doc: libpixman-1-doc
+FILES_pixman-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_pixman-doc: 0

@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.11.0
+Libs: -L${libdir} -lsqlite3
+Libs.private: -ldl -lpthread 
+Cflags: -I${includedir}

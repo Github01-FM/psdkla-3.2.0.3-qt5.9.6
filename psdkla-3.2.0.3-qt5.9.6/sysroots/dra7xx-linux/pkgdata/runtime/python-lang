@@ -1,0 +1,34 @@
+PN: python
+PV: 2.7.11
+PR: r1
+PKGV: 2.7.11
+PKGR: r1.0
+LICENSE: PSFv2
+DESCRIPTION: The Python Programming Language.
+SUMMARY_python-lang: Python low-level language support
+RDEPENDS_python-lang: python-core external-linaro-toolchain (>= 2.21) libpython2 (>= 2.7.11)
+SECTION: devel/python
+PKG_python-lang: python-lang
+FILES_python-lang: /usr/lib/python2.7/lib-dynload/_bisect.so /usr/lib/python2.7/lib-dynload/_collections.so /usr/lib/python2.7/lib-dynload/_heapq.so /usr/lib/python2.7/lib-dynload/_weakref.so /usr/lib/python2.7/lib-dynload/_functools.so /usr/lib/python2.7/lib-dynload/array.so /usr/lib/python2.7/lib-dynload/itertools.so /usr/lib/python2.7/lib-dynload/operator.so /usr/lib/python2.7/lib-dynload/parser.so /usr/lib/python2.7/atexit.* /usr/lib/python2.7/bisect.* /usr/lib/python2.7/code.* /usr/lib/python2.7/codeop.* /usr/lib/python2.7/collections.* /usr/lib/python2.7/dis.* /usr/lib/python2.7/functools.* /usr/lib/python2.7/heapq.* /usr/lib/python2.7/inspect.* /usr/lib/python2.7/keyword.* /usr/lib/python2.7/opcode.* /usr/lib/python2.7/symbol.* /usr/lib/python2.7/repr.* /usr/lib/python2.7/token.* /usr/lib/python2.7/tokenize.* /usr/lib/python2.7/traceback.* /usr/lib/python2.7/weakref.* 
+FILERPROVIDESFLIST_python-lang: /usr/lib/python2.7/lib-dynload/@underscore@heapq.so /usr/lib/python2.7/lib-dynload/array.so /usr/lib/python2.7/lib-dynload/@underscore@bisect.so /usr/lib/python2.7/lib-dynload/operator.so /usr/lib/python2.7/lib-dynload/parser.so /usr/lib/python2.7/lib-dynload/@underscore@collections.so /usr/lib/python2.7/lib-dynload/@underscore@functools.so /usr/lib/python2.7/lib-dynload/itertools.so
+FILES_INFO: {"/usr/lib/python2.7/code.py": 10189, "/usr/lib/python2.7/heapq.pyc": 14529, "/usr/lib/python2.7/tokenize.pyc": 14473, "/usr/lib/python2.7/traceback.pyc": 11639, "/usr/lib/python2.7/atexit.pyc": 2191, "/usr/lib/python2.7/dis.py": 6499, "/usr/lib/python2.7/codeop.py": 5999, "/usr/lib/python2.7/lib-dynload/_collections.so": 29464, "/usr/lib/python2.7/lib-dynload/_functools.so": 9172, "/usr/lib/python2.7/dis.pyc": 6212, "/usr/lib/python2.7/lib-dynload/array.so": 37636, "/usr/lib/python2.7/repr.pyc": 5351, "/usr/lib/python2.7/code.pyc": 10302, "/usr/lib/python2.7/tokenize.py": 17483, "/usr/lib/python2.7/token.pyc": 3806, "/usr/lib/python2.7/lib-dynload/itertools.so": 45976, "/usr/lib/python2.7/weakref.py": 13600, "/usr/lib/python2.7/keyword.py": 1996, "/usr/lib/python2.7/collections.py": 27261, "/usr/lib/python2.7/lib-dynload/_bisect.so": 7788, "/usr/lib/python2.7/traceback.py": 11285, "/usr/lib/python2.7/atexit.py": 1705, "/usr/lib/python2.7/lib-dynload/operator.so": 27072, "/usr/lib/python2.7/heapq.py": 18296, "/usr/lib/python2.7/repr.py": 4296, "/usr/lib/python2.7/symbol.py": 2058, "/usr/lib/python2.7/inspect.pyc": 39909, "/usr/lib/python2.7/opcode.py": 5474, "/usr/lib/python2.7/symbol.pyc": 3022, "/usr/lib/python2.7/bisect.py": 2595, "/usr/lib/python2.7/opcode.pyc": 6137, "/usr/lib/python2.7/lib-dynload/_heapq.so": 17044, "/usr/lib/python2.7/functools.pyc": 6037, "/usr/lib/python2.7/inspect.py": 42611, "/usr/lib/python2.7/keyword.pyc": 2101, "/usr/lib/python2.7/weakref.pyc": 15741, "/usr/lib/python2.7/bisect.pyc": 3061, "/usr/lib/python2.7/collections.pyc": 25517, "/usr/lib/python2.7/codeop.pyc": 6577, "/usr/lib/python2.7/token.py": 2922, "/usr/lib/python2.7/lib-dynload/parser.so": 62492, "/usr/lib/python2.7/functools.py": 4478}
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/@underscore@heapq.so_python-lang: _heapq.so elf(buildid) (= 7416d2186b1eef764309d1f4d8fa74904ca1c127)
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/array.so_python-lang: array.so elf(buildid) (= dea2c00e0648efdaaa64b3f11a1ce07834b7d85a)
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/@underscore@bisect.so_python-lang: _bisect.so elf(buildid) (= 5eaffbe655417e554b3e50a99c49d423bd3eeb7c)
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/operator.so_python-lang: elf(buildid) (= dec24c45156d3b0d5f77e5318dfaccadcd83919c) operator.so
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/parser.so_python-lang: elf(buildid) (= 000c58cc9fee739b2e7d1e3ac85f35eaf4a618de) parser.so
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/@underscore@collections.so_python-lang: _collections.so elf(buildid) (= ae47a11b5da84c6566a89e9fa5daa35c4487a058)
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/@underscore@functools.so_python-lang: _functools.so elf(buildid) (= fa1c07902892aca79129f0f01a13bc29516abccc)
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/itertools.so_python-lang: elf(buildid) (= 372a50c5dcf66e7699f8a5cd9f707779dbb77ef2) itertools.so
+FILERDEPENDSFLIST_python-lang: /usr/lib/python2.7/keyword.py /usr/lib/python2.7/lib-dynload/@underscore@heapq.so /usr/lib/python2.7/lib-dynload/array.so /usr/lib/python2.7/lib-dynload/@underscore@bisect.so /usr/lib/python2.7/lib-dynload/operator.so /usr/lib/python2.7/lib-dynload/parser.so /usr/lib/python2.7/symbol.py /usr/lib/python2.7/lib-dynload/@underscore@collections.so /usr/lib/python2.7/lib-dynload/@underscore@functools.so /usr/lib/python2.7/lib-dynload/itertools.so
+FILERDEPENDS_/usr/lib/python2.7/keyword.py_python-lang: /usr/bin/env
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/@underscore@heapq.so_python-lang: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/array.so_python-lang: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/@underscore@bisect.so_python-lang: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/operator.so_python-lang: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/parser.so_python-lang: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/symbol.py_python-lang: /usr/bin/env
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/@underscore@collections.so_python-lang: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/@underscore@functools.so_python-lang: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/itertools.so_python-lang: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+PKGSIZE_python-lang: 591996

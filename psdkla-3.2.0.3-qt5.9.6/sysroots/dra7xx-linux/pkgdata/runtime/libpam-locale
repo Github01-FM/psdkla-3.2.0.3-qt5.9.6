@@ -1,0 +1,13 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users
+SUMMARY: Linux-PAM (Pluggable Authentication Modules)
+SECTION: base
+PKG_libpam-locale: libpam-locale
+FILES_libpam-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libpam-locale: 0

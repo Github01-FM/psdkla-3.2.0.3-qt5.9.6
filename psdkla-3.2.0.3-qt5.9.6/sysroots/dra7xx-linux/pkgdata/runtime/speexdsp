@@ -1,0 +1,21 @@
+PN: speexdsp
+PV: 1.2rc3
+PR: r0
+PKGV: 1.2rc3
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION: SpeexDSP is a patent-free, Open Source/Free Software DSP library.
+SUMMARY: A patent-free DSP library
+RDEPENDS_speexdsp: external-linaro-toolchain (>= 2.21)
+RPROVIDES_speexdsp:  speexdsp (=1.2rc3)
+RCONFLICTS_speexdsp: speex (< 1.2rc2)
+SECTION: libs
+PKG_speexdsp: libspeexdsp1
+FILES_speexdsp: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/speexdsp /usr/lib/speexdsp/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_speexdsp: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_speexdsp: /usr/lib/libspeexdsp.so.1.5.0
+FILES_INFO: {"/usr/lib/libspeexdsp.so.1": 20, "/usr/lib/libspeexdsp.so.1.5.0": 60584}
+FILERPROVIDES_/usr/lib/libspeexdsp.so.1.5.0_speexdsp: elf(buildid) (= 5075f9a12125f83d1e2bf0b89d18a9b8e83b0a72) libspeexdsp.so.1
+FILERDEPENDSFLIST_speexdsp: /usr/lib/libspeexdsp.so.1.5.0
+FILERDEPENDS_/usr/lib/libspeexdsp.so.1.5.0_speexdsp: libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 libm.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_speexdsp: 60604

@@ -1,0 +1,23 @@
+PN: harfbuzz
+PV: 0.9.35
+PR: r0
+PKGV: 0.9.35
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: HarfBuzz is an OpenType text shaping engine.
+SUMMARY: Text shaping library
+RDEPENDS_harfbuzz-bin: freetype (>= 2.6.3) zlib (>= 1.2.8) cairo (>= 1.14.6) expat (>= 2.1.0) harfbuzz (>= 0.9.35) glib-2.0 (>= 2.46.2) libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21) libpng (>= 1.6.21) libpcre (>= 8.38) fontconfig (>= 2.11.94) pixman (>= 0.32.8)
+RPROVIDES_harfbuzz-bin:  harfbuzz-bin (=0.9.35)
+SECTION: libs
+PKG_harfbuzz-bin: libharfbuzz-bin
+FILES_harfbuzz-bin: /usr/bin/* /usr/sbin/*
+FILERPROVIDESFLIST_harfbuzz-bin: /usr/bin/hb-view /usr/bin/hb-ot-shape-closure /usr/bin/hb-shape
+FILES_INFO: {"/usr/bin/hb-view": 39452, "/usr/bin/hb-ot-shape-closure": 23536, "/usr/bin/hb-shape": 23996}
+FILERPROVIDES_/usr/bin/hb-view_harfbuzz-bin: elf(buildid) (= c5a8bca402589fd7da2ff8a43eec3d360e050d8e)
+FILERPROVIDES_/usr/bin/hb-ot-shape-closure_harfbuzz-bin: elf(buildid) (= ea79916a288e220a2db1ecd11372d3c4c4b45810)
+FILERPROVIDES_/usr/bin/hb-shape_harfbuzz-bin: elf(buildid) (= a30e8d0e6d62cbc7885f7af520ad84b3582fd1a7)
+FILERDEPENDSFLIST_harfbuzz-bin: /usr/bin/hb-view /usr/bin/hb-ot-shape-closure /usr/bin/hb-shape
+FILERDEPENDS_/usr/bin/hb-view_harfbuzz-bin: libc.so.6 libc.so.6(GLIBC_2.4) libcairo.so.2 libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libglib-2.0.so.0 libharfbuzz.so.0 libm.so.6 libm.so.6(GLIBC_2.4) libpcre.so.1 libpixman-1.so.0 libpng16.so.16 libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 libstdc++.so.6 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/hb-ot-shape-closure_harfbuzz-bin: libc.so.6 libc.so.6(GLIBC_2.4) libfreetype.so.6 libgcc_s.so.1 libglib-2.0.so.0 libharfbuzz.so.0 libm.so.6 libpcre.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libstdc++.so.6 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/hb-shape_harfbuzz-bin: libc.so.6 libc.so.6(GLIBC_2.4) libfreetype.so.6 libgcc_s.so.1 libglib-2.0.so.0 libharfbuzz.so.0 libm.so.6 libpcre.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libstdc++.so.6 libz.so.1 rtld(GNU_HASH)
+PKGSIZE_harfbuzz-bin: 86984

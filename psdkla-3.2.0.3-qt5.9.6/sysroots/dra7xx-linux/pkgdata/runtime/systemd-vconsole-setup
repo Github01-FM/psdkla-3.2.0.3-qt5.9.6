@@ -1,0 +1,21 @@
+PN: systemd
+PE: 1
+PV: 229+gitAUTOINC+714c62b463
+PR: r0.arago3
+PKGE: 1
+PKGV: 229+git0+714c62b463
+PKGR: r0.arago3.0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION: systemd is a system and service manager for Linux, compatible with SysV and LSB init scripts. systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux cgroups, supports snapshotting and restoring of the system state, maintains mount and automount points and implements an elaborate transactional dependency-based service control logic. It can work as a drop-in replacement for sysvinit.
+SUMMARY: A System and service manager
+RDEPENDS_systemd-vconsole-setup: external-linaro-toolchain (>= 2.21)
+RRECOMMENDS_systemd-vconsole-setup: kbd kbd-consolefonts kbd-keymaps
+SECTION: base/shell
+PKG_systemd-vconsole-setup: systemd-vconsole-setup
+FILES_systemd-vconsole-setup: /lib/systemd/systemd-vconsole-setup                               /lib/systemd/system/systemd-vconsole-setup.service                               /lib/systemd/system/sysinit.target.wants/systemd-vconsole-setup.service
+FILERPROVIDESFLIST_systemd-vconsole-setup: /lib/systemd/systemd-vconsole-setup
+FILES_INFO: {"/lib/systemd/system/systemd-vconsole-setup.service": 613, "/lib/systemd/system/sysinit.target.wants/systemd-vconsole-setup.service": 33, "/lib/systemd/systemd-vconsole-setup": 34416}
+FILERPROVIDES_/lib/systemd/systemd-vconsole-setup_systemd-vconsole-setup: elf(buildid) (= 404277806cd0a464644b8b34ec6fdd97507281d1)
+FILERDEPENDSFLIST_systemd-vconsole-setup: /lib/systemd/systemd-vconsole-setup
+FILERDEPENDS_/lib/systemd/systemd-vconsole-setup_systemd-vconsole-setup: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_systemd-vconsole-setup: 35062

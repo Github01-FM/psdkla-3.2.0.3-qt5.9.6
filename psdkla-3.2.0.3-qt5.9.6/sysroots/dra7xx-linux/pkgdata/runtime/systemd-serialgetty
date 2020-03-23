@@ -1,0 +1,14 @@
+PN: systemd-serialgetty
+PV: 1.0
+PR: r5
+PKGV: 1.0
+PKGR: r5.0
+LICENSE: GPLv2+
+DESCRIPTION: Serial terminal support for systemd.
+SUMMARY: Serial terminal support for systemd
+RDEPENDS_systemd-serialgetty: systemd
+SECTION: base
+PKG_systemd-serialgetty: systemd-serialgetty
+FILES_systemd-serialgetty: /lib/systemd/system/*.service /etc
+FILES_INFO: {"/lib/systemd/system/serial-getty@.service": 1059, "/etc/systemd/system/getty.target.wants/serial-getty@ttyS2.service": 41}
+PKGSIZE_systemd-serialgetty: 1100

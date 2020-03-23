@@ -1,0 +1,11 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+toolexeclibdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${libdir}/libffi-3.2.1/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.2.1
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

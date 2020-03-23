@@ -1,0 +1,18 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-filter-upperlower: PAM filter for upperlower
+SUMMARY_pam-filter-upperlower: PAM filter for upperlower
+RDEPENDS_pam-filter-upperlower: external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+SECTION: base
+PKG_pam-filter-upperlower: pam-filter-upperlower
+FILES_pam-filter-upperlower: /lib/security/pam_filter/upperLOWER
+FILERPROVIDESFLIST_pam-filter-upperlower: /lib/security/pam@underscore@filter/upperLOWER
+FILES_INFO: {"/lib/security/pam_filter/upperLOWER": 4980}
+FILERPROVIDES_/lib/security/pam@underscore@filter/upperLOWER_pam-filter-upperlower: elf(buildid) (= 00bc700a80c42ef0feabc1b4f221d9217e3d9032)
+FILERDEPENDSFLIST_pam-filter-upperlower: /lib/security/pam@underscore@filter/upperLOWER
+FILERDEPENDS_/lib/security/pam@underscore@filter/upperLOWER_pam-filter-upperlower: libc.so.6 libc.so.6(GLIBC_2.4) libpam.so.0 libpam.so.0(LIBPAM_MODUTIL_1.0) rtld(GNU_HASH)
+PKGSIZE_pam-filter-upperlower: 4980

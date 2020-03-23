@@ -1,0 +1,26 @@
+PN: pango
+PV: 1.38.1
+PR: r0
+PKGV: 1.38.1
+PKGR: r0.0
+LICENSE: LGPLv2.0+
+DESCRIPTION: Pango is a library for laying out and rendering of text, with an emphasis on internationalization. Pango can be used anywhere that text layout is needed, though most of the work on Pango so far has been done in the context of the GTK+ widget toolkit. Pango forms the core of text and font handling for GTK+-2.x.
+SUMMARY: Framework for layout and rendering of internationalized text
+RDEPENDS_pango: freetype (>= 2.6.3) expat (>= 2.1.0) cairo (>= 1.14.6) zlib (>= 1.2.8) harfbuzz (>= 0.9.35) glib-2.0 (>= 2.46.2) libffi (>= 3.2.1) external-linaro-toolchain (>= 2.21) libpng (>= 1.6.21) libpcre (>= 8.38) fontconfig (>= 2.11.94) pixman (>= 0.32.8)
+RPROVIDES_pango:  pango-modules pango-module-indic-lang                     pango-module-basic-fc pango-module-arabic-lang
+SECTION: libs
+PKG_pango: pango
+FILES_pango: /usr/bin/* /usr/lib/libpango*.so.* /usr/lib/girepository-*/*.typelib
+pkg_postinst_pango: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_pango: /usr/bin/pango-view /usr/lib/libpango-1.0.so.0.3800.1 /usr/lib/libpangocairo-1.0.so.0.3800.1 /usr/lib/libpangoft2-1.0.so.0.3800.1
+FILES_INFO: {"/usr/lib/libpangocairo-1.0.so.0.3800.1": 32284, "/usr/lib/libpangoft2-1.0.so.0": 27, "/usr/lib/girepository-1.0/Pango-1.0.typelib": 60820, "/usr/lib/libpangoft2-1.0.so.0.3800.1": 60336, "/usr/lib/libpango-1.0.so.0.3800.1": 220456, "/usr/lib/libpango-1.0.so.0": 24, "/usr/lib/libpangocairo-1.0.so.0": 29, "/usr/bin/pango-view": 31268, "/usr/lib/girepository-1.0/PangoFT2-1.0.typelib": 2720, "/usr/lib/girepository-1.0/PangoCairo-1.0.typelib": 4836}
+FILERPROVIDES_/usr/bin/pango-view_pango: elf(buildid) (= 98d4c17eff5dcad7b705b5abd4c88abab04fbe44)
+FILERPROVIDES_/usr/lib/libpango-1.0.so.0.3800.1_pango: elf(buildid) (= 0de360d6430278c58c08de460db1adee87c36ad4) libpango-1.0.so.0
+FILERPROVIDES_/usr/lib/libpangocairo-1.0.so.0.3800.1_pango: elf(buildid) (= 903fb2ee00329bec15b5b42c357891a30faa0184) libpangocairo-1.0.so.0
+FILERPROVIDES_/usr/lib/libpangoft2-1.0.so.0.3800.1_pango: elf(buildid) (= 3bb0be484fab4770f6ef6c048076f44f84a0b7e2) libpangoft2-1.0.so.0
+FILERDEPENDSFLIST_pango: /usr/bin/pango-view /usr/lib/libpango-1.0.so.0.3800.1 /usr/lib/libpangocairo-1.0.so.0.3800.1 /usr/lib/libpangoft2-1.0.so.0.3800.1
+FILERDEPENDS_/usr/bin/pango-view_pango: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libcairo.so.2 libexpat.so.1 libffi.so.6 libfontconfig.so.1 libfreetype.so.6 libglib-2.0.so.0 libgobject-2.0.so.0 libgthread-2.0.so.0 libharfbuzz.so.0 libm.so.6 libpango-1.0.so.0 libpangocairo-1.0.so.0 libpangoft2-1.0.so.0 libpcre.so.1 libpixman-1.so.0 libpng16.so.16 libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libpango-1.0.so.0.3800.1_pango: libc.so.6 libc.so.6(GLIBC_2.4) libffi.so.6 libglib-2.0.so.0 libgobject-2.0.so.0 libgthread-2.0.so.0 libm.so.6 libm.so.6(GLIBC_2.4) libpcre.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libpangocairo-1.0.so.0.3800.1_pango: libc.so.6 libc.so.6(GLIBC_2.4) libcairo.so.2 libexpat.so.1 libffi.so.6 libfontconfig.so.1 libfreetype.so.6 libglib-2.0.so.0 libgobject-2.0.so.0 libgthread-2.0.so.0 libharfbuzz.so.0 libm.so.6 libm.so.6(GLIBC_2.4) libpango-1.0.so.0 libpangoft2-1.0.so.0 libpcre.so.1 libpixman-1.so.0 libpng16.so.16 libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libpangoft2-1.0.so.0.3800.1_pango: libc.so.6 libc.so.6(GLIBC_2.4) libexpat.so.1 libffi.so.6 libfontconfig.so.1 libfreetype.so.6 libglib-2.0.so.0 libgobject-2.0.so.0 libgthread-2.0.so.0 libharfbuzz.so.0 libm.so.6 libm.so.6(GLIBC_2.4) libpango-1.0.so.0 libpcre.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libz.so.1 rtld(GNU_HASH)
+PKGSIZE_pango: 412800

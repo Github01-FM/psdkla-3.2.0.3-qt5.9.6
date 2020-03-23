@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0.0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-socket: perl module socket
+SUMMARY_perl-module-socket: perl module socket
+RDEPENDS_perl-module-socket: perl-module-carp perl-module-warnings-register perl-module-xsloader perl-module-scalar-util perl-module-exporter external-linaro-toolchain (>= 2.21) perl-module-strict perl
+SECTION: devel
+PKG_perl-module-socket: perl-module-socket
+FILES_perl-module-socket: /usr/lib/perl/5.22.1/auto/Socket/Socket.so /usr/lib/perl/5.22.1/Socket.pm
+FILERPROVIDESFLIST_perl-module-socket: /usr/lib/perl/5.22.1/auto/Socket/Socket.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/auto/Socket/Socket.so": 29016, "/usr/lib/perl/5.22.1/Socket.pm": 36343}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/Socket/Socket.so_perl-module-socket: Socket.so elf(buildid) (= 111e0aaf91e44043ba9ade5df06d5bdd7416231c)
+FILERDEPENDSFLIST_perl-module-socket: /usr/lib/perl/5.22.1/auto/Socket/Socket.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/Socket/Socket.so_perl-module-socket: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_perl-module-socket: 65359

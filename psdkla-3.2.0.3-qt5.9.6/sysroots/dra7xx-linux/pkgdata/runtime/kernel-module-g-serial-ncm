@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-g-serial-ncm: g-serial-ncm kernel module; Gadget Serial&Ncm v0.2
+SUMMARY_kernel-module-g-serial-ncm: g-serial-ncm kernel module
+RDEPENDS_kernel-module-g-serial-ncm: kernel-module-u-ether kernel-module-libcomposite kernel-4.4.45+ kernel-module-udc-core
+SECTION: kernel
+PKG_kernel-module-g-serial-ncm: kernel-module-g-serial-ncm
+FILES_kernel-module-g-serial-ncm: /lib/modules/4.4.45+/kernel/drivers/usb/gadget/legacy/g_serial_ncm.ko /etc/modules-load.d/g_serial_ncm.conf /etc/modprobe.d/g_serial_ncm.conf
+pkg_postinst_kernel-module-g-serial-ncm: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-g-serial-ncm: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/drivers/usb/gadget/legacy/g_serial_ncm.ko": 10044}
+PKGSIZE_kernel-module-g-serial-ncm: 10044

@@ -1,0 +1,41 @@
+PN: systemd
+PE: 1
+PV: 229+gitAUTOINC+714c62b463
+PR: r0.arago3
+PKGE: 1
+PKGV: 229+git0+714c62b463
+PKGR: r0.arago3.0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION: systemd is a system and service manager for Linux, compatible with SysV and LSB init scripts. systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux cgroups, supports snapshotting and restoring of the system state, maintains mount and automount points and implements an elaborate transactional dependency-based service control logic. It can work as a drop-in replacement for sysvinit.
+SUMMARY: A System and service manager
+RDEPENDS_udev: util-linux-libblkid (>= 2.27.1) libacl (>= 2.2.52) external-linaro-toolchain (>= 2.21) libkmod (>= 22+git0+42f32b8ae4)
+RPROVIDES_udev: hotplug
+RRECOMMENDS_udev:  update-rc.d
+SECTION: base/shell
+PKG_udev: udev
+FILES_udev:  /sbin/udevd                /lib/systemd/systemd-udevd                /lib/udev/accelerometer                /lib/udev/ata_id                /lib/udev/cdrom_id                /lib/udev/collect                /lib/udev/findkeyboards                /lib/udev/keyboard-force-release.sh                /lib/udev/keymap                /lib/udev/mtd_probe                /lib/udev/scsi_id                /lib/udev/v4l_id                /lib/udev/keymaps                /lib/udev/rules.d/*.rules                /etc/udev                /etc/init.d/systemd-udevd                /lib/systemd/system/*udev*                /lib/systemd/system/*.wants/*udev*                /bin/udevadm                /usr/share/bash-completion/completions/udevadm               
+pkg_postinst_udev: #!/bin/sh\nif type update-rc.d >/dev/null 2>/dev/null; then\n\tif [ -n "$D" ]; then\n\t\tOPT="-r $D"\n\telse\n\t\tOPT="-s"\n\tfi\n\tupdate-rc.d $OPT systemd-udevd start 03 S .\nfi\n
+pkg_postrm_udev: #!/bin/sh\nif type update-rc.d >/dev/null 2>/dev/null; then\n\tif [ -n "$D" ]; then\n\t\tOPT="-f -r $D"\n\telse\n\t\tOPT="-f"\n\tfi\n\tupdate-rc.d $OPT systemd-udevd remove\nfi\n
+pkg_preinst_udev: #!/bin/sh\nif [ -z "$D" -a -f "/etc/init.d/systemd-udevd" ]; then\n\t/etc/init.d/systemd-udevd stop\nfi\nif type update-rc.d >/dev/null 2>/dev/null; then\n\tif [ -n "$D" ]; then\n\t\tOPT="-f -r $D"\n\telse\n\t\tOPT="-f"\n\tfi\n\tupdate-rc.d $OPT systemd-udevd remove\nfi\n
+pkg_prerm_udev: #!/bin/sh\nif [ -z "$D" ]; then\n\t/etc/init.d/systemd-udevd stop\nfi\n
+FILERPROVIDESFLIST_udev: /lib/udev/mtd@underscore@probe /lib/udev/ata@underscore@id /lib/udev/collect /lib/udev/scsi@underscore@id /lib/udev/cdrom@underscore@id /bin/udevadm /lib/udev/v4l@underscore@id /lib/systemd/systemd-udevd
+FILES_INFO: {"/lib/udev/rules.d/60-persistent-alsa.rules": 616, "/lib/systemd/system/initrd-udevadm-cleanup-db.service": 664, "/lib/udev/rules.d/60-drm.rules": 153, "/lib/udev/rules.d/71-seat.rules": 2710, "/lib/udev/rules.d/60-persistent-input.rules": 2620, "/lib/udev/rules.d/60-cdrom_id.rules": 910, "/lib/udev/rules.d/60-evdev.rules": 738, "/lib/systemd/system/sysinit.target.wants/systemd-udev-trigger.service": 31, "/etc/udev/scripts/usb1-rules.sh": 54, "/etc/udev/rules.d/local.rules": 1371, "/lib/udev/rules.d/64-btrfs.rules": 418, "/etc/udev/udev.conf": 49, "/lib/systemd/system/sockets.target.wants/systemd-udevd-kernel.socket": 30, "/lib/udev/rules.d/70-uaccess.rules": 2591, "/lib/udev/rules.d/90-vconsole.rules": 437, "/etc/init.d/systemd-udevd": 3183, "/lib/udev/rules.d/60-serial.rules": 1190, "/lib/udev/rules.d/78-sound-card.rules": 4505, "/lib/udev/rules.d/50-udev-default.rules": 3310, "/lib/udev/rules.d/75-probe_mtd.rules": 174, "/lib/systemd/system/systemd-udevd-kernel.socket": 570, "/lib/udev/mtd_probe": 5548, "/lib/udev/ata_id": 30244, "/usr/share/bash-completion/completions/udevadm": 3726, "/lib/systemd/systemd-udevd": 382676, "/lib/udev/rules.d/73-seat-late.rules": 596, "/lib/udev/rules.d/50-firmware.rules": 121, "/lib/udev/rules.d/60-persistent-storage-tape.rules": 1420, "/lib/udev/rules.d/80-net-setup-link.rules": 292, "/lib/udev/rules.d/99-systemd.rules": 3851, "/lib/udev/v4l_id": 9696, "/lib/udev/scsi_id": 43048, "/lib/systemd/system/sysinit.target.wants/systemd-udevd.service": 24, "/etc/udev/rules.d/touchscreen.rules": 855, "/lib/udev/collect": 17896, "/lib/udev/rules.d/60-persistent-storage.rules": 4907, "/sbin/udevd": 26, "/lib/udev/rules.d/70-mouse.rules": 734, "/lib/systemd/system/sockets.target.wants/systemd-udevd-control.socket": 31, "/lib/udev/rules.d/60-persistent-v4l.rules": 769, "/etc/udev/scripts/usb2-rules.sh": 56, "/lib/udev/rules.d/60-block.rules": 606, "/lib/systemd/system/systemd-udevd-control.socket": 578, "/lib/udev/rules.d/70-power-switch.rules": 942, "/bin/udevadm": 370352, "/lib/udev/rules.d/80-drivers.rules": 618, "/lib/udev/rules.d/75-net-description.rules": 452, "/lib/systemd/system/systemd-udevd.service": 842, "/lib/udev/cdrom_id": 46632}
+FILERPROVIDES_/lib/udev/mtd@underscore@probe_udev: elf(buildid) (= d79eafb30f0737b3edbd7d01954fb4099730f8de)
+FILERPROVIDES_/lib/udev/ata@underscore@id_udev: elf(buildid) (= ae1316ef4e6d494f0a2a357cbe3aad7d1d573df9)
+FILERPROVIDES_/lib/udev/collect_udev: elf(buildid) (= 439996d20254ec6eaa4523b683bee90f7ebcc6bd)
+FILERPROVIDES_/lib/udev/scsi@underscore@id_udev: elf(buildid) (= 39937110e9384bb067791e411f7970685a383a4a)
+FILERPROVIDES_/lib/udev/cdrom@underscore@id_udev: elf(buildid) (= c566cb1cc8be7037ae4fa9ec95f8f77ec0de9915)
+FILERPROVIDES_/bin/udevadm_udev: elf(buildid) (= c05c14a6fef4d4990ffae991a837d88326596ed4)
+FILERPROVIDES_/lib/udev/v4l@underscore@id_udev: elf(buildid) (= 7153084acc7fd42e091105285bad8e3aea6e57b9)
+FILERPROVIDES_/lib/systemd/systemd-udevd_udev: elf(buildid) (= aa78e017fd978ebf6c49f203198b5eae21a0d14d)
+FILERDEPENDSFLIST_udev: /etc/init.d/systemd-udevd /lib/udev/mtd@underscore@probe /lib/udev/ata@underscore@id /lib/udev/collect /lib/udev/scsi@underscore@id /lib/udev/cdrom@underscore@id /bin/udevadm /lib/udev/v4l@underscore@id /lib/systemd/systemd-udevd
+FILERDEPENDS_/etc/init.d/systemd-udevd_udev: /bin/sh
+FILERDEPENDS_/lib/udev/mtd@underscore@probe_udev: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/udev/ata@underscore@id_udev: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/udev/collect_udev: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/udev/scsi@underscore@id_udev: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/udev/cdrom@underscore@id_udev: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/bin/udevadm_udev: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libacl.so.1 libacl.so.1(ACL_1.0) libblkid.so.1 libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libblkid.so.1(BLKID_2.18) libc.so.6 libc.so.6(GLIBC_2.14) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.9) libkmod.so.2 libkmod.so.2(LIBKMOD_5) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/udev/v4l@underscore@id_udev: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/systemd/systemd-udevd_udev: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libacl.so.1 libacl.so.1(ACL_1.0) libblkid.so.1 libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libblkid.so.1(BLKID_2.18) libc.so.6 libc.so.6(GLIBC_2.10) libc.so.6(GLIBC_2.14) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.9) libkmod.so.2 libkmod.so.2(LIBKMOD_5) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_udev: 953862

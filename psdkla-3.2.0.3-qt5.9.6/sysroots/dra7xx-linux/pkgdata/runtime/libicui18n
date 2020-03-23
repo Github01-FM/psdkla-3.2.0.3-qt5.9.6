@@ -1,0 +1,20 @@
+PN: icu
+PV: 56.1
+PR: r0
+PKGV: 56.1
+PKGR: r0.0
+LICENSE: ICU
+DESCRIPTION: The International Component for Unicode (ICU) is a mature, portable set of C/C++ and Java libraries for Unicode support, software internationalization (I18N) and globalization (G11N), giving applications the same results on all platforms.
+SUMMARY: International Component for Unicode libraries
+RDEPENDS_libicui18n: libstdc++ (>= 5.3.1) libicudata (>= 56.1) libgcc (>= 5.3.1) libicuuc (>= 56.1) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libicui18n:  libicui18n (=56.1)
+SECTION: base
+PKG_libicui18n: libicui18n56
+FILES_libicui18n: /usr/lib/libicui18n.so.*
+pkg_postinst_libicui18n: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libicui18n: /usr/lib/libicui18n.so.56.1
+FILES_INFO: {"/usr/lib/libicui18n.so.56.1": 2030200, "/usr/lib/libicui18n.so.56": 18}
+FILERPROVIDES_/usr/lib/libicui18n.so.56.1_libicui18n: elf(buildid) (= 5d71abc0116fe78707e9f13ff86f345db5fd1067) libicui18n.so.56
+FILERDEPENDSFLIST_libicui18n: /usr/lib/libicui18n.so.56.1
+FILERDEPENDS_/usr/lib/libicui18n.so.56.1_libicui18n: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicuuc.so.56 libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+PKGSIZE_libicui18n: 2030218

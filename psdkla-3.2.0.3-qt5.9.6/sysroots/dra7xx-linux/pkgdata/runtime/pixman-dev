@@ -1,0 +1,19 @@
+PN: pixman
+PE: 1
+PV: 0.32.8
+PR: r0
+PKGE: 1
+PKGV: 0.32.8
+PKGR: r0.0
+LICENSE: MIT & MIT-style & PD
+DESCRIPTION_pixman-dev: Pixman provides a library for manipulating pixel regions -- a set of Y-X banded rectangles, image compositing using the Porter/Duff model and implicit mask generation for geometric primitives including trapezoids, triangles, and rectangles.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_pixman-dev: Pixman: Pixel Manipulation library - Development files
+RDEPENDS_pixman-dev: pixman (= 1:0.32.8-r0.0)
+RPROVIDES_pixman-dev:  pixman-dev (=0.32.8)
+RRECOMMENDS_pixman-dev: external-linaro-toolchain-dev zlib-dev libpng-dev util-macros-dev
+SECTION_pixman-dev: devel
+PKG_pixman-dev: libpixman-1-dev
+ALLOW_EMPTY_pixman-dev: 1
+FILES_pixman-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/pixman/*.la /lib/*.la
+FILES_INFO: {"/usr/lib/libpixman-1.la": 1062, "/usr/lib/libpixman-1.so": 21, "/usr/include/pixman-1/pixman-version.h": 1739, "/usr/include/pixman-1/pixman.h": 44756, "/usr/lib/pkgconfig/pixman-1.pc": 206}
+PKGSIZE_pixman-dev: 47784

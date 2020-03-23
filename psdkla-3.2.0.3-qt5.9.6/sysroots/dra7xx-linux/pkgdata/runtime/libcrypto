@@ -1,0 +1,21 @@
+PN: openssl
+PV: 1.0.2h
+PR: r0.arago0
+PKGV: 1.0.2h
+PKGR: r0.arago0.0
+LICENSE: openssl
+DESCRIPTION: Secure Socket Layer (SSL) binary and related cryptographic tools.
+SUMMARY: Secure Socket Layer
+RDEPENDS_libcrypto: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libcrypto:  libcrypto (=1.0.2h)
+RRECOMMENDS_libcrypto:  openssl-conf
+SECTION: libs/network
+PKG_libcrypto: libcrypto1.0.0
+FILES_libcrypto: /usr/lib/libcrypto.so.*
+pkg_postinst_libcrypto: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libcrypto: /usr/lib/libcrypto.so.1.0.0
+FILES_INFO: {"/usr/lib/libcrypto.so.1.0.0": 1457776}
+FILERPROVIDES_/usr/lib/libcrypto.so.1.0.0_libcrypto: elf(buildid) (= aba10de6ab70fc04e7bbb216ead210bf2baca4f6) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) libcrypto.so.1.0.0(OPENSSL_1.0.2g)
+FILERDEPENDSFLIST_libcrypto: /usr/lib/libcrypto.so.1.0.0
+FILERDEPENDS_/usr/lib/libcrypto.so.1.0.0_libcrypto: libc.so.6 libc.so.6(GLIBC_2.16) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libdl.so.2 libdl.so.2(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libcrypto: 1457776

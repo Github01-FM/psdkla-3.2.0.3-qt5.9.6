@@ -1,0 +1,15 @@
+PN: qtbase-conf
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_qtbase-conf-dev: qtbase configuration files.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_qtbase-conf-dev: qtbase configuration files - Development files
+RDEPENDS_qtbase-conf-dev: qtbase-conf (= 1.0-r0.0)
+SECTION_qtbase-conf-dev: devel
+PKG_qtbase-conf-dev: qtbase-conf-dev
+ALLOW_EMPTY_qtbase-conf-dev: 1
+FILES_qtbase-conf-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/qtbase-conf/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_qtbase-conf-dev: 0

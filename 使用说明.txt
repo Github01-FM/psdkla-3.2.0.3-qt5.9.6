@@ -1,0 +1,6 @@
+
+1. 编译
+cd psdkla-3.2.0.3-qt5.9.6
+./build.sh
+
+具体使用参考psdkla-3.2.0.3-qt5.9.6/README。

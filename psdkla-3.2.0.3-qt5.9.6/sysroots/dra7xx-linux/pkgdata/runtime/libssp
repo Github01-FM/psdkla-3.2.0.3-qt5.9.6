@@ -1,0 +1,20 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_libssp: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libssp:  libssp (=2.21)
+SECTION: base
+PKG_libssp: libssp0
+FILES_libssp: /lib/libssp.so.*
+pkg_postinst_libssp: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libssp: /lib/libssp.so.0.0.0
+FILES_INFO: {"/lib/libssp.so.0": 15, "/lib/libssp.so.0.0.0": 39560}
+FILERPROVIDES_/lib/libssp.so.0.0.0_libssp: elf(buildid) (= 337777a1253d9c95202c894a51abacce77b52c29) libssp.so.0 libssp.so.0(LIBSSP_1.0)
+FILERDEPENDSFLIST_libssp: /lib/libssp.so.0.0.0
+FILERDEPENDS_/lib/libssp.so.0.0.0_libssp: libc.so.6 libc.so.6(GLIBC_2.4)
+PKGSIZE_libssp: 39575

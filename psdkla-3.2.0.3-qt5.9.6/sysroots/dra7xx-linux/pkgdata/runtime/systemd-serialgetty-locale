@@ -1,0 +1,13 @@
+PN: systemd-serialgetty
+PV: 1.0
+PR: r5
+PKGV: 1.0
+PKGR: r5.0
+LICENSE: GPLv2+
+DESCRIPTION: Serial terminal support for systemd.
+SUMMARY: Serial terminal support for systemd
+SECTION: base
+PKG_systemd-serialgetty-locale: systemd-serialgetty-locale
+FILES_systemd-serialgetty-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_systemd-serialgetty-locale: 0

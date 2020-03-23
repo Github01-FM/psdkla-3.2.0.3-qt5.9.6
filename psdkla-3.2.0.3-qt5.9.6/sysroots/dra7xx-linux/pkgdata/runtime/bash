@@ -1,0 +1,22 @@
+PN: bash
+PV: 3.2.48
+PR: r11.arago0
+PKGV: 3.2.48
+PKGR: r11.arago0.0
+LICENSE: GPLv2+
+DESCRIPTION: An sh-compatible command language interpreter.
+SUMMARY: An sh-compatible command language interpreter
+RDEPENDS_bash: update-alternatives-opkg ncurses-libtinfo (>= 6.0+20160213) external-linaro-toolchain (>= 2.21) base-files
+SECTION: base/shell
+PKG_bash: bash
+FILES_bash: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/bash /usr/lib/bash/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_bash: \tgrep -q "^/bin/bash$" $D/etc/shells || echo /bin/bash >> $D/etc/shells\n\tupdate-alternatives --install /bin/sh sh /bin/bash 100\n
+pkg_postrm_bash: \tprintf "$(grep -v "^/bin/bash$" $D/etc/shells)\\n" > $D/etc/shells\n
+pkg_prerm_bash: #!/bin/sh\n\tupdate-alternatives --remove  sh /bin/bash\n
+FILERPROVIDESFLIST_bash: /bin/bash
+FILES_INFO: {"/usr/bin/bashbug": 7677, "/bin/bash": 663188}
+FILERPROVIDES_/bin/bash_bash: elf(buildid) (= ece23560b1949c5621a9db1588e6d271718eea65) /bin/sh
+FILERDEPENDSFLIST_bash: /usr/bin/bashbug /bin/bash
+FILERDEPENDS_/usr/bin/bashbug_bash: /bin/sh
+FILERDEPENDS_/bin/bash_bash: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4) libtinfo.so.5 rtld(GNU_HASH)
+PKGSIZE_bash: 670865

@@ -1,0 +1,14 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RRECOMMENDS_libstdc++-precompile-dev: linux-libc-headers-dev
+SECTION: base
+PKG_libstdc++-precompile-dev: libstdc++-precompile-dev
+FILES_libstdc++-precompile-dev: /usr/include/c++/arm-linux-gnueabi/bits/*.gch
+FILES_INFO: {}
+PKGSIZE_libstdc++-precompile-dev: 0

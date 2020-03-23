@@ -1,0 +1,17 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users
+SUMMARY: Linux-PAM (Pluggable Authentication Modules)
+RDEPENDS_libpam-runtime: libpam-suffix pam-plugin-permit-suffix pam-plugin-unix-suffix pam-plugin-warn-suffix pam-plugin-deny-suffix
+RPROVIDES_libpam-runtime:  libpam-runtime-suffix
+SECTION: base
+PKG_libpam-runtime: libpam-runtime
+FILES_libpam-runtime: /etc
+FILES_INFO: {"/etc/security/time.conf": 2179, "/etc/pam.d/common-password": 1103, "/etc/security/group.conf": 3635, "/etc/pam.d/common-session-noninteractive": 818, "/etc/security/namespace.conf": 1440, "/etc/default/volatiles/99_pam": 40, "/etc/security/namespace.init": 1016, "/etc/pam.d/other": 816, "/etc/security/pam_env.conf": 2972, "/etc/security/limits.conf": 1835, "/etc/environment": 97, "/etc/pam.d/common-auth": 883, "/etc/pam.d/common-session": 851, "/etc/security/access.conf": 4620, "/etc/pam.d/common-account": 1208}
+FILERDEPENDSFLIST_libpam-runtime: /etc/security/namespace.init
+FILERDEPENDS_/etc/security/namespace.init_libpam-runtime: /bin/sh
+PKGSIZE_libpam-runtime: 23513

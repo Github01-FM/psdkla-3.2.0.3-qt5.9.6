@@ -1,0 +1,11 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: expat
+Version: 2.1.0
+Description: expat XML parser
+URL: http://www.libexpat.org
+Libs: -L${libdir} -lexpat
+Cflags: -I${includedir}

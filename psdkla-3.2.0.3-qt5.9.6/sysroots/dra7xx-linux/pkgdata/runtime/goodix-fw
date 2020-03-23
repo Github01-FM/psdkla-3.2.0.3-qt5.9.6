@@ -1,0 +1,13 @@
+PN: goodix-fw
+PV: 1.0.0.0
+PR: r0
+PKGV: 1.0.0.0
+PKGR: r0.0
+LICENSE: BSD-3-Clause
+DESCRIPTION: Goodix GT9271 config firmware
+SUMMARY: goodix-fw version 1.0.0.0-r0
+SECTION: base
+PKG_goodix-fw: goodix-fw
+FILES_goodix-fw: /lib/firmware
+FILES_INFO: {"/lib/firmware/goodix_9271_cfg.bin": 186}
+PKGSIZE_goodix-fw: 186

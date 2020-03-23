@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include/qt5
+
+host_bins=/usr/bin/qt5
+qt_config=shared release c++11 c++14 c++1z concurrent no-qml-debug reduce_exports stl no-widgets properties animation textcodec big_codecs clock-monotonic codecs textdate datestring doubleconversion eventfd filesystemiterator filesystemwatcher gestures itemmodel proxymodel identityproxymodel inotify library mimetype process statemachine regularexpression settings sharedmemory sortfilterproxymodel stringlistmodel systemsemaphore temporaryfile threadsafe-cloexec translation xmlstream xmlstreamreader xmlstreamwriter
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.9.6
+Libs: -L${libdir} -lQt5Core 
+Cflags: -I${includedir}/QtCore -I${includedir}
+

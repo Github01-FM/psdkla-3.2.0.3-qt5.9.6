@@ -1,0 +1,14 @@
+PN: qtdeclarative
+PV: 5.9.6+gitAUTOINC+283a900c4e
+PR: r0.tisdk0
+PKGV: 5.9.6+git0+283a900c4e
+PKGR: r0.tisdk0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0.
+SUMMARY: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0
+RRECOMMENDS_qtdeclarative-examples-dev: qtbase-dev qtxmlpatterns-dev
+SECTION: base
+PKG_qtdeclarative-examples-dev: qtdeclarative-examples-dev
+FILES_qtdeclarative-examples-dev:      /usr/share/qt5/examples/*.so     /usr/share/qt5/examples/*/*.so     /usr/share/qt5/examples/*/*/*.so     /usr/share/qt5/examples/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*/*/*.so 
+FILES_INFO: {}
+PKGSIZE_qtdeclarative-examples-dev: 0

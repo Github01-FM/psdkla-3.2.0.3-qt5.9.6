@@ -1,0 +1,23 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-unix: PAM plugin for -unix
+SUMMARY_pam-plugin-unix: PAM plugin for -unix
+RDEPENDS_pam-plugin-unix: libpam-suffix external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+RPROVIDES_pam-plugin-unix: pam-plugin-unix-suffix
+SECTION: base
+PKG_pam-plugin-unix: pam-plugin-unix
+FILES_pam-plugin-unix: /lib/security/pam_unix.so /usr/sbin/unix_chkpwd /usr/sbin/unix_update
+FILERPROVIDESFLIST_pam-plugin-unix: /usr/sbin/unix@underscore@chkpwd /lib/security/pam@underscore@unix.so /usr/sbin/unix@underscore@update
+FILES_INFO: {"/usr/sbin/unix_chkpwd": 23496, "/usr/sbin/unix_update": 23328, "/lib/security/pam_unix.so": 39604}
+FILERPROVIDES_/usr/sbin/unix@underscore@chkpwd_pam-plugin-unix: elf(buildid) (= f6a20168f1f60a732c7f16864ccd9e8d76def6cd)
+FILERPROVIDES_/lib/security/pam@underscore@unix.so_pam-plugin-unix: elf(buildid) (= 2d39b863f15a9059e0b09df787195df12782b2a1) pam_unix.so
+FILERPROVIDES_/usr/sbin/unix@underscore@update_pam-plugin-unix: elf(buildid) (= de976455d86da851c229524352577cee74657994)
+FILERDEPENDSFLIST_pam-plugin-unix: /usr/sbin/unix@underscore@chkpwd /lib/security/pam@underscore@unix.so /usr/sbin/unix@underscore@update
+FILERDEPENDS_/usr/sbin/unix@underscore@chkpwd_pam-plugin-unix: libc.so.6 libc.so.6(GLIBC_2.4) libcrypt.so.1 libcrypt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/security/pam@underscore@unix.so_pam-plugin-unix: libc.so.6 libc.so.6(GLIBC_2.4) libcrypt.so.1 libcrypt.so.1(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) libpam.so.0(LIBPAM_MODUTIL_1.1.9) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/unix@underscore@update_pam-plugin-unix: libc.so.6 libc.so.6(GLIBC_2.4) libcrypt.so.1 libcrypt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_pam-plugin-unix: 86428

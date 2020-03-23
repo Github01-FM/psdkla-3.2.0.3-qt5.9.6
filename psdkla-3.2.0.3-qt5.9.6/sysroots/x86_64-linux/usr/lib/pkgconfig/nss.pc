@@ -1,0 +1,11 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include/nss3
+
+Name: NSS
+Description: Network Security Services
+Version: 3.21
+Requires: nspr >= 4.9.2
+Libs: -lssl3 -lsmime3 -lnss3 -lsoftokn3 -lnssutil3
+Cflags: -I${STAGING_DIR_NATIVE}/usr/include/nss3

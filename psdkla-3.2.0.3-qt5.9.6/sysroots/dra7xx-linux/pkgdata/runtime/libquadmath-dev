@@ -1,0 +1,14 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY_libquadmath-dev: GNU quad-precision math library - development files
+RRECOMMENDS_libquadmath-dev: linux-libc-headers-dev
+SECTION: base
+PKG_libquadmath-dev: libquadmath-dev
+FILES_libquadmath-dev:     /lib/gcc/arm-linux-gnueabi/${BINV}/include/quadmath*     /lib/libquadmath*.so     /lib/libquadmath.la 
+FILES_INFO: {}
+PKGSIZE_libquadmath-dev: 0

@@ -1,0 +1,15 @@
+PN: qtwebsockets
+PV: 5.9.6+gitAUTOINC+3dc383a807
+PR: r0
+PKGV: 5.9.6+git0+3dc383a807
+PKGR: r0.0
+LICENSE: GFDL-1.3 & (GPL-3 | LGPL-3.0)
+DESCRIPTION: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0.
+SUMMARY: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0
+RPROVIDES_qtwebsockets-examples-dbg:  qtwebsockets-examples-dbg (=5.9.6+git0+3dc383a807)
+RRECOMMENDS_qtwebsockets-examples-dbg: qtbase-dbg qtwebsockets-dbg libstdc++-dbg qtdeclarative-dbg external-linaro-toolchain-dbg libgcc-dbg
+SECTION: base
+PKG_qtwebsockets-examples-dbg: libqt5websockets-examples-dbg
+FILES_qtwebsockets-examples-dbg:      /usr/share/qt5/examples/.debug     /usr/share/qt5/examples/*/.debug     /usr/share/qt5/examples/*/*/.debug     /usr/share/qt5/examples/*/*/*/.debug     /usr/share/qt5/examples/*/*/*/*/.debug     /usr/share/qt5/examples/*/*/*/*/*/.debug     /usr/share/qt5/examples/*/*/*/*/*/*/.debug     /usr/share/qt5/examples/*/*/*/*/*/*/*/.debug 
+FILES_INFO: {}
+PKGSIZE_qtwebsockets-examples-dbg: 0

@@ -1,0 +1,14 @@
+PN: qtimageformats
+PV: 5.9.6+gitAUTOINC+e9daef6d8f
+PR: r0
+PKGV: 5.9.6+git0+e9daef6d8f
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0.
+SUMMARY: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0
+RRECOMMENDS_qtimageformats-examples-dev: qtbase-dev tiff-dev
+SECTION: base
+PKG_qtimageformats-examples-dev: qtimageformats-examples-dev
+FILES_qtimageformats-examples-dev:      /usr/share/qt5/examples/*.so     /usr/share/qt5/examples/*/*.so     /usr/share/qt5/examples/*/*/*.so     /usr/share/qt5/examples/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*/*.so     /usr/share/qt5/examples/*/*/*/*/*/*/*/*.so 
+FILES_INFO: {}
+PKGSIZE_qtimageformats-examples-dev: 0

@@ -1,0 +1,20 @@
+PN: cairo
+PV: 1.14.6
+PR: r1
+PKGV: 1.14.6
+PKGR: r1.0
+LICENSE_cairo: MPL-1 & LGPLv2.1
+DESCRIPTION_cairo: Cairo is a multi-platform library providing anti-aliased vector-based rendering for multiple target backends. Paths consist of line segments and cubic splines and can be rendered at any width with various join and cap styles. All colors may be specified with optional translucence (opacity/alpha) and combined using the extended Porter/Duff compositing algebra as found in the X Render Extension.
+SUMMARY_cairo: The Cairo 2D vector graphics library
+RDEPENDS_cairo: freetype (>= 2.6.3) expat (>= 2.1.0) zlib (>= 1.2.8) fontconfig (>= 2.11.94) external-linaro-toolchain (>= 2.21) libpng (>= 1.6.21) pixman (>= 0.32.8)
+RPROVIDES_cairo:  cairo (=1.14.6)
+SECTION: libs
+PKG_cairo: libcairo2
+FILES_cairo: /usr/lib/libcairo.so.*
+pkg_postinst_cairo: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_cairo: /usr/lib/libcairo.so.2.11400.6
+FILES_INFO: {"/usr/lib/libcairo.so.2": 21, "/usr/lib/libcairo.so.2.11400.6": 747756}
+FILERPROVIDES_/usr/lib/libcairo.so.2.11400.6_cairo: elf(buildid) (= c98be9e702dabfdd4749ca56a561ced2850275eb) libcairo.so.2
+FILERDEPENDSFLIST_cairo: /usr/lib/libcairo.so.2.11400.6
+FILERDEPENDS_/usr/lib/libcairo.so.2.11400.6_cairo: libc.so.6 libc.so.6(GLIBC_2.11) libc.so.6(GLIBC_2.4) libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libm.so.6 libm.so.6(GLIBC_2.4) libpixman-1.so.0 libpng16.so.16 libpng16.so.16(PNG16_0) libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 librt.so.1(GLIBC_2.4) libz.so.1 rtld(GNU_HASH)
+PKGSIZE_cairo: 747777

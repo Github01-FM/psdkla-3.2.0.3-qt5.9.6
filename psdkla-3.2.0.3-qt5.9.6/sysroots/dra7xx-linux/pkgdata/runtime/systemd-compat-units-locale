@@ -1,0 +1,13 @@
+PN: systemd-compat-units
+PV: 1.0
+PR: r29
+PKGV: 1.0
+PKGR: r29.0
+LICENSE: MIT
+DESCRIPTION: Enhances systemd compatilibity with existing SysVinit scripts.
+SUMMARY: Enhances systemd compatilibity with existing SysVinit scripts
+SECTION: base
+PKG_systemd-compat-units-locale: systemd-compat-units-locale
+FILES_systemd-compat-units-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_systemd-compat-units-locale: 0

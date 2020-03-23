@@ -1,0 +1,26 @@
+PN: qtimageformats
+PV: 5.9.6+gitAUTOINC+e9daef6d8f
+PR: r0
+PKGV: 5.9.6+git0+e9daef6d8f
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0.
+SUMMARY: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0
+RDEPENDS_qtimageformats-plugins: tiff (>= 4.0.6) ti-sgx-ddk-um (>= 1.14.3699939) libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21) qtbase (>= 5.9.6+git0+9c50112304)
+SECTION: base
+PKG_qtimageformats-plugins: qtimageformats-plugins
+FILES_qtimageformats-plugins:      /usr/lib/qt5/plugins/*/*.so     /usr/lib/qt5/plugins/*/*/*.so     /usr/lib/qt5/plugins/*/*/*/*.so 
+FILERPROVIDESFLIST_qtimageformats-plugins: /usr/lib/qt5/plugins/imageformats/libqtga.so /usr/lib/qt5/plugins/imageformats/libqwbmp.so /usr/lib/qt5/plugins/imageformats/libqtiff.so /usr/lib/qt5/plugins/imageformats/libqicns.so /usr/lib/qt5/plugins/imageformats/libqwebp.so
+FILES_INFO: {"/usr/lib/qt5/plugins/imageformats/libqtga.so": 13568, "/usr/lib/qt5/plugins/imageformats/libqwbmp.so": 12692, "/usr/lib/qt5/plugins/imageformats/libqtiff.so": 23380, "/usr/lib/qt5/plugins/imageformats/libqicns.so": 31920, "/usr/lib/qt5/plugins/imageformats/libqwebp.so": 417500}
+FILERPROVIDES_/usr/lib/qt5/plugins/imageformats/libqtga.so_qtimageformats-plugins: elf(buildid) (= cfb57f6de8cf7d218013109cd37aee6c42ec78c6) libqtga.so
+FILERPROVIDES_/usr/lib/qt5/plugins/imageformats/libqwbmp.so_qtimageformats-plugins: elf(buildid) (= 5cab158f232db564aaf5345ab672c7a2787a1fae) libqwbmp.so
+FILERPROVIDES_/usr/lib/qt5/plugins/imageformats/libqtiff.so_qtimageformats-plugins: elf(buildid) (= a253eef7bc8e935ab431bd6b2f9e451adda2b6b6) libqtiff.so
+FILERPROVIDES_/usr/lib/qt5/plugins/imageformats/libqicns.so_qtimageformats-plugins: elf(buildid) (= 75542726e912e4ba976137fd8f735bf052ac3f26) libqicns.so
+FILERPROVIDES_/usr/lib/qt5/plugins/imageformats/libqwebp.so_qtimageformats-plugins: elf(buildid) (= f9d9226983c2c4ecdbd122fd276177b75be4c283) libqwebp.so
+FILERDEPENDSFLIST_qtimageformats-plugins: /usr/lib/qt5/plugins/imageformats/libqtga.so /usr/lib/qt5/plugins/imageformats/libqwbmp.so /usr/lib/qt5/plugins/imageformats/libqtiff.so /usr/lib/qt5/plugins/imageformats/libqicns.so /usr/lib/qt5/plugins/imageformats/libqwebp.so
+FILERDEPENDS_/usr/lib/qt5/plugins/imageformats/libqtga.so_qtimageformats-plugins: libGLESv2.so.2 libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Gui.so.5 libQt5Gui.so.5(Qt_5) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libm.so.6 libpthread.so.0 libsrv_um.so.1 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/qt5/plugins/imageformats/libqwbmp.so_qtimageformats-plugins: libGLESv2.so.2 libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Gui.so.5 libQt5Gui.so.5(Qt_5) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libm.so.6 libpthread.so.0 libsrv_um.so.1 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/qt5/plugins/imageformats/libqtiff.so_qtimageformats-plugins: libGLESv2.so.2 libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Gui.so.5 libQt5Gui.so.5(Qt_5) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libpthread.so.0 libsrv_um.so.1 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) libtiff.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/qt5/plugins/imageformats/libqicns.so_qtimageformats-plugins: libGLESv2.so.2 libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Gui.so.5 libQt5Gui.so.5(Qt_5) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libsrv_um.so.1 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/qt5/plugins/imageformats/libqwebp.so_qtimageformats-plugins: libGLESv2.so.2 libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Gui.so.5 libQt5Gui.so.5(Qt_5) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libsrv_um.so.1 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+PKGSIZE_qtimageformats-plugins: 499060

@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+
+Name: libxslt
+Version: 1.1.28
+Description: XSLT library version 2.
+Requires: libxml-2.0
+Libs: -lxslt -L${libdir} -lxslt -lxml2 -lm 
+Cflags: -I${includedir}

@@ -1,0 +1,13 @@
+PN: libwebp
+PV: 0.5.0
+PR: r0
+PKGV: 0.5.0
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_libwebp-gif2webp: Simple tool to convert animated GIFs to WebP
+SUMMARY: WebP is an image format designed for the Web
+SECTION: libs
+PKG_libwebp-gif2webp: libwebp-gif2webp
+FILES_libwebp-gif2webp: /usr/bin/gif2webp
+FILES_INFO: {}
+PKGSIZE_libwebp-gif2webp: 0

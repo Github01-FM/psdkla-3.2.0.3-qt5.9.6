@@ -1,0 +1,15 @@
+PN: libpng
+PV: 1.6.21
+PR: r0
+PKGV: 1.6.21
+PKGR: r0.0
+LICENSE: Libpng
+DESCRIPTION_libpng-staticdev: PNG image format decoding library.  This package contains static libraries for software development.
+SUMMARY_libpng-staticdev: PNG image format decoding library - Development files (Static Libraries)
+RDEPENDS_libpng-staticdev: libpng-dev (= 1.6.21-r0.0)
+RPROVIDES_libpng-staticdev:  libpng-staticdev (=1.6.21)
+SECTION_libpng-staticdev: devel
+PKG_libpng-staticdev: libpng16-staticdev
+FILES_libpng-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/libpng/*.a
+FILES_INFO: {"/usr/lib/libpng16.a": 1045532, "/usr/lib/libpng.a": 10}
+PKGSIZE_libpng-staticdev: 1045542

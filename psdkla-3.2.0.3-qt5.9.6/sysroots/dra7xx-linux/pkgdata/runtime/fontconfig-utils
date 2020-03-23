@@ -1,0 +1,35 @@
+PN: fontconfig
+PV: 2.11.94
+PR: r0
+PKGV: 2.11.94
+PKGR: r0.0
+LICENSE: MIT-style & MIT & PD
+DESCRIPTION: Fontconfig is a font configuration and customization library, which does not depend on the X Window System. It is designed to locate fonts within the system and select them according to requirements specified by applications. Fontconfig is not a rasterization library, nor does it impose a particular rasterization library on the application. The X-specific library \'Xft\' uses fontconfig along with freetype to specify and rasterize fonts.
+SUMMARY: Generic font configuration library
+RDEPENDS_fontconfig-utils: freetype (>= 2.6.3) zlib (>= 1.2.8) expat (>= 2.1.0) external-linaro-toolchain (>= 2.21) fontconfig (>= 2.11.94)
+RPROVIDES_fontconfig-utils: libfontconfig-utils
+RREPLACES_fontconfig-utils: libfontconfig-utils
+RCONFLICTS_fontconfig-utils: libfontconfig-utils
+SECTION: libs
+PKG_fontconfig-utils: fontconfig-utils
+FILES_fontconfig-utils: /usr/bin/*
+FILERPROVIDESFLIST_fontconfig-utils: /usr/bin/fc-pattern /usr/bin/fc-cat /usr/bin/fc-validate /usr/bin/fc-cache /usr/bin/fc-list /usr/bin/fc-query /usr/bin/fc-match /usr/bin/fc-scan
+FILES_INFO: {"/usr/bin/fc-pattern": 6300, "/usr/bin/fc-scan": 6336, "/usr/bin/fc-validate": 7096, "/usr/bin/fc-cache": 10696, "/usr/bin/fc-list": 6652, "/usr/bin/fc-query": 5976, "/usr/bin/fc-match": 7388, "/usr/bin/fc-cat": 8548}
+FILERPROVIDES_/usr/bin/fc-pattern_fontconfig-utils: elf(buildid) (= 8a09b8cd2aaf36f885ca2ac259045e31a57e6fcc)
+FILERPROVIDES_/usr/bin/fc-cat_fontconfig-utils: elf(buildid) (= bcf9c638ab3fb459e37f66392f0965f415f95d28)
+FILERPROVIDES_/usr/bin/fc-validate_fontconfig-utils: elf(buildid) (= 2b30681ee2f3e318a1731068c7bfcf5c5d3627c8)
+FILERPROVIDES_/usr/bin/fc-cache_fontconfig-utils: elf(buildid) (= 183fdf4986a50fa19c9a60bf2f6118ceb4e2865a)
+FILERPROVIDES_/usr/bin/fc-list_fontconfig-utils: elf(buildid) (= b2202b900f190f6a45a2f9771ad54720d26b36f0)
+FILERPROVIDES_/usr/bin/fc-query_fontconfig-utils: elf(buildid) (= f04146e839376c677a90a82ef129eb0670accc8a)
+FILERPROVIDES_/usr/bin/fc-match_fontconfig-utils: elf(buildid) (= b141820060eceb5ae2cf312cfd82aadc94f20220)
+FILERPROVIDES_/usr/bin/fc-scan_fontconfig-utils: elf(buildid) (= 9501ceb2ed84e93b3b99ca21ffec10666130e4ef)
+FILERDEPENDSFLIST_fontconfig-utils: /usr/bin/fc-pattern /usr/bin/fc-cat /usr/bin/fc-validate /usr/bin/fc-cache /usr/bin/fc-list /usr/bin/fc-query /usr/bin/fc-match /usr/bin/fc-scan
+FILERDEPENDS_/usr/bin/fc-pattern_fontconfig-utils: libc.so.6 libc.so.6(GLIBC_2.4) libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libpthread.so.0 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fc-cat_fontconfig-utils: libc.so.6 libc.so.6(GLIBC_2.4) libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libpthread.so.0 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fc-validate_fontconfig-utils: libc.so.6 libc.so.6(GLIBC_2.4) libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libpthread.so.0 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fc-cache_fontconfig-utils: libc.so.6 libc.so.6(GLIBC_2.4) libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fc-list_fontconfig-utils: libc.so.6 libc.so.6(GLIBC_2.4) libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libpthread.so.0 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fc-query_fontconfig-utils: libc.so.6 libc.so.6(GLIBC_2.4) libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libpthread.so.0 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fc-match_fontconfig-utils: libc.so.6 libc.so.6(GLIBC_2.4) libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libpthread.so.0 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fc-scan_fontconfig-utils: libc.so.6 libc.so.6(GLIBC_2.4) libexpat.so.1 libfontconfig.so.1 libfreetype.so.6 libpthread.so.0 libz.so.1 rtld(GNU_HASH)
+PKGSIZE_fontconfig-utils: 58992

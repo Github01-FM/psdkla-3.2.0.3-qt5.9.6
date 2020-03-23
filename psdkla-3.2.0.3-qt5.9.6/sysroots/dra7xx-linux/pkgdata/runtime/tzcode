@@ -1,0 +1,15 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION_tzcode: tzcode, timezone zoneinfo utils -- zic, zdump, tzselect
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+SECTION: base
+PKG_tzcode: tzcode
+FILES_tzcode: /usr/bin/tzselect /usr/sbin/zic /usr/sbin/zdump
+FILES_INFO: {"/usr/bin/tzselect": 13207}
+FILERDEPENDSFLIST_tzcode: /usr/bin/tzselect
+FILERDEPENDS_/usr/bin/tzselect_tzcode: /bin/bash
+PKGSIZE_tzcode: 13207

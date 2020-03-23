@@ -1,0 +1,17 @@
+PN: pixman
+PE: 1
+PV: 0.32.8
+PR: r0
+PKGE: 1
+PKGV: 0.32.8
+PKGR: r0.0
+LICENSE: MIT & MIT-style & PD
+DESCRIPTION_pixman-staticdev: Pixman provides a library for manipulating pixel regions -- a set of Y-X banded rectangles, image compositing using the Porter/Duff model and implicit mask generation for geometric primitives including trapezoids, triangles, and rectangles.  This package contains static libraries for software development.
+SUMMARY_pixman-staticdev: Pixman: Pixel Manipulation library - Development files (Static Libraries)
+RDEPENDS_pixman-staticdev: pixman-dev (= 1:0.32.8-r0.0)
+RPROVIDES_pixman-staticdev:  pixman-staticdev (=0.32.8)
+SECTION_pixman-staticdev: devel
+PKG_pixman-staticdev: libpixman-1-staticdev
+FILES_pixman-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/pixman/*.a
+FILES_INFO: {"/usr/lib/libpixman-1.a": 3599500}
+PKGSIZE_pixman-staticdev: 3599500

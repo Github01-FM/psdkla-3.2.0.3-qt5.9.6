@@ -1,0 +1,17 @@
+PN: speex
+PV: 1.2rc2
+PR: r0
+PKGV: 1.2rc2
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_speex-dev: Speex is an Open Source/Free Software patent-free audio compression format designed for speech.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_speex-dev: Speech Audio Codec - Development files
+RDEPENDS_speex-dev: speex (= 1.2rc2-r0.0)
+RPROVIDES_speex-dev:  speex-dev (=1.2rc2)
+RRECOMMENDS_speex-dev: speexdsp-dev external-linaro-toolchain-dev libogg-dev
+SECTION_speex-dev: devel
+PKG_speex-dev: libspeex-dev
+ALLOW_EMPTY_speex-dev: 1
+FILES_speex-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/speex/*.la /lib/*.la
+FILES_INFO: {"/usr/lib/libspeex.so": 17, "/usr/include/speex/speex_config_types.h": 203, "/usr/include/speex/speex.h": 14030, "/usr/lib/libspeex.la": 1029, "/usr/lib/pkgconfig/speex.pc": 276, "/usr/include/speex/speex_bits.h": 6660, "/usr/include/speex/speex_types.h": 3582, "/usr/include/speex/speex_header.h": 4084, "/usr/include/speex/speex_callbacks.h": 5033, "/usr/share/aclocal/speex.m4": 3704, "/usr/include/speex/speex_stereo.h": 3675}
+PKGSIZE_speex-dev: 42293

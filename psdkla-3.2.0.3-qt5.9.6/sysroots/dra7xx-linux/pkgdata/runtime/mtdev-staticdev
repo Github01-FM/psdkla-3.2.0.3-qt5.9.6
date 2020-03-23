@@ -1,0 +1,14 @@
+PN: mtdev
+PV: 1.1.5
+PR: r0
+PKGV: 1.1.5
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_mtdev-staticdev: mtdev is a library which transforms all variants of kernel multitouch events to the slotted type B protocol. The events put into mtdev may be from any MT device, specifically type A without contact tracking, type A with contact tracking, or type B with contact tracking  This package contains static libraries for software development.
+SUMMARY_mtdev-staticdev: Multitouch Protocol Translation Library - Development files (Static Libraries)
+RDEPENDS_mtdev-staticdev: mtdev-dev (= 1.1.5-r0.0)
+SECTION_mtdev-staticdev: devel
+PKG_mtdev-staticdev: mtdev-staticdev
+FILES_mtdev-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/mtdev/*.a
+FILES_INFO: {"/usr/lib/libmtdev.a": 85190}
+PKGSIZE_mtdev-staticdev: 85190

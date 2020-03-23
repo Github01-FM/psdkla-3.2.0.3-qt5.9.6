@@ -1,0 +1,21 @@
+PN: python
+PV: 2.7.11
+PR: r1
+PKGV: 2.7.11
+PKGR: r1.0
+LICENSE: PSFv2
+DESCRIPTION: The Python Programming Language.
+SUMMARY_python-crypt: Python basic cryptographic and hashing support
+RDEPENDS_python-crypt: python-core libcrypto (>= 1.0.2h) libssl (>= 1.0.2h) external-linaro-toolchain (>= 2.21) libpython2 (>= 2.7.11)
+RRECOMMENDS_python-crypt: openssl
+SECTION: devel/python
+PKG_python-crypt: python-crypt
+FILES_python-crypt: /usr/lib/python2.7/hashlib.* /usr/lib/python2.7/md5.* /usr/lib/python2.7/sha.* /usr/lib/python2.7/lib-dynload/crypt.so /usr/lib/python2.7/lib-dynload/_hashlib.so /usr/lib/python2.7/lib-dynload/_sha256.so /usr/lib/python2.7/lib-dynload/_sha512.so 
+FILERPROVIDESFLIST_python-crypt: /usr/lib/python2.7/lib-dynload/@underscore@hashlib.so /usr/lib/python2.7/lib-dynload/crypt.so
+FILES_INFO: {"/usr/lib/python2.7/md5.pyc": 376, "/usr/lib/python2.7/hashlib.pyc": 7011, "/usr/lib/python2.7/md5.py": 358, "/usr/lib/python2.7/hashlib.py": 7842, "/usr/lib/python2.7/sha.pyc": 419, "/usr/lib/python2.7/sha.py": 393, "/usr/lib/python2.7/lib-dynload/_hashlib.so": 17204, "/usr/lib/python2.7/lib-dynload/crypt.so": 3772}
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/@underscore@hashlib.so_python-crypt: _hashlib.so elf(buildid) (= 290f9959be55c90d0906bd6614aa4a5e782793d5)
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/crypt.so_python-crypt: crypt.so elf(buildid) (= 3a98fba11c7056b4e576355732e49802fa1503ad)
+FILERDEPENDSFLIST_python-crypt: /usr/lib/python2.7/lib-dynload/@underscore@hashlib.so /usr/lib/python2.7/lib-dynload/crypt.so
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/@underscore@hashlib.so_python-crypt: libc.so.6 libc.so.6(GLIBC_2.4) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) libpython2.7.so.1.0 libssl.so.1.0.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/crypt.so_python-crypt: libc.so.6 libc.so.6(GLIBC_2.4) libcrypt.so.1 libcrypt.so.1(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+PKGSIZE_python-crypt: 37375

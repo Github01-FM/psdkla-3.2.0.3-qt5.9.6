@@ -1,0 +1,25 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users
+SUMMARY: Linux-PAM (Pluggable Authentication Modules)
+RDEPENDS_libpam: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libpam:  libpam-suffix
+RRECOMMENDS_libpam: libpam-runtime-suffix
+SECTION: base
+PKG_libpam: libpam
+FILES_libpam: /lib/lib*.so.*
+pkg_postinst_libpam: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libpam: /lib/libpamc.so.0.82.1 /lib/libpam.so.0.84.1 /lib/libpam@underscore@misc.so.0.82.1
+FILES_INFO: {"/lib/libpam_misc.so.0": 21, "/lib/libpamc.so.0.82.1": 8284, "/lib/libpamc.so.0": 17, "/lib/libpam.so.0": 16, "/lib/libpam.so.0.84.1": 43116, "/lib/libpam_misc.so.0.82.1": 7860}
+FILERPROVIDES_/lib/libpamc.so.0.82.1_libpam: elf(buildid) (= 9b6bc54e8031f9beec4162714d43773d12a17779) libpamc.so.0 libpamc.so.0(LIBPAMC_1.0)
+FILERPROVIDES_/lib/libpam.so.0.84.1_libpam: elf(buildid) (= ba400bb6699a34a324bc81e0518c3929a9d4759d) libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_EXTENSION_1.1) libpam.so.0(LIBPAM_EXTENSION_1.1.1) libpam.so.0(LIBPAM_MODUTIL_1.0) libpam.so.0(LIBPAM_MODUTIL_1.1) libpam.so.0(LIBPAM_MODUTIL_1.1.3) libpam.so.0(LIBPAM_MODUTIL_1.1.9)
+FILERPROVIDES_/lib/libpam@underscore@misc.so.0.82.1_libpam: elf(buildid) (= ccfb9412e5da2f33a495c3eb2c7fb5be168e6811) libpam_misc.so.0 libpam_misc.so.0(LIBPAM_MISC_1.0)
+FILERDEPENDSFLIST_libpam: /lib/libpamc.so.0.82.1 /lib/libpam.so.0.84.1 /lib/libpam@underscore@misc.so.0.82.1
+FILERDEPENDS_/lib/libpamc.so.0.82.1_libpam: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/libpam.so.0.84.1_libpam: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/libpam@underscore@misc.so.0.82.1_libpam: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) rtld(GNU_HASH)
+PKGSIZE_libpam: 59314

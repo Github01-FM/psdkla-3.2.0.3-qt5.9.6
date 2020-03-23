@@ -1,0 +1,13 @@
+PN: libevent
+PV: 2.0.22
+PR: r0
+PKGV: 2.0.22
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_libevent-doc: An asynchronous event notification library.  This package contains documentation.
+SUMMARY_libevent-doc: An asynchronous event notification library - Documentation files
+SECTION_libevent-doc: doc
+PKG_libevent-doc: libevent-doc
+FILES_libevent-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_libevent-doc: 0

@@ -1,0 +1,13 @@
+PN: qtwayland
+PV: 5.9.6+gitAUTOINC+8c5999644c
+PR: r0.arago0
+PKGV: 5.9.6+git0+8c5999644c
+PKGR: r0.arago0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtwayland version 5.9.6+gitAUTOINC+8c5999644c-r0.arago0.
+SUMMARY: qtwayland version 5.9.6+gitAUTOINC+8c5999644c-r0.arago0
+SECTION: base
+PKG_qtwayland-locale: qtwayland-locale
+FILES_qtwayland-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_qtwayland-locale: 0

@@ -1,0 +1,13 @@
+PN: gobject-introspection
+PV: 1.46.0
+PR: r0
+PKGV: 1.46.0
+PKGR: r0.0
+LICENSE: LGPLv2+ & GPLv2+
+DESCRIPTION_gobject-introspection-doc: gobject-introspection version 1.46.0-r0.  This package contains documentation.
+SUMMARY_gobject-introspection-doc: gobject-introspection version 1.46.0-r0 - Documentation files
+SECTION_gobject-introspection-doc: doc
+PKG_gobject-introspection-doc: gobject-introspection-doc
+FILES_gobject-introspection-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/man/man1/g-ir-scanner.1": 5039, "/usr/share/man/man1/g-ir-compiler.1": 1065, "/usr/share/man/man1/g-ir-generate.1": 725}
+PKGSIZE_gobject-introspection-doc: 6829

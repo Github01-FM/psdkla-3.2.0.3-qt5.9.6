@@ -1,0 +1,22 @@
+PN: acl
+PV: 2.2.52
+PR: r0
+PKGV: 2.2.52
+PKGR: r0.0
+LICENSE_acl: GPLv2+
+DESCRIPTION: Utilities for managing POSIX Access Control Lists.
+SUMMARY: Utilities for managing POSIX Access Control Lists
+RDEPENDS_acl: libacl (>= 2.2.52) external-linaro-toolchain (>= 2.21) libattr (>= 2.4.47)
+SECTION: libs
+PKG_acl: acl
+FILES_acl: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/acl /usr/lib/acl/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+FILERPROVIDESFLIST_acl: /usr/bin/setfacl /usr/bin/chacl /usr/bin/getfacl
+FILES_INFO: {"/usr/bin/setfacl": 25708, "/usr/bin/chacl": 8564, "/usr/bin/getfacl": 16444}
+FILERPROVIDES_/usr/bin/setfacl_acl: elf(buildid) (= f21ce99502a059c1567f78c97251bda8f8966e1c)
+FILERPROVIDES_/usr/bin/chacl_acl: elf(buildid) (= d16f07a06298a7e43a043949eeef6ac7e5fb8b98)
+FILERPROVIDES_/usr/bin/getfacl_acl: elf(buildid) (= a74113d703cf9d7cd08e8a0f79616a5ee122bb1d)
+FILERDEPENDSFLIST_acl: /usr/bin/setfacl /usr/bin/chacl /usr/bin/getfacl
+FILERDEPENDS_/usr/bin/setfacl_acl: libacl.so.1 libacl.so.1(ACL_1.0) libattr.so.1 libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/chacl_acl: libacl.so.1 libacl.so.1(ACL_1.0) libattr.so.1 libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/getfacl_acl: libacl.so.1 libacl.so.1(ACL_1.0) libattr.so.1 libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_acl: 50716

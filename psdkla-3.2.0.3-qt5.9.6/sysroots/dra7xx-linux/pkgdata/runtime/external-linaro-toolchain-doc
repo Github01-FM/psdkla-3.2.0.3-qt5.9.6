@@ -1,0 +1,14 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_external-linaro-toolchain-doc: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION_external-linaro-toolchain-doc: external-linaro-toolchain version 2016.02-r0.arago33.  This package contains documentation.
+SUMMARY_external-linaro-toolchain-doc: external-linaro-toolchain version 2016.02-r0.arago33 - Documentation files
+RPROVIDES_external-linaro-toolchain-doc: glibc-doc external-linaro-toolchain-doc (=2.21)
+SECTION_external-linaro-toolchain-doc: doc
+PKG_external-linaro-toolchain-doc: libc6-doc
+FILES_external-linaro-toolchain-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/info/libc.info-11": 490338, "/usr/share/info/libc.info-10": 295922, "/usr/share/info/libc.info-13": 397168, "/usr/share/info/libc.info-12": 109861, "/usr/share/info/libc.info-14": 199882, "/usr/share/info/libc.info-5": 301162, "/usr/share/info/libc.info-4": 292194, "/usr/share/info/libc.info-7": 303019, "/usr/share/info/libc.info-6": 299966, "/usr/share/info/libc.info-1": 300301, "/usr/share/info/libc.info-3": 307205, "/usr/share/info/libc.info-2": 301003, "/usr/share/info/libc.info": 88412, "/usr/share/info/libc.info-9": 299575, "/usr/share/info/libc.info-8": 300065}
+PKGSIZE_external-linaro-toolchain-doc: 4286073

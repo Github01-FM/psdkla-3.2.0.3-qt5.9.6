@@ -1,0 +1,28 @@
+PN: xz
+PV: 5.2.2
+PR: r0
+PKGV: 5.2.2
+PKGR: r0.0
+LICENSE_xz: GPLv2+
+DESCRIPTION: Utilities for managing LZMA compressed files.
+SUMMARY: Utilities for managing LZMA compressed files
+RDEPENDS_xz: liblzma (>= 5.2.2) external-linaro-toolchain (>= 2.21)
+SECTION: base
+PKG_xz: xz
+FILES_xz: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/xz /usr/lib/xz/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+FILERPROVIDESFLIST_xz: /usr/bin/lzmainfo /usr/bin/lzmadec /usr/bin/xzdec /usr/bin/xz
+FILES_INFO: {"/usr/bin/xzfgrep": 6, "/usr/bin/lzgrep": 6, "/usr/bin/lzma": 2, "/usr/bin/xzless": 1802, "/usr/bin/xzmore": 2161, "/usr/bin/xzegrep": 6, "/usr/bin/lzmadec": 7148, "/usr/bin/lzfgrep": 6, "/usr/bin/xzgrep": 5628, "/usr/bin/lzmore": 6, "/usr/bin/lzdiff": 6, "/usr/bin/xzdiff": 6632, "/usr/bin/xzcat": 2, "/usr/bin/lzless": 6, "/usr/bin/lzmainfo": 6416, "/usr/bin/lzegrep": 6, "/usr/bin/unxz": 2, "/usr/bin/lzcat": 2, "/usr/bin/unlzma": 2, "/usr/bin/xzcmp": 6, "/usr/bin/lzcmp": 6, "/usr/bin/xzdec": 7132, "/usr/bin/xz": 59716}
+FILERPROVIDES_/usr/bin/lzmainfo_xz: elf(buildid) (= 5c32656e7deb2e06c42041733de3c26c68ca55f7)
+FILERPROVIDES_/usr/bin/lzmadec_xz: elf(buildid) (= 62636c13f8f52dbc2e609d338c8b7ffbda340c0a)
+FILERPROVIDES_/usr/bin/xzdec_xz: elf(buildid) (= b5c7662987091ba168cca649fd48e40290f1fdab)
+FILERPROVIDES_/usr/bin/xz_xz: elf(buildid) (= 1eb9fc0889c9b0f3f2fb31077042d6c9ed23b6b6)
+FILERDEPENDSFLIST_xz: /usr/bin/lzmadec /usr/bin/xzless /usr/bin/xzgrep /usr/bin/lzmainfo /usr/bin/xzmore /usr/bin/xzdec /usr/bin/xzdiff /usr/bin/xz
+FILERDEPENDS_/usr/bin/lzmadec_xz: libc.so.6 libc.so.6(GLIBC_2.4) liblzma.so.5 liblzma.so.5(XZ_5.0) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/xzless_xz: /bin/sh
+FILERDEPENDS_/usr/bin/xzgrep_xz: /bin/sh
+FILERDEPENDS_/usr/bin/lzmainfo_xz: libc.so.6 libc.so.6(GLIBC_2.4) liblzma.so.5 liblzma.so.5(XZ_5.0) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/xzmore_xz: /bin/sh
+FILERDEPENDS_/usr/bin/xzdec_xz: libc.so.6 libc.so.6(GLIBC_2.4) liblzma.so.5 liblzma.so.5(XZ_5.0) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/xzdiff_xz: /bin/sh
+FILERDEPENDS_/usr/bin/xz_xz: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.6) liblzma.so.5 liblzma.so.5(XZ_5.0) liblzma.so.5(XZ_5.2) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_xz: 96705

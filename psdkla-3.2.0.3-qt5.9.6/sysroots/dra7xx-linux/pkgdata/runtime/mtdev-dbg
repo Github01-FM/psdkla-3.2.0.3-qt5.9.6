@@ -1,0 +1,15 @@
+PN: mtdev
+PV: 1.1.5
+PR: r0
+PKGV: 1.1.5
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_mtdev-dbg: mtdev is a library which transforms all variants of kernel multitouch events to the slotted type B protocol. The events put into mtdev may be from any MT device, specifically type A without contact tracking, type A with contact tracking, or type B with contact tracking  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_mtdev-dbg: Multitouch Protocol Translation Library - Debugging files
+RRECOMMENDS_mtdev-dbg: external-linaro-toolchain-dbg
+SECTION_mtdev-dbg: devel
+PKG_mtdev-dbg: mtdev-dbg
+ALLOW_EMPTY_mtdev-dbg: 1
+FILES_mtdev-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/iobuf.h": 1670, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/test/mtdev-test.c": 3586, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/include/mtdev-plumbing.h": 4785, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/evbuf.h": 2033, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/caps.c": 6693, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/iobuf.c": 2832, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/match_four.c": 4087, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/state.h": 2684, "/usr/bin/.debug/mtdev-test": 19528, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/match.c": 10223, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/core.c": 11308, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/common.h": 5149, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/src/match.h": 1905, "/usr/src/debug/mtdev/1.1.5-r0/mtdev-1.1.5/include/mtdev.h": 6741, "/usr/lib/.debug/libmtdev.so.1.0.0": 53180}
+PKGSIZE_mtdev-dbg: 136404

@@ -1,0 +1,12 @@
+# Package Information for pkg-config
+
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: libpcrecpp
+Description: PCRECPP - C++ wrapper for PCRE
+Version: 8.38
+Libs: -L${libdir} -lpcre -lpcrecpp
+Cflags: -I${includedir} 

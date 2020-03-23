@@ -1,0 +1,12 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: GObject
+Description: GLib Type, Object, Parameter and Signal Library
+Requires: glib-2.0
+Version: 2.46.2
+Libs: -L${libdir} -lgobject-2.0
+Libs.private: -L${STAGING_DIR_NATIVE}/usr/lib -lffi
+Cflags:

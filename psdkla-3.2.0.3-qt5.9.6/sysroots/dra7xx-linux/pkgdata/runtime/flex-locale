@@ -1,0 +1,13 @@
+PN: flex
+PV: 2.6.0
+PR: r0
+PKGV: 2.6.0
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION: Flex is a fast lexical analyser generator.  Flex is a tool for generating programs that recognize lexical patterns in text.
+SUMMARY: Flex (The Fast Lexical Analyzer)
+SECTION: devel
+PKG_flex-locale: flex-locale
+FILES_flex-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_flex-locale: 0

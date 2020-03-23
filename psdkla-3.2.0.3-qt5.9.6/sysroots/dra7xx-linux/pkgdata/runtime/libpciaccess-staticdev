@@ -1,0 +1,14 @@
+PN: libpciaccess
+PV: 0.13.4
+PR: r0
+PKGV: 0.13.4
+PKGR: r0.0
+LICENSE: MIT & MIT-style
+DESCRIPTION_libpciaccess-staticdev: libpciaccess provides functionality for X to access the PCI bus and devices in a platform-independent way.  This package contains static libraries for software development.
+SUMMARY_libpciaccess-staticdev: Generic PCI access library for X - Development files (Static Libraries)
+RDEPENDS_libpciaccess-staticdev: libpciaccess-dev (= 0.13.4-r0.0)
+SECTION_libpciaccess-staticdev: devel
+PKG_libpciaccess-staticdev: libpciaccess-staticdev
+FILES_libpciaccess-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/libpciaccess/*.a
+FILES_INFO: {"/usr/lib/libpciaccess.a": 183952}
+PKGSIZE_libpciaccess-staticdev: 183952

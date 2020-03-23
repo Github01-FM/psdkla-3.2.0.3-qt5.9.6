@@ -1,0 +1,13 @@
+PN: libxkbcommon
+PV: 0.5.0
+PR: r0
+PKGV: 0.5.0
+PKGR: r0.0
+LICENSE: MIT & MIT-style
+DESCRIPTION_libxkbcommon-doc: libxkbcommon is a keymap compiler and support library which processes a reduced subset of keymaps as defined by the XKB specification.  This package contains documentation.
+SUMMARY_libxkbcommon-doc: Generic XKB keymap library - Documentation files
+SECTION_libxkbcommon-doc: doc
+PKG_libxkbcommon-doc: libxkbcommon-doc
+FILES_libxkbcommon-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_libxkbcommon-doc: 0

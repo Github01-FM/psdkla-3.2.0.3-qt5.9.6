@@ -1,0 +1,29 @@
+PN: ncurses
+PV: 6.0+20160213
+PR: r0
+PKGV: 6.0+20160213
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: SVr4 and XSI-Curses compatible curses library and terminfo tools including tic, infocmp, captoinfo. Supports color, multiple highlights, forms-drawing characters, and automatic recognition of keypad and function-key sequences. Extensions include resizable windows and mouse support on both xterm and Linux console using the gpm library.
+SUMMARY: The New Curses library
+RDEPENDS_ncurses-tools: ncurses update-alternatives-opkg ncurses-libtinfo (>= 6.0+20160213) ncurses-libtic (>= 6.0+20160213) external-linaro-toolchain (>= 2.21)
+SECTION: libs
+PKG_ncurses-tools: ncurses-tools
+FILES_ncurses-tools:   /usr/bin/tic   /usr/bin/toe   /usr/bin/infotocap   /usr/bin/captoinfo   /usr/bin/infocmp   /usr/bin/clear.ncurses   /usr/bin/reset.ncurses   /usr/bin/tack   /usr/bin/tabs 
+pkg_postinst_ncurses-tools: #!/bin/sh\n\tupdate-alternatives --install /usr/bin/clear clear /usr/bin/clear.ncurses 100\n\tupdate-alternatives --install /usr/bin/reset reset /usr/bin/reset.ncurses 100\n
+pkg_prerm_ncurses-tools: #!/bin/sh\n\tupdate-alternatives --remove  clear /usr/bin/clear.ncurses\n\tupdate-alternatives --remove  reset /usr/bin/reset.ncurses\n
+FILERPROVIDESFLIST_ncurses-tools: /usr/bin/clear.ncurses /usr/bin/infocmp /usr/bin/toe /usr/bin/tic /usr/bin/tabs /usr/bin/reset.ncurses
+FILES_INFO: {"/usr/bin/infocmp": 49688, "/usr/bin/tabs": 10236, "/usr/bin/reset.ncurses": 4, "/usr/bin/infotocap": 3, "/usr/bin/toe": 10380, "/usr/bin/captoinfo": 3, "/usr/bin/tic": 65076, "/usr/bin/clear.ncurses": 3824}
+FILERPROVIDES_/usr/bin/clear.ncurses_ncurses-tools: elf(buildid) (= 62a5bb3840bc31189323f809e50e4ad5506a5de0) /usr/bin/clear
+FILERPROVIDES_/usr/bin/infocmp_ncurses-tools: elf(buildid) (= b92b53a50025b193ae77910ccf512baf682efc87)
+FILERPROVIDES_/usr/bin/toe_ncurses-tools: elf(buildid) (= 23623eb216976ad504e1226c8b9c7b7e79893698)
+FILERPROVIDES_/usr/bin/tic_ncurses-tools: elf(buildid) (= c4d48d38e9087b25d4b637a60a918bccbddb003e)
+FILERPROVIDES_/usr/bin/tabs_ncurses-tools: elf(buildid) (= b08a1c3402aa7bbc938b6e6a33c320e1a60c7269)
+FILERPROVIDES_/usr/bin/reset.ncurses_ncurses-tools:  /usr/bin/reset
+FILERDEPENDSFLIST_ncurses-tools: /usr/bin/clear.ncurses /usr/bin/infocmp /usr/bin/toe /usr/bin/tic /usr/bin/tabs
+FILERDEPENDS_/usr/bin/clear.ncurses_ncurses-tools: libc.so.6 libc.so.6(GLIBC_2.4) libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/infocmp_ncurses-tools: libc.so.6 libc.so.6(GLIBC_2.4) libtic.so.5 libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/toe_ncurses-tools: libc.so.6 libc.so.6(GLIBC_2.4) libtic.so.5 libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tic_ncurses-tools: libc.so.6 libc.so.6(GLIBC_2.4) libtic.so.5 libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tabs_ncurses-tools: libc.so.6 libc.so.6(GLIBC_2.4) libtinfo.so.5 rtld(GNU_HASH)
+PKGSIZE_ncurses-tools: 139214

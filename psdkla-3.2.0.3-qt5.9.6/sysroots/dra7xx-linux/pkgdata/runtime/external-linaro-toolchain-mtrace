@@ -1,0 +1,15 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_external-linaro-toolchain-mtrace: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RPROVIDES_external-linaro-toolchain-mtrace: glibc-mtrace libc-mtrace external-linaro-toolchain-mtrace (=2.21)
+SECTION: base
+PKG_external-linaro-toolchain-mtrace: libc6-mtrace
+ALLOW_EMPTY_external-linaro-toolchain-mtrace: 1
+FILES_external-linaro-toolchain-mtrace: /usr/bin/mtrace
+FILES_INFO: {}
+PKGSIZE_external-linaro-toolchain-mtrace: 0

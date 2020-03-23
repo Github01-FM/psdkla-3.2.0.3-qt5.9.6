@@ -1,0 +1,21 @@
+PN: gdbm
+PV: 1.8.3
+PR: r4
+PKGV: 1.8.3
+PKGR: r4.0
+LICENSE: GPLv2+
+DESCRIPTION: Key/value database library with extensible hashing.
+SUMMARY: Key/value database library with extensible hashing
+RDEPENDS_gdbm: external-linaro-toolchain (>= 2.21)
+SECTION: libs
+PKG_gdbm: gdbm
+FILES_gdbm: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/gdbm /usr/lib/gdbm/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_gdbm: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_gdbm: /usr/lib/libgdbm.so.3.0.0 /usr/lib/libgdbm@underscore@compat.so.3.0.0
+FILES_INFO: {"/usr/lib/libgdbm.so.3.0.0": 18412, "/usr/lib/libgdbm.so.3": 16, "/usr/lib/libgdbm_compat.so.3.0.0": 6412, "/usr/lib/libgdbm_compat.so.3": 23}
+FILERPROVIDES_/usr/lib/libgdbm.so.3.0.0_gdbm: elf(buildid) (= 376ec02df52d7f2249ee76cc3a562b8622077af5) libgdbm.so.3
+FILERPROVIDES_/usr/lib/libgdbm@underscore@compat.so.3.0.0_gdbm: elf(buildid) (= 66c966ae104861fcba7a547e0d65d84cf22276c3) libgdbm_compat.so.3
+FILERDEPENDSFLIST_gdbm: /usr/lib/libgdbm.so.3.0.0 /usr/lib/libgdbm@underscore@compat.so.3.0.0
+FILERDEPENDS_/usr/lib/libgdbm.so.3.0.0_gdbm: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libgdbm@underscore@compat.so.3.0.0_gdbm: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_gdbm: 24863

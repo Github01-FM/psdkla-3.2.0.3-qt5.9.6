@@ -1,0 +1,13 @@
+PN: volatile-binds
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_volatile-binds-doc: Volatile bind mount setup and configuration for read-only-rootfs  This package contains documentation.
+SUMMARY_volatile-binds-doc: Volatile bind mount setup and configuration for read-only-rootfs - Documentation files
+SECTION_volatile-binds-doc: doc
+PKG_volatile-binds-doc: volatile-binds-doc
+FILES_volatile-binds-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_volatile-binds-doc: 0

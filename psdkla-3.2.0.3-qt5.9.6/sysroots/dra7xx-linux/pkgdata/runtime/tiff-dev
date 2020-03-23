@@ -1,0 +1,17 @@
+PN: tiff
+PV: 4.0.6
+PR: r0.arago0
+PKGV: 4.0.6
+PKGR: r0.arago0.0
+LICENSE: BSD-2-Clause
+DESCRIPTION_tiff-dev: Provides support for the Tag Image File Format (TIFF).  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_tiff-dev: Provides support for the Tag Image File Format (TIFF) - Development files
+RDEPENDS_tiff-dev: tiff (= 4.0.6-r0.arago0.0) tiffxx
+RPROVIDES_tiff-dev:  tiff-dev (=4.0.6)
+RRECOMMENDS_tiff-dev: zlib-dev jpeg-dev liblzma-dev libstdc++-dev external-linaro-toolchain-dev libgcc-dev tiffxx-dev libjpeg-turbo-dev
+SECTION_tiff-dev: devel
+PKG_tiff-dev: libtiff-dev
+ALLOW_EMPTY_tiff-dev: 1
+FILES_tiff-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/tiff/*.la /lib/*.la
+FILES_INFO: {"/usr/include/tiffio.hxx": 1702, "/usr/include/tiffio.h": 23003, "/usr/lib/libtiffxx.so": 18, "/usr/include/tiff.h": 35987, "/usr/lib/libtiff.so": 16, "/usr/include/tiffconf.h": 3441, "/usr/lib/libtiffxx.la": 1293, "/usr/lib/pkgconfig/libtiff-4.pc": 237, "/usr/lib/libtiff.la": 1077, "/usr/include/tiffvers.h": 410}
+PKGSIZE_tiff-dev: 67184

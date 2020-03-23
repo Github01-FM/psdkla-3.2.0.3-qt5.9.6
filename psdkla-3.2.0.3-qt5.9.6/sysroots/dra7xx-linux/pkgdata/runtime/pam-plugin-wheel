@@ -1,0 +1,19 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-wheel: PAM plugin for -wheel
+SUMMARY_pam-plugin-wheel: PAM plugin for -wheel
+RDEPENDS_pam-plugin-wheel: libpam-suffix external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+RPROVIDES_pam-plugin-wheel: pam-plugin-wheel-suffix
+SECTION: base
+PKG_pam-plugin-wheel: pam-plugin-wheel
+FILES_pam-plugin-wheel: /lib/security/pam_wheel.so
+FILERPROVIDESFLIST_pam-plugin-wheel: /lib/security/pam@underscore@wheel.so
+FILES_INFO: {"/lib/security/pam_wheel.so": 4960}
+FILERPROVIDES_/lib/security/pam@underscore@wheel.so_pam-plugin-wheel: elf(buildid) (= c9650f267a37f18471d4960339cdf0cb9e8bd0de) pam_wheel.so
+FILERDEPENDSFLIST_pam-plugin-wheel: /lib/security/pam@underscore@wheel.so
+FILERDEPENDS_/lib/security/pam@underscore@wheel.so_pam-plugin-wheel: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) rtld(GNU_HASH)
+PKGSIZE_pam-plugin-wheel: 4960

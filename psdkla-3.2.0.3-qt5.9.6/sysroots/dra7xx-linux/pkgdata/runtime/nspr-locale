@@ -1,0 +1,13 @@
+PN: nspr
+PV: 4.12
+PR: r0
+PKGV: 4.12
+PKGR: r0.0
+LICENSE: GPL-2.0 | MPL-2.0 | LGPL-2.1
+DESCRIPTION: Netscape Portable Runtime Library.
+SUMMARY: Netscape Portable Runtime Library
+SECTION: libs/network
+PKG_nspr-locale: nspr-locale
+FILES_nspr-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_nspr-locale: 0

@@ -1,0 +1,43 @@
+PN: libcgroup
+PV: 0.41
+PR: r0
+PKGV: 0.41
+PKGR: r0.0
+LICENSE: LGPLv2.1
+DESCRIPTION: libcgroup is a library that abstracts the control group file system in Linux. Control groups allow you to limit, account and isolate resource usage (CPU, memory, disk I/O, etc.) of groups of processes.
+SUMMARY: Linux control group abstraction library
+RDEPENDS_libcgroup: external-linaro-toolchain (>= 2.21)
+SECTION: libs
+PKG_libcgroup: libcgroup
+FILES_libcgroup: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libcgroup /usr/lib/libcgroup/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libcgroup: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libcgroup: /usr/bin/cgexec /usr/bin/lssubsys /usr/bin/lscgroup /usr/bin/cgdelete /usr/bin/cgclassify /usr/sbin/cgrulesengd /usr/bin/cgset /usr/bin/cgsnapshot /usr/sbin/cgconfigparser /lib/libcgroup.so.1.0.41 /usr/sbin/cgclear /usr/bin/cgcreate /usr/bin/cgget
+FILES_INFO: {"/usr/bin/cgexec": 9184, "/usr/bin/lssubsys": 6748, "/usr/bin/lscgroup": 10120, "/usr/bin/cgdelete": 8620, "/usr/bin/cgclassify": 9204, "/lib/libcgroup.so.1": 19, "/usr/sbin/cgrulesengd": 18404, "/usr/bin/cgset": 9400, "/usr/bin/cgsnapshot": 12504, "/usr/sbin/cgconfigparser": 10212, "/lib/libcgroup.so.1.0.41": 77696, "/usr/sbin/cgclear": 8520, "/usr/bin/cgcreate": 9496, "/usr/bin/cgget": 11704}
+FILERPROVIDES_/usr/bin/cgexec_libcgroup: elf(buildid) (= 768695f5d1f0f4d37d947c43e3580e25733d335f)
+FILERPROVIDES_/usr/bin/lssubsys_libcgroup: elf(buildid) (= 8da44be45309b5db57d95a5e87babf7ba883054a)
+FILERPROVIDES_/usr/bin/lscgroup_libcgroup: elf(buildid) (= 055c3eb5a9b5636fdde1acae70fa0abdd5a369d4)
+FILERPROVIDES_/usr/bin/cgdelete_libcgroup: elf(buildid) (= ebaf7069a1394f402094ad38581d6fb1593c5d2a)
+FILERPROVIDES_/usr/bin/cgclassify_libcgroup: elf(buildid) (= de2da4255caf26d37ff29414ea23f93fcc42201e)
+FILERPROVIDES_/usr/sbin/cgrulesengd_libcgroup: elf(buildid) (= 1c5163cab900e9ab521b17b33530334508a5b195)
+FILERPROVIDES_/usr/bin/cgset_libcgroup: elf(buildid) (= f72d80596be13c2c134a754d857303c56630e6e3)
+FILERPROVIDES_/usr/bin/cgsnapshot_libcgroup: elf(buildid) (= 1b5585d504f647900f43efaa4144f64500b83de3)
+FILERPROVIDES_/usr/sbin/cgconfigparser_libcgroup: elf(buildid) (= 28199271ad7e0027a2733d2083ea32b30c813974)
+FILERPROVIDES_/lib/libcgroup.so.1.0.41_libcgroup: elf(buildid) (= 1265606f038afd2adb10cb9b24f262b747ac38c5) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.33) libcgroup.so.1(CGROUP_0.34) libcgroup.so.1(CGROUP_0.35) libcgroup.so.1(CGROUP_0.36) libcgroup.so.1(CGROUP_0.37) libcgroup.so.1(CGROUP_0.38) libcgroup.so.1(CGROUP_0.39)
+FILERPROVIDES_/usr/sbin/cgclear_libcgroup: elf(buildid) (= 5f8782273de5db619238644146095f212e5af467)
+FILERPROVIDES_/usr/bin/cgcreate_libcgroup: elf(buildid) (= b0f197e48bef42d1c5c8f16b348288733b6b69e2)
+FILERPROVIDES_/usr/bin/cgget_libcgroup: elf(buildid) (= 0d629c6a0953d1ce7ed03ad779650f110c9e338c)
+FILERDEPENDSFLIST_libcgroup: /usr/bin/cgexec /usr/bin/lssubsys /usr/bin/lscgroup /usr/bin/cgdelete /usr/bin/cgclassify /usr/sbin/cgrulesengd /usr/bin/cgset /usr/bin/cgsnapshot /usr/sbin/cgconfigparser /lib/libcgroup.so.1.0.41 /usr/sbin/cgclear /usr/bin/cgcreate /usr/bin/cgget
+FILERDEPENDS_/usr/bin/cgexec_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.34) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/lssubsys_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.35) libcgroup.so.1(CGROUP_0.38) libpthread.so.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/lscgroup_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.33) libcgroup.so.1(CGROUP_0.34) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/cgdelete_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.35) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/cgclassify_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.34) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/cgrulesengd_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.34) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 librt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/cgset_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.35) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/cgsnapshot_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.33) libcgroup.so.1(CGROUP_0.34) libcgroup.so.1(CGROUP_0.35) libcgroup.so.1(CGROUP_0.38) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/cgconfigparser_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.38) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/lib/libcgroup.so.1.0.41_libcgroup: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/cgclear_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.34) libcgroup.so.1(CGROUP_0.38) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/cgcreate_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.38) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/cgget_libcgroup: libc.so.6 libc.so.6(GLIBC_2.4) libcgroup.so.1 libcgroup.so.1(CGROUP_0.32) libcgroup.so.1(CGROUP_0.32.1) libcgroup.so.1(CGROUP_0.34) libcgroup.so.1(CGROUP_0.35) libcgroup.so.1(CGROUP_0.37) libcgroup.so.1(CGROUP_0.39) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libcgroup: 201831

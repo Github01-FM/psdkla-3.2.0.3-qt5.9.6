@@ -1,0 +1,22 @@
+PN: util-linux
+PV: 2.27.1
+PR: r0
+PKGV: 2.27.1
+PKGR: r0.0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux-fsck: util-linux-libblkid (>= 2.27.1) util-linux-libmount (>= 2.27.1) update-alternatives-opkg external-linaro-toolchain (>= 2.21) util-linux-libuuid (>= 2.27.1)
+SECTION: base
+PKG_util-linux-fsck: util-linux-fsck
+FILES_util-linux-fsck: /sbin/fsck*
+pkg_postinst_util-linux-fsck: #!/bin/sh\n\tupdate-alternatives --install /sbin/fsck.minix fsck.minix /sbin/fsck.minix.util-linux 80\n\tupdate-alternatives --install /sbin/fsck fsck /sbin/fsck.util-linux 80\n
+pkg_prerm_util-linux-fsck: #!/bin/sh\n\tupdate-alternatives --remove  fsck.minix /sbin/fsck.minix.util-linux\n\tupdate-alternatives --remove  fsck /sbin/fsck.util-linux\n
+FILERPROVIDESFLIST_util-linux-fsck: /sbin/fsck.minix.util-linux /sbin/fsck.util-linux
+FILES_INFO: {"/sbin/fsck.minix.util-linux": 60264, "/sbin/fsck.util-linux": 32888}
+FILERPROVIDES_/sbin/fsck.minix.util-linux_util-linux-fsck: elf(buildid) (= 32d38a4ba970d7dc3cb92ca0e4924185add60a50) /sbin/fsck.minix
+FILERPROVIDES_/sbin/fsck.util-linux_util-linux-fsck: elf(buildid) (= 263b2271a28668dc78089a1429476d826edb675d) /sbin/fsck
+FILERDEPENDSFLIST_util-linux-fsck: /sbin/fsck.minix.util-linux /sbin/fsck.util-linux
+FILERDEPENDS_/sbin/fsck.minix.util-linux_util-linux-fsck: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/fsck.util-linux_util-linux-fsck: libblkid.so.1 libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.17) libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.20) libmount.so.1(MOUNT_2.21) libmount.so.1(MOUNT_2.24) librt.so.1 librt.so.1(GLIBC_2.4) libuuid.so.1 rtld(GNU_HASH)
+PKGSIZE_util-linux-fsck: 93152

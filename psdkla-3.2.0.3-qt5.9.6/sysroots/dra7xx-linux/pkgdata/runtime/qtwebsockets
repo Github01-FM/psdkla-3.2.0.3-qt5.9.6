@@ -1,0 +1,22 @@
+PN: qtwebsockets
+PV: 5.9.6+gitAUTOINC+3dc383a807
+PR: r0
+PKGV: 5.9.6+git0+3dc383a807
+PKGR: r0.0
+LICENSE: GFDL-1.3 & (GPL-3 | LGPL-3.0)
+DESCRIPTION: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0.
+SUMMARY: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0
+RDEPENDS_qtwebsockets: libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) qtbase (>= 5.9.6+git0+9c50112304) external-linaro-toolchain (>= 2.21)
+RPROVIDES_qtwebsockets:  qtwebsockets (=5.9.6+git0+3dc383a807)
+RRECOMMENDS_qtwebsockets:      qtwebsockets-plugins     qtwebsockets-qmlplugins     
+SECTION: base
+PKG_qtwebsockets: libqt5websockets5
+ALLOW_EMPTY_qtwebsockets: 1
+FILES_qtwebsockets: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/qtwebsockets /usr/lib/qtwebsockets/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers      /usr/lib/lib*.so.*     /usr/lib/qt5/libexec 
+pkg_postinst_qtwebsockets: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_qtwebsockets: /usr/lib/libQt5WebSockets.so.5.9.6
+FILES_INFO: {"/usr/lib/libQt5WebSockets.so.5.9.6": 171836, "/usr/lib/libQt5WebSockets.so.5.9": 25, "/usr/lib/libQt5WebSockets.so.5": 25}
+FILERPROVIDES_/usr/lib/libQt5WebSockets.so.5.9.6_qtwebsockets: elf(buildid) (= 08b399668ac28027e391cdd8486c8c0342a2cdc6) libQt5WebSockets.so.5 libQt5WebSockets.so.5(Qt_5) libQt5WebSockets.so.5(Qt_5.0) libQt5WebSockets.so.5(Qt_5.1) libQt5WebSockets.so.5(Qt_5.2) libQt5WebSockets.so.5(Qt_5.3) libQt5WebSockets.so.5(Qt_5.4) libQt5WebSockets.so.5(Qt_5.5) libQt5WebSockets.so.5(Qt_5.6) libQt5WebSockets.so.5(Qt_5.7) libQt5WebSockets.so.5(Qt_5.8) libQt5WebSockets.so.5(Qt_5.9) libQt5WebSockets.so.5(Qt_5_PRIVATE_API)
+FILERDEPENDSFLIST_qtwebsockets: /usr/lib/libQt5WebSockets.so.5.9.6
+FILERDEPENDS_/usr/lib/libQt5WebSockets.so.5.9.6_qtwebsockets: libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Core.so.5(Qt_5_PRIVATE_API) libQt5Network.so.5 libQt5Network.so.5(Qt_5) libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+PKGSIZE_qtwebsockets: 171886

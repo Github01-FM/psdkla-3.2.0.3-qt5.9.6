@@ -1,0 +1,15 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION: Linux kernel for Desay SV g5r2 devices
+SUMMARY: linux-g5r2-staging version 4.4.45+gitAUTOINC+cf0f7ad356-r7a.arago5
+SECTION: kernel
+PKG_kernel-devicetree: kernel-devicetree
+FILES_kernel-devicetree: /boot/devicetree*
+pkg_postinst_kernel-devicetree: \tcd /boot\n\tfor DTB in dra72-g5r2.dtb\n\tdo\n\t\tDTB_BASE_NAME=`basename ${DTB} .dtb`\n\t\tDTB_SYMLINK_NAME=`echo zImage-dra7xx-g5r2 | sed "s/dra7xx-g5r2/${DTB_BASE_NAME}/g"`\n\t\tupdate-alternatives --install /boot/${DTB_BASE_NAME}.dtb ${DTB_BASE_NAME}.dtb /boot/devicetree-${DTB_SYMLINK_NAME}.dtb 40445 || true\n\tdone\n
+pkg_postrm_kernel-devicetree: \tcd /boot\n\tfor DTB in dra72-g5r2.dtb\n\tdo\n\t\tDTB_BASE_NAME=`basename ${DTB} .dtb`\n\t\tDTB_SYMLINK_NAME=`echo zImage-dra7xx-g5r2 | sed "s/dra7xx-g5r2/${DTB_BASE_NAME}/g"`\n\t\tupdate-alternatives --remove ${DTB_BASE_NAME}.dtb /boot/devicetree-${DTB_SYMLINK_NAME}.dtb 40445 || true\n\tdone\n
+FILES_INFO: {"/boot/devicetree-zImage-dra72-g5r2.dtb": 100101}
+PKGSIZE_kernel-devicetree: 100101

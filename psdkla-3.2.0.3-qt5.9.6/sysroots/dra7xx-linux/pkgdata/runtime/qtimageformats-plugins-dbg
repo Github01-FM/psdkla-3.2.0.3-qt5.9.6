@@ -1,0 +1,14 @@
+PN: qtimageformats
+PV: 5.9.6+gitAUTOINC+e9daef6d8f
+PR: r0
+PKGV: 5.9.6+git0+e9daef6d8f
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0.
+SUMMARY: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0
+RRECOMMENDS_qtimageformats-plugins-dbg: qtbase-dbg libstdc++-dbg tiff-dbg external-linaro-toolchain-dbg ti-sgx-ddk-um-dbg libgcc-dbg
+SECTION: base
+PKG_qtimageformats-plugins-dbg: qtimageformats-plugins-dbg
+FILES_qtimageformats-plugins-dbg:      /usr/lib/qt5/plugins/*/.debug/*     /usr/lib/qt5/plugins/*/*/.debug/*     /usr/lib/qt5/plugins/*/*/*/.debug/* 
+FILES_INFO: {}
+PKGSIZE_qtimageformats-plugins-dbg: 0

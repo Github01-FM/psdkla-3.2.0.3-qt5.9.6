@@ -1,0 +1,13 @@
+PN: qtwebengine
+PV: 5.9.6+gitAUTOINC+cc526afe9c_e517527148
+PR: r0
+PKGV: 5.9.6+git0+cc526afe9c_e517527148
+PKGR: r0.0
+LICENSE: BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: QtWebEngine combines the power of Chromium and Qt.
+SUMMARY: QtWebEngine combines the power of Chromium and Qt
+SECTION: base
+PKG_qtwebengine-plugins: qtwebengine-plugins
+FILES_qtwebengine-plugins:      /usr/lib/qt5/plugins/*/*.so     /usr/lib/qt5/plugins/*/*/*.so     /usr/lib/qt5/plugins/*/*/*/*.so 
+FILES_INFO: {}
+PKGSIZE_qtwebengine-plugins: 0

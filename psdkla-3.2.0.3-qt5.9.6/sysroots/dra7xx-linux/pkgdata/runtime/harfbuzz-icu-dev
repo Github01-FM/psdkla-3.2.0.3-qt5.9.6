@@ -1,0 +1,15 @@
+PN: harfbuzz
+PV: 0.9.35
+PR: r0
+PKGV: 0.9.35
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: HarfBuzz is an OpenType text shaping engine.
+SUMMARY: Text shaping library
+RPROVIDES_harfbuzz-icu-dev:  harfbuzz-icu-dev (=0.9.35)
+RRECOMMENDS_harfbuzz-icu-dev: glib-2.0-dev freetype-dev cairo-dev
+SECTION: libs
+PKG_harfbuzz-icu-dev: libharfbuzz-icu-dev
+FILES_harfbuzz-icu-dev: /usr/lib/libharfbuzz-icu.la                        /usr/lib/libharfbuzz-icu.so                        /usr/lib/pkgconfig/harfbuzz-icu.pc 
+FILES_INFO: {}
+PKGSIZE_harfbuzz-icu-dev: 0

@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-ecb: ecb kernel module; ECB block cipher algorithm
+SUMMARY_kernel-module-ecb: ecb kernel module
+RDEPENDS_kernel-module-ecb: kernel-4.4.45+
+SECTION: kernel
+PKG_kernel-module-ecb: kernel-module-ecb
+FILES_kernel-module-ecb: /lib/modules/4.4.45+/kernel/crypto/ecb.ko /etc/modules-load.d/ecb.conf /etc/modprobe.d/ecb.conf
+pkg_postinst_kernel-module-ecb: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-ecb: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/crypto/ecb.ko": 5580}
+PKGSIZE_kernel-module-ecb: 5580

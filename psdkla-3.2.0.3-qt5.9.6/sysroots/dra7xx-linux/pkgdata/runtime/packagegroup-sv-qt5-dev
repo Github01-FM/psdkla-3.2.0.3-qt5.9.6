@@ -1,0 +1,16 @@
+PN: packagegroup-sv-qt5
+PV: 1.0
+PR: r1
+PKGV: 1.0
+PKGR: r1.0
+LICENSE: MIT
+DESCRIPTION_packagegroup-sv-qt5-dev: External task to get Qt5  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_packagegroup-sv-qt5-dev: packagegroup-sv-qt5 version 1.0-r1 - Development files
+RDEPENDS_packagegroup-sv-qt5-dev: packagegroup-sv-qt5 (= 1.0-r1.0)
+RRECOMMENDS_packagegroup-sv-qt5-dev: qtwebengine-dev qtbase-dev qtimageformats-dev qtxmlpatterns-dev qtquickcontrols-qmlplugins-dev qtgraphicaleffects-dev qtdeclarative-dev qtbase-plugins-dev liblzma-dev qtgraphicaleffects-qmlplugins-dev qtwebengine-examples-dev qtwayland-plugins-dev qtwayland-dev qtdeclarative-qmlplugins-dev libcap-dev
+SECTION_packagegroup-sv-qt5-dev: devel
+PKG_packagegroup-sv-qt5-dev: packagegroup-sv-qt5-dev
+ALLOW_EMPTY_packagegroup-sv-qt5-dev: 1
+FILES_packagegroup-sv-qt5-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/packagegroup-sv-qt5/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_packagegroup-sv-qt5-dev: 0

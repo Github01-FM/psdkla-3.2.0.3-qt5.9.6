@@ -1,0 +1,16 @@
+PN: cryptodev-module
+PV: 1.8
+PR: r0.arago0
+PKGV: 1.8
+PKGR: r0.arago0.0
+LICENSE: GPLv2
+DESCRIPTION_cryptodev-module-dev: A /dev/crypto device driver kernel module.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_cryptodev-module-dev: A /dev/crypto device driver kernel module - Development files
+RDEPENDS_cryptodev-module-dev: cryptodev-module (= 1.8-r0.arago0.0)
+RRECOMMENDS_cryptodev-module-dev: kernel-4.4.45+-dev cryptodev-linux-dev kernel-module-cryptodev-dev
+SECTION_cryptodev-module-dev: devel
+PKG_cryptodev-module-dev: cryptodev-module-dev
+ALLOW_EMPTY_cryptodev-module-dev: 1
+FILES_cryptodev-module-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/cryptodev-module/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_cryptodev-module-dev: 0

@@ -1,0 +1,14 @@
+PN: qtdeclarative
+PV: 5.9.6+gitAUTOINC+283a900c4e
+PR: r0.tisdk0
+PKGV: 5.9.6+git0+283a900c4e
+PKGR: r0.tisdk0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0.
+SUMMARY: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0
+RRECOMMENDS_qtdeclarative-tools-dbg: qtbase-dbg libstdc++-dbg qtxmlpatterns-dbg qtdeclarative-dbg external-linaro-toolchain-dbg ti-sgx-ddk-um-dbg libgcc-dbg
+SECTION: base
+PKG_qtdeclarative-tools-dbg: qtdeclarative-tools-dbg
+FILES_qtdeclarative-tools-dbg:      /usr/bin/qt5/.debug 
+FILES_INFO: {}
+PKGSIZE_qtdeclarative-tools-dbg: 0

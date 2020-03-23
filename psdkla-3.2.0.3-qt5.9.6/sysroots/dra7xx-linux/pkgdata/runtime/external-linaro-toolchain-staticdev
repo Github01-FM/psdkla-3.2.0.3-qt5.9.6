@@ -1,0 +1,15 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_external-linaro-toolchain-staticdev: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION_external-linaro-toolchain-staticdev: external-linaro-toolchain version 2016.02-r0.arago33.  This package contains static libraries for software development.
+SUMMARY_external-linaro-toolchain-staticdev: external-linaro-toolchain version 2016.02-r0.arago33 - Development files (Static Libraries)
+RDEPENDS_external-linaro-toolchain-staticdev: external-linaro-toolchain-dev (= 2.21-r0.arago33.0)
+RPROVIDES_external-linaro-toolchain-staticdev: eglibc-staticdev libc-staticdev glibc-staticdev external-linaro-toolchain-staticdev (=2.21)
+SECTION_external-linaro-toolchain-staticdev: devel
+PKG_external-linaro-toolchain-staticdev: libc6-staticdev
+FILES_external-linaro-toolchain-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/external-linaro-toolchain/*.a /usr/lib/*.a /lib/*.a
+FILES_INFO: {"/usr/lib/libpthread.a": 1809388, "/lib/libstdc++fs.a": 6285330, "/usr/lib/libg.a": 2470, "/usr/lib/libgcov.a": 64378, "/lib/libubsan.a": 2237840, "/lib/libasan.a": 9085308, "/usr/lib/libm.a": 2867882, "/usr/lib/libdl.a": 50206, "/usr/lib/libnsl.a": 875714, "/usr/lib/libutil.a": 41136, "/usr/lib/libieee.a": 2176, "/lib/libgfortran.a": 7144592, "/usr/lib/librt.a": 307582, "/usr/lib/libBrokenLocale.a": 17318, "/usr/lib/libcrypt.a": 166782, "/usr/lib/libresolv.a": 450782, "/usr/lib/librpcsvc.a": 250390, "/usr/lib/libmcheck.a": 7796, "/usr/lib/libanl.a": 98792, "/usr/lib/libc.a": 17558680}
+PKGSIZE_external-linaro-toolchain-staticdev: 49324542

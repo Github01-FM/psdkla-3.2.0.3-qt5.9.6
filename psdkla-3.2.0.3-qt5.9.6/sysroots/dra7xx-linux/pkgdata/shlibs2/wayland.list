@@ -1,0 +1,3 @@
+libwayland-client.so.0:/usr/lib:1.14.0
+libwayland-server.so.0:/usr/lib:1.14.0
+libwayland-cursor.so.0:/usr/lib:1.14.0

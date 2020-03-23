@@ -1,0 +1,20 @@
+PN: libpng
+PV: 1.6.21
+PR: r0
+PKGV: 1.6.21
+PKGR: r0.0
+LICENSE: Libpng
+DESCRIPTION: PNG image format decoding library.
+SUMMARY: PNG image format decoding library
+RDEPENDS_libpng: zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libpng:  libpng (=1.6.21)
+SECTION: libs
+PKG_libpng: libpng16-16
+FILES_libpng: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libpng /usr/lib/libpng/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libpng: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libpng: /usr/lib/libpng16.so.16.21.0
+FILES_INFO: {"/usr/lib/libpng16.so.16": 19, "/usr/lib/libpng16.so.16.21.0": 162096}
+FILERPROVIDES_/usr/lib/libpng16.so.16.21.0_libpng: elf(buildid) (= 5ad37a509ce8041a11bca1f3314ec220465e03dc) libpng16.so.16 libpng16.so.16(PNG16_0)
+FILERDEPENDSFLIST_libpng: /usr/lib/libpng16.so.16.21.0
+FILERDEPENDS_/usr/lib/libpng16.so.16.21.0_libpng: libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 libm.so.6(GLIBC_2.4) libz.so.1 libz.so.1(ZLIB_1.2.3.4) rtld(GNU_HASH)
+PKGSIZE_libpng: 162115

@@ -1,0 +1,13 @@
+PN: qtbase-conf
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: qtbase configuration files.
+SUMMARY: qtbase configuration files
+SECTION: base
+PKG_qtbase-conf-locale: qtbase-conf-locale
+FILES_qtbase-conf-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_qtbase-conf-locale: 0

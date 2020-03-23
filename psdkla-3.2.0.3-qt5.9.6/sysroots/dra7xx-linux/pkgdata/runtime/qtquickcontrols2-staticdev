@@ -1,0 +1,14 @@
+PN: qtquickcontrols2
+PV: 5.9.6+gitAUTOINC+c48b314ede
+PR: r0
+PKGV: 5.9.6+git0+c48b314ede
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & LGPL-3.0 | GPL-3.0 | The-Qt-Company-Commercial
+DESCRIPTION_qtquickcontrols2-staticdev: qtquickcontrols2 version 5.9.6+gitAUTOINC+c48b314ede-r0.  This package contains static libraries for software development.
+SUMMARY_qtquickcontrols2-staticdev: qtquickcontrols2 version 5.9.6+gitAUTOINC+c48b314ede-r0 - Development files (Static Libraries)
+RDEPENDS_qtquickcontrols2-staticdev: qtquickcontrols2-dev (= 5.9.6+git0+c48b314ede-r0.0)
+SECTION_qtquickcontrols2-staticdev: devel
+PKG_qtquickcontrols2-staticdev: qtquickcontrols2-staticdev
+FILES_qtquickcontrols2-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/qtquickcontrols2/*.a      /usr/lib/*.a 
+FILES_INFO: {}
+PKGSIZE_qtquickcontrols2-staticdev: 0

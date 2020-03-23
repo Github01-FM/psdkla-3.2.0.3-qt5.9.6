@@ -1,0 +1,63 @@
+PN: tiff
+PV: 4.0.6
+PR: r0.arago0
+PKGV: 4.0.6
+PKGR: r0.arago0.0
+LICENSE: BSD-2-Clause
+DESCRIPTION: Provides support for the Tag Image File Format (TIFF).
+SUMMARY: Provides support for the Tag Image File Format (TIFF)
+RDEPENDS_tiff-utils: tiff (>= 4.0.6) liblzma (>= 5.2.2) zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21) libjpeg-turbo (>= 8d+1.4.2)
+RPROVIDES_tiff-utils:  tiff-utils (=4.0.6)
+SECTION: base
+PKG_tiff-utils: libtiff-utils
+FILES_tiff-utils: /usr/bin/*
+FILERPROVIDESFLIST_tiff-utils: /usr/bin/fax2tiff /usr/bin/thumbnail /usr/bin/tiffdump /usr/bin/tiffset /usr/bin/tiff2bw /usr/bin/bmp2tiff /usr/bin/ras2tiff /usr/bin/ppm2tiff /usr/bin/tiff2ps /usr/bin/fax2ps /usr/bin/raw2tiff /usr/bin/pal2rgb /usr/bin/tiffdither /usr/bin/tiff2pdf /usr/bin/tiffcp /usr/bin/tiffsplit /usr/bin/gif2tiff /usr/bin/tiffinfo /usr/bin/tiffcmp /usr/bin/rgb2ycbcr /usr/bin/tiffmedian /usr/bin/tiff2rgba /usr/bin/tiffcrop
+FILES_INFO: {"/usr/bin/fax2tiff": 11148, "/usr/bin/thumbnail": 12368, "/usr/bin/tiffdump": 15508, "/usr/bin/tiffset": 8616, "/usr/bin/tiff2bw": 10584, "/usr/bin/bmp2tiff": 12276, "/usr/bin/ras2tiff": 8608, "/usr/bin/ppm2tiff": 10164, "/usr/bin/tiff2ps": 41716, "/usr/bin/fax2ps": 12256, "/usr/bin/raw2tiff": 14876, "/usr/bin/pal2rgb": 10476, "/usr/bin/tiffdither": 8840, "/usr/bin/tiff2pdf": 58468, "/usr/bin/tiffcp": 27872, "/usr/bin/tiffsplit": 8828, "/usr/bin/gif2tiff": 14252, "/usr/bin/tiffinfo": 10968, "/usr/bin/tiffcmp": 14188, "/usr/bin/rgb2ycbcr": 10160, "/usr/bin/tiffmedian": 14216, "/usr/bin/tiff2rgba": 10292, "/usr/bin/tiffcrop": 90304}
+FILERPROVIDES_/usr/bin/fax2tiff_tiff-utils: elf(buildid) (= d6000450aa28442236f07d9a4159b1cf76f9b2c1)
+FILERPROVIDES_/usr/bin/thumbnail_tiff-utils: elf(buildid) (= 15346d0316c7d5a4511dee03aec6f1560e4eecd8)
+FILERPROVIDES_/usr/bin/tiffdump_tiff-utils: elf(buildid) (= 683a1691eafe88dd8bac1ca924d7211115a7987c)
+FILERPROVIDES_/usr/bin/tiffset_tiff-utils: elf(buildid) (= ff9b21a7675cbc07424fe7b6fe1ee85a67df37c4)
+FILERPROVIDES_/usr/bin/tiff2bw_tiff-utils: elf(buildid) (= 05bbc5fb1e12709f309adcd2d1ab66b09324bafc)
+FILERPROVIDES_/usr/bin/bmp2tiff_tiff-utils: elf(buildid) (= eacad4038b91f97f7daf216b6da4de1112845af7)
+FILERPROVIDES_/usr/bin/ras2tiff_tiff-utils: elf(buildid) (= 7bb60e28203427455a4a155c6195bcdd9c8e06f0)
+FILERPROVIDES_/usr/bin/ppm2tiff_tiff-utils: elf(buildid) (= 36c0a1ff65b095bd284444cbe545795bb1521926)
+FILERPROVIDES_/usr/bin/tiff2ps_tiff-utils: elf(buildid) (= 361c2f1eac2ea8b491c9aa0dfc42f3adc5acd180)
+FILERPROVIDES_/usr/bin/fax2ps_tiff-utils: elf(buildid) (= c8797a9352934a89ad202ee6279e59417d28e50a)
+FILERPROVIDES_/usr/bin/raw2tiff_tiff-utils: elf(buildid) (= 34f40ec5b5a6a3c2a9ca10a937fed4e925b86eab)
+FILERPROVIDES_/usr/bin/pal2rgb_tiff-utils: elf(buildid) (= 4dea3cc2e7e5181790ae8c02b4ee84bfa95c543d)
+FILERPROVIDES_/usr/bin/tiffdither_tiff-utils: elf(buildid) (= 41a023ea8d1c40bdb4aff7e847af23117568c723)
+FILERPROVIDES_/usr/bin/tiff2pdf_tiff-utils: elf(buildid) (= 052d5d7eae4e8eac1a2ac5d13b5a709dfbd2e6bf)
+FILERPROVIDES_/usr/bin/tiffcp_tiff-utils: elf(buildid) (= eb46c95c96c864bcee8b90c381caa5df6f8d5527)
+FILERPROVIDES_/usr/bin/tiffsplit_tiff-utils: elf(buildid) (= 670ac5a758a19437a6911f3d58218a59d765946b)
+FILERPROVIDES_/usr/bin/gif2tiff_tiff-utils: elf(buildid) (= cf5d3bbe2b8cf024bf26f3dd9a908538e2538a0e)
+FILERPROVIDES_/usr/bin/tiffinfo_tiff-utils: elf(buildid) (= a01e2cc82af5ee19b72cf6c5e42ec4e4e6d5148c)
+FILERPROVIDES_/usr/bin/tiffcmp_tiff-utils: elf(buildid) (= 5b0ba9bc55c9ca31a651c2d5c4379e10cc35b601)
+FILERPROVIDES_/usr/bin/rgb2ycbcr_tiff-utils: elf(buildid) (= e5152a03fc399b4ec46d9cd5ac16bf6f654f2e92)
+FILERPROVIDES_/usr/bin/tiffmedian_tiff-utils: elf(buildid) (= 54438295e0a4f9f01a6cd26c8e93ec5f2939e586)
+FILERPROVIDES_/usr/bin/tiff2rgba_tiff-utils: elf(buildid) (= 7d04f8db91ca9d15efe295b8d2d662f99e59520e)
+FILERPROVIDES_/usr/bin/tiffcrop_tiff-utils: elf(buildid) (= cdb01b6e2bd0ec8cd1d31ac0cba6a088a0f22da6)
+FILERDEPENDSFLIST_tiff-utils: /usr/bin/fax2tiff /usr/bin/thumbnail /usr/bin/tiffdump /usr/bin/tiffset /usr/bin/tiff2bw /usr/bin/bmp2tiff /usr/bin/ras2tiff /usr/bin/ppm2tiff /usr/bin/tiff2ps /usr/bin/fax2ps /usr/bin/raw2tiff /usr/bin/pal2rgb /usr/bin/tiffdither /usr/bin/tiff2pdf /usr/bin/tiffcp /usr/bin/tiffsplit /usr/bin/gif2tiff /usr/bin/tiffinfo /usr/bin/tiffcmp /usr/bin/rgb2ycbcr /usr/bin/tiffmedian /usr/bin/tiff2rgba /usr/bin/tiffcrop
+FILERDEPENDS_/usr/bin/fax2tiff_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/thumbnail_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiffdump_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiffset_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiff2bw_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/bmp2tiff_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ras2tiff_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ppm2tiff_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiff2ps_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fax2ps_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/raw2tiff_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pal2rgb_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiffdither_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiff2pdf_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiffcp_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiffsplit_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/gif2tiff_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiffinfo_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiffcmp_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/rgb2ycbcr_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiffmedian_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiff2rgba_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libjpeg.so.62 liblzma.so.5 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tiffcrop_tiff-utils: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libjpeg.so.62 liblzma.so.5 libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+PKGSIZE_tiff-utils: 436984

@@ -1,0 +1,13 @@
+PN: libwebp
+PV: 0.5.0
+PR: r0
+PKGV: 0.5.0
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_libwebp-doc: WebP is a method of lossy and lossless compression that can be                used on a large variety of photographic, translucent and                graphical images found on the web. The degree of lossy                compression is adjustable so a user can choose the trade-off                between file size and image quality. WebP typically achieves                an average of 30% more compression than JPEG and JPEG 2000,                without loss of image quality.  This package contains documentation.
+SUMMARY_libwebp-doc: WebP is an image format designed for the Web - Documentation files
+SECTION_libwebp-doc: doc
+PKG_libwebp-doc: libwebp-doc
+FILES_libwebp-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/man/man1/cwebp.1": 12251, "/usr/share/man/man1/webpmux.1": 4950, "/usr/share/man/man1/dwebp.1": 4776}
+PKGSIZE_libwebp-doc: 21977

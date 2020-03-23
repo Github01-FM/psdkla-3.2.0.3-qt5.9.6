@@ -1,0 +1,13 @@
+PN: bash
+PV: 3.2.48
+PR: r11.arago0
+PKGV: 3.2.48
+PKGR: r11.arago0.0
+LICENSE: GPLv2+
+DESCRIPTION_bash-doc: An sh-compatible command language interpreter.  This package contains documentation.
+SUMMARY_bash-doc: An sh-compatible command language interpreter - Documentation files
+SECTION_bash-doc: doc
+PKG_bash-doc: bash-doc
+FILES_bash-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/man/man1/bash.1": 249635, "/usr/share/man/man1/bashbug.1": 1343}
+PKGSIZE_bash-doc: 250978

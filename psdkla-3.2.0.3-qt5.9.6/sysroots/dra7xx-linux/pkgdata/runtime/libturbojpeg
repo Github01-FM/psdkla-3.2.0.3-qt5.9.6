@@ -1,0 +1,20 @@
+PN: libjpeg-turbo
+PV: 8d+1.4.2
+PR: r0
+PKGV: 8d+1.4.2
+PKGR: r0.0
+LICENSE: BSD-3-Clause
+DESCRIPTION_libturbojpeg: A SIMD-accelerated JPEG codec which provides only TurboJPEG APIs
+SUMMARY: libjpeg-turbo version 8d+1.4.2-r0
+RDEPENDS_libturbojpeg: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libturbojpeg:  libturbojpeg (=8d+1.4.2)
+SECTION: base
+PKG_libturbojpeg: libturbojpeg0
+FILES_libturbojpeg: /usr/lib/libturbojpeg.so.*
+pkg_postinst_libturbojpeg: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libturbojpeg: /usr/lib/libturbojpeg.so.0.1.0
+FILES_INFO: {"/usr/lib/libturbojpeg.so.0.1.0": 236308, "/usr/lib/libturbojpeg.so.0": 21}
+FILERPROVIDES_/usr/lib/libturbojpeg.so.0.1.0_libturbojpeg: elf(buildid) (= 91f11645e6fecfacfec5b39a1b77e4ca06cc52fb) libturbojpeg.so.0 libturbojpeg.so.0(TURBOJPEG_1.0) libturbojpeg.so.0(TURBOJPEG_1.1) libturbojpeg.so.0(TURBOJPEG_1.2) libturbojpeg.so.0(TURBOJPEG_1.4)
+FILERDEPENDSFLIST_libturbojpeg: /usr/lib/libturbojpeg.so.0.1.0
+FILERDEPENDS_/usr/lib/libturbojpeg.so.0.1.0_libturbojpeg: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+PKGSIZE_libturbojpeg: 236329

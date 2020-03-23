@@ -1,0 +1,20 @@
+PN: harfbuzz
+PV: 0.9.35
+PR: r0
+PKGV: 0.9.35
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: HarfBuzz is an OpenType text shaping engine.
+SUMMARY: Text shaping library
+RDEPENDS_harfbuzz: libpcre (>= 8.38) zlib (>= 1.2.8) freetype (>= 2.6.3) external-linaro-toolchain (>= 2.21) glib-2.0 (>= 2.46.2)
+RPROVIDES_harfbuzz:  harfbuzz (=0.9.35)
+SECTION: libs
+PKG_harfbuzz: libharfbuzz0
+FILES_harfbuzz: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/harfbuzz /usr/lib/harfbuzz/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_harfbuzz: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_harfbuzz: /usr/lib/libharfbuzz.so.0.935.0
+FILES_INFO: {"/usr/lib/libharfbuzz.so.0": 22, "/usr/lib/libharfbuzz.so.0.935.0": 307244}
+FILERPROVIDES_/usr/lib/libharfbuzz.so.0.935.0_harfbuzz: elf(buildid) (= 8f84714db55630dcb34d3d30d73d74e8f2fd209a) libharfbuzz.so.0
+FILERDEPENDSFLIST_harfbuzz: /usr/lib/libharfbuzz.so.0.935.0
+FILERDEPENDS_/usr/lib/libharfbuzz.so.0.935.0_harfbuzz: libc.so.6 libc.so.6(GLIBC_2.4) libfreetype.so.6 libglib-2.0.so.0 libpcre.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libz.so.1 rtld(GNU_HASH)
+PKGSIZE_harfbuzz: 307266

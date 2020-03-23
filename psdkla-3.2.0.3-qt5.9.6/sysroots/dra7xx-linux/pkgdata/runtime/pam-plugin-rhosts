@@ -1,0 +1,19 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-rhosts: PAM plugin for -rhosts
+SUMMARY_pam-plugin-rhosts: PAM plugin for -rhosts
+RDEPENDS_pam-plugin-rhosts: libpam-suffix external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+RPROVIDES_pam-plugin-rhosts: pam-plugin-rhosts-suffix
+SECTION: base
+PKG_pam-plugin-rhosts: pam-plugin-rhosts
+FILES_pam-plugin-rhosts: /lib/security/pam_rhosts.so
+FILERPROVIDESFLIST_pam-plugin-rhosts: /lib/security/pam@underscore@rhosts.so
+FILES_INFO: {"/lib/security/pam_rhosts.so": 4228}
+FILERPROVIDES_/lib/security/pam@underscore@rhosts.so_pam-plugin-rhosts: elf(buildid) (= 58f04fef685f78347a07916b68594160a9fa11e6) pam_rhosts.so
+FILERDEPENDSFLIST_pam-plugin-rhosts: /lib/security/pam@underscore@rhosts.so
+FILERDEPENDS_/lib/security/pam@underscore@rhosts.so_pam-plugin-rhosts: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) rtld(GNU_HASH)
+PKGSIZE_pam-plugin-rhosts: 4228

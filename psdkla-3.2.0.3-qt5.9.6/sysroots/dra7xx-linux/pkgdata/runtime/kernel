@@ -1,0 +1,14 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION: Linux kernel for Desay SV g5r2 devices
+SUMMARY: linux-g5r2-staging version 4.4.45+gitAUTOINC+cf0f7ad356-r7a.arago5
+RDEPENDS_kernel: kernel-base
+SECTION: kernel
+PKG_kernel: kernel
+ALLOW_EMPTY_kernel: 1
+FILES_INFO: {}
+PKGSIZE_kernel: 0

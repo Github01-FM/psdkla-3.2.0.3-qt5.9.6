@@ -1,0 +1,4 @@
+#!/bin/bash
+realpath=`readlink -fn $0`
+export BISON_PKGDATADIR=${STAGING_DIR_NATIVE}/usr/share/bison
+exec -a `dirname $realpath`/bison `dirname $realpath`/bison.real "$@"

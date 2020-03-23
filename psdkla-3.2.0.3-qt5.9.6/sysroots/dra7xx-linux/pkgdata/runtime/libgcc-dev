@@ -1,0 +1,15 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_libgcc-dev: 5.3.1
+PKGR: r0.arago33.0
+LICENSE_libgcc-dev: GPL-3-with-GCC-exception
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RPROVIDES_libgcc-dev:  libgcc-dev (=2.21)
+RRECOMMENDS_libgcc-dev: external-linaro-toolchain-dev linux-libc-headers-dev
+SECTION: base
+PKG_libgcc-dev: libgcc-s-dev
+FILES_libgcc-dev: /lib/libgcc_s.so \t/usr/lib/libgcc.a 
+FILES_INFO: {"/lib/libgcc_s.so": 132, "/usr/lib/libgcc.a": 6122488}
+PKGSIZE_libgcc-dev: 6122620

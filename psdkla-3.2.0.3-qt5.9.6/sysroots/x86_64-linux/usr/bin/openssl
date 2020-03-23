@@ -1,0 +1,4 @@
+#!/bin/bash
+realpath=`readlink -fn $0`
+export OPENSSL_CONF=${STAGING_DIR_NATIVE}/usr/lib/ssl/openssl.cnf SSL_CERT_DIR=${STAGING_DIR_NATIVE}/usr/lib/ssl/certs SSL_CERT_FILE=${STAGING_DIR_NATIVE}/usr/lib/ssl/cert.pem OPENSSL_ENGINES=${STAGING_DIR_NATIVE}/usr/lib/ssl/engines
+exec -a `dirname $realpath`/openssl `dirname $realpath`/openssl.real "$@"

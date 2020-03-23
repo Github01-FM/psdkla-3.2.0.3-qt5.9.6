@@ -1,0 +1,13 @@
+PN: systemd-compat-units
+PV: 1.0
+PR: r29
+PKGV: 1.0
+PKGR: r29.0
+LICENSE: MIT
+DESCRIPTION_systemd-compat-units-doc: Enhances systemd compatilibity with existing SysVinit scripts.  This package contains documentation.
+SUMMARY_systemd-compat-units-doc: Enhances systemd compatilibity with existing SysVinit scripts - Documentation files
+SECTION_systemd-compat-units-doc: doc
+PKG_systemd-compat-units-doc: systemd-compat-units-doc
+FILES_systemd-compat-units-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_systemd-compat-units-doc: 0

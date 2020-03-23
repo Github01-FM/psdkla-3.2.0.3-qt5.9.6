@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: libpcre
+Description: PCRE - Perl compatible regular expressions C library with 8 bit character support
+Version: 8.38
+Libs: -L${libdir} -lpcre
+Libs.private:  
+Cflags: -I${includedir} 

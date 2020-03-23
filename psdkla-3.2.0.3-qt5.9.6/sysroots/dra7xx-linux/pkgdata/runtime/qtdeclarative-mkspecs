@@ -1,0 +1,13 @@
+PN: qtdeclarative
+PV: 5.9.6+gitAUTOINC+283a900c4e
+PR: r0.tisdk0
+PKGV: 5.9.6+git0+283a900c4e
+PKGR: r0.tisdk0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0.
+SUMMARY: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0
+SECTION: base
+PKG_qtdeclarative-mkspecs: qtdeclarative-mkspecs
+FILES_qtdeclarative-mkspecs:     /usr/lib/qt5/mkspecs 
+FILES_INFO: {"/usr/lib/qt5/mkspecs/modules/qt_lib_quickparticles_private.pri": 881, "/usr/lib/qt5/mkspecs/modules/qt_lib_qmldevtools_private.pri": 717, "/usr/lib/qt5/mkspecs/modules/qt_lib_qmltest.pri": 606, "/usr/lib/qt5/mkspecs/modules/qt_lib_qml_private.pri": 472, "/usr/lib/qt5/mkspecs/features/qmlcache.prf": 2050, "/usr/lib/qt5/mkspecs/modules/qt_lib_quick.pri": 531, "/usr/lib/qt5/mkspecs/modules/qt_lib_qmltest_private.pri": 518, "/usr/lib/qt5/mkspecs/modules/qt_lib_qml.pri": 476, "/usr/lib/qt5/mkspecs/modules/qt_lib_quick_private.pri": 795}
+PKGSIZE_qtdeclarative-mkspecs: 7046

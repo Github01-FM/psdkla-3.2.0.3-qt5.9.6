@@ -1,0 +1,14 @@
+PN: libxslt
+PV: 1.1.28
+PR: r0
+PKGV: 1.1.28
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libxslt-staticdev: GNOME XSLT library.  This package contains static libraries for software development.
+SUMMARY_libxslt-staticdev: GNOME XSLT library - Development files (Static Libraries)
+RDEPENDS_libxslt-staticdev: libxslt-dev (= 1.1.28-r0.0)
+SECTION_libxslt-staticdev: devel
+PKG_libxslt-staticdev: libxslt-staticdev
+FILES_libxslt-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/libxslt/*.a
+FILES_INFO: {"/usr/lib/libxslt.a": 1161226, "/usr/lib/libexslt.a": 426538}
+PKGSIZE_libxslt-staticdev: 1587764

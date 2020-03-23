@@ -1,0 +1,15 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION: Linux kernel for Desay SV g5r2 devices
+SUMMARY: linux-g5r2-staging version 4.4.45+gitAUTOINC+cf0f7ad356-r7a.arago5
+SECTION: kernel
+PKG_kernel-vmlinux: kernel-vmlinux
+FILES_kernel-vmlinux: /boot/vmlinux*
+FILERPROVIDESFLIST_kernel-vmlinux: /boot/vmlinux-4.4.45+
+FILES_INFO: {"/boot/vmlinux-4.4.45+": 11486328}
+FILERPROVIDES_/boot/vmlinux-4.4.45+_kernel-vmlinux: elf(buildid) (= 5948aa1d7779951322c39190a6eb371687f9f3e0)
+PKGSIZE_kernel-vmlinux: 11486328

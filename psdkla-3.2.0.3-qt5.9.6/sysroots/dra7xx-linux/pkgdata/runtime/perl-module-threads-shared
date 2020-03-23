@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0.0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-threads-shared: perl module threads-shared
+SUMMARY_perl-module-threads-shared: perl module threads-shared
+RDEPENDS_perl-module-threads-shared: perl-module-carp perl perl-module-scalar-util perl-module-warnings external-linaro-toolchain (>= 2.21) perl-module-strict perl-module-xsloader
+SECTION: devel
+PKG_perl-module-threads-shared: perl-module-threads-shared
+FILES_perl-module-threads-shared: /usr/lib/perl/5.22.1/auto/threads/shared/shared.so /usr/lib/perl/5.22.1/threads/shared.pm
+FILERPROVIDESFLIST_perl-module-threads-shared: /usr/lib/perl/5.22.1/auto/threads/shared/shared.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/auto/threads/shared/shared.so": 32028, "/usr/lib/perl/5.22.1/threads/shared.pm": 19915}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/threads/shared/shared.so_perl-module-threads-shared: elf(buildid) (= a1f372e5aaa7ef7e40853cc02da54d910204f48a) shared.so
+FILERDEPENDSFLIST_perl-module-threads-shared: /usr/lib/perl/5.22.1/auto/threads/shared/shared.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/threads/shared/shared.so_perl-module-threads-shared: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_perl-module-threads-shared: 51943

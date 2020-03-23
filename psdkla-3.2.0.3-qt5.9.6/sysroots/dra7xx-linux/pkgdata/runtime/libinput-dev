@@ -1,0 +1,16 @@
+PN: libinput
+PV: 1.8.4
+PR: r0
+PKGV: 1.8.4
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libinput-dev: Library to handle input devices in Wayland compositors.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libinput-dev: Library to handle input devices in Wayland compositors - Development files
+RDEPENDS_libinput-dev: libinput (= 1.8.4-r0.0)
+RRECOMMENDS_libinput-dev: udev-dev external-linaro-toolchain-dev libevdev-dev libcap-dev mtdev-dev libudev-dev
+SECTION_libinput-dev: devel
+PKG_libinput-dev: libinput-dev
+ALLOW_EMPTY_libinput-dev: 1
+FILES_libinput-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libinput/*.la /lib/*.la
+FILES_INFO: {"/usr/lib/libinput.la": 1119, "/usr/include/libinput.h": 175972, "/usr/lib/pkgconfig/libinput.pc": 292, "/usr/lib/libinput.so": 19}
+PKGSIZE_libinput-dev: 177402

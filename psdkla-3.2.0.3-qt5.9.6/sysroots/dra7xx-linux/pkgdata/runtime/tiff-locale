@@ -1,0 +1,14 @@
+PN: tiff
+PV: 4.0.6
+PR: r0.arago0
+PKGV: 4.0.6
+PKGR: r0.arago0.0
+LICENSE: BSD-2-Clause
+DESCRIPTION: Provides support for the Tag Image File Format (TIFF).
+SUMMARY: Provides support for the Tag Image File Format (TIFF)
+RPROVIDES_tiff-locale:  tiff-locale (=4.0.6)
+SECTION: base
+PKG_tiff-locale: libtiff-locale
+FILES_tiff-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_tiff-locale: 0

@@ -1,0 +1,14 @@
+PN: libcgroup
+PV: 0.41
+PR: r0
+PKGV: 0.41
+PKGR: r0.0
+LICENSE: LGPLv2.1
+DESCRIPTION_libcgroup-staticdev: libcgroup is a library that abstracts the control group file system in Linux. Control groups allow you to limit, account and isolate resource usage (CPU, memory, disk I/O, etc.) of groups of processes.  This package contains static libraries for software development.
+SUMMARY_libcgroup-staticdev: Linux control group abstraction library - Development files (Static Libraries)
+RDEPENDS_libcgroup-staticdev: libcgroup-dev (= 0.41-r0.0)
+SECTION_libcgroup-staticdev: devel
+PKG_libcgroup-staticdev: libcgroup-staticdev
+FILES_libcgroup-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/libcgroup/*.a
+FILES_INFO: {}
+PKGSIZE_libcgroup-staticdev: 0

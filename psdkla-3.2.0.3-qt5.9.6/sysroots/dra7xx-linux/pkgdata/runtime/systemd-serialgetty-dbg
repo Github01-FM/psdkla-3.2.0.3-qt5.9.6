@@ -1,0 +1,14 @@
+PN: systemd-serialgetty
+PV: 1.0
+PR: r5
+PKGV: 1.0
+PKGR: r5.0
+LICENSE: GPLv2+
+DESCRIPTION_systemd-serialgetty-dbg: Serial terminal support for systemd.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_systemd-serialgetty-dbg: Serial terminal support for systemd - Debugging files
+SECTION_systemd-serialgetty-dbg: devel
+PKG_systemd-serialgetty-dbg: systemd-serialgetty-dbg
+ALLOW_EMPTY_systemd-serialgetty-dbg: 1
+FILES_systemd-serialgetty-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_systemd-serialgetty-dbg: 0

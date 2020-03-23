@@ -1,0 +1,27 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_external-linaro-toolchain-utils: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION_external-linaro-toolchain-utils: Miscellaneous utilities including getconf, iconv, locale, gencat, rpcgen, ...
+SUMMARY_external-linaro-toolchain-utils: Miscellaneous utilities provided by glibc
+RDEPENDS_external-linaro-toolchain-utils: external-linaro-toolchain (>= 2.21)
+RPROVIDES_external-linaro-toolchain-utils: glibc-utils external-linaro-toolchain-utils (=2.21)
+SECTION: base
+PKG_external-linaro-toolchain-utils: libc6-utils
+ALLOW_EMPTY_external-linaro-toolchain-utils: 1
+FILES_external-linaro-toolchain-utils: /usr/bin/* /usr/sbin/*
+FILES_INFO: {"/usr/bin/locale": 112704, "/usr/bin/getent": 66816, "/usr/bin/gencat": 68932, "/usr/bin/makedb": 55868, "/usr/bin/iconv": 206544, "/usr/bin/rpcgen": 240804, "/usr/bin/getconf": 45512, "/usr/bin/sprof": 73024, "/usr/bin/pcprofiledump": 23628, "/usr/bin/pldd": 45636}
+FILERDEPENDSFLIST_external-linaro-toolchain-utils: /usr/bin/locale /usr/bin/getent /usr/bin/gencat /usr/bin/makedb /usr/bin/iconv /usr/bin/rpcgen /usr/bin/getconf /usr/bin/sprof /usr/bin/pcprofiledump /usr/bin/pldd
+FILERDEPENDS_/usr/bin/locale_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.4)
+FILERDEPENDS_/usr/bin/getent_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.10) libc.so.6(GLIBC_2.4)
+FILERDEPENDS_/usr/bin/gencat_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/usr/bin/makedb_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.4)
+FILERDEPENDS_/usr/bin/iconv_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/usr/bin/rpcgen_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.4)
+FILERDEPENDS_/usr/bin/getconf_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.4)
+FILERDEPENDS_/usr/bin/sprof_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4)
+FILERDEPENDS_/usr/bin/pcprofiledump_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.4)
+FILERDEPENDS_/usr/bin/pldd_external-linaro-toolchain-utils: libc.so.6 libc.so.6(GLIBC_2.4)
+PKGSIZE_external-linaro-toolchain-utils: 939468

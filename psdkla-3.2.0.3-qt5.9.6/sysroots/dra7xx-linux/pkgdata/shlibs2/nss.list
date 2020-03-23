@@ -1,0 +1,8 @@
+libssl3.so:/usr/lib:3.21
+libnssdbm3.so:/usr/lib:3.21
+libfreebl3.so:/usr/lib:3.21
+libnss3.so:/usr/lib:3.21
+libsoftokn3.so:/usr/lib:3.21
+libsmime3.so:/usr/lib:3.21
+libnssutil3.so:/usr/lib:3.21
+libnssckbi.so:/usr/lib:3.21

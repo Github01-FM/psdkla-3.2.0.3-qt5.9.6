@@ -1,0 +1,20 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0.0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION: Perl scripting language.
+SUMMARY: Perl scripting language
+RDEPENDS_perl-lib: external-linaro-toolchain (>= 2.21)
+RPROVIDES_perl-lib: perl-lib
+SECTION: devel
+PKG_perl-lib: libperl5
+FILES_perl-lib: /usr/lib/libperl.so*                    /usr/lib/perl5                    /usr/lib/perl/config.sh                    /usr/lib/perl/5.22.1/Config_heavy.pl                    /usr/lib/perl/5.22.1/Config_heavy-target.pl
+pkg_postinst_perl-lib: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_perl-lib: /usr/lib/libperl.so.5.22.1
+FILES_INFO: {"/usr/lib/perl/5.22.1/Config_heavy-target.pl": 15, "/usr/lib/libperl.so.5": 17, "/usr/lib/perl/5.22.1/Config_heavy.pl": 50288, "/usr/lib/perl/config.sh": 41887, "/usr/lib/libperl.so.5.22.1": 1589892}
+FILERPROVIDES_/usr/lib/libperl.so.5.22.1_perl-lib: elf(buildid) (= fcb79fdf7a4a02b8b21e580ecce68ce061caef74) libperl.so.5
+FILERDEPENDSFLIST_perl-lib: /usr/lib/libperl.so.5.22.1
+FILERDEPENDS_/usr/lib/libperl.so.5.22.1_perl-lib: libc.so.6 libc.so.6(GLIBC_2.11) libc.so.6(GLIBC_2.4) libcrypt.so.1 libcrypt.so.1(GLIBC_2.4) libdl.so.2 libdl.so.2(GLIBC_2.4) libm.so.6 libm.so.6(GLIBC_2.4) libnsl.so.1 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libutil.so.1 rtld(GNU_HASH)
+PKGSIZE_perl-lib: 1682099

@@ -1,0 +1,15 @@
+PN: harfbuzz
+PV: 0.9.35
+PR: r0
+PKGV: 0.9.35
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_harfbuzz-staticdev: HarfBuzz is an OpenType text shaping engine.  This package contains static libraries for software development.
+SUMMARY_harfbuzz-staticdev: Text shaping library - Development files (Static Libraries)
+RDEPENDS_harfbuzz-staticdev: harfbuzz-dev (= 0.9.35-r0.0)
+RPROVIDES_harfbuzz-staticdev:  harfbuzz-staticdev (=0.9.35)
+SECTION_harfbuzz-staticdev: devel
+PKG_harfbuzz-staticdev: libharfbuzz-staticdev
+FILES_harfbuzz-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/harfbuzz/*.a
+FILES_INFO: {}
+PKGSIZE_harfbuzz-staticdev: 0

@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include/qt5
+
+
+Name: Qt5 Location
+Description: Qt Location module
+Version: 5.9.6
+Libs: -L${libdir} -lQt5Location 
+Cflags: -I${includedir}/QtLocation -I${includedir}
+Requires: Qt5Core Qt5Positioning Qt5Gui Qt5Quick Qt5Network Qt5Qml
+

@@ -1,0 +1,4 @@
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/dra7xx_g5r2-linux-gnueabi/ti-sgx-ddk-um/1.14.3699939-r23/packages-split/ti-sgx-ddk-um-dev/usr/lib/pkgconfig/egl
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/dra7xx_g5r2-linux-gnueabi/ti-sgx-ddk-um/1.14.3699939-r23/packages-split/ti-sgx-ddk-um-dev/usr/lib/pkgconfig/wayland-egl
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/dra7xx_g5r2-linux-gnueabi/ti-sgx-ddk-um/1.14.3699939-r23/packages-split/ti-sgx-ddk-um-dev/usr/lib/pkgconfig/gles_cm
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/dra7xx_g5r2-linux-gnueabi/ti-sgx-ddk-um/1.14.3699939-r23/packages-split/ti-sgx-ddk-um-dev/usr/lib/pkgconfig/glesv2

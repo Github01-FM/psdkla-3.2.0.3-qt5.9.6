@@ -1,0 +1,13 @@
+PN: systemd-serialgetty
+PV: 1.0
+PR: r5
+PKGV: 1.0
+PKGR: r5.0
+LICENSE: GPLv2+
+DESCRIPTION_systemd-serialgetty-doc: Serial terminal support for systemd.  This package contains documentation.
+SUMMARY_systemd-serialgetty-doc: Serial terminal support for systemd - Documentation files
+SECTION_systemd-serialgetty-doc: doc
+PKG_systemd-serialgetty-doc: systemd-serialgetty-doc
+FILES_systemd-serialgetty-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_systemd-serialgetty-doc: 0

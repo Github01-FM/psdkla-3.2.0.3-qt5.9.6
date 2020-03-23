@@ -1,0 +1,20 @@
+PN: pciutils
+PV: 3.4.1
+PR: r0
+PKGV: 3.4.1
+PKGR: r0.0
+LICENSE: GPLv2+
+DESCRIPTION: The PCI Utilities package contains a library for portable access to PCI bus configuration space and several utilities based on this library.
+SUMMARY: PCI utilities
+RDEPENDS_libpci: libudev (>= 229+git0+714c62b463) zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21)
+RPROVIDES_libpci:  libpci (=3.4.1)
+SECTION: console/utils
+PKG_libpci: libpci3
+FILES_libpci: /usr/lib/libpci.so.*
+pkg_postinst_libpci: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libpci: /usr/lib/libpci.so.3.4.1
+FILES_INFO: {"/usr/lib/libpci.so.3": 15, "/usr/lib/libpci.so.3.4.1": 35456}
+FILERPROVIDES_/usr/lib/libpci.so.3.4.1_libpci: elf(buildid) (= 1ef59e8921423434c8a40db76760ef2d577854c9) libpci.so.3 libpci.so.3(LIBPCI_3.0) libpci.so.3(LIBPCI_3.1) libpci.so.3(LIBPCI_3.2) libpci.so.3(LIBPCI_3.3) libpci.so.3(LIBPCI_3.4)
+FILERDEPENDSFLIST_libpci: /usr/lib/libpci.so.3.4.1
+FILERDEPENDS_/usr/lib/libpci.so.3.4.1_libpci: rtld(GNU_HASH)
+PKGSIZE_libpci: 35471

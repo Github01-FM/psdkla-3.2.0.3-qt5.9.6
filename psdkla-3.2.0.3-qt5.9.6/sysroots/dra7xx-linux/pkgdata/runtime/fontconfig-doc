@@ -1,0 +1,14 @@
+PN: fontconfig
+PV: 2.11.94
+PR: r0
+PKGV: 2.11.94
+PKGR: r0.0
+LICENSE: MIT-style & MIT & PD
+DESCRIPTION_fontconfig-doc: Fontconfig is a font configuration and customization library, which does not depend on the X Window System. It is designed to locate fonts within the system and select them according to requirements specified by applications. Fontconfig is not a rasterization library, nor does it impose a particular rasterization library on the application. The X-specific library \'Xft\' uses fontconfig along with freetype to specify and rasterize fonts.  This package contains documentation.
+SUMMARY_fontconfig-doc: Generic font configuration library - Documentation files
+RPROVIDES_fontconfig-doc:  fontconfig-doc (=2.11.94)
+SECTION_fontconfig-doc: doc
+PKG_fontconfig-doc: libfontconfig-doc
+FILES_fontconfig-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_fontconfig-doc: 0

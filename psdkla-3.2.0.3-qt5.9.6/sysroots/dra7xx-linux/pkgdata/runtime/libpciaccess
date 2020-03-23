@@ -1,0 +1,20 @@
+PN: libpciaccess
+PV: 0.13.4
+PR: r0
+PKGV: 0.13.4
+PKGR: r0.0
+LICENSE: MIT & MIT-style
+DESCRIPTION: libpciaccess provides functionality for X to access the PCI bus and devices in a platform-independent way.
+SUMMARY: Generic PCI access library for X
+RDEPENDS_libpciaccess: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libpciaccess:  libpciaccess (=0.13.4)
+SECTION: x11/libs
+PKG_libpciaccess: libpciaccess0
+FILES_libpciaccess: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libpciaccess /usr/lib/libpciaccess/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libpciaccess: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libpciaccess: /usr/lib/libpciaccess.so.0.11.1
+FILES_INFO: {"/usr/lib/libpciaccess.so.0": 22, "/usr/lib/libpciaccess.so.0.11.1": 25020}
+FILERPROVIDES_/usr/lib/libpciaccess.so.0.11.1_libpciaccess: elf(buildid) (= 4438f1aa0009319dc3c62ba6fdca32ccb5fe3f8b) libpciaccess.so.0
+FILERDEPENDSFLIST_libpciaccess: /usr/lib/libpciaccess.so.0.11.1
+FILERDEPENDS_/usr/lib/libpciaccess.so.0.11.1_libpciaccess: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libpciaccess: 25042

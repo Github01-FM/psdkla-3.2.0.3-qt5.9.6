@@ -1,0 +1,18 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0.0
+LICENSE: LGPLv2.1+
+DESCRIPTION: Password strength checker library.
+SUMMARY: Password strength checker library
+RDEPENDS_cracklib-python: zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21) cracklib (>= 2.9.5)
+SECTION: base
+PKG_cracklib-python: cracklib-python
+FILES_cracklib-python: /usr/lib/python2.7/site-packages/cracklib.py* \t/usr/lib/python2.7/site-packages/_cracklib.*
+FILERPROVIDESFLIST_cracklib-python: /usr/lib/python2.7/site-packages/@underscore@cracklib.so
+FILES_INFO: {"/usr/lib/python2.7/site-packages/cracklib.py": 5922, "/usr/lib/python2.7/site-packages/cracklib.pyo": 4888, "/usr/lib/python2.7/site-packages/_cracklib.la": 1065, "/usr/lib/python2.7/site-packages/cracklib.pyc": 4888, "/usr/lib/python2.7/site-packages/_cracklib.so": 6336}
+FILERPROVIDES_/usr/lib/python2.7/site-packages/@underscore@cracklib.so_cracklib-python: _cracklib.so elf(buildid) (= 36e4c82a984b6b2f95d6bccd61f1d009b74b4b5e)
+FILERDEPENDSFLIST_cracklib-python: /usr/lib/python2.7/site-packages/@underscore@cracklib.so
+FILERDEPENDS_/usr/lib/python2.7/site-packages/@underscore@cracklib.so_cracklib-python: libc.so.6 libc.so.6(GLIBC_2.4) libcrack.so.2 libz.so.1 rtld(GNU_HASH)
+PKGSIZE_cracklib-python: 23099

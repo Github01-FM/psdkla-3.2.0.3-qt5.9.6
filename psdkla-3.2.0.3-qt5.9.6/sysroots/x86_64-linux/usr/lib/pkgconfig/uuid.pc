@@ -1,0 +1,11 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.27.0
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

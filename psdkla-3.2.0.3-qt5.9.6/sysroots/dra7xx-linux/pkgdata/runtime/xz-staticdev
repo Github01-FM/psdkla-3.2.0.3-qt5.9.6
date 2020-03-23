@@ -1,0 +1,14 @@
+PN: xz
+PV: 5.2.2
+PR: r0
+PKGV: 5.2.2
+PKGR: r0.0
+LICENSE_xz-staticdev: GPLv2+
+DESCRIPTION_xz-staticdev: Utilities for managing LZMA compressed files.  This package contains static libraries for software development.
+SUMMARY_xz-staticdev: Utilities for managing LZMA compressed files - Development files (Static Libraries)
+RDEPENDS_xz-staticdev: xz-dev (= 5.2.2-r0.0)
+SECTION_xz-staticdev: devel
+PKG_xz-staticdev: xz-staticdev
+FILES_xz-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/xz/*.a
+FILES_INFO: {"/usr/lib/liblzma.a": 1000860}
+PKGSIZE_xz-staticdev: 1000860

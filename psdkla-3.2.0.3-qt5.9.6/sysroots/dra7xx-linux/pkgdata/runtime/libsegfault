@@ -1,0 +1,19 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_libsegfault: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_libsegfault: external-linaro-toolchain (>= 2.21)
+SECTION: base
+PKG_libsegfault: libsegfault
+FILES_libsegfault: /lib/libSegFault*
+pkg_postinst_libsegfault: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libsegfault: /lib/libSegFault.so
+FILES_INFO: {"/lib/libSegFault.so": 37736}
+FILERPROVIDES_/lib/libSegFault.so_libsegfault: libSegFault.so
+FILERDEPENDSFLIST_libsegfault: /lib/libSegFault.so
+FILERDEPENDS_/lib/libSegFault.so_libsegfault: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_PRIVATE)
+PKGSIZE_libsegfault: 37736

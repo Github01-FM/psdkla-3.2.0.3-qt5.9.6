@@ -1,0 +1,16 @@
+PN: libpng
+PV: 1.6.21
+PR: r0
+PKGV: 1.6.21
+PKGR: r0.0
+LICENSE: Libpng
+DESCRIPTION_libpng-dbg: PNG image format decoding library.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_libpng-dbg: PNG image format decoding library - Debugging files
+RPROVIDES_libpng-dbg:  libpng-dbg (=1.6.21)
+RRECOMMENDS_libpng-dbg: external-linaro-toolchain-dbg zlib-dbg
+SECTION_libpng-dbg: devel
+PKG_libpng-dbg: libpng16-dbg
+ALLOW_EMPTY_libpng-dbg: 1
+FILES_libpng-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngconf.h": 22873, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/arm/arm_init.c": 4640, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/contrib/tools/png-fix-itxt.c": 4205, "/usr/bin/.debug/png-fix-itxt": 14432, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngwio.c": 5652, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngtrans.c": 25124, "/usr/bin/.debug/pngfix": 72692, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/png.c": 153464, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/png.h": 136730, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngget.c": 33370, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngstruct.h": 20032, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/contrib/tools/pngfix.c": 129740, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngrio.c": 3955, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngrtran.c": 168425, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngwrite.c": 71149, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pnginfo.h": 12343, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngread.c": 138296, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngwtran.c": 15388, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngpread.c": 31446, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngwutil.c": 77166, "/usr/lib/.debug/libpng16.so.16.21.0": 545908, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngmem.c": 8342, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngpriv.h": 81116, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/arm/filter_neon_intrinsics.c": 10926, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngset.c": 49906, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngerror.c": 29174, "/usr/src/debug/libpng/1.6.21-r0/libpng-1.6.21/pngrutil.c": 142719}
+PKGSIZE_libpng-dbg: 2009213

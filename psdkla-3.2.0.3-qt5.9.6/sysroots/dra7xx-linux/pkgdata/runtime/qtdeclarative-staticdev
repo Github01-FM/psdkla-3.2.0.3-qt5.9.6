@@ -1,0 +1,14 @@
+PN: qtdeclarative
+PV: 5.9.6+gitAUTOINC+283a900c4e
+PR: r0.tisdk0
+PKGV: 5.9.6+git0+283a900c4e
+PKGR: r0.tisdk0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION_qtdeclarative-staticdev: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0.  This package contains static libraries for software development.
+SUMMARY_qtdeclarative-staticdev: qtdeclarative version 5.9.6+gitAUTOINC+283a900c4e-r0.tisdk0 - Development files (Static Libraries)
+RDEPENDS_qtdeclarative-staticdev: qtdeclarative-dev (= 5.9.6+git0+283a900c4e-r0.tisdk0.0)
+SECTION_qtdeclarative-staticdev: devel
+PKG_qtdeclarative-staticdev: qtdeclarative-staticdev
+FILES_qtdeclarative-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/qtdeclarative/*.a      /usr/lib/*.a 
+FILES_INFO: {"/usr/lib/libQt5QmlDevTools.a": 33405234}
+PKGSIZE_qtdeclarative-staticdev: 33405234

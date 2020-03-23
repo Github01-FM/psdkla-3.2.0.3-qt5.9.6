@@ -1,0 +1,19 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0.0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION: Perl scripting language.
+SUMMARY: Perl scripting language
+RDEPENDS_perl: perl-lib (>= 5.22.1) external-linaro-toolchain (>= 2.21)
+RPROVIDES_perl:  perl-module-strict perl-module-vars perl-module-config perl-module-warnings                     perl-module-warnings-register
+SECTION: devel
+PKG_perl: perl
+FILES_perl: /usr/bin/perl /usr/bin/perl5.22.1                /usr/lib/perl/5.22.1/Config.pm                /usr/lib/perl/5.22.1/strict.pm                /usr/lib/perl/5.22.1/warnings.pm                /usr/lib/perl/5.22.1/warnings                /usr/lib/perl/5.22.1/vars.pm               
+FILERPROVIDESFLIST_perl: /usr/bin/perl5.22.1
+FILES_INFO: {"/usr/lib/perl/5.22.1/warnings/register.pm": 759, "/usr/bin/perl": 10, "/usr/lib/perl/5.22.1/strict.pm": 4433, "/usr/lib/perl/5.22.1/Config.pm": 4769, "/usr/lib/perl/5.22.1/warnings.pm": 44896, "/usr/lib/perl/5.22.1/vars.pm": 2414, "/usr/bin/perl5.22.1": 5468}
+FILERPROVIDES_/usr/bin/perl5.22.1_perl: elf(buildid) (= 9ede3ab31aa8b072b1bad1199b2dd77a45d9dff7)
+FILERDEPENDSFLIST_perl: /usr/bin/perl5.22.1
+FILERDEPENDS_/usr/bin/perl5.22.1_perl: libc.so.6 libc.so.6(GLIBC_2.4) libcrypt.so.1 libdl.so.2 libm.so.6 libnsl.so.1 libperl.so.5 libpthread.so.0 libutil.so.1 rtld(GNU_HASH)
+PKGSIZE_perl: 62749

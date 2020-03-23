@@ -1,0 +1,14 @@
+PN: qtgraphicaleffects
+PV: 5.9.6+gitAUTOINC+f61dcaa5e5
+PR: r0
+PKGV: 5.9.6+git0+f61dcaa5e5
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION_qtgraphicaleffects-staticdev: qtgraphicaleffects version 5.9.6+gitAUTOINC+f61dcaa5e5-r0.  This package contains static libraries for software development.
+SUMMARY_qtgraphicaleffects-staticdev: qtgraphicaleffects version 5.9.6+gitAUTOINC+f61dcaa5e5-r0 - Development files (Static Libraries)
+RDEPENDS_qtgraphicaleffects-staticdev: qtgraphicaleffects-dev (= 5.9.6+git0+f61dcaa5e5-r0.0)
+SECTION_qtgraphicaleffects-staticdev: devel
+PKG_qtgraphicaleffects-staticdev: qtgraphicaleffects-staticdev
+FILES_qtgraphicaleffects-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/qtgraphicaleffects/*.a      /usr/lib/*.a 
+FILES_INFO: {}
+PKGSIZE_qtgraphicaleffects-staticdev: 0

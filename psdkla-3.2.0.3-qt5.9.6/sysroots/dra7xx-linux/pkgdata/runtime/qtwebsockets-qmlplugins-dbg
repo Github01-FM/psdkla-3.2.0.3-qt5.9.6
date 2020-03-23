@@ -1,0 +1,15 @@
+PN: qtwebsockets
+PV: 5.9.6+gitAUTOINC+3dc383a807
+PR: r0
+PKGV: 5.9.6+git0+3dc383a807
+PKGR: r0.0
+LICENSE: GFDL-1.3 & (GPL-3 | LGPL-3.0)
+DESCRIPTION: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0.
+SUMMARY: qtwebsockets version 5.9.6+gitAUTOINC+3dc383a807-r0
+RPROVIDES_qtwebsockets-qmlplugins-dbg:  qtwebsockets-qmlplugins-dbg (=5.9.6+git0+3dc383a807)
+RRECOMMENDS_qtwebsockets-qmlplugins-dbg: qtbase-dbg qtwebsockets-dbg libstdc++-dbg qtdeclarative-dbg external-linaro-toolchain-dbg libgcc-dbg
+SECTION: base
+PKG_qtwebsockets-qmlplugins-dbg: libqt5websockets-qmlplugins-dbg
+FILES_qtwebsockets-qmlplugins-dbg:      /usr/lib/qt5/qml/*/.debug     /usr/lib/qt5/qml/*/*/.debug     /usr/lib/qt5/qml/*/*/*/.debug     /usr/lib/qt5/qml/*/*/*/*/.debug     /usr/lib/qt5/imports/*/.debug     /usr/lib/qt5/imports/*/*/.debug     /usr/lib/qt5/imports/*/*/*/.debug 
+FILES_INFO: {}
+PKGSIZE_qtwebsockets-qmlplugins-dbg: 0

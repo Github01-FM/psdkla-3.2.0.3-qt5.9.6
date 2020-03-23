@@ -1,0 +1,16 @@
+PN: xz
+PV: 5.2.2
+PR: r0
+PKGV: 5.2.2
+PKGR: r0.0
+LICENSE_xz-dev: GPLv2+
+DESCRIPTION_xz-dev: Utilities for managing LZMA compressed files.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_xz-dev: Utilities for managing LZMA compressed files - Development files
+RDEPENDS_xz-dev: xz (= 5.2.2-r0.0) liblzma
+RRECOMMENDS_xz-dev: external-linaro-toolchain-dev liblzma-dev
+SECTION_xz-dev: devel
+PKG_xz-dev: xz-dev
+ALLOW_EMPTY_xz-dev: 1
+FILES_xz-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/xz/*.la /lib/*.la
+FILES_INFO: {"/usr/include/lzma/check.h": 4255, "/usr/include/lzma/version.h": 3497, "/usr/include/lzma/hardware.h": 2605, "/usr/include/lzma/base.h": 24594, "/usr/include/lzma/vli.h": 6547, "/usr/include/lzma/index_hash.h": 3914, "/usr/include/lzma/block.h": 22106, "/usr/include/lzma/container.h": 24000, "/usr/include/lzma/lzma12.h": 14743, "/usr/lib/pkgconfig/liblzma.pc": 380, "/usr/include/lzma/stream_flags.h": 8253, "/usr/lib/liblzma.la": 1027, "/usr/include/lzma/filter.h": 16429, "/usr/include/lzma/index.h": 23236, "/usr/include/lzma.h": 9737, "/usr/include/lzma/delta.h": 1865, "/usr/include/lzma/bcj.h": 2630, "/usr/lib/liblzma.so": 16}
+PKGSIZE_xz-dev: 169834

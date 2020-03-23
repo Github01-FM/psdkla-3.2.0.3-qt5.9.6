@@ -1,0 +1,15 @@
+PN: vpdma-fw
+PV: 03-2012
+PR: r1
+PKGV: 03-2012
+PKGR: r1.0
+LICENSE: TI-TSPA
+DESCRIPTION_vpdma-fw-dev: VPDMA firmware for Video Input Port and Video Processing Engine  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_vpdma-fw-dev: vpdma-fw version 03-2012-r1 - Development files
+RDEPENDS_vpdma-fw-dev: vpdma-fw (= 03-2012-r1.0)
+SECTION_vpdma-fw-dev: devel
+PKG_vpdma-fw-dev: vpdma-fw-dev
+ALLOW_EMPTY_vpdma-fw-dev: 1
+FILES_vpdma-fw-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/vpdma-fw/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_vpdma-fw-dev: 0

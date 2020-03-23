@@ -1,0 +1,20 @@
+PN: python
+PV: 2.7.11
+PR: r1
+PKGV: 2.7.11
+PKGR: r1.0
+LICENSE: PSFv2
+DESCRIPTION: The Python Programming Language.
+SUMMARY_python-unixadmin: Python Unix administration support
+RDEPENDS_python-unixadmin: python-core external-linaro-toolchain (>= 2.21) libpython2 (>= 2.7.11)
+SECTION: devel/python
+PKG_python-unixadmin: python-unixadmin
+FILES_python-unixadmin: /usr/lib/python2.7/lib-dynload/nis.so /usr/lib/python2.7/lib-dynload/grp.so /usr/lib/python2.7/lib-dynload/pwd.so /usr/lib/python2.7/getpass.* 
+FILERPROVIDESFLIST_python-unixadmin: /usr/lib/python2.7/lib-dynload/grp.so /usr/lib/python2.7/lib-dynload/nis.so
+FILES_INFO: {"/usr/lib/python2.7/lib-dynload/grp.so": 7072, "/usr/lib/python2.7/lib-dynload/nis.so": 8796, "/usr/lib/python2.7/getpass.py": 5563, "/usr/lib/python2.7/getpass.pyc": 4730}
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/grp.so_python-unixadmin: elf(buildid) (= 9441411039364a93b57e8b98c650afda002ff861) grp.so
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/nis.so_python-unixadmin: elf(buildid) (= 260c1e83121cdceba678ea46370c8b8bbfe3ebe2) nis.so
+FILERDEPENDSFLIST_python-unixadmin: /usr/lib/python2.7/lib-dynload/grp.so /usr/lib/python2.7/lib-dynload/nis.so
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/grp.so_python-unixadmin: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/nis.so_python-unixadmin: libc.so.6 libc.so.6(GLIBC_2.4) libnsl.so.1 libnsl.so.1(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+PKGSIZE_python-unixadmin: 26161

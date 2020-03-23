@@ -1,0 +1,13 @@
+PN: libdrm
+PV: 2.4.67
+PR: r0.arago1
+PKGV: 2.4.67
+PKGR: r0.arago1.0
+LICENSE: MIT
+DESCRIPTION_libdrm-doc: The runtime library for accessing the kernel DRM services.  DRM stands for \\"Direct Rendering Manager\\", which is the kernel portion of the \\"Direct Rendering Infrastructure\\" (DRI).  DRI is required for many hardware accelerated OpenGL drivers.  This package contains documentation.
+SUMMARY_libdrm-doc: Userspace interface to the kernel DRM services - Documentation files
+SECTION_libdrm-doc: doc
+PKG_libdrm-doc: libdrm-doc
+FILES_libdrm-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_libdrm-doc: 0

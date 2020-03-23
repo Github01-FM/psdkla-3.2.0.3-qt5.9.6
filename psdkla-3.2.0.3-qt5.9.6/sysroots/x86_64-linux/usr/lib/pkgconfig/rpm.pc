@@ -1,0 +1,18 @@
+##
+##  rpm.pc -- RPM pkg-config(1) specification
+##
+
+suffix=
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+includedir=${STAGING_DIR_NATIVE}/usr/include${suffix}
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+
+Name: rpm
+Description: RPM Package Manager
+Version: 5.4.16
+URL: http://rpm5.org/
+Cflags: -I${includedir}/rpm
+Libs: -L${libdir} -lrpmbuild${suffix} -lrpm${suffix} -lrpmdb${suffix} -lrpmio${suffix} -lrpmconstant${suffix} -lrpmmisc${suffix}
+Libs.private: -lacl -lattr -lossp-uuid -lpcreposix -lpcre -ldb-6.0 -lmagic -lcrypto -lbz2 -lz -lpopt -lpthread  -lelf -lpopt -lz -lssl -lcrypto -lpcre -lossp-uuid
+

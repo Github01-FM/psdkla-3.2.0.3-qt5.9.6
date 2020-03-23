@@ -1,0 +1,16 @@
+PN: zlib
+PV: 1.2.8
+PR: r0
+PKGV: 1.2.8
+PKGR: r0.0
+LICENSE: Zlib
+DESCRIPTION_zlib-dbg: Zlib is a general-purpose, patent-free, lossless data compression library which is used by many different programs.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_zlib-dbg: Zlib Compression Library - Debugging files
+RPROVIDES_zlib-dbg:  zlib-dbg (=1.2.8)
+RRECOMMENDS_zlib-dbg: external-linaro-toolchain-dbg
+SECTION_zlib-dbg: devel
+PKG_zlib-dbg: libz-dbg
+ALLOW_EMPTY_zlib-dbg: 1
+FILES_zlib-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/compress.c": 2529, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/gzclose.c": 678, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/infback.c": 22709, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/inflate.c": 53512, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/inflate.h": 6399, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/gzread.c": 18694, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/inffast.h": 427, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/gzlib.c": 16415, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/inffast.c": 13455, "/lib/.debug/libz.so.1.2.8": 141968, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/gzwrite.c": 16199, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/crc32.c": 13174, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/deflate.c": 71476, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/deflate.h": 12774, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/crc32.h": 30562, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/zlib.h": 87883, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/zconf.h": 15472, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/inftrees.h": 2928, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/inftrees.c": 13028, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/trees.c": 44255, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/inffixed.h": 6332, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/trees.h": 8472, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/zutil.h": 6766, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/gzguts.h": 6552, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/zutil.c": 7414, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/uncompr.c": 2003, "/usr/src/debug/zlib/1.2.8-r0/zlib-1.2.8/adler32.c": 4968}
+PKGSIZE_zlib-dbg: 627044

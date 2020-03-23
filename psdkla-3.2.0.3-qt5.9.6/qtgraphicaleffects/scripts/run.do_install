@@ -1,0 +1,195 @@
+#!/bin/sh
+
+# Emit a useful diagnostic if something fails:
+bb_exit_handler() {
+    ret=$?
+    case $ret in
+    0)  ;;
+    *)  case $BASH_VERSION in
+        "") echo "WARNING: exit code $ret from a shell command.";;
+        *)  echo "WARNING: ${BASH_SOURCE[0]}:${BASH_LINENO[0]} exit $ret from '$BASH_COMMAND'";;
+        esac
+        exit $ret
+    esac
+}
+trap 'bb_exit_handler' 0
+set -e
+export OE_QMAKE_LDFLAGS=" -L${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-rpath-link,${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-O1 -Wl,--hash-style=gnu"
+export prefix="/usr"
+export STRIP="${HOST_PREFIX}strip"
+export localstatedir="/var"
+export BUILD_CC="gcc "
+export libexecdir="/usr/libexec"
+export READELF="${HOST_PREFIX}readelf"
+export datadir="/usr/share"
+export PKG_CONFIG_SYSROOT_DIR="${STAGING_DIR_HOST}"
+export BUILD_CXX="g++ "
+export LD="${HOST_PREFIX}ld --sysroot=${STAGING_DIR_HOST} "
+export bindir="/usr/bin"
+export TARGET_CXXFLAGS=" -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= "
+export BUILD_LDFLAGS="-L${STAGING_DIR_NATIVE}/usr/lib -L${STAGING_DIR_NATIVE}/lib -Wl,-rpath-link,${STAGING_DIR_NATIVE}/usr/lib -Wl,-rpath-link,${STAGING_DIR_NATIVE}/lib -Wl,-rpath,${STAGING_DIR_NATIVE}/usr/lib -Wl,-rpath,${STAGING_DIR_NATIVE}/lib -Wl,-O1"
+export STRINGS="${HOST_PREFIX}strings"
+export BUILD_LD="ld "
+export oldincludedir="/usr/include"
+export BUILD_CCLD="gcc "
+export OE_QMAKE_CXX="${HOST_PREFIX}g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}"
+export PSEUDO_LOCALSTATEDIR="${WORKDIR}/pseudo/"
+export PKG_CONFIG_SYSTEM_LIBRARY_PATH="/lib:/usr/lib"
+export CC="${HOST_PREFIX}gcc  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}"
+export RANLIB="${HOST_PREFIX}ranlib"
+export OE_QMAKE_WAYLAND_SCANNER="${STAGING_DIR_NATIVE}/usr/bin/wayland-scanner"
+export CPPFLAGS=" -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include "
+export OE_QMAKE_CXXFLAGS=" -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= "
+export PKG_CONFIG_SYSTEM_INCLUDE_PATH="/usr/include"
+export CXX="${HOST_PREFIX}g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}"
+export BUILD_RANLIB="ranlib"
+export BUILD_NM="nm"
+export mandir="/usr/share/man"
+export OE_QMAKE_CFLAGS=" -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= "
+export OBJCOPY="${HOST_PREFIX}objcopy"
+export OE_QMAKE_COMPILER="${HOST_PREFIX}gcc  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}"
+export servicedir="/srv"
+export OE_QMAKE_CC="${HOST_PREFIX}gcc  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}"
+export LC_ALL="C"
+export nonarch_libdir="/usr/lib"
+export PKG_CONFIG_DIR="${STAGING_DIR_HOST}/usr/lib/pkgconfig"
+export sysconfdir="/etc"
+export CCLD="${HOST_PREFIX}gcc  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}"
+export base_bindir="/bin"
+export includedir="/usr/include"
+export PKG_CONFIG_LIBDIR="${STAGING_DIR_HOST}/usr/lib/pkgconfig"
+export sbindir="/usr/sbin"
+export CFLAGS=" -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= "
+export systemd_system_unitdir="/lib/systemd/system"
+export PKG_CONFIG_DISABLE_UNINSTALLED="yes"
+export PSEUDO_DISABLED="0"
+export OE_QMAKE_AR="${HOST_PREFIX}ar"
+export TARGET_LDFLAGS=" -L${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-rpath-link,${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-O1 -Wl,--hash-style=gnu"
+export systemd_unitdir="/lib/systemd"
+export AS="${HOST_PREFIX}as "
+export systemd_user_unitdir="/usr/lib/systemd/user"
+export NM="${HOST_PREFIX}nm"
+export USER="user01"
+export LDFLAGS=" -L${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-rpath-link,${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-O1 -Wl,--hash-style=gnu"
+export MAKE="make"
+unset TARGET_ARCH
+export CCACHE_DIR="/home/user01/.ccache"
+export PSEUDO_PREFIX="${STAGING_DIR_NATIVE}/usr"
+export BUILD_CPP="gcc  -E"
+export OE_QMAKE_STRIP="echo"
+export BUILD_CFLAGS="-isystem${STAGING_DIR_NATIVE}/usr/include -O2 -pipe"
+export docdir="/usr/share/doc"
+export infodir="/usr/share/info"
+export base_prefix=""
+export TERM="xterm-256color"
+export OE_QMAKE_QTCONF_PATH="${QTCONF_PATH}/qt.conf"
+export base_sbindir="/sbin"
+export PKG_CONFIG_PATH="${STAGING_DIR_HOST}/usr/lib/pkgconfig:${STAGING_DIR_HOST}/usr/share/pkgconfig"
+export PSEUDO_NOSYMLINKEXP="1"
+export AR="${HOST_PREFIX}ar"
+export BUILD_CPPFLAGS="-isystem${STAGING_DIR_NATIVE}/usr/include"
+export CPP="${HOST_PREFIX}gcc -E --sysroot=${STAGING_DIR_HOST}  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard"
+export BUILD_CXXFLAGS="-isystem${STAGING_DIR_NATIVE}/usr/include -O2 -pipe"
+export CCACHE_DISABLE="1"
+export FC="${HOST_PREFIX}gfortran  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}"
+export HOME="/home/user01"
+export BUILD_FC="gfortran "
+export TARGET_CPPFLAGS=" -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include "
+export exec_prefix="/usr"
+export CXXFLAGS=" -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= "
+export OE_QMAKE_LINK="${HOST_PREFIX}g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}"
+export base_libdir="/lib"
+export LOGNAME="user01"
+export PATH="${STAGING_DIR_NATIVE}/usr/bin/qt5:${STAGING_DIR_NATIVE}/usr/bin/arm-linux-gnueabi:${STAGING_DIR_HOST}/usr/bin/crossscripts:${STAGING_DIR_NATIVE}/usr/sbin:${STAGING_DIR_NATIVE}/usr/bin:${STAGING_DIR_NATIVE}/sbin:${STAGING_DIR_NATIVE}/bin:${TOOLCHAIN_PATH}/bin:${TOOLCHAIN_PATH}/bin:${TOOLCHAIN_PATH}/bin:${PATH}"
+export TARGET_CFLAGS=" -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= "
+unset MACHINE
+export BUILD_AR="ar"
+export BUILD_AS="as "
+export sharedstatedir="/com"
+export OBJDUMP="${HOST_PREFIX}objdump"
+unset DISTRO
+export libdir="/usr/lib"
+export nonarch_base_libdir="/lib"
+unset SHELL
+export BUILD_STRIP="strip"
+export PSEUDO_PASSWD="${STAGING_DIR_HOST}:${STAGING_DIR_NATIVE}"
+
+do_install() {
+    qmake5_base_do_install
+}
+
+qmake5_base_do_install() {
+    # Fix install paths for all
+    find . -name "Makefile*" | xargs -r sed -i "s,(INSTALL_ROOT)${STAGING_DIR_HOST},(INSTALL_ROOT),g"
+    find . -name "Makefile*" | xargs -r sed -i "s,(INSTALL_ROOT)${STAGING_DIR_HOST},(INSTALL_ROOT),g"
+    find . -name "Makefile*" | xargs -r sed -i "s,(INSTALL_ROOT)${STAGING_DIR_NATIVE},(INSTALL_ROOT),g"
+
+    oe_runmake install INSTALL_ROOT=${D}
+
+    # everything except HostData and HostBinaries is prefixed with sysroot value,
+    # but we cannot remove sysroot override, because that's useful for pkg-config etc
+    # concurrent builds may cause qmake to regenerate Makefiles and override the above
+    # sed changes. If that happens, move files manually to correct location.
+    qmake5_base_fix_install ${STAGING_DIR_HOST}
+    qmake5_base_fix_install ${STAGING_DIR_HOST}
+    qmake5_base_fix_install ${STAGING_DIR_NATIVE}
+
+    if ls ${D}/usr/lib/pkgconfig/*.pc >/dev/null 2>/dev/null; then
+        sed -i ${D}/usr/lib/pkgconfig/*.pc \
+            -e "s@-L${STAGING_DIR_HOST}/usr/lib@-L\/usr/lib@g" \
+            -e "s@${STAGING_DIR_HOST}@@g"
+    fi
+}
+
+oe_runmake() {
+	oe_runmake_call "$@" || die "oe_runmake failed"
+}
+
+qmake5_base_fix_install() {
+    STAGING_PATH=$1
+    if [ -d ${D}${STAGING_PATH} ] ; then
+        echo "Some files are installed in wrong directory ${D}${STAGING_PATH}"
+        cp -ra ${D}${STAGING_PATH}/* ${D}
+        rm -rf ${D}${STAGING_PATH}
+        # remove empty dirs
+        TMP=`dirname ${D}${STAGING_PATH}`
+        while test ${TMP} != ${D}; do
+            rmdir ${TMP}
+            TMP=`dirname ${TMP}`;
+        done
+    fi
+}
+
+die() {
+	bbfatal_log "$*"
+}
+
+oe_runmake_call() {
+	bbnote make -j 48      MAKEFLAGS='-j 48'     OE_QMAKE_COMPILER='${HOST_PREFIX}gcc  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}'     OE_QMAKE_CC='${HOST_PREFIX}gcc  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}'     OE_QMAKE_CXX='${HOST_PREFIX}g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}'     OE_QMAKE_CFLAGS=' -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= '     OE_QMAKE_CXXFLAGS=' -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= '     OE_QMAKE_LINK='${HOST_PREFIX}g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}'     OE_QMAKE_LDFLAGS=' -L${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-rpath-link,${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-O1 -Wl,--hash-style=gnu'     OE_QMAKE_AR='${HOST_PREFIX}ar'     OE_QMAKE_STRIP='echo'     OE_QMAKE_WAYLAND_SCANNER='${STAGING_DIR_NATIVE}/usr/bin/wayland-scanner'     OE_QMAKE_INCDIR_QT='${STAGING_DIR_HOST}//usr/include/qt5'  "$@"
+	make -j 48      MAKEFLAGS='-j 48'     OE_QMAKE_COMPILER='${HOST_PREFIX}gcc  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}'     OE_QMAKE_CC='${HOST_PREFIX}gcc  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}'     OE_QMAKE_CXX='${HOST_PREFIX}g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}'     OE_QMAKE_CFLAGS=' -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= '     OE_QMAKE_CXXFLAGS=' -isystem${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/include  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=${WORKDIR}=/usr/src/debug/qtgraphicaleffects/5.9.6+gitAUTOINC+f61dcaa5e5-r0 -fdebug-prefix-map=${STAGING_DIR_NATIVE}= -fdebug-prefix-map=${STAGING_DIR_HOST}= '     OE_QMAKE_LINK='${HOST_PREFIX}g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=${STAGING_DIR_HOST}'     OE_QMAKE_LDFLAGS=' -L${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-rpath-link,${TOOLCHAIN_PATH}/${ELT_TARGET_SYS}/lib -Wl,-O1 -Wl,--hash-style=gnu'     OE_QMAKE_AR='${HOST_PREFIX}ar'     OE_QMAKE_STRIP='echo'     OE_QMAKE_WAYLAND_SCANNER='${STAGING_DIR_NATIVE}/usr/bin/wayland-scanner'     OE_QMAKE_INCDIR_QT='${STAGING_DIR_HOST}//usr/include/qt5'  "$@"
+}
+
+bbfatal_log() {
+	if [ -p ${WORKDIR}/temp/fifo.86156 ] ; then
+		printf "%b\0" "bbfatal_log $*" > ${WORKDIR}/temp/fifo.86156
+	else
+		echo "ERROR: $*"
+	fi
+	exit 1
+}
+
+bbnote() {
+	if [ -p ${WORKDIR}/temp/fifo.86156 ] ; then
+		printf "%b\0" "bbnote $*" > ${WORKDIR}/temp/fifo.86156
+	else
+		echo "NOTE: $*"
+	fi
+}
+
+cd ${B}
+do_install
+
+# cleanup
+ret=$?
+trap '' 0
+exit $ret

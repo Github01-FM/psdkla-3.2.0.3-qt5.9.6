@@ -1,0 +1,15 @@
+PN: packagegroup-sv-qt5
+PV: 1.0
+PR: r1
+PKGV: 1.0
+PKGR: r1.0
+LICENSE: MIT
+DESCRIPTION_packagegroup-sv-qt5-dbg: External task to get Qt5  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_packagegroup-sv-qt5-dbg: packagegroup-sv-qt5 version 1.0-r1 - Debugging files
+RRECOMMENDS_packagegroup-sv-qt5-dbg: qtgraphicaleffects-dbg qtdeclarative-qmlplugins-dbg qtxmlpatterns-dbg qtwebengine-examples-dbg libcap-dbg qtwayland-dbg qtdeclarative-dbg qtbase-plugins-dbg liblzma-dbg qtwebengine-dbg qtquickcontrols-qmlplugins-dbg qtwayland-plugins-dbg qtgraphicaleffects-qmlplugins-dbg qtbase-dbg qtimageformats-dbg
+SECTION_packagegroup-sv-qt5-dbg: devel
+PKG_packagegroup-sv-qt5-dbg: packagegroup-sv-qt5-dbg
+ALLOW_EMPTY_packagegroup-sv-qt5-dbg: 1
+FILES_packagegroup-sv-qt5-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_packagegroup-sv-qt5-dbg: 0

@@ -1,0 +1,13 @@
+PN: xz
+PV: 5.2.2
+PR: r0
+PKGV: 5.2.2
+PKGR: r0.0
+LICENSE_xz-doc: GPLv2+
+DESCRIPTION_xz-doc: Utilities for managing LZMA compressed files.  This package contains documentation.
+SUMMARY_xz-doc: Utilities for managing LZMA compressed files - Documentation files
+SECTION_xz-doc: doc
+PKG_xz-doc: xz-doc
+FILES_xz-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/man/man1/xzcat.1": 4, "/usr/share/man/man1/xzdiff.1": 1469, "/usr/share/doc/xz/xz-file-format.txt": 43305, "/usr/share/man/man1/lzdiff.1": 8, "/usr/share/man/man1/lzmadec.1": 7, "/usr/share/man/man1/xzless.1": 1360, "/usr/share/doc/xz/examples_old/xz_pipe_comp.c": 3043, "/usr/share/man/man1/xzfgrep.1": 8, "/usr/share/doc/xz/examples/00_README.txt": 1037, "/usr/share/man/man1/lzgrep.1": 8, "/usr/share/man/man1/xzcmp.1": 8, "/usr/share/doc/xz/examples/03_compress_custom.c": 5025, "/usr/share/man/man1/lzfgrep.1": 8, "/usr/share/man/man1/lzcat.1": 4, "/usr/share/doc/xz/examples/Makefile": 337, "/usr/share/doc/xz/examples/01_compress_easy.c": 9534, "/usr/share/man/man1/unxz.1": 4, "/usr/share/man/man1/lzmore.1": 8, "/usr/share/doc/xz/NEWS": 18971, "/usr/share/doc/xz/history.txt": 7427, "/usr/share/man/man1/unlzma.1": 4, "/usr/share/man/man1/lzmainfo.1": 1250, "/usr/share/man/man1/lzma.1": 4, "/usr/share/doc/xz/THANKS": 2323, "/usr/share/doc/xz/TODO": 4040, "/usr/share/man/man1/xzmore.1": 1153, "/usr/share/man/man1/xzegrep.1": 8, "/usr/share/man/man1/xz.1": 64641, "/usr/share/doc/xz/faq.txt": 9409, "/usr/share/doc/xz/examples/02_decompress.c": 8912, "/usr/share/doc/xz/examples_old/xz_pipe_decomp.c": 3130, "/usr/share/man/man1/xzgrep.1": 1489, "/usr/share/doc/xz/COPYING.GPLv2": 18092, "/usr/share/doc/xz/README": 13525, "/usr/share/doc/xz/COPYING": 2774, "/usr/share/doc/xz/lzma-file-format.txt": 5689, "/usr/share/doc/xz/examples/04_compress_easy_mt.c": 5214, "/usr/share/man/man1/lzless.1": 8, "/usr/share/man/man1/lzegrep.1": 8, "/usr/share/man/man1/lzcmp.1": 8, "/usr/share/doc/xz/AUTHORS": 1043, "/usr/share/man/man1/xzdec.1": 2837}
+PKGSIZE_xz-doc: 237136

@@ -1,0 +1,14 @@
+PN: systemd-compat-units
+PV: 1.0
+PR: r29
+PKGV: 1.0
+PKGR: r29.0
+LICENSE: MIT
+DESCRIPTION_systemd-compat-units-staticdev: Enhances systemd compatilibity with existing SysVinit scripts.  This package contains static libraries for software development.
+SUMMARY_systemd-compat-units-staticdev: Enhances systemd compatilibity with existing SysVinit scripts - Development files (Static Libraries)
+RDEPENDS_systemd-compat-units-staticdev: systemd-compat-units-dev (= 1.0-r29.0)
+SECTION_systemd-compat-units-staticdev: devel
+PKG_systemd-compat-units-staticdev: systemd-compat-units-staticdev
+FILES_systemd-compat-units-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/systemd-compat-units/*.a
+FILES_INFO: {}
+PKGSIZE_systemd-compat-units-staticdev: 0

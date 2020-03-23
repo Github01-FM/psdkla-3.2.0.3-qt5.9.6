@@ -1,0 +1,16 @@
+PN: pango
+PV: 1.38.1
+PR: r0
+PKGV: 1.38.1
+PKGR: r0.0
+LICENSE: LGPLv2.0+
+DESCRIPTION_pango-dev: Pango is a library for laying out and rendering of text, with an emphasis on internationalization. Pango can be used anywhere that text layout is needed, though most of the work on Pango so far has been done in the context of the GTK+ widget toolkit. Pango forms the core of text and font handling for GTK+-2.x.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_pango-dev: Framework for layout and rendering of internationalized text - Development files
+RDEPENDS_pango-dev: pango (= 1.38.1-r0.0)
+RRECOMMENDS_pango-dev: external-linaro-toolchain-dev zlib-dev libpcre-dev freetype-dev libffi-dev gobject-introspection-dev harfbuzz-dev fontconfig-dev libpng-dev cairo-dev pixman-dev glib-2.0-dev expat-dev
+SECTION_pango-dev: devel
+PKG_pango-dev: pango-dev
+ALLOW_EMPTY_pango-dev: 1
+FILES_pango-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/pango/*.la /lib/*.la /usr/lib/pango/1.8.0/modules/*.la /usr/share/gir-*/*.gir
+FILES_INFO: {"/usr/include/pango-1.0/pango/pango-script.h": 11049, "/usr/include/pango-1.0/pango/pango-tabs.h": 2929, "/usr/include/pango-1.0/pango/pangoft2.h": 4791, "/usr/include/pango-1.0/pango/pango-coverage.h": 2962, "/usr/include/pango-1.0/pango/pango-ot.h": 14260, "/usr/include/pango-1.0/pango/pangofc-decoder.h": 3822, "/usr/include/pango-1.0/pango/pango-fontset.h": 5589, "/usr/include/pango-1.0/pango/pango-matrix.h": 3538, "/usr/include/pango-1.0/pango/pango-attributes.h": 20340, "/usr/include/pango-1.0/pango/pango-engine.h": 15467, "/usr/include/pango-1.0/pango/pango-enum-types.h": 2607, "/usr/include/pango-1.0/pango/pango-features.h": 232, "/usr/share/gir-1.0/Pango-1.0.gir": 639945, "/usr/include/pango-1.0/pango/pango-break.h": 6578, "/usr/lib/pkgconfig/pangoft2.pc": 310, "/usr/lib/pkgconfig/pangocairo.pc": 270, "/usr/include/pango-1.0/pango/pango-fontmap.h": 5828, "/usr/include/pango-1.0/pango/pangocairo.h": 6354, "/usr/include/pango-1.0/pango/pango-glyph.h": 6652, "/usr/lib/libpango-1.0.so": 24, "/usr/include/pango-1.0/pango/pango-item.h": 3255, "/usr/include/pango-1.0/pango/pangofc-font.h": 5300, "/usr/lib/libpangocairo-1.0.la": 1642, "/usr/include/pango-1.0/pango/pango-renderer.h": 8954, "/usr/include/pango-1.0/pango/pangofc-fontmap.h": 11011, "/usr/share/gir-1.0/PangoCairo-1.0.gir": 39031, "/usr/include/pango-1.0/pango/pango-context.h": 5432, "/usr/include/pango-1.0/pango/pango.h": 1598, "/usr/include/pango-1.0/pango/pango-bidi-type.h": 4547, "/usr/lib/libpango-1.0.la": 1259, "/usr/include/pango-1.0/pango/pango-types.h": 5872, "/usr/share/gir-1.0/PangoFT2-1.0.gir": 14893, "/usr/include/pango-1.0/pango/pango-glyph-item.h": 5634, "/usr/include/pango-1.0/pango/pango-utils.h": 6373, "/usr/lib/libpangocairo-1.0.so": 29, "/usr/lib/libpangoft2-1.0.so": 27, "/usr/include/pango-1.0/pango/pango-language.h": 2071, "/usr/include/pango-1.0/pango/pango-modules.h": 2434, "/usr/lib/pkgconfig/pango.pc": 256, "/usr/include/pango-1.0/pango/pango-gravity.h": 4339, "/usr/include/pango-1.0/pango/pango-font.h": 22212, "/usr/lib/libpangoft2-1.0.la": 1453, "/usr/include/pango-1.0/pango/pango-layout.h": 14743}
+PKGSIZE_pango-dev: 915912

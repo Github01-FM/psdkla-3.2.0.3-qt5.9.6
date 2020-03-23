@@ -1,0 +1,13 @@
+PN: libinput
+PV: 1.8.4
+PR: r0
+PKGV: 1.8.4
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: Library to handle input devices in Wayland compositors.
+SUMMARY: Library to handle input devices in Wayland compositors
+SECTION: libs
+PKG_libinput-locale: libinput-locale
+FILES_libinput-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libinput-locale: 0

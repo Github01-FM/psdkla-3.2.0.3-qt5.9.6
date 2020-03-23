@@ -1,0 +1,15 @@
+PN: libcheck
+PV: 0.10.0
+PR: r0
+PKGV: 0.10.0
+PKGR: r0.0
+LICENSE: LGPLv2.1+
+DESCRIPTION_libcheck-dbg: Check - unit testing framework for C code.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_libcheck-dbg: Check - unit testing framework for C code - Debugging files
+RRECOMMENDS_libcheck-dbg: external-linaro-toolchain-dbg
+SECTION_libcheck-dbg: devel
+PKG_libcheck-dbg: libcheck-dbg
+ALLOW_EMPTY_libcheck-dbg: 1
+FILES_libcheck-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check.c": 12713, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_error.h": 1273, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_print.c": 6023, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_str.h": 1617, "/usr/lib/.debug/libcheck.so.0.0.0": 108760, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_msg.c": 8386, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_print.h": 1302, "/usr/src/debug/libcheck/0.10.0-r0/build/src/check.h": 37218, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check.h": 37218, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_msg.h": 1280, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_str.c": 3527, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_pack.c": 11079, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_impl.h": 4160, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_pack.h": 1843, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_list.h": 1732, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_log.c": 14026, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_run.c": 23139, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_error.c": 1981, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/lib/libcompat.c": 305, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_log.h": 2078, "/usr/src/debug/libcheck/0.10.0-r0/check-0.10.0/src/check_list.c": 3014}
+PKGSIZE_libcheck-dbg: 282674

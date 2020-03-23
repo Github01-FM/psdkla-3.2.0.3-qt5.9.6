@@ -1,0 +1,2 @@
+#! /bin/sh
+exec '${STAGING_DIR_NATIVE}/usr/bin/bison' -y "$@"

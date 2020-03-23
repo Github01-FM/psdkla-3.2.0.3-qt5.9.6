@@ -1,0 +1,4 @@
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/wayland/1.14.0-r0/packages-split/wayland-dev/usr/lib/pkgconfig/wayland-cursor
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/wayland/1.14.0-r0/packages-split/wayland-dev/usr/lib/pkgconfig/wayland-server
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/wayland/1.14.0-r0/packages-split/wayland-dev/usr/lib/pkgconfig/wayland-scanner
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/wayland/1.14.0-r0/packages-split/wayland-dev/usr/lib/pkgconfig/wayland-client

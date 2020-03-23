@@ -1,0 +1,20 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_libcidn: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libcidn:  libcidn (=2.21)
+SECTION: base
+PKG_libcidn: libcidn1
+FILES_libcidn: /lib/libcidn-*.so /lib/libcidn.so.*
+pkg_postinst_libcidn: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libcidn: /lib/libcidn-2.21.so
+FILES_INFO: {"/lib/libcidn.so.1": 15, "/lib/libcidn-2.21.so": 252584}
+FILERPROVIDES_/lib/libcidn-2.21.so_libcidn: libcidn.so.1 libcidn.so.1(GLIBC_PRIVATE)
+FILERDEPENDSFLIST_libcidn: /lib/libcidn-2.21.so
+FILERDEPENDS_/lib/libcidn-2.21.so_libcidn: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_PRIVATE)
+PKGSIZE_libcidn: 252599

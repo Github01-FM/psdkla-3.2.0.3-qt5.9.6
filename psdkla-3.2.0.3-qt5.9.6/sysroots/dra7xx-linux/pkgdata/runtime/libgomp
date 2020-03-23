@@ -1,0 +1,22 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_libgomp: external-linaro-toolchain (>= 2.21)
+SECTION: base
+PKG_libgomp: libgomp
+ALLOW_EMPTY_libgomp: 1
+FILES_libgomp: /lib/libgomp*.so.*
+pkg_postinst_libgomp: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libgomp: /lib/libgomp.so.1.0.0 /lib/libgomp-plugin-host@underscore@nonshm.so.1.0.0
+FILES_INFO: {"/lib/libgomp.so.1.0.0": 599332, "/lib/libgomp-plugin-host_nonshm.so.1": 35, "/lib/libgomp.so.1": 16, "/lib/libgomp-plugin-host_nonshm.so.1.0.0": 17080}
+FILERPROVIDES_/lib/libgomp.so.1.0.0_libgomp: elf(buildid) (= be2827ac44962b2394a5d7854eaca6c3a1f14956) libgomp.so.1 libgomp.so.1(GOACC_2.0) libgomp.so.1(GOMP_1.0) libgomp.so.1(GOMP_2.0) libgomp.so.1(GOMP_3.0) libgomp.so.1(GOMP_4.0) libgomp.so.1(GOMP_4.0.1) libgomp.so.1(GOMP_PLUGIN_1.0) libgomp.so.1(OACC_2.0) libgomp.so.1(OMP_1.0) libgomp.so.1(OMP_2.0) libgomp.so.1(OMP_3.0) libgomp.so.1(OMP_3.1) libgomp.so.1(OMP_4.0)
+FILERPROVIDES_/lib/libgomp-plugin-host@underscore@nonshm.so.1.0.0_libgomp: elf(buildid) (= 45988dcdfec6c39a0e10dc7bf1ecd08ee3bdadac) libgomp-plugin-host_nonshm.so.1
+FILERDEPENDSFLIST_libgomp: /lib/libgomp.so.1.0.0 /lib/libgomp-plugin-host@underscore@nonshm.so.1.0.0
+FILERDEPENDS_/lib/libgomp.so.1.0.0_libgomp: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.6) libdl.so.2 libdl.so.2(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4)
+FILERDEPENDS_/lib/libgomp-plugin-host@underscore@nonshm.so.1.0.0_libgomp: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgomp.so.1 libgomp.so.1(GOMP_PLUGIN_1.0) libpthread.so.0
+PKGSIZE_libgomp: 616463

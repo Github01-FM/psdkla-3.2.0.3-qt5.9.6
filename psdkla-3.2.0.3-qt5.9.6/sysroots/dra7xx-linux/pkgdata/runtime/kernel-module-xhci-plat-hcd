@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-xhci-plat-hcd: xhci-plat-hcd kernel module; xHCI Platform Host Controller Driver
+SUMMARY_kernel-module-xhci-plat-hcd: xhci-plat-hcd kernel module
+RDEPENDS_kernel-module-xhci-plat-hcd: kernel-module-xhci-hcd kernel-4.4.45+ kernel-module-usbcore
+SECTION: kernel
+PKG_kernel-module-xhci-plat-hcd: kernel-module-xhci-plat-hcd
+FILES_kernel-module-xhci-plat-hcd: /lib/modules/4.4.45+/kernel/drivers/usb/host/xhci-plat-hcd.ko /etc/modules-load.d/xhci-plat-hcd.conf /etc/modprobe.d/xhci-plat-hcd.conf
+pkg_postinst_kernel-module-xhci-plat-hcd: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-xhci-plat-hcd: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/drivers/usb/host/xhci-plat-hcd.ko": 11976}
+PKGSIZE_kernel-module-xhci-plat-hcd: 11976

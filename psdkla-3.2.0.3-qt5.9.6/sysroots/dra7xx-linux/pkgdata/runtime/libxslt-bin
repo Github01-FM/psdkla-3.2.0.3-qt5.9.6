@@ -1,0 +1,21 @@
+PN: libxslt
+PV: 1.1.28
+PR: r0
+PKGV: 1.1.28
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: GNOME XSLT library.
+SUMMARY: GNOME XSLT library
+RDEPENDS_libxslt-bin: libxslt (>= 1.1.28) zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21) libxml2 (>= 2.9.4)
+RPROVIDES_libxslt-bin:  libxslt-utils
+RREPLACES_libxslt-bin:  libxslt-utils
+RCONFLICTS_libxslt-bin:  libxslt-utils
+SECTION: libs
+PKG_libxslt-bin: libxslt-bin
+FILES_libxslt-bin: /usr/bin/* /usr/sbin/*
+FILERPROVIDESFLIST_libxslt-bin: /usr/bin/xsltproc
+FILES_INFO: {"/usr/bin/xsltproc": 18360}
+FILERPROVIDES_/usr/bin/xsltproc_libxslt-bin: elf(buildid) (= ea27c6d7324ac18a5d8470e0a7bfa258eba749b1)
+FILERDEPENDSFLIST_libxslt-bin: /usr/bin/xsltproc
+FILERDEPENDS_/usr/bin/xsltproc_libxslt-bin: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libexslt.so.0 libm.so.6 libxml2.so.2 libxml2.so.2(LIBXML2_2.4.30) libxml2.so.2(LIBXML2_2.6.0) libxml2.so.2(LIBXML2_2.6.3) libxslt.so.1 libxslt.so.1(LIBXML2_1.0.11) libxslt.so.1(LIBXML2_1.0.17) libxslt.so.1(LIBXML2_1.0.18) libxslt.so.1(LIBXML2_1.0.22) libxslt.so.1(LIBXML2_1.0.24) libxslt.so.1(LIBXML2_1.1.2) libz.so.1 rtld(GNU_HASH)
+PKGSIZE_libxslt-bin: 18360

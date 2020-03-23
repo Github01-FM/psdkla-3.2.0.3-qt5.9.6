@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-xfrm4-mode-beet: xfrm4-mode-beet kernel module
+SUMMARY_kernel-module-xfrm4-mode-beet: xfrm4-mode-beet kernel module
+RDEPENDS_kernel-module-xfrm4-mode-beet: kernel-4.4.45+
+SECTION: kernel
+PKG_kernel-module-xfrm4-mode-beet: kernel-module-xfrm4-mode-beet
+FILES_kernel-module-xfrm4-mode-beet: /lib/modules/4.4.45+/kernel/net/ipv4/xfrm4_mode_beet.ko /etc/modules-load.d/xfrm4_mode_beet.conf /etc/modprobe.d/xfrm4_mode_beet.conf
+pkg_postinst_kernel-module-xfrm4-mode-beet: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-xfrm4-mode-beet: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/net/ipv4/xfrm4_mode_beet.ko": 4684}
+PKGSIZE_kernel-module-xfrm4-mode-beet: 4684

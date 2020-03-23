@@ -1,0 +1,13 @@
+PN: libgbm
+PV: 10.0.0
+PR: r0
+PKGV: 10.0.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_libgbm-doc: Userspace interface for the kernel GBM services.  This package contains documentation.
+SUMMARY_libgbm-doc: libgbm version 10.0.0-r0 - Documentation files
+SECTION_libgbm-doc: doc
+PKG_libgbm-doc: libgbm-doc
+FILES_libgbm-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_libgbm-doc: 0

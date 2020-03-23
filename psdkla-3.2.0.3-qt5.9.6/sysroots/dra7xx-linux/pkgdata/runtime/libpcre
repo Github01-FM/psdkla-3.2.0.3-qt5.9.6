@@ -1,0 +1,20 @@
+PN: libpcre
+PV: 8.38
+PR: r0
+PKGV: 8.38
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION: The PCRE library is a set of functions that implement regular expression pattern matching using the same syntax and semantics as Perl 5. PCRE has its own native API, as well as a set of wrapper functions that correspond to the POSIX regular expression API.
+SUMMARY: Perl Compatible Regular Expressions
+RDEPENDS_libpcre: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libpcre:  libpcre (=8.38)
+SECTION: devel
+PKG_libpcre: libpcre1
+FILES_libpcre: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libpcre /usr/lib/libpcre/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libpcre: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libpcre: /usr/lib/libpcre.so.1.2.6
+FILES_INFO: {"/usr/lib/libpcre.so.1.2.6": 250712, "/usr/lib/libpcre.so.1": 16}
+FILERPROVIDES_/usr/lib/libpcre.so.1.2.6_libpcre: elf(buildid) (= 9e150e25a7d39e9ef324eff15f63896810b79d1e) libpcre.so.1
+FILERDEPENDSFLIST_libpcre: /usr/lib/libpcre.so.1.2.6
+FILERDEPENDS_/usr/lib/libpcre.so.1.2.6_libpcre: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libpcre: 250728

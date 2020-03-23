@@ -1,0 +1,14 @@
+PN: qtwebchannel
+PV: 5.9.6+gitAUTOINC+56a155e68d
+PR: r0
+PKGV: 5.9.6+git0+56a155e68d
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtwebchannel version 5.9.6+gitAUTOINC+56a155e68d-r0.
+SUMMARY: qtwebchannel version 5.9.6+gitAUTOINC+56a155e68d-r0
+RPROVIDES_qtwebchannel-examples-staticdev:  qtwebchannel-examples-staticdev (=5.9.6+git0+56a155e68d)
+SECTION: base
+PKG_qtwebchannel-examples-staticdev: libqt5webchannel-examples-staticdev
+FILES_qtwebchannel-examples-staticdev:      /usr/share/qt5/examples/*.a     /usr/share/qt5/examples/*/*.a     /usr/share/qt5/examples/*/*/*.a     /usr/share/qt5/examples/*/*/*/*.a     /usr/share/qt5/examples/*/*/*/*/*.a     /usr/share/qt5/examples/*/*/*/*/*/*.a     /usr/share/qt5/examples/*/*/*/*/*/*/*.a     /usr/share/qt5/examples/*/*/*/*/*/*/*/*.a 
+FILES_INFO: {}
+PKGSIZE_qtwebchannel-examples-staticdev: 0

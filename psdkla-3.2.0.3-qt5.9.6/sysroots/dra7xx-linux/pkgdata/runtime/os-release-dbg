@@ -1,0 +1,14 @@
+PN: os-release
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_os-release-dbg: The /etc/os-release file contains operating system identification data.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_os-release-dbg: Operating system identification - Debugging files
+SECTION_os-release-dbg: devel
+PKG_os-release-dbg: os-release-dbg
+ALLOW_EMPTY_os-release-dbg: 1
+FILES_os-release-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_os-release-dbg: 0

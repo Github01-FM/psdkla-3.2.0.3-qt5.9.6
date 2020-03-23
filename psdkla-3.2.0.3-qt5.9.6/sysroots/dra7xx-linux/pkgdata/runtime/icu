@@ -1,0 +1,51 @@
+PN: icu
+PV: 56.1
+PR: r0
+PKGV: 56.1
+PKGR: r0.0
+LICENSE: ICU
+DESCRIPTION: The International Component for Unicode (ICU) is a mature, portable set of C/C++ and Java libraries for Unicode support, software internationalization (I18N) and globalization (G11N), giving applications the same results on all platforms.
+SUMMARY: International Component for Unicode libraries
+RDEPENDS_icu: libicuio (>= 56.1) libicui18n (>= 56.1) libicutu (>= 56.1) libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21) libicudata (>= 56.1) libicuuc (>= 56.1)
+SECTION: base
+PKG_icu: icu
+FILES_icu: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/icu /usr/lib/icu/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_icu: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_icu: /usr/sbin/gensprep /usr/bin/gencnval /usr/bin/uconv /usr/bin/icuinfo /usr/bin/gendict /usr/sbin/gencmn /usr/sbin/icupkg /usr/bin/makeconv /usr/lib/libicutest.so.56.1 /usr/bin/genrb /usr/sbin/gennorm2 /usr/bin/pkgdata /usr/bin/derb /usr/bin/gencfu /usr/bin/genbrk /usr/sbin/genccode
+FILES_INFO: {"/usr/sbin/gensprep": 14616, "/usr/sbin/gennorm2": 32956, "/usr/bin/gencnval": 16672, "/usr/bin/uconv": 41440, "/usr/share/icu/56.1/mkinstalldirs": 935, "/usr/bin/icuinfo": 6228, "/usr/bin/gendict": 16744, "/usr/sbin/gencmn": 6132, "/usr/lib/libicutest.so.56": 18, "/usr/share/icu/56.1/license.html": 20237, "/usr/bin/genbrk": 8872, "/usr/share/icu/56.1/config/mh-linux": 2435, "/usr/bin/makeconv": 39296, "/usr/lib/libicutest.so.56.1": 48868, "/usr/bin/derb": 16796, "/usr/sbin/icupkg": 14604, "/usr/bin/pkgdata": 35296, "/usr/bin/genrb": 93888, "/usr/bin/gencfu": 7948, "/usr/share/icu/56.1/install-sh": 5598, "/usr/sbin/genccode": 6112}
+FILERPROVIDES_/usr/sbin/gensprep_icu: elf(buildid) (= fd82cab75c8935f2f34c37ea04d1b5602770bdf2)
+FILERPROVIDES_/usr/bin/gencnval_icu: elf(buildid) (= 1aff00a60af6fb1dc2ab9ca00b9cc34a1d2cfec3)
+FILERPROVIDES_/usr/bin/uconv_icu: elf(buildid) (= 2266b08358a32b835de544f9f4ca22d08de31396)
+FILERPROVIDES_/usr/bin/icuinfo_icu: elf(buildid) (= d3b80b8d926ecafe6ab9f24416a15b4edaf14e21)
+FILERPROVIDES_/usr/bin/gendict_icu: elf(buildid) (= 150ecffa4755adca70efe3b3b08c064036a03de2)
+FILERPROVIDES_/usr/sbin/gencmn_icu: elf(buildid) (= 69ef570ca2678d202315f7169e88e3f09813067f)
+FILERPROVIDES_/usr/sbin/icupkg_icu: elf(buildid) (= edf54da69e4441525302d239163b130e5bb8616d)
+FILERPROVIDES_/usr/bin/makeconv_icu: elf(buildid) (= 8ae766da8ef88a440e311214307601e2ff7c02e7)
+FILERPROVIDES_/usr/lib/libicutest.so.56.1_icu: elf(buildid) (= 571124ce65a7b0a5a51c5061ab0c6ba0602c4622) libicutest.so.56
+FILERPROVIDES_/usr/bin/genrb_icu: elf(buildid) (= c218b0c93edd73b0ba09b29760db1135eea6a5ed)
+FILERPROVIDES_/usr/sbin/gennorm2_icu: elf(buildid) (= 4bdfd3c681c7c5ec22358db6f02ea75a5783ff83)
+FILERPROVIDES_/usr/bin/pkgdata_icu: elf(buildid) (= d513ca4e99535a78db0e85ec274f8fc413fd088d)
+FILERPROVIDES_/usr/bin/derb_icu: elf(buildid) (= 7aa2336f681528ea92f87f42660d39a723297831)
+FILERPROVIDES_/usr/bin/gencfu_icu: elf(buildid) (= 0d67cc74a0aa7062b9f3fffd4b064ac5e9d91269)
+FILERPROVIDES_/usr/bin/genbrk_icu: elf(buildid) (= b3c85a8f1b512ee151aaaf39ad2617bcc6337d21)
+FILERPROVIDES_/usr/sbin/genccode_icu: elf(buildid) (= f1a9a1b1b622c50716c1e73c0255f42b8982ee3b)
+FILERDEPENDSFLIST_icu: /usr/sbin/gensprep /usr/bin/gencnval /usr/bin/uconv /usr/bin/icuinfo /usr/bin/gendict /usr/sbin/gencmn /usr/sbin/icupkg /usr/bin/makeconv /usr/lib/libicutest.so.56.1 /usr/bin/genrb /usr/sbin/gennorm2 /usr/bin/pkgdata /usr/share/icu/56.1/install-sh /usr/bin/derb /usr/sbin/genccode /usr/bin/gencfu /usr/bin/genbrk /usr/share/icu/56.1/mkinstalldirs
+FILERDEPENDS_/usr/sbin/gensprep_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/gencnval_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/uconv_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/icuinfo_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/gendict_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/gencmn_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/icupkg_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/makeconv_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libicutest.so.56.1_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/genrb_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/gennorm2_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pkgdata_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) rtld(GNU_HASH)
+FILERDEPENDS_/usr/share/icu/56.1/install-sh_icu: /bin/sh
+FILERDEPENDS_/usr/bin/derb_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicuio.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/genccode_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/gencfu_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/genbrk_icu: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libicudata.so.56 libicui18n.so.56 libicutu.so.56 libicuuc.so.56 libm.so.6 libpthread.so.0 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/share/icu/56.1/mkinstalldirs_icu: /bin/sh
+PKGSIZE_icu: 435691

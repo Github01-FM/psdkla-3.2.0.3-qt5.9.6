@@ -1,0 +1,19 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-umask: PAM plugin for -umask
+SUMMARY_pam-plugin-umask: PAM plugin for -umask
+RDEPENDS_pam-plugin-umask: libpam-suffix external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+RPROVIDES_pam-plugin-umask: pam-plugin-umask-suffix
+SECTION: base
+PKG_pam-plugin-umask: pam-plugin-umask
+FILES_pam-plugin-umask: /lib/security/pam_umask.so
+FILERPROVIDESFLIST_pam-plugin-umask: /lib/security/pam@underscore@umask.so
+FILES_INFO: {"/lib/security/pam_umask.so": 5928}
+FILERPROVIDES_/lib/security/pam@underscore@umask.so_pam-plugin-umask: elf(buildid) (= 27565cc619096afbbec69d0dc184045cfbb98a19) pam_umask.so
+FILERDEPENDSFLIST_pam-plugin-umask: /lib/security/pam@underscore@umask.so
+FILERDEPENDS_/lib/security/pam@underscore@umask.so_pam-plugin-umask: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) rtld(GNU_HASH)
+PKGSIZE_pam-plugin-umask: 5928

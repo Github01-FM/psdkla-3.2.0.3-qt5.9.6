@@ -1,0 +1,7 @@
+#! /bin/sh
+
+PKG_CONFIG_PATH="${STAGING_DIR_NATIVE}/usr/lib/pkgconfig:${STAGING_DIR_NATIVE}/usr/share/pkgconfig"
+PKG_CONFIG_LIBDIR="${STAGING_DIR_NATIVE}/usr/lib/pkgconfig"
+unset PKG_CONFIG_SYSROOT_DIR
+
+pkg-config "$@"

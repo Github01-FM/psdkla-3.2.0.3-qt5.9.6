@@ -1,0 +1,20 @@
+PN: ncurses
+PV: 6.0+20160213
+PR: r0
+PKGV: 6.0+20160213
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_ncurses-libmenuw: ncurses menuw library
+SUMMARY_ncurses-libmenuw: ncurses menuw library
+RDEPENDS_ncurses-libmenuw: ncurses-libtinfo (>= 6.0+20160213) ncurses-libncursesw (>= 6.0+20160213) external-linaro-toolchain (>= 2.21)
+RPROVIDES_ncurses-libmenuw:  ncurses-libmenuw (=6.0+20160213)
+SECTION: libs
+PKG_ncurses-libmenuw: libmenuw5
+FILES_ncurses-libmenuw: /usr/lib/libmenuw.so.5 /usr/lib/libmenuw.so.5.9
+pkg_postinst_ncurses-libmenuw: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_ncurses-libmenuw: /usr/lib/libmenuw.so.5.9
+FILES_INFO: {"/usr/lib/libmenuw.so.5.9": 24168, "/usr/lib/libmenuw.so.5": 15}
+FILERPROVIDES_/usr/lib/libmenuw.so.5.9_ncurses-libmenuw: elf(buildid) (= 5002560d896e16b62c6d61c09f1cdc700f66fccb) libmenuw.so.5
+FILERDEPENDSFLIST_ncurses-libmenuw: /usr/lib/libmenuw.so.5.9
+FILERDEPENDS_/usr/lib/libmenuw.so.5.9_ncurses-libmenuw: libc.so.6 libc.so.6(GLIBC_2.4) libncursesw.so.5 libtinfo.so.5 rtld(GNU_HASH)
+PKGSIZE_ncurses-libmenuw: 24183

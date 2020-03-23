@@ -1,0 +1,14 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV_nscd: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION_nscd: nscd, name service cache daemon, caches name service lookups for the passwd, group and hosts information.  It can damatically improvide performance with remote, such as NIS or NIS+, name services.
+SUMMARY_nscd: Name service cache daemon
+SECTION: base
+PKG_nscd: nscd
+FILES_nscd: /usr/sbin/nscd* /etc/init.d/nscd /lib/systemd/system/nscd* /etc/tmpfiles.d/nscd.conf               /etc/nscd.conf /etc/default/volatiles/98_nscd /var/db/nscd
+pkg_postinst_nscd: \tif [ -z "$D" ]; then\n\t\tif command -v systemd-tmpfiles >/dev/null; then\n\t\t\tsystemd-tmpfiles --create /etc/tmpfiles.d/nscd.conf\n\t\telif [ -e /etc/init.d/populate-volatile.sh ]; then\n\t\t\t/etc/init.d/populate-volatile.sh update\n\t\tfi\n\tfi\n
+FILES_INFO: {"/lib/systemd/system/nscd.service": 0, "/etc/init.d/nscd": 0, "/etc/tmpfiles.d/nscd.conf": 28, "/etc/nscd.conf": 0}
+PKGSIZE_nscd: 28

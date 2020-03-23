@@ -1,0 +1,20 @@
+PN: attr
+PV: 2.4.47
+PR: r0
+PKGV: 2.4.47
+PKGR: r0.0
+LICENSE_libattr: LGPLv2.1+
+DESCRIPTION: Utilities for manipulating filesystem extended attributes.
+SUMMARY: Utilities for manipulating filesystem extended attributes
+RDEPENDS_libattr: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libattr:  libattr (=2.4.47)
+SECTION: libs
+PKG_libattr: libattr1
+FILES_libattr: /lib/lib*.so.*
+pkg_postinst_libattr: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libattr: /lib/libattr.so.1.1.0
+FILES_INFO: {"/lib/libattr.so.1.1.0": 13412, "/lib/libattr.so.1": 16}
+FILERPROVIDES_/lib/libattr.so.1.1.0_libattr: elf(buildid) (= ad6077bddd5892f9c004ac90f4f44a7c430350cc) libattr.so.1 libattr.so.1(ATTR_1.0) libattr.so.1(ATTR_1.1) libattr.so.1(ATTR_1.2)
+FILERDEPENDSFLIST_libattr: /lib/libattr.so.1.1.0
+FILERDEPENDS_/lib/libattr.so.1.1.0_libattr: rtld(GNU_HASH)
+PKGSIZE_libattr: 13428

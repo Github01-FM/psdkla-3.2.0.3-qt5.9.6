@@ -1,0 +1,14 @@
+PN: harfbuzz
+PV: 0.9.35
+PR: r0
+PKGV: 0.9.35
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_harfbuzz-doc: HarfBuzz is an OpenType text shaping engine.  This package contains documentation.
+SUMMARY_harfbuzz-doc: Text shaping library - Documentation files
+RPROVIDES_harfbuzz-doc:  harfbuzz-doc (=0.9.35)
+SECTION_harfbuzz-doc: doc
+PKG_harfbuzz-doc: libharfbuzz-doc
+FILES_harfbuzz-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_harfbuzz-doc: 0

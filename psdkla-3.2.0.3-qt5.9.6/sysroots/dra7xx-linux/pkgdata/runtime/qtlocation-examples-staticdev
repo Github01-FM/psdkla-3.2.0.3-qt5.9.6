@@ -1,0 +1,13 @@
+PN: qtlocation
+PV: 5.9.6+gitAUTOINC+b0dd210c2d_b0dd210c2d-mapboxgl
+PR: r0
+PKGV: 5.9.6+git0+b0dd210c2d_b0dd210c2d-mapboxgl
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & (LGPL-2.1 & The-Qt-Company-Qt-LGPL-Exception-1.1 | LGPL-3.0) | GPL-2.0 | The-Qt-Company-Commercial
+DESCRIPTION: qtlocation version 5.9.6+gitAUTOINC+b0dd210c2d_b0dd210c2d-mapboxgl-r0.
+SUMMARY: qtlocation version 5.9.6+gitAUTOINC+b0dd210c2d_b0dd210c2d-mapboxgl-r0
+SECTION: base
+PKG_qtlocation-examples-staticdev: qtlocation-examples-staticdev
+FILES_qtlocation-examples-staticdev:      /usr/share/qt5/examples/*.a     /usr/share/qt5/examples/*/*.a     /usr/share/qt5/examples/*/*/*.a     /usr/share/qt5/examples/*/*/*/*.a     /usr/share/qt5/examples/*/*/*/*/*.a     /usr/share/qt5/examples/*/*/*/*/*/*.a     /usr/share/qt5/examples/*/*/*/*/*/*/*.a     /usr/share/qt5/examples/*/*/*/*/*/*/*/*.a 
+FILES_INFO: {}
+PKGSIZE_qtlocation-examples-staticdev: 0

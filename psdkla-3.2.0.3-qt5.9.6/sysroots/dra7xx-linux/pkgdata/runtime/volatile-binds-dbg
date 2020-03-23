@@ -1,0 +1,14 @@
+PN: volatile-binds
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_volatile-binds-dbg: Volatile bind mount setup and configuration for read-only-rootfs  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_volatile-binds-dbg: Volatile bind mount setup and configuration for read-only-rootfs - Debugging files
+SECTION_volatile-binds-dbg: devel
+PKG_volatile-binds-dbg: volatile-binds-dbg
+ALLOW_EMPTY_volatile-binds-dbg: 1
+FILES_volatile-binds-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_volatile-binds-dbg: 0

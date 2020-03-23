@@ -1,0 +1,48 @@
+PN: ti-sgx-ddk-um
+PV: 1.14.3699939
+PR: r23
+PKGV: 1.14.3699939
+PKGR: r23.0
+LICENSE: TI-TSPA
+DESCRIPTION: Userspace libraries for PowerVR SGX chipset on TI SoCs
+SUMMARY: ti-sgx-ddk-um version 1.14.3699939-r23
+RDEPENDS_ti-sgx-ddk-um: libudev (>= 229+git0+714c62b463) libgbm (>= 10.0.0) libstdc++ (>= 5.3.1) wayland (>= 1.14.0) libdrm (>= 2.4.67) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21) libffi (>= 3.2.1) ti-sgx-ddk-um-plugins libdrm-omap (>= 2.4.67)
+RPROVIDES_ti-sgx-ddk-um: libegl libgles1 libgles2 omap5-sgx-ddk-um-linux
+RRECOMMENDS_ti-sgx-ddk-um:  update-rc.d
+RREPLACES_ti-sgx-ddk-um: libegl libgles1 libgles2 omap5-sgx-ddk-um-linux
+RCONFLICTS_ti-sgx-ddk-um: libegl libgles1 libgles2 omap5-sgx-ddk-um-linux
+SECTION: base
+PKG_ti-sgx-ddk-um: ti-sgx-ddk-um
+FILES_ti-sgx-ddk-um: /usr/bin/*  /usr/lib/* /usr/include/* /etc/*
+pkg_postinst_ti-sgx-ddk-um: #!/bin/sh\nif type update-rc.d >/dev/null 2>/dev/null; then\n\tif [ -n "$D" ]; then\n\t\tOPT="-r $D"\n\telse\n\t\tOPT="-s"\n\tfi\n\tupdate-rc.d $OPT rc.pvr defaults 8\nfi\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+pkg_postrm_ti-sgx-ddk-um: #!/bin/sh\nif type update-rc.d >/dev/null 2>/dev/null; then\n\tif [ -n "$D" ]; then\n\t\tOPT="-f -r $D"\n\telse\n\t\tOPT="-f"\n\tfi\n\tupdate-rc.d $OPT rc.pvr remove\nfi\n
+pkg_preinst_ti-sgx-ddk-um: #!/bin/sh\nif [ -z "$D" -a -f "/etc/init.d/rc.pvr" ]; then\n\t/etc/init.d/rc.pvr stop\nfi\nif type update-rc.d >/dev/null 2>/dev/null; then\n\tif [ -n "$D" ]; then\n\t\tOPT="-f -r $D"\n\telse\n\t\tOPT="-f"\n\tfi\n\tupdate-rc.d $OPT rc.pvr remove\nfi\n
+pkg_prerm_ti-sgx-ddk-um: #!/bin/sh\nif [ -z "$D" ]; then\n\t/etc/init.d/rc.pvr stop\nfi\n
+FILERPROVIDESFLIST_ti-sgx-ddk-um: /usr/bin/eglinfo /usr/lib/libpvr2d.so.1.14.3699939 /usr/lib/libPVRScopeServices.so.1.14.3699939 /usr/lib/libGLES@underscore@CM.so.1.14.3699939 /usr/lib/libpvrGBMWSEGL.so.1.14.3699939 /usr/lib/libsrv@underscore@init.so.1.14.3699939 /usr/bin/pvrsrvctl /usr/bin/gles2test1 /usr/lib/libEGL.so.1.14.3699939 /usr/lib/libpvrDRMWSEGL.so.1.14.3699939 /usr/lib/libIMGegl.so.1.14.3699939 /usr/lib/libGLESv2.so.1.14.3699939 /usr/bin/gles1test1 /usr/lib/libdbm.so.1.14.3699939 /usr/lib/libusc.so.1.14.3699939 /usr/lib/libglslcompiler.so.1.14.3699939 /usr/lib/libsrv@underscore@um.so.1.14.3699939 /usr/lib/libpvrws@underscore@WAYLAND.so.1.14.3699939 /usr/lib/libpvr@underscore@wlegl.so.1.14.3699939
+FILES_INFO: {"/usr/bin/eglinfo": 17504, "/usr/lib/libpvr2d.so.1.14.3699939": 15940, "/usr/lib/libGLES_CM.so.1.14.3699939": 425456, "/usr/bin/pvrsrvctl": 7448, "/usr/lib/libEGL.so.1.14.3699939": 6580, "/usr/lib/libGLESv2.so.2": 25, "/usr/lib/libGLESv2.so.1": 25, "/usr/lib/libpvrGBMWSEGL.so.1.14.3699939": 19328, "/usr/lib/libglslcompiler.so.1": 31, "/usr/lib/libpvrws_WAYLAND.so.1.14.3699939": 12804, "/usr/lib/libpvr_wlegl.so.1.14.3699939": 3592, "/usr/lib/libdbm.so.1": 22, "/usr/lib/libpvr_wlegl.so.1": 28, "/usr/lib/libGLES_CM.so.1": 26, "/usr/bin/glsltest1_vertshader.txt": 262, "/usr/lib/libusc.so.1": 22, "/usr/bin/gles1test1": 7668, "/usr/lib/libPVRScopeServices.so.1": 35, "/etc/init.d/rc.pvr": 3203, "/usr/lib/libpvrws_WAYLAND.so.1": 32, "/usr/bin/gles2test1": 12928, "/usr/lib/libpvrGBMWSEGL.so.1": 30, "/usr/bin/glsltest1_fragshaderB.txt": 214, "/usr/lib/libpvr2d.so.1": 24, "/usr/lib/libglslcompiler.so.1.14.3699939": 214356, "/usr/lib/libGLESv2.so.1.14.3699939": 437592, "/usr/lib/gbm/gbm_pvr.so": 33, "/usr/lib/libusc.so.1.14.3699939": 974632, "/usr/lib/libsrv_um.so.1": 25, "/usr/lib/libsrv_init.so.1.14.3699939": 110384, "/usr/lib/libIMGegl.so.1": 25, "/etc/powervr.ini": 44, "/usr/lib/libpvrDRMWSEGL.so.1": 30, "/usr/lib/libpvrDRMWSEGL.so.1.14.3699939": 16796, "/usr/lib/libIMGegl.so.1.14.3699939": 88560, "/usr/lib/libdbm.so.1.14.3699939": 9220, "/usr/lib/libsrv_init.so.1": 27, "/usr/bin/glsltest1_fragshaderA.txt": 81, "/usr/lib/libPVRScopeServices.so.1.14.3699939": 8432, "/usr/lib/libEGL.so.1": 22, "/usr/lib/libsrv_um.so.1.14.3699939": 212824}
+FILERPROVIDES_/usr/bin/eglinfo_ti-sgx-ddk-um: elf(buildid) (= 88ea2ad800b71a2533312676baab257e28515240)
+FILERPROVIDES_/usr/lib/libpvr2d.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= e6562d0e03b6748c752d690c26065b0431136117) libpvr2d.so.1
+FILERPROVIDES_/usr/lib/libPVRScopeServices.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 0a700f091a5fe2ff5973b0cc7f6df2f10b716d59) libPVRScopeServices.so.1
+FILERPROVIDES_/usr/lib/libGLES@underscore@CM.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= a01077d9d89f1c9168918b0181beab845c336438) libGLES_CM.so.1
+FILERPROVIDES_/usr/lib/libpvrGBMWSEGL.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 259e0f14345a3b4da70d3f35e0d96430b99e7c3d) libpvrGBMWSEGL.so.1
+FILERPROVIDES_/usr/lib/libsrv@underscore@init.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 73d683865e9b36668a81988a3c84d4721cb58a02) libsrv_init.so.1
+FILERPROVIDES_/usr/bin/pvrsrvctl_ti-sgx-ddk-um: elf(buildid) (= 90cc89677be9f540babc6a7e1b8e124c91274782)
+FILERPROVIDES_/usr/bin/gles2test1_ti-sgx-ddk-um: elf(buildid) (= 9b7b9c00469f398894b5485c22bd20021ccf472d)
+FILERPROVIDES_/usr/lib/libEGL.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 3ed6185cf5c04e814210c03810fadce7cab0f7c8) libEGL.so.1
+FILERPROVIDES_/usr/lib/libpvrDRMWSEGL.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 9b5f211b94018827f8b3dac0f646aa7ef1fa0d44) libpvrDRMWSEGL.so.1
+FILERPROVIDES_/usr/lib/libIMGegl.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= c9affd91e2ffc113a894600748e2c576699b56d5) libIMGegl.so.1
+FILERPROVIDES_/usr/lib/libGLESv2.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 4101342b93bb442b2ed74d17132c927d40ce7e8f) libGLESv2.so.2
+FILERPROVIDES_/usr/bin/gles1test1_ti-sgx-ddk-um: elf(buildid) (= 3dbc9f73a2c4bae49c266981986fdb9bf817c831)
+FILERPROVIDES_/usr/lib/libdbm.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 12c03082038874e6bff88fadbcabb2ca6e6213fd) libdbm.so.1
+FILERPROVIDES_/usr/lib/libusc.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 38ee7f3560fb2afe4da07bd0ec2250c9dac907b9) libusc.so.1
+FILERPROVIDES_/usr/lib/libglslcompiler.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= eb11a338eda944696634b47d673f83bdf7638179) libglslcompiler.so.1
+FILERPROVIDES_/usr/lib/libsrv@underscore@um.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 96603cc1c430c646f8657cf9d24d4f3828d2608f) libsrv_um.so.1
+FILERPROVIDES_/usr/lib/libpvrws@underscore@WAYLAND.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= 07c5d0ea35809caadb49bfd169d371f035d81814) libpvrws_WAYLAND.so.1
+FILERPROVIDES_/usr/lib/libpvr@underscore@wlegl.so.1.14.3699939_ti-sgx-ddk-um: elf(buildid) (= af73b9539863dde4cb79c8e5a40ae32301a44ba5) libpvr_wlegl.so.1
+FILERDEPENDSFLIST_ti-sgx-ddk-um: /etc/init.d/rc.pvr /usr/bin/eglinfo /usr/bin/gles1test1 /usr/bin/gles2test1 /usr/bin/pvrsrvctl
+FILERDEPENDS_/etc/init.d/rc.pvr_ti-sgx-ddk-um: /bin/sh
+FILERDEPENDS_/usr/bin/eglinfo_ti-sgx-ddk-um: libEGL.so.1 libIMGegl.so.1 libc.so.6 libc.so.6(GLIBC_2.4) libdbm.so.1 libdl.so.2 libdl.so.2(GLIBC_2.4) libdrm.so.2 libdrm_omap.so.1 libffi.so.6 libgbm.so.2 libsrv_um.so.1 libudev.so.1 libusc.so.1 libwayland-server.so.0
+FILERDEPENDS_/usr/bin/gles1test1_ti-sgx-ddk-um: libEGL.so.1 libGLES_CM.so.1 libIMGegl.so.1 libc.so.6 libc.so.6(GLIBC_2.4) libdbm.so.1 libdrm.so.2 libdrm_omap.so.1 libffi.so.6 libgbm.so.2 libsrv_um.so.1 libudev.so.1 libusc.so.1 libwayland-server.so.0
+FILERDEPENDS_/usr/bin/gles2test1_ti-sgx-ddk-um: libEGL.so.1 libGLESv2.so.2 libIMGegl.so.1 libc.so.6 libc.so.6(GLIBC_2.4) libdbm.so.1 libdrm.so.2 libdrm_omap.so.1 libffi.so.6 libgbm.so.2 libm.so.6 libm.so.6(GLIBC_2.4) libsrv_um.so.1 libudev.so.1 libusc.so.1 libwayland-server.so.0
+FILERDEPENDS_/usr/bin/pvrsrvctl_ti-sgx-ddk-um: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libdrm_omap.so.1 libffi.so.6 libgbm.so.2 libsrv_init.so.1 libsrv_um.so.1 libudev.so.1 libwayland-server.so.0
+PKGSIZE_ti-sgx-ddk-um: 2606310

@@ -1,0 +1,13 @@
+PN: cryptodev-module
+PV: 1.8
+PR: r0.arago0
+PKGV: 1.8
+PKGR: r0.arago0.0
+LICENSE: GPLv2
+DESCRIPTION_cryptodev-module-doc: A /dev/crypto device driver kernel module.  This package contains documentation.
+SUMMARY_cryptodev-module-doc: A /dev/crypto device driver kernel module - Documentation files
+SECTION_cryptodev-module-doc: doc
+PKG_cryptodev-module-doc: cryptodev-module-doc
+FILES_cryptodev-module-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_cryptodev-module-doc: 0

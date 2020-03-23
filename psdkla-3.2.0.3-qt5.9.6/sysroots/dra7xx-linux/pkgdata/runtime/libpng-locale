@@ -1,0 +1,14 @@
+PN: libpng
+PV: 1.6.21
+PR: r0
+PKGV: 1.6.21
+PKGR: r0.0
+LICENSE: Libpng
+DESCRIPTION: PNG image format decoding library.
+SUMMARY: PNG image format decoding library
+RPROVIDES_libpng-locale:  libpng-locale (=1.6.21)
+SECTION: libs
+PKG_libpng-locale: libpng16-locale
+FILES_libpng-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libpng-locale: 0

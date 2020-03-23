@@ -1,0 +1,56 @@
+PN: libdrm
+PV: 2.4.67
+PR: r0.arago1
+PKGV: 2.4.67
+PKGR: r0.arago1.0
+LICENSE: MIT
+DESCRIPTION: The runtime library for accessing the kernel DRM services.  DRM stands for \\"Direct Rendering Manager\\", which is the kernel portion of the \\"Direct Rendering Infrastructure\\" (DRI).  DRI is required for many hardware accelerated OpenGL drivers.
+SUMMARY: Userspace interface to the kernel DRM services
+RDEPENDS_libdrm-tests: libudev (>= 229+git0+714c62b463) libcap (>= 2.24) libdrm (>= 2.4.67) external-linaro-toolchain (>= 2.21) libdrm-kms (>= 2.4.67)
+SECTION: x11/base
+PKG_libdrm-tests: libdrm-tests
+FILES_libdrm-tests: /usr/bin/*
+FILERPROVIDESFLIST_libdrm-tests: /usr/bin/drmsl /usr/bin/vbltest /usr/bin/random /usr/bin/getversion /usr/bin/name@underscore@from@underscore@fd /usr/bin/updatedraw /usr/bin/setversion /usr/bin/getstats /usr/bin/modetest /usr/bin/drmstat /usr/bin/hash /usr/bin/kms-universal-planes /usr/bin/proptest /usr/bin/drmdevice /usr/bin/modeprint /usr/bin/openclose /usr/bin/dristat /usr/bin/kmstest.libdrm /usr/bin/kms-steal-crtc /usr/bin/getclient
+FILES_INFO: {"/usr/bin/vbltest": 6860, "/usr/bin/drmsl": 5936, "/usr/bin/random": 4056, "/usr/bin/getversion": 6676, "/usr/bin/updatedraw": 7128, "/usr/bin/setversion": 7120, "/usr/bin/modetest": 45896, "/usr/bin/getstats": 6184, "/usr/bin/hash": 5908, "/usr/bin/drmstat": 10348, "/usr/bin/kmstest.libdrm": 6220, "/usr/bin/proptest": 10360, "/usr/bin/drmdevice": 5264, "/usr/bin/modeprint": 10020, "/usr/bin/openclose": 6064, "/usr/bin/dristat": 28672, "/usr/bin/kms-universal-planes": 11476, "/usr/bin/kms-steal-crtc": 25068, "/usr/bin/getclient": 6324, "/usr/bin/name_from_fd": 5940}
+FILERPROVIDES_/usr/bin/drmsl_libdrm-tests: elf(buildid) (= 12d1b9290eef28cdeaac148740844dabe504222a)
+FILERPROVIDES_/usr/bin/vbltest_libdrm-tests: elf(buildid) (= 8203abd42d91fab764ac1963fed5e3876018b6a9)
+FILERPROVIDES_/usr/bin/random_libdrm-tests: elf(buildid) (= 5b7786b6de4736d99f4c6fa46d6447bc5425232e)
+FILERPROVIDES_/usr/bin/getversion_libdrm-tests: elf(buildid) (= 6898844316adab7d215b46a4ef936edfe4a4c5f1)
+FILERPROVIDES_/usr/bin/name@underscore@from@underscore@fd_libdrm-tests: elf(buildid) (= d0a6decf067a16fd4c7ef19cdb02f654d6a8b8a4)
+FILERPROVIDES_/usr/bin/updatedraw_libdrm-tests: elf(buildid) (= 61606b04fc9cbe4a42fb83663147d6999694775c)
+FILERPROVIDES_/usr/bin/setversion_libdrm-tests: elf(buildid) (= 710b75378f504a223dc3e2c248a3c465ffa42da8)
+FILERPROVIDES_/usr/bin/getstats_libdrm-tests: elf(buildid) (= e5251bae2077ba0afdda4d6f84f59f6c900c6fc1)
+FILERPROVIDES_/usr/bin/modetest_libdrm-tests: elf(buildid) (= 4ecbc951bc9ecfd6e4d46bb51718f98c1372aeb2)
+FILERPROVIDES_/usr/bin/drmstat_libdrm-tests: elf(buildid) (= 45d7c2c6a604c081b781700b4ce36ca5c86d583e)
+FILERPROVIDES_/usr/bin/hash_libdrm-tests: elf(buildid) (= d26160ed6b656a0d3f4796fe6783631f4f5f200a)
+FILERPROVIDES_/usr/bin/kms-universal-planes_libdrm-tests: elf(buildid) (= a42d08a9a00aae6b6388cd61088815d7e1776265)
+FILERPROVIDES_/usr/bin/proptest_libdrm-tests: elf(buildid) (= 8e4b9867d6724173a4654efcd24c98871c341cb8)
+FILERPROVIDES_/usr/bin/drmdevice_libdrm-tests: elf(buildid) (= 1a993f84318d55930c7be6556b5c4deb07b0dfd3)
+FILERPROVIDES_/usr/bin/modeprint_libdrm-tests: elf(buildid) (= 2e9ce80345bdc44f49b0844950ec08497c4e56a9)
+FILERPROVIDES_/usr/bin/openclose_libdrm-tests: elf(buildid) (= 26ce2121e2fbbdc6b55e3429b58762f0f24e8d7c)
+FILERPROVIDES_/usr/bin/dristat_libdrm-tests: elf(buildid) (= ad4f458f70342376f7348441d832fd4394a58bca)
+FILERPROVIDES_/usr/bin/kmstest.libdrm_libdrm-tests: elf(buildid) (= 4c301ce2c9348db39e5eaf4553428abd4730fafc)
+FILERPROVIDES_/usr/bin/kms-steal-crtc_libdrm-tests: elf(buildid) (= 5a65ecf15919406faa726ff9885474fc252d39e6)
+FILERPROVIDES_/usr/bin/getclient_libdrm-tests: elf(buildid) (= 968f677bde710b8badbf67c96a470161cced7ee5)
+FILERDEPENDSFLIST_libdrm-tests: /usr/bin/drmsl /usr/bin/vbltest /usr/bin/random /usr/bin/getversion /usr/bin/name@underscore@from@underscore@fd /usr/bin/updatedraw /usr/bin/setversion /usr/bin/getstats /usr/bin/modetest /usr/bin/drmstat /usr/bin/hash /usr/bin/kms-universal-planes /usr/bin/proptest /usr/bin/drmdevice /usr/bin/modeprint /usr/bin/openclose /usr/bin/dristat /usr/bin/kmstest.libdrm /usr/bin/kms-steal-crtc /usr/bin/getclient
+FILERDEPENDS_/usr/bin/drmsl_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libresolv.so.2 librt.so.1 libudev.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/vbltest_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libm.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/random_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libresolv.so.2 librt.so.1 libudev.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/getversion_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/name@underscore@from@underscore@fd_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/updatedraw_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/setversion_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/getstats_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/modetest_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/drmstat_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/hash_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libresolv.so.2 librt.so.1 libudev.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/kms-universal-planes_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libm.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/proptest_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libm.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/drmdevice_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/modeprint_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libm.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/openclose_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/dristat_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libm.so.6 libm.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/kmstest.libdrm_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libkms.so.1 libm.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/kms-steal-crtc_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libdrm.so.2 libm.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/getclient_libdrm-tests: libc.so.6 libc.so.6(GLIBC_2.4) libcap.so.2 libdrm.so.2 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libresolv.so.2 librt.so.1 libudev.so.1 libudev.so.1(LIBUDEV_183) rtld(GNU_HASH)
+PKGSIZE_libdrm-tests: 221520

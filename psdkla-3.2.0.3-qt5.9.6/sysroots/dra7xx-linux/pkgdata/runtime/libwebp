@@ -1,0 +1,23 @@
+PN: libwebp
+PV: 0.5.0
+PR: r0
+PKGV: 0.5.0
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION: WebP is a method of lossy and lossless compression that can be                used on a large variety of photographic, translucent and                graphical images found on the web. The degree of lossy                compression is adjustable so a user can choose the trade-off                between file size and image quality. WebP typically achieves                an average of 30% more compression than JPEG and JPEG 2000,                without loss of image quality.
+SUMMARY: WebP is an image format designed for the Web
+RDEPENDS_libwebp: external-linaro-toolchain (>= 2.21)
+SECTION: libs
+PKG_libwebp: libwebp
+FILES_libwebp: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/libwebp /usr/lib/libwebp/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libwebp: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libwebp: /usr/lib/libwebpdemux.so.2.0.0 /usr/lib/libwebpmux.so.2.0.0 /usr/lib/libwebp.so.6.0.0
+FILES_INFO: {"/usr/lib/libwebpdemux.so.2.0.0": 12352, "/usr/lib/libwebp.so.6": 16, "/usr/lib/libwebpmux.so.2.0.0": 26812, "/usr/lib/libwebpdemux.so.2": 21, "/usr/lib/libwebpmux.so.2": 19, "/usr/lib/libwebp.so.6.0.0": 289212}
+FILERPROVIDES_/usr/lib/libwebpdemux.so.2.0.0_libwebp: elf(buildid) (= 8ec838fd08179a8a4f9fcd663405493cbe104c40) libwebpdemux.so.2
+FILERPROVIDES_/usr/lib/libwebpmux.so.2.0.0_libwebp: elf(buildid) (= 5060bd8fdba641d892f1234659e7fe5dec9ed1c0) libwebpmux.so.2
+FILERPROVIDES_/usr/lib/libwebp.so.6.0.0_libwebp: elf(buildid) (= a1993f3e34b7c3dd654211eb30cea373470b26bb) libwebp.so.6
+FILERDEPENDSFLIST_libwebp: /usr/lib/libwebpdemux.so.2.0.0 /usr/lib/libwebpmux.so.2.0.0 /usr/lib/libwebp.so.6.0.0
+FILERDEPENDS_/usr/lib/libwebpdemux.so.2.0.0_libwebp: libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libwebp.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libwebpmux.so.2.0.0_libwebp: libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 libpthread.so.0 libwebp.so.6 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libwebp.so.6.0.0_libwebp: libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libwebp: 328432

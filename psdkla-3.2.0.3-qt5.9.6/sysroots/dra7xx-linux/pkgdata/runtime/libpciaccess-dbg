@@ -1,0 +1,15 @@
+PN: libpciaccess
+PV: 0.13.4
+PR: r0
+PKGV: 0.13.4
+PKGR: r0.0
+LICENSE: MIT & MIT-style
+DESCRIPTION_libpciaccess-dbg: libpciaccess provides functionality for X to access the PCI bus and devices in a platform-independent way.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_libpciaccess-dbg: Generic PCI access library for X - Debugging files
+RRECOMMENDS_libpciaccess-dbg: external-linaro-toolchain-dbg
+SECTION_libpciaccess-dbg: devel
+PKG_libpciaccess-dbg: libpciaccess-dbg
+ALLOW_EMPTY_libpciaccess-dbg: 1
+FILES_libpciaccess-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/common_device_name.c": 12420, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/common_map.c": 1920, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/common_capability.c": 5611, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/include/pciaccess.h": 15082, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/linux_devmem.c": 3900, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/linux_sysfs.c": 24451, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/common_init.c": 3384, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/common_bridge.c": 10277, "/usr/lib/.debug/libpciaccess.so.0.11.1": 100676, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/common_io.c": 5695, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/common_vgaarb.c": 8045, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/common_interface.c": 18625, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/pciaccess_private.h": 5938, "/usr/src/debug/libpciaccess/0.13.4-r0/libpciaccess-0.13.4/src/common_iterator.c": 5578}
+PKGSIZE_libpciaccess-dbg: 221602

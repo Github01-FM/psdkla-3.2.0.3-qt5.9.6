@@ -1,0 +1,14 @@
+PN: cryptodev-module
+PV: 1.8
+PR: r0.arago0
+PKGV: 1.8
+PKGR: r0.arago0.0
+LICENSE: GPLv2
+DESCRIPTION_cryptodev-module-dbg: A /dev/crypto device driver kernel module.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_cryptodev-module-dbg: A /dev/crypto device driver kernel module - Debugging files
+SECTION_cryptodev-module-dbg: devel
+PKG_cryptodev-module-dbg: cryptodev-module-dbg
+ALLOW_EMPTY_cryptodev-module-dbg: 1
+FILES_cryptodev-module-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_cryptodev-module-dbg: 0

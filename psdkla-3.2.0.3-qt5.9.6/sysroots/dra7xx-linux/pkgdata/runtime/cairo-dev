@@ -1,0 +1,17 @@
+PN: cairo
+PV: 1.14.6
+PR: r1
+PKGV: 1.14.6
+PKGR: r1.0
+LICENSE_cairo-dev: MPL-1 & LGPLv2.1
+DESCRIPTION_cairo-dev: Cairo is a multi-platform library providing anti-aliased vector-based rendering for multiple target backends. Paths consist of line segments and cubic splines and can be rendered at any width with various join and cap styles. All colors may be specified with optional translucence (opacity/alpha) and combined using the extended Porter/Duff compositing algebra as found in the X Render Extension.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_cairo-dev: The Cairo 2D vector graphics library - Development files
+RDEPENDS_cairo-dev: cairo (= 1.14.6-r1.0) cairo-gobject
+RPROVIDES_cairo-dev:  cairo-dev (=1.14.6)
+RRECOMMENDS_cairo-dev: zlib-dev libpcre-dev pixman-dev freetype-dev libpng-dev external-linaro-toolchain-dev fontconfig-dev libffi-dev glib-2.0-dev cairo-gobject-dev expat-dev
+SECTION_cairo-dev: devel
+PKG_cairo-dev: libcairo-dev
+ALLOW_EMPTY_cairo-dev: 1
+FILES_cairo-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/cairo/*.la /lib/*.la /usr/lib/cairo/*.so
+FILES_INFO: {"/usr/lib/pkgconfig/cairo-tee.pc": 219, "/usr/include/cairo/cairo-deprecated.h": 8698, "/usr/lib/pkgconfig/cairo-svg.pc": 219, "/usr/include/cairo/cairo-gobject.h": 6452, "/usr/lib/pkgconfig/cairo-ps.pc": 228, "/usr/lib/libcairo.so": 21, "/usr/lib/pkgconfig/cairo-gobject.pc": 276, "/usr/include/cairo/cairo-script-interpreter.h": 4059, "/usr/include/cairo/cairo-ft.h": 3721, "/usr/lib/libcairo-gobject.la": 1475, "/usr/lib/libcairo-gobject.so": 29, "/usr/lib/pkgconfig/cairo-png.pc": 219, "/usr/lib/libcairo-script-interpreter.la": 1392, "/usr/include/cairo/cairo.h": 109757, "/usr/lib/pkgconfig/cairo-ft.pc": 239, "/usr/include/cairo/cairo-features.h": 1470, "/usr/lib/pkgconfig/cairo-pdf.pc": 222, "/usr/include/cairo/cairo-svg.h": 2823, "/usr/lib/pkgconfig/cairo-fc.pc": 242, "/usr/include/cairo/cairo-script.h": 3072, "/usr/lib/pkgconfig/cairo-script.pc": 225, "/usr/include/cairo/cairo-ps.h": 3632, "/usr/lib/libcairo.la": 1237, "/usr/include/cairo/cairo-version.h": 148, "/usr/include/cairo/cairo-pdf.h": 3136, "/usr/lib/pkgconfig/cairo.pc": 368, "/usr/include/cairo/cairo-tee.h": 2173}
+PKGSIZE_cairo-dev: 155752

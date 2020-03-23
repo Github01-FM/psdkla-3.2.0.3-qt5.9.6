@@ -1,0 +1,15 @@
+PN: opkg-utils
+PV: 0.1.8+gitAUTOINC+53274f0875
+PR: r0
+PKGV: 0.1.8+git0+53274f0875
+PKGR: r0.0
+LICENSE: GPLv2+
+DESCRIPTION_opkg-utils-dbg: Additional utilities for the opkg package manager.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_opkg-utils-dbg: Additional utilities for the opkg package manager - Debugging files
+RRECOMMENDS_opkg-utils-dbg: external-linaro-toolchain-dbg
+SECTION_opkg-utils-dbg: devel
+PKG_opkg-utils-dbg: opkg-utils-dbg
+ALLOW_EMPTY_opkg-utils-dbg: 1
+FILES_opkg-utils-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/opkg-utils/0.1.8+gitAUTOINC+53274f0875-r0/git/opkg-compare-versions.c": 4040, "/usr/bin/.debug/opkg-compare-versions": 16880}
+PKGSIZE_opkg-utils-dbg: 20920

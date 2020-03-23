@@ -1,0 +1,20 @@
+PN: freetype
+PV: 2.6.3
+PR: r0.arago0
+PKGV: 2.6.3
+PKGR: r0.arago0.0
+LICENSE: GPLv2+
+DESCRIPTION: FreeType is a software font engine that is designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output (glyph images). It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.
+SUMMARY: Freetype font rendering library
+RDEPENDS_freetype: zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21)
+RPROVIDES_freetype:  freetype (=2.6.3)
+SECTION: libs
+PKG_freetype: libfreetype6
+FILES_freetype: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/freetype /usr/lib/freetype/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_freetype: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_freetype: /usr/lib/libfreetype.so.6.12.3
+FILES_INFO: {"/usr/lib/libfreetype.so.6.12.3": 496272, "/usr/lib/libfreetype.so.6": 21}
+FILERPROVIDES_/usr/lib/libfreetype.so.6.12.3_freetype: elf(buildid) (= 641e7f8756e4c646a63b5c6f1eb6bedb0a7954d9) libfreetype.so.6
+FILERDEPENDSFLIST_freetype: /usr/lib/libfreetype.so.6.12.3
+FILERDEPENDS_/usr/lib/libfreetype.so.6.12.3_freetype: libc.so.6 libc.so.6(GLIBC_2.4) libz.so.1 rtld(GNU_HASH)
+PKGSIZE_freetype: 496293

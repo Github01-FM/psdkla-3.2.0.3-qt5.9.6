@@ -1,0 +1,13 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include
+
+Name: Python
+Description: Python library
+Requires: 
+Version: 2.7
+Libs.private: -lpthread -ldl  -lutil
+Libs: -L${libdir} -lpython2.7
+Cflags: -I${includedir}/python2.7 
+

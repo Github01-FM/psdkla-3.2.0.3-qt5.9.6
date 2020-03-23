@@ -1,0 +1,23 @@
+PN: gettext
+PV: 0.16.1
+PR: r6
+PKGV: 0.16.1
+PKGR: r6.0
+LICENSE: GPLv2
+DESCRIPTION: GNU gettext is a set of tools that provides a framework to help other programs produce multi-lingual messages. These tools include a set of conventions about how programs should be written to support message catalogs, a directory and file naming organization for the message catalogs themselves, a runtime library supporting the retrieval of translated messages, and a few stand-alone programs to massage in various ways the sets of translatable and already translated strings.
+SUMMARY: Utilities and libraries for producing multi-lingual messages
+RDEPENDS_gettext-runtime: external-linaro-toolchain (>= 2.21)
+SECTION: libs
+PKG_gettext-runtime: gettext-runtime
+FILES_gettext-runtime: /usr/bin/gettext                          /usr/bin/ngettext                          /usr/bin/envsubst                          /usr/bin/gettext.sh                          /usr/lib/libasprintf${SODEV}                          /usr/lib/GNU.Gettext.dll                         
+FILERPROVIDESFLIST_gettext-runtime: /usr/bin/gettext /usr/bin/envsubst /usr/bin/ngettext
+FILES_INFO: {"/usr/bin/gettext": 16304, "/usr/bin/envsubst": 16284, "/usr/bin/ngettext": 16044, "/usr/bin/gettext.sh": 4607}
+FILERPROVIDES_/usr/bin/gettext_gettext-runtime: elf(buildid) (= b63721bcc7fc119aac625b4a493a79145f90ce9f)
+FILERPROVIDES_/usr/bin/envsubst_gettext-runtime: elf(buildid) (= 8cd774c66b13eb596d8f7fcd481b862243f233a9)
+FILERPROVIDES_/usr/bin/ngettext_gettext-runtime: elf(buildid) (= 586a0a39614191db3cd81f4d6793e29c3bf46b67)
+FILERDEPENDSFLIST_gettext-runtime: /usr/bin/gettext /usr/bin/envsubst /usr/bin/ngettext /usr/bin/gettext.sh
+FILERDEPENDS_/usr/bin/gettext_gettext-runtime: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/envsubst_gettext-runtime: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ngettext_gettext-runtime: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/gettext.sh_gettext-runtime: /bin/sh
+PKGSIZE_gettext-runtime: 53239

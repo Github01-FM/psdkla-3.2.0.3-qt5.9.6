@@ -1,0 +1,13 @@
+PN: icu
+PV: 56.1
+PR: r0
+PKGV: 56.1
+PKGR: r0.0
+LICENSE: ICU
+DESCRIPTION: The International Component for Unicode (ICU) is a mature, portable set of C/C++ and Java libraries for Unicode support, software internationalization (I18N) and globalization (G11N), giving applications the same results on all platforms.
+SUMMARY: International Component for Unicode libraries
+SECTION: base
+PKG_icu-locale: icu-locale
+FILES_icu-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_icu-locale: 0

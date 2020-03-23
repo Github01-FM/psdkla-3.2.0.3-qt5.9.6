@@ -1,0 +1,14 @@
+PN: gobject-introspection
+PV: 1.46.0
+PR: r0
+PKGV: 1.46.0
+PKGR: r0.0
+LICENSE: LGPLv2+ & GPLv2+
+DESCRIPTION_gobject-introspection-staticdev: gobject-introspection version 1.46.0-r0.  This package contains static libraries for software development.
+SUMMARY_gobject-introspection-staticdev: gobject-introspection version 1.46.0-r0 - Development files (Static Libraries)
+RDEPENDS_gobject-introspection-staticdev: gobject-introspection-dev (= 1.46.0-r0.0)
+SECTION_gobject-introspection-staticdev: devel
+PKG_gobject-introspection-staticdev: gobject-introspection-staticdev
+FILES_gobject-introspection-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/gobject-introspection/*.a /usr/lib/gobject-introspection/giscanner/*.a
+FILES_INFO: {"/usr/lib/gobject-introspection/giscanner/_giscanner.a": 244402, "/usr/lib/libgirepository-1.0.a": 1245282}
+PKGSIZE_gobject-introspection-staticdev: 1489684

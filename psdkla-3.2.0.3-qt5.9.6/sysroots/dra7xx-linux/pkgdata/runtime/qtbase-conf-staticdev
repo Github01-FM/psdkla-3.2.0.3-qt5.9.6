@@ -1,0 +1,14 @@
+PN: qtbase-conf
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_qtbase-conf-staticdev: qtbase configuration files.  This package contains static libraries for software development.
+SUMMARY_qtbase-conf-staticdev: qtbase configuration files - Development files (Static Libraries)
+RDEPENDS_qtbase-conf-staticdev: qtbase-conf-dev (= 1.0-r0.0)
+SECTION_qtbase-conf-staticdev: devel
+PKG_qtbase-conf-staticdev: qtbase-conf-staticdev
+FILES_qtbase-conf-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/qtbase-conf/*.a
+FILES_INFO: {}
+PKGSIZE_qtbase-conf-staticdev: 0

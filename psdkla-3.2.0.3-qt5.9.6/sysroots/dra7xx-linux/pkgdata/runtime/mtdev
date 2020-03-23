@@ -1,0 +1,21 @@
+PN: mtdev
+PV: 1.1.5
+PR: r0
+PKGV: 1.1.5
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: mtdev is a library which transforms all variants of kernel multitouch events to the slotted type B protocol. The events put into mtdev may be from any MT device, specifically type A without contact tracking, type A with contact tracking, or type B with contact tracking
+SUMMARY: Multitouch Protocol Translation Library
+RDEPENDS_mtdev: external-linaro-toolchain (>= 2.21)
+SECTION: libs
+PKG_mtdev: mtdev
+FILES_mtdev: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/mtdev /usr/lib/mtdev/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_mtdev: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_mtdev: /usr/bin/mtdev-test /usr/lib/libmtdev.so.1.0.0
+FILES_INFO: {"/usr/bin/mtdev-test": 5876, "/usr/lib/libmtdev.so.1.0.0": 15892, "/usr/lib/libmtdev.so.1": 17}
+FILERPROVIDES_/usr/bin/mtdev-test_mtdev: elf(buildid) (= 3eb338c5d4cc6a9914b465053e2ececa75529653)
+FILERPROVIDES_/usr/lib/libmtdev.so.1.0.0_mtdev: elf(buildid) (= f79bbde9ba83fd22357bcb698c1970c2d1dc3891) libmtdev.so.1
+FILERDEPENDSFLIST_mtdev: /usr/bin/mtdev-test /usr/lib/libmtdev.so.1.0.0
+FILERDEPENDS_/usr/bin/mtdev-test_mtdev: libc.so.6 libc.so.6(GLIBC_2.4) libmtdev.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libmtdev.so.1.0.0_mtdev: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_mtdev: 21785

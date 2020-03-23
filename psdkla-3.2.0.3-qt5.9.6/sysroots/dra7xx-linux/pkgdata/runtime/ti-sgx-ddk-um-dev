@@ -1,0 +1,19 @@
+PN: ti-sgx-ddk-um
+PV: 1.14.3699939
+PR: r23
+PKGV: 1.14.3699939
+PKGR: r23.0
+LICENSE: TI-TSPA
+DESCRIPTION_ti-sgx-ddk-um-dev: Userspace libraries for PowerVR SGX chipset on TI SoCs  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_ti-sgx-ddk-um-dev: ti-sgx-ddk-um version 1.14.3699939-r23 - Development files
+RDEPENDS_ti-sgx-ddk-um-dev: ti-sgx-ddk-um (= 1.14.3699939-r23.0)
+RPROVIDES_ti-sgx-ddk-um-dev: libegl-dev libgles1-dev libgles2-dev omap5-sgx-ddk-um-linux-dev
+RRECOMMENDS_ti-sgx-ddk-um-dev: libstdc++-dev wayland-dev udev-dev libgbm-dev libffi-dev external-linaro-toolchain-dev libgcc-dev ti-sgx-ddk-um-plugins-dev update-rc.d-dev libdrm-omap-dev libdrm-dev libudev-dev initscripts-dev
+RREPLACES_ti-sgx-ddk-um-dev: libegl-dev libgles1-dev libgles2-dev omap5-sgx-ddk-um-linux-dev
+RCONFLICTS_ti-sgx-ddk-um-dev: libegl-dev libgles1-dev libgles2-dev omap5-sgx-ddk-um-linux-dev
+SECTION_ti-sgx-ddk-um-dev: devel
+PKG_ti-sgx-ddk-um-dev: ti-sgx-ddk-um-dev
+ALLOW_EMPTY_ti-sgx-ddk-um-dev: 1
+FILES_ti-sgx-ddk-um-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/ti-sgx-ddk-um/*.la /lib/*.la
+FILES_INFO: {"/usr/include/GLES2/gl2.h": 31605, "/usr/include/GLES2/gl2platform.h": 898, "/usr/include/KHR/khrplatform.h": 9259, "/usr/include/GLES/glplatform.h": 891, "/usr/lib/pkgconfig/glesv2.pc": 213, "/usr/lib/pkgconfig/egl.pc": 224, "/usr/lib/libEGL.so": 22, "/usr/lib/libpvr_wlegl.so": 28, "/usr/include/GLES/glext.h": 53656, "/usr/lib/pkgconfig/wayland-egl.pc": 214, "/usr/include/EGL/eglplatform.h": 4140, "/usr/include/EGL/eglext.h": 27442, "/usr/lib/libGLES_CM.so": 26, "/usr/include/GLES/gl.h": 34133, "/usr/lib/pkgconfig/gles_cm.pc": 208, "/usr/lib/libusc.so": 22, "/usr/lib/libpvr2d.so": 24, "/usr/include/EGL/egl.h": 12477, "/usr/lib/libdbm.so": 22, "/usr/include/GLES2/gl2ext.h": 91570, "/usr/lib/libIMGegl.so": 25}
+PKGSIZE_ti-sgx-ddk-um-dev: 267099

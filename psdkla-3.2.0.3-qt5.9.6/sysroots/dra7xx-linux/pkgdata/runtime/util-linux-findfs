@@ -1,0 +1,18 @@
+PN: util-linux
+PV: 2.27.1
+PR: r0
+PKGV: 2.27.1
+PKGR: r0.0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux-findfs: util-linux-libblkid (>= 2.27.1) util-linux-libuuid (>= 2.27.1) external-linaro-toolchain (>= 2.21)
+SECTION: base
+PKG_util-linux-findfs: util-linux-findfs
+FILES_util-linux-findfs: /usr/sbin/findfs
+FILERPROVIDESFLIST_util-linux-findfs: /usr/sbin/findfs
+FILES_INFO: {"/usr/sbin/findfs": 5480}
+FILERPROVIDES_/usr/sbin/findfs_util-linux-findfs: elf(buildid) (= ed5c704f4efac2459fe0aa8689a0a70234bd1ea8)
+FILERDEPENDSFLIST_util-linux-findfs: /usr/sbin/findfs
+FILERDEPENDS_/usr/sbin/findfs_util-linux-findfs: libblkid.so.1 libblkid.so.1(BLKID_2.15) libc.so.6 libc.so.6(GLIBC_2.4) libuuid.so.1 rtld(GNU_HASH)
+PKGSIZE_util-linux-findfs: 5480

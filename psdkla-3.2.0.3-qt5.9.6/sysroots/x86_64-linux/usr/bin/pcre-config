@@ -1,0 +1,4 @@
+#!/bin/sh
+echo 'ERROR: ${STAGING_DIR_NATIVE}/usr/bin/pcre-config should not be used, use an alternative such as pkg-config' >&2
+echo '--should-not-have-used-${STAGING_DIR_NATIVE}/usr/bin/pcre-config'
+exit 1

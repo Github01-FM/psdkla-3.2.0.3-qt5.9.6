@@ -1,0 +1,14 @@
+PN: libdrm
+PV: 2.4.67
+PR: r0.arago1
+PKGV: 2.4.67
+PKGR: r0.arago1.0
+LICENSE: MIT
+DESCRIPTION_libdrm-staticdev: The runtime library for accessing the kernel DRM services.  DRM stands for \\"Direct Rendering Manager\\", which is the kernel portion of the \\"Direct Rendering Infrastructure\\" (DRI).  DRI is required for many hardware accelerated OpenGL drivers.  This package contains static libraries for software development.
+SUMMARY_libdrm-staticdev: Userspace interface to the kernel DRM services - Development files (Static Libraries)
+RDEPENDS_libdrm-staticdev: libdrm-dev (= 2.4.67-r0.arago1.0)
+SECTION_libdrm-staticdev: devel
+PKG_libdrm-staticdev: libdrm-staticdev
+FILES_libdrm-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/libdrm/*.a
+FILES_INFO: {}
+PKGSIZE_libdrm-staticdev: 0

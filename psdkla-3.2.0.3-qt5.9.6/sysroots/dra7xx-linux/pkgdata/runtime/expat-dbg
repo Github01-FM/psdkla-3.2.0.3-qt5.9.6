@@ -1,0 +1,16 @@
+PN: expat
+PV: 2.1.0
+PR: r0
+PKGV: 2.1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_expat-dbg: Expat is an XML parser library written in C. It is a stream-oriented parser in which an application registers handlers for things the parser might find in the XML document (like start tags)  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_expat-dbg: A stream-oriented XML parser library - Debugging files
+RPROVIDES_expat-dbg:  expat-dbg (=2.1.0)
+RRECOMMENDS_expat-dbg: external-linaro-toolchain-dbg libgcc-dbg
+SECTION_expat-dbg: devel
+PKG_expat-dbg: libexpat-dbg
+ALLOW_EMPTY_expat-dbg: 1
+FILES_expat-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/xmltok_impl.c": 44554, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/xmlwf/xmlfile.h": 509, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/expat.h": 41752, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/xmlwf/filemap.h": 500, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/xmltok.h": 11184, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/xmlrole.c": 32475, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/xmlwf/xmlwf.c": 21212, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/xmlwf/xmlfile.c": 6082, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/xmltok_impl.h": 661, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/xmlrole.h": 3023, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/xmltok.c": 41405, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/xmlwf/unixfilemap.c": 1274, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/xmlparse.c": 198171, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/xmlwf/codepage.c": 1355, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/expat_external.h": 3364, "/usr/bin/.debug/xmlwf": 52280, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/nametab.h": 7050, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/xmlwf/codepage.h": 196, "/usr/src/debug/expat/2.1.0-r0/expat-2.1.0/lib/xmltok_ns.c": 3144, "/usr/lib/.debug/libexpat.so.1.6.0": 274536}
+PKGSIZE_expat-dbg: 744727

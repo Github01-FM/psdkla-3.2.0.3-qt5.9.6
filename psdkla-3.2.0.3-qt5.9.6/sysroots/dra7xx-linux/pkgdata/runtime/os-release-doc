@@ -1,0 +1,13 @@
+PN: os-release
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_os-release-doc: The /etc/os-release file contains operating system identification data.  This package contains documentation.
+SUMMARY_os-release-doc: Operating system identification - Documentation files
+SECTION_os-release-doc: doc
+PKG_os-release-doc: os-release-doc
+FILES_os-release-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_os-release-doc: 0

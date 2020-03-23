@@ -1,0 +1,17 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION: Linux kernel for Desay SV g5r2 devices
+SUMMARY: linux-g5r2-staging version 4.4.45+gitAUTOINC+cf0f7ad356-r7a.arago5
+RDEPENDS_kernel-base: goodix-fw kernel-devicetree kernel-image vpdma-fw
+RPROVIDES_kernel-base:  kernel-4.4.45+ kernel-base (=4.4.45+git0+cf0f7ad356)
+SECTION: kernel
+PKG_kernel-base: kernel-4.4.45+
+ALLOW_EMPTY_kernel-base: 1
+FILES_kernel-base: /lib/modules/4.4.45+/modules.order /lib/modules/4.4.45+/modules.builtin
+pkg_postinst_kernel-base: \tif [ ! -e "$D/lib/modules/4.4.45+" ]; then\n\t\tmkdir -p $D/lib/modules/4.4.45+\n\tfi\n\tif [ -n "$D" ]; then\n\t\tdepmodwrapper -a -b $D 4.4.45+\n\telse\n\t\tdepmod -a 4.4.45+\n\tfi\n
+FILES_INFO: {"/lib/modules/4.4.45+/modules.builtin": 6973, "/lib/modules/4.4.45+/modules.order": 7787}
+PKGSIZE_kernel-base: 14760

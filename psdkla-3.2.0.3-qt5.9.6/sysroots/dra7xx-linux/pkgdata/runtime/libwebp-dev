@@ -1,0 +1,16 @@
+PN: libwebp
+PV: 0.5.0
+PR: r0
+PKGV: 0.5.0
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_libwebp-dev: WebP is a method of lossy and lossless compression that can be                used on a large variety of photographic, translucent and                graphical images found on the web. The degree of lossy                compression is adjustable so a user can choose the trade-off                between file size and image quality. WebP typically achieves                an average of 30% more compression than JPEG and JPEG 2000,                without loss of image quality.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libwebp-dev: WebP is an image format designed for the Web - Development files
+RDEPENDS_libwebp-dev: libwebp (= 0.5.0-r0.0)
+RRECOMMENDS_libwebp-dev: external-linaro-toolchain-dev
+SECTION_libwebp-dev: devel
+PKG_libwebp-dev: libwebp-dev
+ALLOW_EMPTY_libwebp-dev: 1
+FILES_libwebp-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libwebp/*.la /lib/*.la
+FILES_INFO: {"/usr/include/webp/decode.h": 22526, "/usr/include/webp/encode.h": 26298, "/usr/lib/libwebpdemux.so": 21, "/usr/lib/pkgconfig/libwebp.pc": 226, "/usr/include/webp/types.h": 1687, "/usr/lib/pkgconfig/libwebpdemux.pc": 253, "/usr/lib/libwebpmux.so": 19, "/usr/include/webp/mux.h": 22885, "/usr/lib/pkgconfig/libwebpmux.pc": 254, "/usr/include/webp/mux_types.h": 3149, "/usr/lib/libwebp.la": 1031, "/usr/lib/libwebp.so": 16, "/usr/include/webp/demux.h": 15235, "/usr/lib/libwebpmux.la": 1073, "/usr/lib/libwebpdemux.la": 1087}
+PKGSIZE_libwebp-dev: 95760

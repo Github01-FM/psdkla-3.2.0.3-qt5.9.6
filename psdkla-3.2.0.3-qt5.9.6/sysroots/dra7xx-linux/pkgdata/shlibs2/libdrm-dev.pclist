@@ -1,0 +1,8 @@
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/libdrm/2.4.67-r0.arago1/packages-split/libdrm-dev/usr/lib/pkgconfig/libdrm_vc4
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/libdrm/2.4.67-r0.arago1/packages-split/libdrm-dev/usr/lib/pkgconfig/libdrm_nouveau
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/libdrm/2.4.67-r0.arago1/packages-split/libdrm-dev/usr/lib/pkgconfig/libdrm_radeon
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/libdrm/2.4.67-r0.arago1/packages-split/libdrm-dev/usr/lib/pkgconfig/libdrm
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/libdrm/2.4.67-r0.arago1/packages-split/libdrm-dev/usr/lib/pkgconfig/libdrm_omap
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/libdrm/2.4.67-r0.arago1/packages-split/libdrm-dev/usr/lib/pkgconfig/libkms
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/libdrm/2.4.67-r0.arago1/packages-split/libdrm-dev/usr/lib/pkgconfig/libdrm_freedreno
+/home/user01/zzp/g5r2/yocto-layers/build/arago-tmp-external-linaro-toolchain/work/armv7ahf-neon-linux-gnueabi/libdrm/2.4.67-r0.arago1/packages-split/libdrm-dev/usr/lib/pkgconfig/libdrm_amdgpu

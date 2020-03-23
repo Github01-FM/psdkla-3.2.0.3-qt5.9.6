@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-cpufreq-stats: cpufreq-stats kernel module; Export cpufreq stats via sysfs
+SUMMARY_kernel-module-cpufreq-stats: cpufreq-stats kernel module
+RDEPENDS_kernel-module-cpufreq-stats: kernel-4.4.45+
+SECTION: kernel
+PKG_kernel-module-cpufreq-stats: kernel-module-cpufreq-stats
+FILES_kernel-module-cpufreq-stats: /lib/modules/4.4.45+/kernel/drivers/cpufreq/cpufreq_stats.ko /etc/modules-load.d/cpufreq_stats.conf /etc/modprobe.d/cpufreq_stats.conf
+pkg_postinst_kernel-module-cpufreq-stats: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-cpufreq-stats: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/drivers/cpufreq/cpufreq_stats.ko": 8932}
+PKGSIZE_kernel-module-cpufreq-stats: 8932

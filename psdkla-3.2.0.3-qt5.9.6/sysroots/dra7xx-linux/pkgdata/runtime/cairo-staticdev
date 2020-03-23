@@ -1,0 +1,15 @@
+PN: cairo
+PV: 1.14.6
+PR: r1
+PKGV: 1.14.6
+PKGR: r1.0
+LICENSE: MPL-1 & LGPLv2.1 & GPLv3+
+DESCRIPTION_cairo-staticdev: Cairo is a multi-platform library providing anti-aliased vector-based rendering for multiple target backends. Paths consist of line segments and cubic splines and can be rendered at any width with various join and cap styles. All colors may be specified with optional translucence (opacity/alpha) and combined using the extended Porter/Duff compositing algebra as found in the X Render Extension.  This package contains static libraries for software development.
+SUMMARY_cairo-staticdev: The Cairo 2D vector graphics library - Development files (Static Libraries)
+RDEPENDS_cairo-staticdev: cairo-dev (= 1.14.6-r1.0)
+RPROVIDES_cairo-staticdev:  cairo-staticdev (=1.14.6)
+SECTION_cairo-staticdev: devel
+PKG_cairo-staticdev: libcairo-staticdev
+FILES_cairo-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/cairo/*.a
+FILES_INFO: {"/usr/lib/libcairo-gobject.a": 57466, "/usr/lib/libcairo.a": 6740058, "/usr/lib/libcairo-script-interpreter.a": 654448}
+PKGSIZE_cairo-staticdev: 7451972

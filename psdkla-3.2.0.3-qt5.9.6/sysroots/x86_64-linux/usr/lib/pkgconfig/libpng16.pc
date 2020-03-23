@@ -1,0 +1,11 @@
+prefix=${STAGING_DIR_NATIVE}/usr
+exec_prefix=${STAGING_DIR_NATIVE}/usr
+libdir=${STAGING_DIR_NATIVE}/usr/lib
+includedir=${STAGING_DIR_NATIVE}/usr/include/libpng16
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.6.21
+Libs: -L${libdir} -lpng16
+Libs.private: -lm -lz -lm 
+Cflags: -I${includedir}

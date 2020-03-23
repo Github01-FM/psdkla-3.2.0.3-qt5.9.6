@@ -1,0 +1,5 @@
+0001-functions.prf-allow-build-for-linux-oe-g-platform.patch -p1
+0002-WebEngine-qquickwebengineview_p_p.h-add-include-QCol.patch -p1
+0003-Include-dependency-to-QCoreApplication-translate.patch -p1
+0004-Force-host-toolchain-configuration.patch -p1
+sv001-enable-kIgnoreGpuBlacklist-switch.patch -p1

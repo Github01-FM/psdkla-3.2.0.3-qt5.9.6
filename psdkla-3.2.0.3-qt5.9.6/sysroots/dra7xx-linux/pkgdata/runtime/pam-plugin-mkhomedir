@@ -1,0 +1,21 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-mkhomedir: PAM plugin for -mkhomedir
+SUMMARY_pam-plugin-mkhomedir: PAM plugin for -mkhomedir
+RDEPENDS_pam-plugin-mkhomedir: libpam-suffix external-linaro-toolchain (>= 2.21) libpam (>= 1.2.1)
+RPROVIDES_pam-plugin-mkhomedir: pam-plugin-mkhomedir-suffix
+SECTION: base
+PKG_pam-plugin-mkhomedir: pam-plugin-mkhomedir
+FILES_pam-plugin-mkhomedir: /lib/security/pam_mkhomedir.so /usr/sbin/mkhomedir_helper
+FILERPROVIDESFLIST_pam-plugin-mkhomedir: /lib/security/pam@underscore@mkhomedir.so /usr/sbin/mkhomedir@underscore@helper
+FILES_INFO: {"/usr/sbin/mkhomedir_helper": 15176, "/lib/security/pam_mkhomedir.so": 5096}
+FILERPROVIDES_/lib/security/pam@underscore@mkhomedir.so_pam-plugin-mkhomedir: elf(buildid) (= 92eff94735d79203ff6ab510db54e428f978e9ca) pam_mkhomedir.so
+FILERPROVIDES_/usr/sbin/mkhomedir@underscore@helper_pam-plugin-mkhomedir: elf(buildid) (= 8ea149dd77c1654262c01442117508dfa7f1b473)
+FILERDEPENDSFLIST_pam-plugin-mkhomedir: /lib/security/pam@underscore@mkhomedir.so /usr/sbin/mkhomedir@underscore@helper
+FILERDEPENDS_/lib/security/pam@underscore@mkhomedir.so_pam-plugin-mkhomedir: libc.so.6 libc.so.6(GLIBC_2.4) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) libpam.so.0(LIBPAM_MODUTIL_1.1.9) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/mkhomedir@underscore@helper_pam-plugin-mkhomedir: libc.so.6 libc.so.6(GLIBC_2.4) libpam.so.0 libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_MODUTIL_1.0) rtld(GNU_HASH)
+PKGSIZE_pam-plugin-mkhomedir: 20272

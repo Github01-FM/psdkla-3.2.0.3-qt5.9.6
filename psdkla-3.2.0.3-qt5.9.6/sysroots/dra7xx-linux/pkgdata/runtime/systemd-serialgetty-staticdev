@@ -1,0 +1,14 @@
+PN: systemd-serialgetty
+PV: 1.0
+PR: r5
+PKGV: 1.0
+PKGR: r5.0
+LICENSE: GPLv2+
+DESCRIPTION_systemd-serialgetty-staticdev: Serial terminal support for systemd.  This package contains static libraries for software development.
+SUMMARY_systemd-serialgetty-staticdev: Serial terminal support for systemd - Development files (Static Libraries)
+RDEPENDS_systemd-serialgetty-staticdev: systemd-serialgetty-dev (= 1.0-r5.0)
+SECTION_systemd-serialgetty-staticdev: devel
+PKG_systemd-serialgetty-staticdev: systemd-serialgetty-staticdev
+FILES_systemd-serialgetty-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/systemd-serialgetty/*.a
+FILES_INFO: {}
+PKGSIZE_systemd-serialgetty-staticdev: 0

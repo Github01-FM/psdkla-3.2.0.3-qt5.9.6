@@ -1,0 +1,14 @@
+PN: goodix-fw
+PV: 1.0.0.0
+PR: r0
+PKGV: 1.0.0.0
+PKGR: r0.0
+LICENSE: BSD-3-Clause
+DESCRIPTION_goodix-fw-dbg: Goodix GT9271 config firmware  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_goodix-fw-dbg: goodix-fw version 1.0.0.0-r0 - Debugging files
+SECTION_goodix-fw-dbg: devel
+PKG_goodix-fw-dbg: goodix-fw-dbg
+ALLOW_EMPTY_goodix-fw-dbg: 1
+FILES_goodix-fw-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_goodix-fw-dbg: 0

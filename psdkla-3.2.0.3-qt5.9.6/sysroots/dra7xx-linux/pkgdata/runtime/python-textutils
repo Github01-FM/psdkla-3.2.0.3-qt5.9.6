@@ -1,0 +1,18 @@
+PN: python
+PV: 2.7.11
+PR: r1
+PKGV: 2.7.11
+PKGR: r1.0
+LICENSE: PSFv2
+DESCRIPTION: The Python Programming Language.
+SUMMARY_python-textutils: Python option parsing, text wrapping and CSV support
+RDEPENDS_python-textutils: libpython2 (>= 2.7.11) python-core python-io external-linaro-toolchain (>= 2.21) python-re python-stringold
+SECTION: devel/python
+PKG_python-textutils: python-textutils
+FILES_python-textutils: /usr/lib/python2.7/lib-dynload/_csv.so /usr/lib/python2.7/csv.* /usr/lib/python2.7/optparse.* /usr/lib/python2.7/textwrap.* 
+FILERPROVIDESFLIST_python-textutils: /usr/lib/python2.7/lib-dynload/@underscore@csv.so
+FILES_INFO: {"/usr/lib/python2.7/lib-dynload/_csv.so": 25212, "/usr/lib/python2.7/optparse.py": 61205, "/usr/lib/python2.7/textwrap.pyc": 12004, "/usr/lib/python2.7/csv.py": 16708, "/usr/lib/python2.7/optparse.pyc": 53844, "/usr/lib/python2.7/textwrap.py": 17215, "/usr/lib/python2.7/csv.pyc": 13457}
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/@underscore@csv.so_python-textutils: _csv.so elf(buildid) (= c4e53a2b385c040b3a54952bb92411606273b9f7)
+FILERDEPENDSFLIST_python-textutils: /usr/lib/python2.7/lib-dynload/@underscore@csv.so
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/@underscore@csv.so_python-textutils: libc.so.6 libc.so.6(GLIBC_2.4) libpython2.7.so.1.0 rtld(GNU_HASH)
+PKGSIZE_python-textutils: 199645

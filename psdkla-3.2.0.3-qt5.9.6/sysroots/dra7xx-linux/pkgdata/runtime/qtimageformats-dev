@@ -1,0 +1,16 @@
+PN: qtimageformats
+PV: 5.9.6+gitAUTOINC+e9daef6d8f
+PR: r0
+PKGV: 5.9.6+git0+e9daef6d8f
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION_qtimageformats-dev: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_qtimageformats-dev: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0 - Development files
+RDEPENDS_qtimageformats-dev: qtimageformats (= 5.9.6+git0+e9daef6d8f-r0.0)
+RRECOMMENDS_qtimageformats-dev: qtbase-dev qtimageformats-qmldesigner qtimageformats-mkspecs qtimageformats tiff-dev
+SECTION_qtimageformats-dev: devel
+PKG_qtimageformats-dev: qtimageformats-dev
+ALLOW_EMPTY_qtimageformats-dev: 1
+FILES_qtimageformats-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/qtimageformats/*.la /lib/*.la      /usr/lib/lib*.so     /usr/lib/pkgconfig     /usr/lib/cmake/*     /usr/lib/*.prl     /usr/lib/*.la     /usr/include/qt5/* 
+FILES_INFO: {"/usr/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake": 174, "/usr/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake": 174, "/usr/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake": 174, "/usr/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake": 170, "/usr/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake": 174}
+PKGSIZE_qtimageformats-dev: 866

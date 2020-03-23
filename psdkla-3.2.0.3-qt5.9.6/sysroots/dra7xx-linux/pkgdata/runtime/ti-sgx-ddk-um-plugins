@@ -1,0 +1,15 @@
+PN: ti-sgx-ddk-um
+PV: 1.14.3699939
+PR: r23
+PKGV: 1.14.3699939
+PKGR: r23.0
+LICENSE: TI-TSPA
+DESCRIPTION: Userspace libraries for PowerVR SGX chipset on TI SoCs
+SUMMARY: ti-sgx-ddk-um version 1.14.3699939-r23
+RDEPENDS_ti-sgx-ddk-um-plugins: ti-sgx-ddk-um
+SECTION: base
+PKG_ti-sgx-ddk-um-plugins: ti-sgx-ddk-um-plugins
+ALLOW_EMPTY_ti-sgx-ddk-um-plugins: 1
+FILES_ti-sgx-ddk-um-plugins: /usr/lib/libsrv_init.so /usr/lib/libsrv_um.so /usr/lib/libglslcompiler.so /usr/lib/libPVRScopeServices.so /usr/lib/libGLESv2.so /usr/lib/libpvrDRMWSEGL.so  /usr/lib/libpvrGBMWSEGL.so  /usr/lib/libpvrws_WAYLAND.so
+FILES_INFO: {"/usr/lib/libGLESv2.so": 25, "/usr/lib/libsrv_um.so": 25, "/usr/lib/libPVRScopeServices.so": 35, "/usr/lib/libpvrDRMWSEGL.so": 30, "/usr/lib/libpvrws_WAYLAND.so": 32, "/usr/lib/libglslcompiler.so": 31, "/usr/lib/libsrv_init.so": 27, "/usr/lib/libpvrGBMWSEGL.so": 30}
+PKGSIZE_ti-sgx-ddk-um-plugins: 235

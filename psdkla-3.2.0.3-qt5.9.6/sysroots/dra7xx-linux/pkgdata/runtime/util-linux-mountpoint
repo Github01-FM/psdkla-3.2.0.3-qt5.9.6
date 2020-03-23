@@ -1,0 +1,20 @@
+PN: util-linux
+PV: 2.27.1
+PR: r0
+PKGV: 2.27.1
+PKGR: r0.0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux-mountpoint: util-linux-libblkid (>= 2.27.1) util-linux-libmount (>= 2.27.1) update-alternatives-opkg external-linaro-toolchain (>= 2.21) util-linux-libuuid (>= 2.27.1)
+SECTION: base
+PKG_util-linux-mountpoint: util-linux-mountpoint
+FILES_util-linux-mountpoint: /bin/mountpoint.util-linux
+pkg_postinst_util-linux-mountpoint: #!/bin/sh\n\tupdate-alternatives --install /bin/mountpoint mountpoint /bin/mountpoint.util-linux 80\n
+pkg_prerm_util-linux-mountpoint: #!/bin/sh\n\tupdate-alternatives --remove  mountpoint /bin/mountpoint.util-linux\n
+FILERPROVIDESFLIST_util-linux-mountpoint: /bin/mountpoint.util-linux
+FILES_INFO: {"/bin/mountpoint.util-linux": 7720}
+FILERPROVIDES_/bin/mountpoint.util-linux_util-linux-mountpoint: elf(buildid) (= c48afdedffd07de1f96be0c9e0a30b65a726b9a3) /bin/mountpoint
+FILERDEPENDSFLIST_util-linux-mountpoint: /bin/mountpoint.util-linux
+FILERDEPENDS_/bin/mountpoint.util-linux_util-linux-mountpoint: libblkid.so.1 libc.so.6 libc.so.6(GLIBC_2.4) libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.24) librt.so.1 libuuid.so.1 rtld(GNU_HASH)
+PKGSIZE_util-linux-mountpoint: 7720

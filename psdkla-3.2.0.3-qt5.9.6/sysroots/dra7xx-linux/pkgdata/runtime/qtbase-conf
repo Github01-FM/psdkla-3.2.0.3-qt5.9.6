@@ -1,0 +1,13 @@
+PN: qtbase-conf
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION: qtbase configuration files.
+SUMMARY: qtbase configuration files
+SECTION: base
+PKG_qtbase-conf: qtbase-conf
+FILES_qtbase-conf: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/qtbase-conf /usr/lib/qtbase-conf/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers /etc/profile.d/*
+FILES_INFO: {"/etc/profile.d/qt_env.sh": 79}
+PKGSIZE_qtbase-conf: 79

@@ -1,0 +1,13 @@
+PN: qtimageformats
+PV: 5.9.6+gitAUTOINC+e9daef6d8f
+PR: r0
+PKGV: 5.9.6+git0+e9daef6d8f
+PKGR: r0.0
+LICENSE: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+DESCRIPTION: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0.
+SUMMARY: qtimageformats version 5.9.6+gitAUTOINC+e9daef6d8f-r0
+SECTION: base
+PKG_qtimageformats-qmldesigner: qtimageformats-qmldesigner
+FILES_qtimageformats-qmldesigner:       /usr/lib/qt5/qml/*/designer     /usr/lib/qt5/qml/*/*/designer     /usr/lib/qt5/qml/*/*/*/designer 
+FILES_INFO: {}
+PKGSIZE_qtimageformats-qmldesigner: 0

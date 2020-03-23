@@ -1,0 +1,16 @@
+PN: cryptodev-module
+PV: 1.8
+PR: r0.arago0
+PKGV: 1.8
+PKGR: r0.arago0.0
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-cryptodev: cryptodev kernel module; CryptoDev driver
+SUMMARY_kernel-module-cryptodev: cryptodev kernel module
+RDEPENDS_kernel-module-cryptodev: kernel-4.4.45+
+SECTION: base
+PKG_kernel-module-cryptodev: kernel-module-cryptodev
+FILES_kernel-module-cryptodev: /lib/modules/4.4.45+/extra/cryptodev.ko /etc/modules-load.d/cryptodev.conf /etc/modprobe.d/cryptodev.conf
+pkg_postinst_kernel-module-cryptodev: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\nif [ x"$D" = "x" ]; then\n\tmodprobe cryptodev || true\nfi\n
+pkg_postrm_kernel-module-cryptodev: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/extra/cryptodev.ko": 54180, "/etc/modules-load.d/cryptodev.conf": 10}
+PKGSIZE_kernel-module-cryptodev: 54190

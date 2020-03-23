@@ -1,0 +1,16 @@
+PN: libevent
+PV: 2.0.22
+PR: r0
+PKGV: 2.0.22
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_libevent-dev: An asynchronous event notification library.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libevent-dev: An asynchronous event notification library - Development files
+RDEPENDS_libevent-dev: libevent (= 2.0.22-r0.0)
+RRECOMMENDS_libevent-dev: external-linaro-toolchain-dev zlib-dev
+SECTION_libevent-dev: devel
+PKG_libevent-dev: libevent-dev
+ALLOW_EMPTY_libevent-dev: 1
+FILES_libevent-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/libevent/*.la /lib/*.la
+FILES_INFO: {"/usr/include/event2/event-config.h": 13959, "/usr/lib/libevent_extra.la": 1090, "/usr/include/event2/rpc.h": 20984, "/usr/lib/libevent_pthreads.la": 1111, "/usr/lib/pkgconfig/libevent.pc": 302, "/usr/include/evdns.h": 1974, "/usr/lib/libevent_extra.so": 28, "/usr/include/event2/bufferevent_struct.h": 4111, "/usr/include/event2/dns_struct.h": 2572, "/usr/include/event2/dns.h": 24648, "/usr/include/event2/bufferevent_ssl.h": 3832, "/usr/lib/pkgconfig/libevent_pthreads.pc": 347, "/usr/include/event2/listener.h": 5968, "/usr/lib/libevent_core.so": 27, "/usr/include/evutil.h": 1737, "/usr/include/event2/rpc_struct.h": 3211, "/usr/include/event2/http_struct.h": 4166, "/usr/include/event2/event.h": 45193, "/usr/include/event2/tag_compat.h": 2117, "/usr/include/event2/event_struct.h": 4047, "/usr/include/evrpc.h": 1970, "/usr/include/event2/buffer.h": 30737, "/usr/include/evhttp.h": 1990, "/usr/include/event2/buffer_compat.h": 4586, "/usr/include/event2/bufferevent_compat.h": 4448, "/usr/include/event2/http.h": 32400, "/usr/include/event2/http_compat.h": 3129, "/usr/include/event2/keyvalq_struct.h": 2599, "/usr/include/event2/bufferevent.h": 28619, "/usr/lib/libevent.la": 1048, "/usr/include/event2/thread.h": 9458, "/usr/lib/libevent_core.la": 1083, "/usr/include/event2/dns_compat.h": 12131, "/usr/include/event2/event_compat.h": 7395, "/usr/include/event2/tag.h": 4438, "/usr/lib/libevent.so": 22, "/usr/lib/libevent_pthreads.so": 31, "/usr/include/event2/rpc_compat.h": 2327, "/usr/include/event.h": 2760, "/usr/include/event2/util.h": 22581}
+PKGSIZE_libevent-dev: 315176

@@ -1,0 +1,22 @@
+PN: pixman
+PE: 1
+PV: 0.32.8
+PR: r0
+PKGE: 1
+PKGV: 0.32.8
+PKGR: r0.0
+LICENSE: MIT & MIT-style & PD
+DESCRIPTION: Pixman provides a library for manipulating pixel regions -- a set of Y-X banded rectangles, image compositing using the Porter/Duff model and implicit mask generation for geometric primitives including trapezoids, triangles, and rectangles.
+SUMMARY: Pixman: Pixel Manipulation library
+RDEPENDS_pixman: external-linaro-toolchain (>= 2.21)
+RPROVIDES_pixman:  pixman (=0.32.8)
+SECTION: x11/libs
+PKG_pixman: libpixman-1-0
+FILES_pixman: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/pixman /usr/lib/pixman/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_pixman: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_pixman: /usr/lib/libpixman-1.so.0.32.8
+FILES_INFO: {"/usr/lib/libpixman-1.so.0": 21, "/usr/lib/libpixman-1.so.0.32.8": 527552}
+FILERPROVIDES_/usr/lib/libpixman-1.so.0.32.8_pixman: elf(buildid) (= 184326fce9176ce14c35b5d2b16fab715bba2325) libpixman-1.so.0
+FILERDEPENDSFLIST_pixman: /usr/lib/libpixman-1.so.0.32.8
+FILERDEPENDS_/usr/lib/libpixman-1.so.0.32.8_pixman: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.4) libm.so.6 libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_pixman: 527573

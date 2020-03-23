@@ -1,0 +1,20 @@
+PN: e2fsprogs
+PV: 1.42.99+1.43+gitAUTOINC+0f26747167
+PR: r0
+PKGV: 1.42.99+1.43+git0+0f26747167
+PKGR: r0.0
+LICENSE: GPLv2 & LGPLv2 & BSD & MIT
+DESCRIPTION: The Ext2 Filesystem Utilities (e2fsprogs) contain all of the standard utilities for creating, fixing, configuring , and debugging ext2 filesystems.
+SUMMARY: Ext2 Filesystem Utilities
+RDEPENDS_libe2p: external-linaro-toolchain (>= 2.21)
+RPROVIDES_libe2p:  libe2p (=1.42.99+1.43+git0+0f26747167)
+SECTION: base
+PKG_libe2p: libe2p2
+FILES_libe2p: /lib/libe2p.so.*
+pkg_postinst_libe2p: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libe2p: /lib/libe2p.so.2.3
+FILES_INFO: {"/lib/libe2p.so.2.3": 25152, "/lib/libe2p.so.2": 13}
+FILERPROVIDES_/lib/libe2p.so.2.3_libe2p: elf(buildid) (= 356f6059fde49faf8d73de46fbbe04c65bb37f10) libe2p.so.2
+FILERDEPENDSFLIST_libe2p: /lib/libe2p.so.2.3
+FILERDEPENDS_/lib/libe2p.so.2.3_libe2p: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_libe2p: 25165

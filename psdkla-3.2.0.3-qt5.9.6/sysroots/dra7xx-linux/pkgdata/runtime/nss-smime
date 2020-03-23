@@ -1,0 +1,16 @@
+PN: nss
+PV: 3.21
+PR: r0
+PKGV: 3.21
+PKGR: r0.0
+LICENSE: MPL-2.0 | (MPL-2.0 & GPL-2.0+) | (MPL-2.0 & LGPL-2.1+)
+DESCRIPTION: Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v2 and v3, TLS, PKCS 5, PKCS 7, PKCS 11, PKCS 12, S/MIME, X.509 v3 certificates, and other security standards.
+SUMMARY: Mozilla\'s SSL and TLS implementation
+RDEPENDS_nss-smime: perl
+SECTION: libs
+PKG_nss-smime: nss-smime
+FILES_nss-smime:     /usr/bin/smime 
+FILES_INFO: {"/usr/bin/smime": 16442}
+FILERDEPENDSFLIST_nss-smime: /usr/bin/smime
+FILERDEPENDS_/usr/bin/smime_nss-smime: /usr/bin/env
+PKGSIZE_nss-smime: 16442

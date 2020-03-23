@@ -1,0 +1,16 @@
+PN: linux-g5r2-staging
+PV: 4.4.45+gitAUTOINC+cf0f7ad356
+PR: r7a.arago5
+PKGV: 4.4.45+git0+cf0f7ad356
+PKGR: r7a.arago5.2
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-tvp5158: tvp5158 kernel module; Video Decoder driver
+SUMMARY_kernel-module-tvp5158: tvp5158 kernel module
+RDEPENDS_kernel-module-tvp5158: kernel-4.4.45+
+SECTION: kernel
+PKG_kernel-module-tvp5158: kernel-module-tvp5158
+FILES_kernel-module-tvp5158: /lib/modules/4.4.45+/kernel/drivers/media/i2c/tvp5158.ko /etc/modules-load.d/tvp5158.conf /etc/modprobe.d/tvp5158.conf
+pkg_postinst_kernel-module-tvp5158: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-tvp5158: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.4.45+\nelse\n\tdepmodwrapper -a -b $D 4.4.45+\nfi\n\n
+FILES_INFO: {"/lib/modules/4.4.45+/kernel/drivers/media/i2c/tvp5158.ko": 11692}
+PKGSIZE_kernel-module-tvp5158: 11692

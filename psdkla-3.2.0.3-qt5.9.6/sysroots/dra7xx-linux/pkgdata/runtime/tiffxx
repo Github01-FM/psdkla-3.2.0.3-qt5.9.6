@@ -1,0 +1,20 @@
+PN: tiff
+PV: 4.0.6
+PR: r0.arago0
+PKGV: 4.0.6
+PKGR: r0.arago0.0
+LICENSE: BSD-2-Clause
+DESCRIPTION: Provides support for the Tag Image File Format (TIFF).
+SUMMARY: Provides support for the Tag Image File Format (TIFF)
+RDEPENDS_tiffxx: tiff (>= 4.0.6) zlib (>= 1.2.8) libstdc++ (>= 5.3.1) libgcc (>= 5.3.1) external-linaro-toolchain (>= 2.21) libjpeg-turbo (>= 8d+1.4.2) liblzma (>= 5.2.2)
+RPROVIDES_tiffxx:  tiffxx (=4.0.6)
+SECTION: base
+PKG_tiffxx: libtiffxx5
+FILES_tiffxx: /usr/lib/libtiffxx.so.*
+pkg_postinst_tiffxx: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_tiffxx: /usr/lib/libtiffxx.so.5.2.4
+FILES_INFO: {"/usr/lib/libtiffxx.so.5.2.4": 6572, "/usr/lib/libtiffxx.so.5": 18}
+FILERPROVIDES_/usr/lib/libtiffxx.so.5.2.4_tiffxx: elf(buildid) (= da367874f139cf9f0a390f3c57b212aa38f0426f) libtiffxx.so.5
+FILERDEPENDSFLIST_tiffxx: /usr/lib/libtiffxx.so.5.2.4
+FILERDEPENDS_/usr/lib/libtiffxx.so.5.2.4_tiffxx: libc.so.6 libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libjpeg.so.62 liblzma.so.5 libm.so.6 libstdc++.so.6 libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6(GLIBCXX_3.4) libstdc++.so.6(GLIBCXX_3.4.9) libtiff.so.5 libz.so.1 rtld(GNU_HASH)
+PKGSIZE_tiffxx: 6590

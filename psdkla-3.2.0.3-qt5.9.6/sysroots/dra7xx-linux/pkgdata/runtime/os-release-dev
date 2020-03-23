@@ -1,0 +1,15 @@
+PN: os-release
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_os-release-dev: The /etc/os-release file contains operating system identification data.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_os-release-dev: Operating system identification - Development files
+RDEPENDS_os-release-dev: os-release (= 1.0-r0.0)
+SECTION_os-release-dev: devel
+PKG_os-release-dev: os-release-dev
+ALLOW_EMPTY_os-release-dev: 1
+FILES_os-release-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/os-release/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_os-release-dev: 0

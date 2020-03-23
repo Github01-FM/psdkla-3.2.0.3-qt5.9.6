@@ -1,0 +1,19 @@
+PN: libpam
+PV: 1.2.1
+PR: r5
+PKGV: 1.2.1
+PKGR: r5.0
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-cracklib: PAM plugin for -cracklib
+SUMMARY_pam-plugin-cracklib: PAM plugin for -cracklib
+RDEPENDS_pam-plugin-cracklib: libpam-suffix libpam (>= 1.2.1) zlib (>= 1.2.8) external-linaro-toolchain (>= 2.21) cracklib (>= 2.9.5)
+RPROVIDES_pam-plugin-cracklib: pam-plugin-cracklib-suffix
+SECTION: base
+PKG_pam-plugin-cracklib: pam-plugin-cracklib
+FILES_pam-plugin-cracklib: /lib/security/pam_cracklib.so
+FILERPROVIDESFLIST_pam-plugin-cracklib: /lib/security/pam@underscore@cracklib.so
+FILES_INFO: {"/lib/security/pam_cracklib.so": 10404}
+FILERPROVIDES_/lib/security/pam@underscore@cracklib.so_pam-plugin-cracklib: elf(buildid) (= c7f893db43801c7aaf557e1fda1ffc1f1fd963e9) pam_cracklib.so
+FILERDEPENDSFLIST_pam-plugin-cracklib: /lib/security/pam@underscore@cracklib.so
+FILERDEPENDS_/lib/security/pam@underscore@cracklib.so_pam-plugin-cracklib: libc.so.6 libc.so.6(GLIBC_2.4) libcrack.so.2 libcrypt.so.1 libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) libpam.so.0(LIBPAM_EXTENSION_1.1.1) libpam.so.0(LIBPAM_MODUTIL_1.0) libz.so.1 rtld(GNU_HASH)
+PKGSIZE_pam-plugin-cracklib: 10404

@@ -1,0 +1,20 @@
+PN: systemd
+PE: 1
+PV: 229+gitAUTOINC+714c62b463
+PR: r0.arago3
+PKGE: 1
+PKGV: 229+git0+714c62b463
+PKGR: r0.arago3.0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION: systemd is a system and service manager for Linux, compatible with SysV and LSB init scripts. systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux cgroups, supports snapshotting and restoring of the system state, maintains mount and automount points and implements an elaborate transactional dependency-based service control logic. It can work as a drop-in replacement for sysvinit.
+SUMMARY: A System and service manager
+RDEPENDS_systemd-analyze: util-linux-libmount (>= 2.27.1) libpam (>= 1.2.1) external-linaro-toolchain (>= 2.21) libcap (>= 2.24)
+SECTION: base/shell
+PKG_systemd-analyze: systemd-analyze
+FILES_systemd-analyze: /usr/bin/systemd-analyze
+FILERPROVIDESFLIST_systemd-analyze: /usr/bin/systemd-analyze
+FILES_INFO: {"/usr/bin/systemd-analyze": 1215324}
+FILERPROVIDES_/usr/bin/systemd-analyze_systemd-analyze: elf(buildid) (= 639fb0b3996668ef04dc4cce5f34c9601fd71593)
+FILERDEPENDSFLIST_systemd-analyze: /usr/bin/systemd-analyze
+FILERDEPENDS_/usr/bin/systemd-analyze_systemd-analyze: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.10) libc.so.6(GLIBC_2.14) libc.so.6(GLIBC_2.16) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.5) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.9) libcap.so.2 libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.20) libmount.so.1(MOUNT_2.26) libpam.so.0 libpam.so.0(LIBPAM_1.0) libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 librt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_systemd-analyze: 1215324

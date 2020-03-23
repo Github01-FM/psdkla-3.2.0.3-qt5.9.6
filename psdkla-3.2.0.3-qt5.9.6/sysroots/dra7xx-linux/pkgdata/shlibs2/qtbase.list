@@ -1,0 +1,7 @@
+libQt5Core.so.5:/usr/lib:5.9.6+git0+9c50112304
+libQt5Gui.so.5:/usr/lib:5.9.6+git0+9c50112304
+libQt5Concurrent.so.5:/usr/lib:5.9.6+git0+9c50112304
+libQt5Test.so.5:/usr/lib:5.9.6+git0+9c50112304
+libQt5EglFSDeviceIntegration.so.5:/usr/lib:5.9.6+git0+9c50112304
+libQt5Network.so.5:/usr/lib:5.9.6+git0+9c50112304
+libQt5Xml.so.5:/usr/lib:5.9.6+git0+9c50112304

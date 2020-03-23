@@ -1,0 +1,13 @@
+PN: xz
+PV: 5.2.2
+PR: r0
+PKGV: 5.2.2
+PKGR: r0.0
+LICENSE_xz-locale: GPLv2+
+DESCRIPTION: Utilities for managing LZMA compressed files.
+SUMMARY: Utilities for managing LZMA compressed files
+SECTION: base
+PKG_xz-locale: xz-locale
+FILES_xz-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_xz-locale: 0

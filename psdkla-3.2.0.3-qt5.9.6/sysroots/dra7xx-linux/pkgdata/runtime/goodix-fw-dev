@@ -1,0 +1,15 @@
+PN: goodix-fw
+PV: 1.0.0.0
+PR: r0
+PKGV: 1.0.0.0
+PKGR: r0.0
+LICENSE: BSD-3-Clause
+DESCRIPTION_goodix-fw-dev: Goodix GT9271 config firmware  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_goodix-fw-dev: goodix-fw version 1.0.0.0-r0 - Development files
+RDEPENDS_goodix-fw-dev: goodix-fw (= 1.0.0.0-r0.0)
+SECTION_goodix-fw-dev: devel
+PKG_goodix-fw-dev: goodix-fw-dev
+ALLOW_EMPTY_goodix-fw-dev: 1
+FILES_goodix-fw-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/goodix-fw/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_goodix-fw-dev: 0

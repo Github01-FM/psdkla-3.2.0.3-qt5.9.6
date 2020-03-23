@@ -1,0 +1,20 @@
+PN: util-linux
+PV: 2.27.1
+PR: r0
+PKGV: 2.27.1
+PKGR: r0.0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux-umount: util-linux-libblkid (>= 2.27.1) util-linux-libmount (>= 2.27.1) update-alternatives-opkg external-linaro-toolchain (>= 2.21) util-linux-libuuid (>= 2.27.1)
+SECTION: base
+PKG_util-linux-umount: util-linux-umount
+FILES_util-linux-umount: /bin/umount.util-linux
+pkg_postinst_util-linux-umount: #!/bin/sh\n\tupdate-alternatives --install /bin/umount umount /bin/umount.util-linux 80\n
+pkg_prerm_util-linux-umount: #!/bin/sh\n\tupdate-alternatives --remove  umount /bin/umount.util-linux\n
+FILERPROVIDESFLIST_util-linux-umount: /bin/umount.util-linux
+FILES_INFO: {"/bin/umount.util-linux": 19796}
+FILERPROVIDES_/bin/umount.util-linux_util-linux-umount: elf(buildid) (= 49483889e170e2347fab5d4b30bd02cf3542eec2) /bin/umount
+FILERDEPENDSFLIST_util-linux-umount: /bin/umount.util-linux
+FILERDEPENDS_/bin/umount.util-linux_util-linux-umount: libblkid.so.1 libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.20) libmount.so.1(MOUNT_2.21) libmount.so.1(MOUNT_2.22) libmount.so.1(MOUNT_2.23) libmount.so.1(MOUNT_2.24) libmount.so.1(MOUNT_2.25) librt.so.1 libuuid.so.1 rtld(GNU_HASH)
+PKGSIZE_util-linux-umount: 19796

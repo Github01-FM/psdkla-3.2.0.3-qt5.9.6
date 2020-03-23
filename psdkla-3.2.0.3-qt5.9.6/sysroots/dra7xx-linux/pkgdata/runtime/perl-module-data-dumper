@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0.0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-data-dumper: perl module data-dumper
+SUMMARY_perl-module-data-dumper: perl module data-dumper
+RDEPENDS_perl-module-data-dumper: perl-module-carp perl-module-b-deparse perl-module-overload perl-module-xsloader perl-module-scalar-util perl-module-exporter external-linaro-toolchain (>= 2.21) perl-module-config perl-module-constant perl
+SECTION: devel
+PKG_perl-module-data-dumper: perl-module-data-dumper
+FILES_perl-module-data-dumper: /usr/lib/perl/5.22.1/auto/Data/Dumper/Dumper.so /usr/lib/perl/5.22.1/Data/Dumper.pm
+FILERPROVIDESFLIST_perl-module-data-dumper: /usr/lib/perl/5.22.1/auto/Data/Dumper/Dumper.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/Data/Dumper.pm": 45313, "/usr/lib/perl/5.22.1/auto/Data/Dumper/Dumper.so": 30584}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/Data/Dumper/Dumper.so_perl-module-data-dumper: Dumper.so elf(buildid) (= 0039a4b5095ab8b7438be1926b573736c607e8d5)
+FILERDEPENDSFLIST_perl-module-data-dumper: /usr/lib/perl/5.22.1/auto/Data/Dumper/Dumper.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/Data/Dumper/Dumper.so_perl-module-data-dumper: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_perl-module-data-dumper: 75897

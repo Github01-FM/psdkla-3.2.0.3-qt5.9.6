@@ -1,0 +1,15 @@
+PN: flex
+PV: 2.6.0
+PR: r0
+PKGV: 2.6.0
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_flex-dbg: Flex is a fast lexical analyser generator.  Flex is a tool for generating programs that recognize lexical patterns in text.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_flex-dbg: Flex (The Fast Lexical Analyzer) - Debugging files
+RRECOMMENDS_flex-dbg: external-linaro-toolchain-dbg
+SECTION_flex-dbg: devel
+PKG_flex-dbg: flex-dbg
+ALLOW_EMPTY_flex-dbg: 1
+FILES_flex-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/ccl.c": 7488, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/ecs.c": 5644, "/usr/bin/.debug/flex": 289860, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/dfa.c": 27234, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/tables.c": 13304, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/scanflags.c": 2272, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/tables.h": 2914, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/gen.c": 56226, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/flexdef.h": 43448, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/tables_shared.c": 2208, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/filter.c": 11551, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/libmain.c": 1201, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/nfa.c": 18238, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/buf.c": 7677, "/usr/lib/.debug/libfl.so.2.0.0": 6632, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/flexint.h": 1494, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/parse.h": 4117, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/yylex.c": 4159, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/tables_shared.h": 5120, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/tblcmp.c": 23286, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/libyywrap.c": 1134, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/options.c": 7767, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/options.h": 3245, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/main.c": 50509, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/misc.c": 21188, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/regex.c": 4843, "/usr/lib/.debug/libfl_pic.so.2.0.0": 6632, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/skel.c": 122087, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/scanopt.h": 4317, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/sym.c": 6666, "/usr/src/debug/flex/2.6.0-r0/flex-2.6.0/src/scanopt.c": 20238}
+PKGSIZE_flex-dbg: 782699

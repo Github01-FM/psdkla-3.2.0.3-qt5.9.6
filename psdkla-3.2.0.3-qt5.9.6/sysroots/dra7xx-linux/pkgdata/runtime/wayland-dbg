@@ -1,0 +1,15 @@
+PN: wayland
+PV: 1.14.0
+PR: r0
+PKGV: 1.14.0
+PKGR: r0.0
+LICENSE: MIT
+DESCRIPTION_wayland-dbg: Wayland is a protocol for a compositor to talk to its clients as well as a C library implementation of that protocol. The compositor can be a standalone display server running on Linux kernel modesetting and evdev input devices, an X application, or a wayland client itself. The clients can be traditional applications, X servers (rootless or fullscreen) or other display servers.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_wayland-dbg: Wayland, a protocol between a compositor and clients - Debugging files
+RRECOMMENDS_wayland-dbg: external-linaro-toolchain-dbg zlib-dbg expat-dbg libffi-dbg libxml2-dbg
+SECTION_wayland-dbg: devel
+PKG_wayland-dbg: wayland-dbg
+ALLOW_EMPTY_wayland-dbg: 1
+FILES_wayland-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/src/debug/wayland/1.14.0-r0/build/protocol/wayland-protocol.c": 12986, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/scanner.c": 46185, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-shm.c": 16571, "/usr/lib/.debug/libwayland-cursor.so.0.0.0": 47036, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-client-core.h": 8615, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-server.c": 55620, "/usr/lib/.debug/libwayland-server.so.0.1.0": 139656, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-private.h": 6602, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/cursor/cursor-data.h": 38476, "/usr/lib/.debug/libwayland-client.so.0.3.0": 93560, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-util.h": 23111, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/cursor/os-compatibility.c": 3476, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-client.c": 57712, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/cursor/os-compatibility.h": 1315, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-util.c": 8625, "/usr/src/debug/wayland/1.14.0-r0/build/protocol/wayland-client-protocol.h": 177539, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/cursor/wayland-cursor.c": 12311, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/cursor/wayland-cursor.h": 2243, "/usr/src/debug/wayland/1.14.0-r0/build/protocol/wayland-server-protocol.h": 138870, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/cursor/xcursor.h": 2385, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-os.c": 3585, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-os.h": 1844, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/cursor/xcursor.c": 23270, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/event-loop.c": 10886, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/connection.c": 26789, "/usr/src/debug/wayland/1.14.0-r0/wayland-1.14.0/src/wayland-server-core.h": 16231, "/usr/bin/.debug/wayland-scanner": 82004}
+PKGSIZE_wayland-dbg: 1057503

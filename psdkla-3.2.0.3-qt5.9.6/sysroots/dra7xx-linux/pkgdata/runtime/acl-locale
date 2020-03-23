@@ -1,0 +1,13 @@
+PN: acl
+PV: 2.2.52
+PR: r0
+PKGV: 2.2.52
+PKGR: r0.0
+LICENSE: LGPLv2.1+ & GPLv2+
+DESCRIPTION: Utilities for managing POSIX Access Control Lists.
+SUMMARY: Utilities for managing POSIX Access Control Lists
+SECTION: libs
+PKG_acl-locale: acl-locale
+FILES_acl-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_acl-locale: 0

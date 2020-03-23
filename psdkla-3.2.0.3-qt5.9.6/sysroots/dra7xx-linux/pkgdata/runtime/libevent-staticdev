@@ -1,0 +1,14 @@
+PN: libevent
+PV: 2.0.22
+PR: r0
+PKGV: 2.0.22
+PKGR: r0.0
+LICENSE: BSD
+DESCRIPTION_libevent-staticdev: An asynchronous event notification library.  This package contains static libraries for software development.
+SUMMARY_libevent-staticdev: An asynchronous event notification library - Development files (Static Libraries)
+RDEPENDS_libevent-staticdev: libevent-dev (= 2.0.22-r0.0)
+SECTION_libevent-staticdev: devel
+PKG_libevent-staticdev: libevent-staticdev
+FILES_libevent-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/libevent/*.a
+FILES_INFO: {"/usr/lib/libevent_pthreads.a": 17094, "/usr/lib/libevent_extra.a": 454420, "/usr/lib/libevent.a": 1282664, "/usr/lib/libevent_core.a": 828316}
+PKGSIZE_libevent-staticdev: 2582494

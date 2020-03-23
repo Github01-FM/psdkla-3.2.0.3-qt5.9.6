@@ -1,0 +1,15 @@
+PN: external-linaro-toolchain
+PV: 2016.02
+PR: r0.arago33
+PKGV: 2.21
+PKGR: r0.arago33.0
+LICENSE: LGPL-2.1&GPL-3&GPL-3-with-GCC-exception&GPL-3
+DESCRIPTION: external-linaro-toolchain version 2016.02-r0.arago33.
+SUMMARY: external-linaro-toolchain version 2016.02-r0.arago33
+RDEPENDS_libgomp-dev: libgomp
+RRECOMMENDS_libgomp-dev: external-linaro-toolchain-dev linux-libc-headers-dev
+SECTION: base
+PKG_libgomp-dev: libgomp-dev
+FILES_libgomp-dev:   /lib/libgomp*.so   /lib/libgomp*.la   /lib/libgomp.spec   /lib/gcc/arm-linux-gnueabi/${BINV}/include/omp.h    \t/usr/lib/gcc/arm-linux-gnueabi/5.3.1/include/omp.h \t/usr/lib/gcc/arm-linux-gnueabihf 
+FILES_INFO: {"/usr/lib/gcc/arm-linux-gnueabi/5.3.1/include/omp.h": 4355, "/lib/libgomp-plugin-host_nonshm.la": 1386, "/lib/libgomp.la": 1097, "/lib/libgomp-plugin-host_nonshm.so": 35, "/lib/libgomp.spec": 169}
+PKGSIZE_libgomp-dev: 7042
