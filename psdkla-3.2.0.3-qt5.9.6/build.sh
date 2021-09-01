@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/b cd psdkla-3.2.0.3-qt5.9.6; ./build.sh
+in/sh
 
 # Variable
 export SCRIPTDIR=$(dirname $(readlink -f $0))
